@@ -32,6 +32,26 @@ jobs:
           node-version: '22'
       - name: RSS feeds verwerken
         run: node scripts/update-feed.mjs
+      - name: Python configureren voor gratis Nederlandse vertaling
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-translate.txt
+      - name: Basistests vertaalmodule
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Argos-modelcache herstellen
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/risk-monitor-argos-models
+          key: risk-monitor-argos-en-nl-v1
+      - name: Argos Translate installeren
+        continue-on-error: true
+        run: python -m pip install -r requirements-translate.txt
+      - name: Nieuwe headlines automatisch naar Nederlands vertalen
+        env:
+          ARGOS_PACKAGE_DIR: /home/runner/.cache/risk-monitor-argos-models
+        run: python scripts/translate-feed.py
       - name: Bewaar historiek in repository
         run: |
           git config user.name "github-actions[bot]"
