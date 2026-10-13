@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.2.0",
+  "type": "automated_headline_feed",
+  "generatedAt": "2026-10-13T15:08:50.293Z",
+  "sourcesOk": 5,
+  "sourcesTotal": 5,
+  "newCount": 0,
+  "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
+  "sources": [
+    {
+      "name": "BBC News",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "name": "The Guardian",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "name": "Deutsche Welle",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "name": "UN News",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "name": "Raad van de EU",
+      "ok": true,
+      "items": 1
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-10-13T15:03:18.590Z",
+      "added": 8,
+      "total": 8,
+      "important": 0,
+      "review": 2,
+      "below": 6,
+      "sourcesOk": 5
+    },
+    {
+      "at": "2026-10-13T15:07:16.571Z",
+      "added": 0,
+      "total": 8,
+      "important": 0,
+      "review": 2,
+      "below": 6,
+      "sourcesOk": 5
+    },
+    {
+      "at": "2026-10-13T15:08:50.293Z",
+      "added": 0,
+      "total": 8,
+      "important": 0,
+      "review": 2,
+      "below": 6,
+      "sourcesOk": 5
+    }
+  ],
+  "signals": [
+    {
+      "id": "RSS-9054258f7cdf977b5d7fed",
+      "title": "Russia and Ukraine agree ceasefire after missile attack near NATO",
+      "summary": "NATO officials say European energy supplies could be affected by the missile attack.",
+      "date": "2026-10-13T15:02:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://example.org/BBC_News/0",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 3,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 9,
+      "category": "review",
+      "belowReason": "Verdere beoordeling vereist.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "BBC News",
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-6e8b45923d5435b636e05d",
+      "title": "Ukraine and Russia agree ceasefire following NATO missile attack",
+      "summary": "European Union officials discuss energy impacts after missile attack.",
+      "date": "2026-10-13T15:02:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://example.org/The_Guardian/0",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 3,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 9,
+      "category": "review",
+      "belowReason": "Verdere beoordeling vereist.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "The Guardian",
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-02881e369f9438b549b9f0",
+      "title": "China stages military drills around Taiwan",
+      "summary": "Taiwan officials condemn missile military exercises.",
+      "date": "2026-10-13T15:02:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://example.org/Deutsche_Welle/0",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-76d4fbe090acd8798bfd3f",
+      "title": "UN warns of war violence in Sudan",
+      "summary": "Humanitarian situation continues in Sudan amid armed conflict.",
+      "date": "2026-10-13T15:02:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://example.org/UN_News/0",
+      "topic": "conflict",
+      "region": "afrika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-0832a9ca7186b78e840151",
+      "title": "European Union approves sanctions on Russia",
+      "summary": "The EU has approved new sanctions following the war in Ukraine.",
+      "date": "2026-10-13T15:02:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "Raad van de EU",
+      "official": true,
+      "url": "https://example.org/Raad_van_de_EU/0",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-de14a7337a13ce8cb30b48",
+      "title": "Trump announces new EU tariffs in major trade decision",
+      "summary": "White House trade decision involving European Union companies.",
+      "date": "2026-10-13T14:53:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://example.org/BBC_News/1",
+      "topic": "trump",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-e79bc497abb95ec74ae19f",
+      "title": "Trump announces EU tariffs as trade decision",
+      "summary": "The White House tariff announcement could affect Europe.",
+      "date": "2026-10-13T14:53:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://example.org/The_Guardian/1",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-818aa2067c3e6ede1846e4",
+      "title": "North Korea conducts routine military exercises",
+      "summary": "South Korean officials monitor missile drills.",
+      "date": "2026-10-13T14:44:46.000Z",
+      "firstSeen": "2026-10-13T15:03:18.590Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://example.org/BBC_News/2",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    }
+  ]
+}

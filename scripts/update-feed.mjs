@@ -1,4 +1,4 @@
-/** Risk Monitor v1.2.0 — public RSS collector and transparent RULE-BASED triage.
+/** Risk Monitor v1.3.0 — public RSS collector and transparent RULE-BASED triage.
  * No AI inference, no independently verified reports, no emergency alerts.
  * Runs in GitHub Actions. Node.js standard library only. */
 import fs from 'node:fs/promises';
@@ -91,7 +91,7 @@ function assess(o,seenSourceNames){
   return {score:{military,belgium,novelty,reliability},total,category,belowReason,belgiumImpact,corroboratingSources:seenSourceNames,method:'rule_based_screening',verified:false};
 }
 async function loadOld(){try{let d=JSON.parse(await fs.readFile(PATH,'utf8'));return d&&typeof d==='object'?d:{};}catch{return {};}}
-async function fetchFeed(source){if(process.env.RISK_MONITOR_FEEDS_DIR){const filename=source.name.replace(/[^A-Za-z0-9]+/g,'_')+'.xml';const xml=await fs.readFile(process.env.RISK_MONITOR_FEEDS_DIR+'/'+filename,'utf8');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}const a=new AbortController();const timer=setTimeout(()=>a.abort(),12000);try{let r=await fetch(source.url,{signal:a.signal,headers:{'User-Agent':'RiskMonitor-v1.2-NonCommercial (+GitHub Actions)','Accept':'application/rss+xml,application/xml,text/xml,*/*'}});if(!r.ok)throw Error('HTTP '+r.status);let xml=await r.text();if(xml.length>4_000_000)throw Error('Feed te groot');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}finally{clearTimeout(timer);}}
+async function fetchFeed(source){if(process.env.RISK_MONITOR_FEEDS_DIR){const filename=source.name.replace(/[^A-Za-z0-9]+/g,'_')+'.xml';const xml=await fs.readFile(process.env.RISK_MONITOR_FEEDS_DIR+'/'+filename,'utf8');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}const a=new AbortController();const timer=setTimeout(()=>a.abort(),12000);try{let r=await fetch(source.url,{signal:a.signal,headers:{'User-Agent':'RiskMonitor-v1.3-NonCommercial (+GitHub Actions)','Accept':'application/rss+xml,application/xml,text/xml,*/*'}});if(!r.ok)throw Error('HTTP '+r.status);let xml=await r.text();if(xml.length>4_000_000)throw Error('Feed te groot');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}finally{clearTimeout(timer);}}
 
 const old=await loadOld();
 const oldSignals=Array.isArray(old.signals)?old.signals:[];
@@ -110,9 +110,9 @@ const entries=[...map.values()].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date
 for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));}
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
 const history=[...past,{at:NOW.toISOString(),added,total:entries.length,important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'1.2.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,
+const result={schemaVersion:'1.3.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
  sources:status,history,signals:entries};
 await fs.mkdir('data',{recursive:true});
 await fs.writeFile(PATH,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(`Risk Monitor 1.2.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
+console.log(`Risk Monitor 1.3.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);

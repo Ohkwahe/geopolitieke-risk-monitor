@@ -1,15 +1,10 @@
-# Testresultaten Risk Monitor v1.2.0
+# Risk Monitor v1.3.0 — testresultaten
 
-Uitgevoerd op 13 oktober 2026 in testomgeving met uitsluitend fictieve RSS-testkoppen.
+Datum: 2026-10-13
 
-- JavaScript in `index.html`: syntactisch gevalideerd (Node.js 22).
-- `scripts/update-feed.mjs`: syntactisch gevalideerd; verwerkt mock RSS van 5 bronnen.
-- RSS met HTML, Markdown en entities: omgezet naar leesbare platte tekst.
-- Herhaalde feedrun zonder nieuwe artikels: 0 nieuwe; historiek +1; bestaand nieuws blijft behouden.
-- Chromium Playwright iPhone/small-mobile simulatie: breedtes 320, 375, 390 en 430 px; daarnaast 768 px.
-- **Geen horizontaal scrollen**, geen JavaScript-paginafouten.
-- 3 tabbladen tonen automatische RSS-items volgens de gekozen categorie, ook Trump-items onder drempel.
-- Uitklapbare details, bronlinks, historiek en regiofilters getest.
-- Upgrade gebruikt bestaande `geopolitieke_monitor_v1_data` lokale opslag; DEMO-invoer wordt verborgen.
-
-Niet getest: daadwerkelijke GitHub Pages-publicatie in het account van de gebruiker, de echte GitHub Actions-run, Safari op een fysiek iPhone-toestel, en de bereikbaarheid van publieke RSS-bronnen vanuit GitHub Actions. De bestaande v1.1.0 GitHub-workflow was door de gebruiker als groen bevestigd.
+- 5 Python-unit-tests: **OK**. Getest: Nederlandse velden toegevoegd, origineel/score ongewijzigd, bronhash-cache, vertaling na gewijzigde bron, fallback bij model-/vertaalfout, begrenzing per run.
+- RSS-integratietest met 5 opgeslagen openbare feedfixtures: **OK** (8 testitems, alle 5 feeds verwerkt).
+- Chromium/Playwright mobiel: **OK** bij 320, 375, 390, 430 en 768 pixels; geen horizontale scroll, categorie-tabs werken, knop Toon origineel schakelt naar Engelse testkop en terug, vertaalstatus Instellingen aanwezig.
+- JavaScript Node-syntax: **OK**.
+- NIET hier getest: daadwerkelijke Argos-modeldownload en echte machinevertaalkwaliteit (deze runtime bevat het Argos-model niet en heeft geen uitvoerbare netwerktoegang tot de package index). Test op GitHub Actions noodzakelijk vóór GO.
+- De gebruikte headlines in testfixtures zijn **fictieve TESTDATA** en geen actuele nieuwsfeiten.
