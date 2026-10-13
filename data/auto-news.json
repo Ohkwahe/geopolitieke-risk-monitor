@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-13T11:22:51.075Z",
+  "generatedAt": "2026-10-13T15:15:22.367Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
-  "newCount": 58,
-  "notice": "Automatische headlines en RSS-samenvattingen, NIET onafhankelijk geverifieerd. Geen AI-risicoscore, geen veiligheidswaarschuwingen.",
+  "newCount": 46,
+  "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
       "name": "BBC News",
       "ok": true,
-      "items": 40
+      "items": 23
     },
     {
       "name": "The Guardian",
@@ -20,7 +20,7 @@
     {
       "name": "Deutsche Welle",
       "ok": true,
-      "items": 90
+      "items": 100
     },
     {
       "name": "UN News",
@@ -33,18 +33,326 @@
       "items": 20
     }
   ],
+  "history": [
+    {
+      "at": "2026-10-13T15:15:22.367Z",
+      "added": 46,
+      "total": 104,
+      "important": 0,
+      "review": 2,
+      "below": 102,
+      "sourcesOk": 5
+    }
+  ],
   "signals": [
+    {
+      "id": "RSS-b26f094ea80fe2f440790b",
+      "title": "MI5 chief Ken McCallum confirms Russia did interfere in Brexit referendum but says it had little impact – UK politics live",
+      "summary": "He argued there was no evidence to suggest the result of the Brexit vote had been swayed as a result of the effort Zia Yusuf , Reform UK’s home affairs spokesperson, has said he does not agree with his colleague Suella Braverman’s assertion that black people cannot be English. Asked about her views in an interview , Yusuf said: In my view Ashley Cole is the best English fullback in history, and I won’t take any othe…",
+      "date": "2026-10-13T14:39:37.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/politics/live/2026/oct/13/andy-burnham-brexit-eu-europe-neil-kinnock-lobby-wes-streeting-labour-prisoner-early-release-uk-politics-latest-news-updates",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-6f53e5239e0406943a5d3f",
+      "title": "White House asks US Ambassador to Greece Kimberly Guilfoyle to step down amid misconduct allegations",
+      "summary": "Trump has previously said he was unhappy with Guilfoyle amid reports of a bribery scandal and ethics violations.",
+      "date": "2026-10-13T14:37:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/white-house-asks-us-ambassador-to-greece-kimberly-guilfoyle-to-step-down-amid-misconduct-allegations/a-79652952?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-4f6477a9e5ebee7eead58f",
+      "title": "Kimberly Guilfoyle asked to resign as ambassador after reports she asked Trump donor to pay bill",
+      "summary": "Decision about US ambassador to Greece announced by White House after Trump and Rubio were reportedly furious over allegations Kimberly Guilfoyle has been asked to step down as US ambassador to Greece, after weeks of reports that she sought payment from a Trump donor in exchange for access to administration officials. The decision, announced by the White House on Tuesday morning, ends the diplomatic career of one of…",
+      "date": "2026-10-13T14:23:41.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/us-news/2026/oct/13/kimberly-guilfoyle-ambassador-greece-step-down",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-42abfce8cf9e42e898f5e6",
+      "title": "Allies did not warn Kyiv of Russian ballistic missile strikes, says Zelenskyy",
+      "summary": "Ukrainian president’s comments on ‘particularly vile’ strikes come after US threatened to halt intelligence sharing Ukraine received no early warning from its partners about a Russian ballistic missile strike on Kyiv in which five missiles hit civilian infrastructure, Volodymyr Zelenskyy said on Tuesday. The Ukrainian president as “particularly vile”. He emphasised that receiving intelligence from Ukraine’s western…",
+      "date": "2026-10-13T13:51:50.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/2026/oct/13/allies-did-not-warn-kyiv-of-russian-ballistic-missile-strikes-says-zelenskyy",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 2,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-812f4788888a1a0fd17694",
+      "title": "50 years on from Arts Britain Ignores: how much has changed for black and Asian artists?",
+      "summary": "Conference to explore legacy of Naseem Khan’s seminal 1976 report about exclusion of minority ethnic artists It is 50 years since cultural historian Naseem Khan’s challenge to the British arts establishment was first published, and the question of who and what counts as British continues to be contested. The Arts Britain Ignores – Khan’s groundbreaking 1976 report, commissioned by organisations including the then Ar…",
+      "date": "2026-10-13T13:48:05.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/artanddesign/2026/oct/13/arts-britain-ignores-50-years-on-black-asian-artists-naseem-khan",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-7949ed2f7a7cd4441e93c1",
+      "title": "Ex-president named leader of new DR Congo rebel coalition",
+      "summary": "Joseph Kabila had previously denied having links to the M23 rebels, which control much of eastern DR Congo.",
+      "date": "2026-10-13T13:40:45.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/c8y56re7ldqyo?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "afrika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-8fbcb34bf24eac7d5b187d",
+      "title": "Is Zelensky right to say data centre strikes have taken down Russian bots?",
+      "summary": "Experts say there is no evidence that Russian trolls have been affected by Ukraine’s Yandex attacks.",
+      "date": "2026-10-13T13:27:31.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/c9y7l0pm8jkko?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-29b075dba4ab5ea7e13da9",
+      "title": "Nord Stream: Trial of Ukrainian attack suspect begins in Germany",
+      "summary": "A Ukrainian citizen faces court in Hamburg, accused of attacking the Nord Stream gas pipelines in 2022. It raises questions about Kyiv's possible role in the explosions. German support for Ukraine is also under scrutiny.",
+      "date": "2026-10-13T12:40:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/nord-stream-trial-of-ukrainian-attack-suspect-begins-in-germany/a-79647617?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-06700bbe948b4a02bb4a10",
+      "title": "Critics warn of espionage risks as Slovakia restores military-diplomatic representation with Russia",
+      "summary": "Slovakia is restoring military-diplomatic relations with Russia for the first time since 2022. The government has defended the move; critics warn of espionage risks and further damage to trust within NATO.",
+      "date": "2026-10-13T12:04:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/critics-warn-of-espionage-risks-as-slovakia-restores-military-diplomatic-representation-with-russia/a-79649641?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-b3a6c416413c46cd7a74f9",
+      "title": "Houthis and Saudis strike each other in latest escalation",
+      "summary": "Fighting has continued between Iran-backed rebels and Saudi Arabia, adversely impacting the kingdom's economy and security. Still, Saudi officials have stopped warning of Houthi attacks in an effort to calm fears.",
+      "date": "2026-10-13T11:56:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/houthis-and-saudis-strike-each-other-in-latest-escalation/a-79649973?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
     {
       "id": "RSS-1133ed9cb913ff9511f943",
       "date": "2026-10-13T11:08:16.000Z",
       "region": "europa",
       "topic": "conflict",
       "title": "Zelenskyy says Russia ‘did not heed’ Trump’s call for energy ceasefire and gave ‘no early warning’ before strikes on Kyiv – Europe live",
-      "summary": "<p>Ukraine’s president says his country has halted strikes on Russian oil refineries for two days after Trump’s ceasefire announcement</p><p>On frozen Russian assets, <strong>Poland’s Sikorski says the use of frozen Russian assets is “a complicated issue,”</strong> but takes a <em>very</em> clear stance in response to any suggestion of releasing them back to",
+      "summary": "Ukraine’s president says his country has halted strikes on Russian oil refineries for two days after Trump’s ceasefire announcement · On frozen Russian assets, Poland’s Sikorski says the use of frozen Russian assets is “a complicated issue,” but takes a very clear stance in response to any suggestion of releasing them back to",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/live/2026/oct/13/ships-hit-sunk-drones-bulgaria-black-sea-ukraine-russia-war-france-spains-sweden-pope-leo-europe-latest-news-updates",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 9,
+      "category": "review",
+      "belowReason": "Verdere beoordeling vereist.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "The Guardian",
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-d4dd94774c0b693d1dce2e",
@@ -52,11 +360,27 @@
       "region": "amerika",
       "topic": "trump",
       "title": "Is punishing the poor Trump’s last hand to play?",
-      "summary": "<p>The pre-midterm defenestration of ACA enrollees looks like political madness – but the president appears to believe hitting poor people might work for him</p><p>There is a manic quality to <a href=\"https://www.theguardian.com/us-news/donaldtrump\">Donald Trump</a>’s desperate dash to do something, anything, ahead of November’s <a href=\"https://www.theguard",
+      "summary": "The pre-midterm defenestration of ACA enrollees looks like political madness – but the president appears to believe hitting poor people might work for him · There is a manic quality to Donald Trump ’s desperate dash to do something, anything, ahead of November’s <a href=\"",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/oct/13/trump-aca-healthcare-politics-midterms",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-0883ac512f2e2de65b15b9",
@@ -64,11 +388,27 @@
       "region": "overig",
       "topic": "conflict",
       "title": "UK asks Interpol to reject Argentina’s ‘politically motivated’ requests for Falklands oil arrests",
-      "summary": "<p>Exclusive: Caution urged over Javier Milei government’s ‘red notice’ requests for arrest of individuals linked to oil project</p><p>Britain has appealed to Interpol to reject Argentina’s requests for the arrest of individuals involved in a large oil project off the Falkland Islands.</p><p>With tensions over the sovereignty of the British overseas territor",
+      "summary": "Exclusive: Caution urged over Javier Milei government’s ‘red notice’ requests for arrest of individuals linked to oil project · Britain has appealed to Interpol to reject Argentina’s requests for the arrest of individuals involved in a large oil project off the Falkland Islands. · With tensions over the sovereignty of the British overseas territor",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/uk-news/2026/oct/13/britain-interpol-reject-argentina-falkland-islands-arrests",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-fb245af0673954a9f2b78b",
@@ -80,7 +420,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-7a42fa955e0fbb6a697b52",
@@ -88,23 +444,55 @@
       "region": "amerika",
       "topic": "trump",
       "title": "First Thing: Democratic leaders condemn federal raid on Ilhan Omar as she vows not to be silenced",
-      "summary": "<p>Minnesota congresswoman criticized raid as attempt by Trump administration ‘to target political enemies and weaponize law enforcement’. Plus what is to be done about the world record in the women’s marathon?</p><p>Good morning. Ilhan Omar has said <a href=\"https://www.theguardian.com/us-news/2026/oct/12/federal-agents-ilhan-omar-home-raid\">she will not be",
+      "summary": "Minnesota congresswoman criticized raid as attempt by Trump administration ‘to target political enemies and weaponize law enforcement’. Plus what is to be done about the world record in the women’s marathon? · Good morning. Ilhan Omar has said she will not be",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/oct/13/first-thing-democratic-leaders-condemn-federal-raid-ilhan-omar",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-a9a193d01b61bcec723567",
       "date": "2026-10-13T10:42:23.000Z",
-      "region": "amerika",
+      "region": "afrika",
       "topic": "trump",
       "title": "Trump targets Ilhan Omar at rally following raid on her home – US politics live",
-      "summary": "<p>President says Somalia, birthplace of the Minnesota Democratic congresswoman, is ‘one of the worst countries on the planet’</p><ul><li><p><a href=\"https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-us-email-to-get-newsletter-alerts-direct-to-your-inbox?utm_medium=ACQUISITIONS_STANDFIRST&amp;utm_campaign=BN22326&amp;utm_content=sign",
+      "summary": "President says Somalia, birthplace of the Minnesota Democratic congresswoman, is ‘one of the worst countries on the planet’ · <a href=\"",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/live/2026/oct/13/donald-trump-ilhan-omar-katie-zacharia-alaska-midterms-latest-news-updates",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-41f1b1d51f2a574b3c2daf",
@@ -116,7 +504,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-f895ac6630c9b12b8a3c0e",
@@ -128,7 +532,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/bulgaria-condemns-black-sea-drone-attacks-as-russia-s-war-in-ukraine-spills-over-into-eastern-europe/a-79648001?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 2,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-da63dc5c465266d88d9560",
@@ -136,11 +556,27 @@
       "region": "amerika",
       "topic": "trump",
       "title": "Millions of Medicaid recipients to face draconian requirements as of 1 January",
-      "summary": "<p>Trump’s reform law that seeks to make coverage harder to get, and to keep, includes working 80 hours per month</p><p>It is a date keeping US healthcare providers up at night: 1 January 2027.</p><p>As the <a href=\"https://www.theguardian.com/us-news/us-midterm-elections-2026\">midterm elections</a> loom, everyone from hospital leaders and to patient advocat",
+      "summary": "Trump’s reform law that seeks to make coverage harder to get, and to keep, includes working 80 hours per month · It is a date keeping US healthcare providers up at night: 1 January 2027. · As the midterm elections loom, everyone from hospital leaders and to patient advocat",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/oct/13/medicaid-healthcare-reform-law-requirements-1-january",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-d345635f31312ac48eb8f1",
@@ -148,11 +584,27 @@
       "region": "overig",
       "topic": "conflict",
       "title": "UK holiday demand may have peaked amid cost of living squeeze, says travel industry",
-      "summary": "<p>Spain remains most popular destination as Britons book later in hope of better deals, Abta report finds</p><ul><li><p><a href=\"https://www.theguardian.com/business/live/2026/oct/13/imf-uk-economy-growth-boost-chancellor-john-healey-oil-prices-inflation-business-live-news\">Business live – latest updates</a></p></li></ul><p>The UK’s cost of living squeeze m",
+      "summary": "Spain remains most popular destination as Britons book later in hope of better deals, Abta report finds · Business live – latest updates · The UK’s cost of living squeeze m",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/business/2026/oct/13/uk-holiday-demand-travel-industry-spain-deals-abta",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-0fa2380f51589013b16c31",
@@ -160,11 +612,27 @@
       "region": "overig",
       "topic": "conflict",
       "title": "Farage denies Reform would let troops shoot small boats after Jenrick’s ‘lethal force’ claim",
-      "summary": "<p>Party leader says Jenrick’s comments ‘misconstrued’, after MP said Royal Marines would be allowed to fire at those on boats</p><ul><li><p><a href=\"https://www.theguardian.com/politics/live/2026/oct/13/andy-burnham-brexit-eu-europe-neil-kinnock-lobby-wes-streeting-labour-prisoner-early-release-uk-politics-latest-news-updates\">UK politics live – latest upda",
+      "summary": "Party leader says Jenrick’s comments ‘misconstrued’, after MP said Royal Marines would be allowed to fire at those on boats · UK politics live – latest upda",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/politics/2026/oct/13/nigel-farage-reform-robert-jenrick-small-boats-royal-marines-lethal-force",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-c3ae3d6240491c6346ef60",
@@ -176,7 +644,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/germany-s-china-calculation-shifts-as-import-pressures-eclipse-export-benefits/a-79571852?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-9fa7d260484c8b3f6c8f01",
@@ -188,19 +672,51 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/what-is-holding-back-cyprus-s-schengen-ambitions/a-79641488?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-85ed3d77cb5a5d27d8c06c",
       "date": "2026-10-13T05:42:46.000Z",
-      "region": "europa",
+      "region": "overig",
       "topic": "conflict",
       "title": "Tuesday briefing: Could Burnham take Britain back towards the EU?",
-      "summary": "<p>In today’s newsletter: The prime minister is calling for closer ties with the EU, but what could this actually amount to?</p><p>Good morning. After a holiday spent contracting nursery bugs from an 11-month-old, it’s good to return. Yesterday, Andy Burnham marked his first day back after party conference by calling for a closer relationship with the EU and",
+      "summary": "In today’s newsletter: The prime minister is calling for closer ties with the EU, but what could this actually amount to? · Good morning. After a holiday spent contracting nursery bugs from an 11-month-old, it’s good to return. Yesterday, Andy Burnham marked his first day back after party conference by calling for a closer relationship with the EU and",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/13/tuesday-briefing-could-burnham-take-britain-back-towards-the-eu",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-ebf339358c81ac7d7193df",
@@ -212,7 +728,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-157b5c5b02cd66606f3634",
@@ -224,7 +756,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-0202ae2f375421a155ade9",
@@ -236,7 +784,51 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-2dfc2d8fe8c905cfa0dc4e",
+      "title": "Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast",
+      "summary": "Security forces use helicopters to rescue dozens of people as the two storms damage infrastructure and cause flash flooding At least five people have died after Hurricane Simon and Tropical Storm Rachel pummelled Mexico’s Pacific coast, causing flooding that downed trees and electricity poles, blocked roads and inundated homes. Simon claimed the life of a 71-year-old man who died when a wall collapsed in Chilpancing…",
+      "date": "2026-10-13T04:29:46.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/2026/oct/13/mexico-hurricane-simon-tropical-storm-rachel-kill-five-pacific-coast",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-d3d86283ba9c7eb9cf859e",
@@ -248,7 +840,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-858a145164c4b0536cbb2c",
@@ -260,7 +868,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-4725a39aeee2a5e75254c2",
@@ -272,7 +896,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqgm087rkze2o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 0,
+        "reliability": 1
+      },
+      "total": 1,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-8e6d2a07fa9c13d91ddcfd",
@@ -284,7 +924,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cjx2359qekrdo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-28aa7b9571c1a22188fab6",
@@ -296,7 +952,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/uk-iran-highly-likely-to-be-behind-raf-fairford-incident/a-79645941?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-3ddbb7bafbd420b9114839",
@@ -308,7 +980,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/hundreds-of-french-supermarkets-hit-by-a-cyberattack-that-defrosted-refrigeration-systems/a-79646097?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 8,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-6568378aad0562bfaa3246",
@@ -320,7 +1008,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/poland-reports-arrests-of-2-turkish-citizens-in-germany-in-connection-with-starlink-station-fire-last-month/a-79646138?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-566321cf8d0b92b0e2edfb",
@@ -332,7 +1036,23 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/media-advisory-general-affairs-council-and-accession-conferences-with-albania-the-republic-of-moldova-and-ukraine-of-13-october-2026/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-ef578e29fb163b3a4ea4ed",
@@ -344,7 +1064,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/germany-news-merz-says-trump-s-russia-diesel-deal-out-of-question-for-europe/live-79636427?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-92f27a6603f8f7778c6bda",
@@ -356,7 +1092,25 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "BBC News",
+        "The Guardian",
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-89e576d4d126b2554ad072",
@@ -364,11 +1118,27 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport",
-      "summary": "<p>Energy minister says ‘fear has no place in the Saudi lexicon’ as paramilitary group again breaches stretched defences</p><ul><li><p><a href=\"https://www.theguardian.com/world/2026/oct/12/why-are-the-houthis-attacking-saudi-airports-riyadh-yemen\">Why are the Houthis attacking Saudi airports and how are the missiles getting through?</a></p></li></ul><p>Saud",
+      "summary": "Energy minister says ‘fear has no place in the Saudi lexicon’ as paramilitary group again breaches stretched defences · Why are the Houthis attacking Saudi airports and how are the missiles getting through? · Saud",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/12/saudi-arabia-suspends-flights-latest-deadly-houthi-attack-airport",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 7,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-a7b525d0da3e636ac747f6",
@@ -380,7 +1150,51 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/us-federal-agents-search-home-of-trump-critic-ilhan-omar/a-79643360?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-97ce1ff1a1c2f25995a6e3",
+      "title": "Starlink India launch: Why Elon Musk is still waiting",
+      "summary": "Despite securing key approvals, the Starlink satellite internet service remains in regulatory limbo, raising questions about security clearances, competition and India’s investment climate.",
+      "date": "2026-10-12T14:33:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/starlink-india-launch-why-elon-musk-is-still-waiting/a-79643043?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-d94c47a81394a9a6218f69",
@@ -392,7 +1206,23 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/dprk-council-adds-three-individuals-and-four-entities-to-sanctions-lists-over-nuclear-missile-programmes-and-russia-ties/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-f6db5e5398e7b384942050",
@@ -404,7 +1234,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/can-south-korea-and-ukraine-resolve-their-diplomatic-spat-over-north-korean-pows/a-79641352?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-bc3da381a585a884979b57",
@@ -412,11 +1258,27 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "NAZA: Netanyahu orders identification and prosecution of film’s interviewees",
-      "summary": "<p>Israeli PM calls for criminal investigation into soldiers and officers interviewed in Guardian-produced documentary</p><p>The Israeli prime minister, Benjamin Netanyahu, has ordered the country’s attorney general and the head of the Shin Bet security service to reveal the identities of soldiers and officers interviewed in the investigative documentary <a ",
+      "summary": "Israeli PM calls for criminal investigation into soldiers and officers interviewed in Guardian-produced documentary · The Israeli prime minister, Benjamin Netanyahu, has ordered the country’s attorney general and the head of the Shin Bet security service to reveal the identities of soldiers and officers interviewed in the investigative documentary <a",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/film/2026/oct/12/naza-netanyahu-orders-identification-prosecution-interviewees-documentary-film",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-b57040765a94b3e41dac79",
@@ -428,7 +1290,23 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/lebanon-eu-establishes-new-csdp-support-mission-to-strengthen-defence-and-security-institutions/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-05a62423accbb1d9ea6455",
@@ -440,7 +1318,23 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/russia-s-war-of-aggression-against-ukraine-eu-agrees-largest-ever-package-of-listings-targeting-almost-1600-individuals-and-entities-in-russia-s-military-industrial-complex/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-fc07649294118057d90d30",
@@ -452,7 +1346,23 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/ukraine-s-territorial-integrity-council-lists-77-individuals-over-the-illegal-russian-state-duma-elections-in-the-temporarily-occupied-territories-of-ukraine/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-cc1852ad81be8243caf0f8",
@@ -464,7 +1374,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-b8c832d11bc7b48a87e267",
@@ -476,7 +1402,23 @@
       "source": "UN News",
       "url": "https://news.un.org/feed/view/en/story/2026/10/1168581",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-b7600be984a428bc8f3f35",
@@ -488,7 +1430,23 @@
       "source": "UN News",
       "url": "https://news.un.org/feed/view/en/story/2026/10/1168578",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-45473804e2bb263ed73878",
@@ -500,7 +1458,51 @@
       "source": "UN News",
       "url": "https://news.un.org/feed/view/en/story/2026/10/1168577",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-241cc1dca45d488afbfced",
+      "title": "Colombia peace deal must endure as insecurity grows, Security Council hears",
+      "summary": "Nearly 10 years after Colombia signed a historic peace agreement to end a decades-long insurgency, the deal is under strain from growing insecurity – and the UN’s top official in the country says it cannot be allowed to falter.",
+      "date": "2026-10-12T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168580",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-0916073d991c450ec87511",
@@ -508,11 +1510,27 @@
       "region": "azie",
       "topic": "conflict",
       "title": "EU to limit Chinese hybrid vehicle imports to 350,000 a year",
-      "summary": "<p>Brussels uses WTO rules to quickly impose quota, which will halve Chinese market share to 3%</p><ul><li><p><a href=\"https://www.theguardian.com/business/live/2026/oct/12/uk-growth-inflation-pressures-oil-price-sveriges-riksbank-nobel-prize-economic-sciences-awarded-latest-news-updates\">Business live – latest updates</a></p></li><li><p><a href=\"https://www",
+      "summary": "Brussels uses WTO rules to quickly impose quota, which will halve Chinese market share to 3% · Business live – latest updates · <a href=\"",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/oct/12/eu-deal-china-limit-imports-hybrid-electric-vehicles",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 3,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "België wordt expliciet genoemd; feitelijke gevolgen moeten worden gecontroleerd.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-e30d098fdb5e9ec2cdc920",
@@ -524,7 +1542,23 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/programme-for-agile-and-rapid-defence-innovation-council-gives-final-green-light/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-2bf0b713d1d22bf2d4e167",
@@ -536,7 +1570,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/videos/cj4g17wz7gv0o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-9260364d7cc64745bc85dd",
@@ -548,7 +1598,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-c85d70cd1e15bc1003a062",
@@ -560,7 +1626,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-d969e1731fd072c5487e49",
@@ -572,7 +1654,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6d7q5z17gp5o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-79519ba896b72cabd8ab3c",
@@ -580,11 +1678,27 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say",
-      "summary": "<p>Unidentified projectile strikes King Khalid airport, killing one and injuring 11, as escalating attacks threaten to draw more countries into Yemen conflict</p><ul><li><p><a href=\"https://www.theguardian.com/world/2026/oct/11/houthi-attack-riyadh-airport-donald-trump-strategy\">Analysis: attack will force rethink of Trump strategy</a></p></li></ul><p>A proj",
+      "summary": "Unidentified projectile strikes King Khalid airport, killing one and injuring 11, as escalating attacks threaten to draw more countries into Yemen conflict · Analysis: attack will force rethink of Trump strategy · A proj",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-4c28a2f1987f920ece6251",
@@ -596,7 +1710,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/who-are-the-ukrainian-volunteers-under-russian-command/a-79629555?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-34b9d08cc8ae5b287284b8",
@@ -604,11 +1734,27 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "Middle East crisis: Riyadh airport hit again as Houthis claim attacks, including strike that killed 12 – as it happened",
-      "summary": "<p>This live blog is now closed. You can read our latest full report here:</p><ul><li><p><a href=\"https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport\">Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say</a></p></li></ul><p>Some more Gulf reaction to Houthi’s deadly airport atta",
+      "summary": "This live blog is now closed. You can read our latest full report here: · Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say · Some more Gulf reaction to Houthi’s deadly airport atta",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/live/2026/oct/11/saudi-arabia-riyadh-airport-houthis-yemen-attack-blockade-trump-latest-news-updates",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-09cec1f6e809608c5b20ff",
@@ -620,7 +1766,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-a923c6a37b18a95189aa00",
@@ -628,11 +1790,27 @@
       "region": "azie",
       "topic": "conflict",
       "title": "Volkswagen boss backs EU plan to bolster domestic European industry",
-      "summary": "<p>Oliver Blume says ‘Made in Europe’ rules to counter rapid rise of lower-price Chinese brands ‘must reward real value creation’</p><p>The boss of Volkswagen has backed EU proposals to boost its domestic industry, arguing European carmakers need to be able to “compete under comparable conditions” with Chinese rivals.</p><p>Oliver Blume said “Made in Europe”",
+      "summary": "Oliver Blume says ‘Made in Europe’ rules to counter rapid rise of lower-price Chinese brands ‘must reward real value creation’ · The boss of Volkswagen has backed EU proposals to boost its domestic industry, arguing European carmakers need to be able to “compete under comparable conditions” with Chinese rivals. · Oliver Blume said “Made in Europe”",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/business/2026/oct/11/volkswagen-boss-backs-eu-plan-to-boost-domestic-european-industry",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-247efd53ed44311dd3cd20",
@@ -644,7 +1822,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 7,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-d60732d7eb26547ed91d3b",
@@ -656,7 +1850,24 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/trump-claims-russia-and-ukraine-agreed-to-energy-ceasefire/a-79634509?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "Deutsche Welle",
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-9c456bbec7c9470c9513eb",
@@ -668,7 +1879,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 3,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-46ee2fe0635c6d70743a40",
@@ -680,7 +1907,23 @@
       "source": "UN News",
       "url": "https://news.un.org/feed/view/en/story/2026/10/1168569",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-9d0850cf1121946e4b18d5",
@@ -692,7 +1935,23 @@
       "source": "UN News",
       "url": "https://news.un.org/feed/view/en/story/2026/10/1168572",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 3,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 7,
+      "category": "review",
+      "belowReason": "Verdere beoordeling vereist.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-103a191fb6e98c9900cd5c",
@@ -704,7 +1963,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/georgia-s-surrogacy-industry-is-booming-but-at-what-cost/a-79629971?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-ce12374564504518dbe928",
@@ -716,7 +1991,23 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/operations-plan-germany-how-the-bundeswehr-trains-for-nato-collective-defense/a-79553793?maca=en-rss-en-all-1573-xml-mrss",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": false,
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     },
     {
       "id": "RSS-dc4ef4238541c96b613170",
@@ -728,7 +2019,947 @@
       "source": "Raad van de EU",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/10/international-criminal-court-statement-by-the-high-representative-on-behalf-of-the-eu-following-the-announcement-of-us-sanctions/",
       "firstSeen": "2026-10-13T11:22:51.075Z",
-      "status": "automatic_unverified"
+      "status": "automatic_unverified",
+      "official": true,
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-3493e3e0484fb7f47ac954",
+      "title": "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+      "summary": "Committee recognises work of South African who chaired UN commission that concluded Israel was guilty of genocide in Gaza The Nobel peace prize has been awarded to Navi Pillay, the South African former UN human rights chief who chaired the UN commission . The Norwegian Nobel committee said Pillay, who is serving as a judge at the international court of justice (ICJ), has “shown that legal measures can help prevent a…",
+      "date": "2026-10-09T16:30:09.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-485b41bf2fb40ad0ad5486",
+      "title": "Poland: Lifeline for Ukrainian refugees confronts donor fatigue and online abuse as anti-Ukrainian sentiment grows",
+      "summary": "A Ukrainian woman who fled the war in her country built a lifeline for refugees in Poland. Now her organization faces donor fatigue, funding cuts and rising hostility as support for Ukrainians in Poland wanes.",
+      "date": "2026-10-09T12:50:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/poland-lifeline-for-ukrainian-refugees-confronts-donor-fatigue-and-online-abuse-as-anti-ukrainian-sentiment-grows/a-79613292?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-a25f287fea187a92c602c5",
+      "title": "Cop31 host urges wealthy countries to spend ‘much more’ on climate than defence",
+      "summary": "‘The climate issue is the security issue,’ says Turkish minister at Pacific pre-Cop summit in Fiji Wealthy countries should spend far more on dealing with the climate crisis than the 5% of GDP promised by Nato members for defence because “the climate issue is the security issue”, the host of the next UN summit has said. But, in comments that are likely to prove contentious, the Cop31 president-designate, Murat Kurum…",
+      "date": "2026-10-09T12:00:28.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/environment/2026/oct/09/cop31-host-wealthy-countries-climate-crisis-spending-defence-nato",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-e9b57befdc71e9251c9df8",
+      "title": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza",
+      "summary": "A suspected drone strike has left at least 40 dead in Sudan’s Blue Nile State – near the Ethiopian border - according to initial reports from the ground, according to UN Spokesperson Stéphane Dujarric. Most of the casualties were women and girls.",
+      "date": "2026-10-09T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168567",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-9f223d25a2caa85890392e",
+      "title": "Security Council LIVE: Cycle of escalating attacks on civilians in Ukraine ‘must end now’",
+      "summary": "Escalating violence and human rights violations in the four-year-old Russia-Ukraine war are in the spotlight in the Security Council on Friday following a spate of Russian attacks against civilian targets and infrastructure in recent days.",
+      "date": "2026-10-09T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168564",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 6,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-7014a2ddf1def1e280cea7",
+      "title": "‘Serious blow’: Guterres condemns new US sanctions on International Criminal Court",
+      "summary": "The United States has imposed sanctions on the International Criminal Court (ICC) as an institution, with Secretary of State Marco Rubio vowing on Friday to “dismantle the ICC, brick by brick” unless it ends what Washington regards as a “threat” to its citizens.",
+      "date": "2026-10-09T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168562",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-e6f4361c726f2b6e72e06c",
+      "title": "Security Council LIVE: Yemen has fallen back into full-scale war, warns UN envoy",
+      "summary": "The Security Council met to discuss the crisis in Yemen Friday, where a Houthi offensive launched in September has sharply escalated the 12-year-long war for control of the country and spillover from the US-Iran war has provoked a new displacement crisis. Live coverage below and for full meetings updates, go here.",
+      "date": "2026-10-09T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168559",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-63a2edd9e03824cdafd21d",
+      "title": "World Cup 2034: Does Saudi Arabia shelving Neom Stadium spell trouble?",
+      "summary": "Since winning the right to hold the 2034 World Cup unopposed, Saudi Arabia has been pulling away from sport. With reports that its most ambitious stadium project will be abandoned, what does this mean for the World Cup?",
+      "date": "2026-10-09T11:43:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/world-cup-2034-does-saudi-arabia-shelving-neom-stadium-spell-trouble/a-79592948?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-10143e67f95c98319af7d3",
+      "title": "Finland, the world's happiest nation, faces a glum winter",
+      "summary": "Finns have many reasons to feel content, but the country's pile of debt is not one of them. Russia's war in Ukraine has added to the fiscal burden. Can the Nordic nation absorb another shock?",
+      "date": "2026-10-09T08:12:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/finland-the-world-s-happiest-nation-faces-a-glum-winter/a-79544348?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-12d8e672504c5b0b9819c2",
+      "title": "World News in Brief: Russian attacks continue in Ukraine, Gazans shelter in flood-prone areas, keeping sight of eye health",
+      "summary": "UN human rights chief Volker Türk said on Thursday he was appalled by a wave of attacks that have killed civilians across Ukraine over the past four days.",
+      "date": "2026-10-08T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168557",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-62b823eec8a44b2924ec07",
+      "title": "Darfur: Healthcare needs outstrip resources as Security Council extends Sudan sanctions",
+      "summary": "More than 700,000 displaced people in Tawila, in Sudan’s war-ravaged Darfur region, face severe shortages of healthcare, food, water and protection, the UN World Health Organization (WHO) warned on Thursday as it called for an urgent increase in resources.",
+      "date": "2026-10-08T12:00:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168556",
+      "topic": "conflict",
+      "region": "afrika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-cfcd2de0c8536c2f0cec11",
+      "title": "Security in the Black Sea region: is Bulgaria the weak link in Europe's defense against threats from Russia?",
+      "summary": "Two ships have sunk off the coast of Bulgaria and Romania after drone attacks in recent days. Bulgaria has held back on pointing the finger at Russia. What does that mean for security in the Black Sea and the region?",
+      "date": "2026-10-08T11:45:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/security-in-the-black-sea-region-is-bulgaria-the-weak-link-in-europe-s-defense-against-threats-from-russia/a-79592663?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-afc60f7038b31fef978502",
+      "title": "How a multibillion-dollar oilfield has ignited the UK-Argentina feud over the Falklands",
+      "summary": "Argentina and the UK once fought a war over the Falkland Islands. Now, the multibillion-dollar Sea Lion oil project has reignited old tensions, with Buenos Aires seeking to put a stop to the plans.",
+      "date": "2026-10-08T11:40:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/how-a-multibillion-dollar-oilfield-has-ignited-the-uk-argentina-feud-over-the-falklands/a-79588973?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-abcecf80b9a35b48694062",
+      "title": "South Korea recalls Ukraine ambassador amid POW dispute",
+      "summary": "South Korea has said it will recall its ambassador to Ukraine. Seoul is upset about a transfer of North Korean prisoners of war being made public knowledge at the UN and had demanded — but not received — an apology.",
+      "date": "2026-10-08T10:55:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/south-korea-recalls-ukraine-ambassador-amid-pow-dispute/a-79590511?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-422ed056ccfecc1cb0f7c8",
+      "title": "As Russia steps up attacks on Ukrainian data centers, could Ukraine soon be offline?",
+      "summary": "As Russia targets Ukraine's data centers more and more, experts say the country's internet system is too robust to shut down entirely. However, services could become more expensive.",
+      "date": "2026-10-08T10:52:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/as-russia-steps-up-attacks-on-ukrainian-data-centers-could-ukraine-soon-be-offline/a-79582503?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-4de7ef13ca02ad17d2ada2",
+      "title": "German Bundeswehr: A new naval port in Emden aims to enhance Germany's defense capabilities",
+      "summary": "Citing the escalating security threat, Germany's Navy has decided to establish a second port on the North Sea coast. Emden was chosen as the location.",
+      "date": "2026-10-08T09:34:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/german-bundeswehr-a-new-naval-port-in-emden-aims-to-enhance-germany-s-defense-capabilities/a-79561414?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-be9d20789dda0e45063518",
+      "title": "Middle Corridor: Can Bulgaria be a safe gateway for Asian imports to the EU?",
+      "summary": "The EU wants more trade via the Middle Corridor, which could bring big benefits for Bulgaria. But Tuesday's drone attacks on commercial ships off the Bulgarian coast are a stark reminder of the security risks involved.",
+      "date": "2026-10-08T08:38:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/middle-corridor-can-bulgaria-be-a-safe-gateway-for-asian-imports-to-the-eu/a-79584530?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-d27a094a6292caa5de1c97",
+      "title": "Gerhard Schröder visits latest Russian employer, Hyperglobus",
+      "summary": "Former German Chancellor Gerhard Schröder visited a Moscow supermarket in his new role on the supervisory board. Schröder is no stranger to retirement stipends in Russia — or the scandal that accompanies them.",
+      "date": "2026-10-07T16:39:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/gerhard-schr%C3%B6der-visits-latest-russian-employer-hyperglobus/a-79583018?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-1da2384bf011271fab508c",
+      "title": "German spy scandal threatens national security",
+      "summary": "The arrest of Germany's former intelligence chief August Hanning could undermine national security, experts warn, as allies may reconsider their intelligence relationships.",
+      "date": "2026-10-07T12:39:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/german-spy-scandal-threatens-national-security/a-79580000?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-67a3d5085497938e6b3b2e",
+      "title": "Suspected pneumonic plague in Siberia: What we know about the disease",
+      "summary": "After a worker at a Russian plague research institute in Siberia died October 2, 2026, nearly 200 of her contacts were under medical observation. But authorities there denied pneumonic plague had caused the death.",
+      "date": "2026-10-07T09:44:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 0,
+        "reliability": 1
+      },
+      "total": 1,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-987273430f178b45759f44",
+      "title": "EU seeks ways to make expansion more palatable to members",
+      "summary": "The European Commission has put forward ideas it hopes will both ease the EU expansion process and allay concerns among existing members. Several countries, not least war-torn Ukraine, are among the candidates.",
+      "date": "2026-10-06T18:02:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/eu-seeks-ways-to-make-expansion-more-palatable-to-members/a-79567297?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-7aa80a63f021d2cff59b4a",
+      "title": "Germany's far-right AfD makes history again in Saxony-Anhalt",
+      "summary": "For the first time since the end of World War II, a German state parliament has chosen parliamentary speaker from the far right: Tobias Rausch of the Alternative for Germany (AfD).",
+      "date": "2026-10-06T13:27:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/germany-s-far-right-afd-makes-history-again-in-saxony-anhalt/a-79565146?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-553be7bd244e1de3c33925",
+      "title": "Fact check: Misleading claims spark plague fears in Russia",
+      "summary": "The death of a lab worker at a plague research institute in Russia has sparked claims about a lab accident, hundreds of infections and international spread. Some of these viral narratives are misleading.",
+      "date": "2026-10-06T11:07:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/fact-check-misleading-claims-spark-plague-fears-in-russia/a-79560752?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-3b504d6a3288203afdb5ae",
+      "title": "Germany faces a triple threat from Russia, China and domestic far-right extremists",
+      "summary": "At a rare public hearing Germany's intelligence agencies identified Russia as the country's most dangerous adversary. The threat from China is also coming into focus. And the homegrown far right also poses a challenge.",
+      "date": "2026-10-06T09:41:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/germany-faces-a-triple-threat-from-russia-china-and-domestic-far-right-extremists/a-79560490?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-aac125bf6a9a6ec0ba9feb",
+      "title": "Germany news: Far-right AfD gets first house speaker in a German state parliament",
+      "summary": "For the first time since World War II, a far-right party has a house speaker in a German state parliament. And Germany's foreign minister has warned that the climate crisis could fuel extremism.",
+      "date": "2026-10-06T06:21:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/germany-news-far-right-afd-gets-first-house-speaker-in-a-german-state-parliament/live-79558497?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-93ada91f8e8aae7efa8686",
+      "title": "Merz, Macron seek tougher EU measures against unfair trade",
+      "summary": "Emmanuel Macron and Friedrich Merz have written to Ursula von der Leyen, calling for tougher EU mechanisms against unfair trade practices by other states. They name no names but seem to have China or the US in mind.",
+      "date": "2026-10-05T17:23:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/merz-macron-seek-tougher-eu-measures-against-unfair-trade/a-79554905?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 2,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-4f1de4b874c69ba503303b",
+      "title": "Australia, New Zealand probe Flydubai pilot's time there",
+      "summary": "The Flydubai pilot from Oman suspected of trying to crash a plane in Israel spent time in Oceania as a young man. Police in both Australia and New Zealand said they would investigate his links to the countries.",
+      "date": "2026-10-05T15:02:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/australia-new-zealand-probe-flydubai-pilot-s-time-there/a-79551423?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-1113a8af269481772311b0",
+      "title": "Germany news: Spy chief warns Russia conflict risk growing",
+      "summary": "Moscow is already waging a \"shadow war\" against Europe, the head of Germany's foreign intelligence service says. The Left Party is taking a case over remarks by the CDU's Katherina Reiche to a top court.",
+      "date": "2026-10-05T12:33:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/germany-news-spy-chief-warns-russia-conflict-risk-growing/live-79542789?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-92c98f24b1335321cdd7c8",
+      "title": "\"NAZA\": Israeli military issues statement on film",
+      "summary": "The award-winning documentary \"NAZA\" continues to spark controversy in Israel. The Israeli military has now published a multi-page statement calling the film's portrayal \"distorted.\"",
+      "date": "2026-10-02T15:55:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/naza-israeli-military-issues-statement-on-film/a-79520483?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-26d354f49892ed82dc0723",
+      "title": "ARD-Deutschlandtrend survey: Germans unite in frustration over the government",
+      "summary": "On the 36th anniversary of reunification, Germans are dissatisfied with the country's political leaders. They don't believe they'll be able to handle the challenges posed by AI, Russia and Donald Trump.",
+      "date": "2026-10-02T11:17:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/ard-deutschlandtrend-survey-germans-unite-in-frustration-over-the-government/a-79515172?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-8995e90c6b7694c680ab0c",
+      "title": "Is US President Donald Trump right to rename AI as 'Super Intelligence'?",
+      "summary": "Donald Trump thinks the name artificial intelligence sounds \"fake\" and has ordered US agencies to use \"Super Intelligence\" instead. Yet, tech firms and researchers have little reason to play along.",
+      "date": "2026-09-30T09:33:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/is-us-president-donald-trump-right-to-rename-ai-as-super-intelligence/a-79430388?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-30aeb7b53144720d07f7d1",
+      "title": "Ireland will boycott Eurovision again because of Israel's participation, but the song contest is still expanding",
+      "summary": "The 2026 Eurovision Song Contest was marred by boycotts in protest against Israel's participation in the midst of its war on Gaza. It still aims to keep growing.",
+      "date": "2026-09-30T09:18:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/ireland-will-boycott-eurovision-again-because-of-israel-s-participation-but-the-song-contest-is-still-expanding/a-79401752?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
+    },
+    {
+      "id": "RSS-dd69c8914dbd27a04786ca",
+      "title": "Global trade weathers Iran, Ukraine and Trump's tariffs",
+      "summary": "Over the past six years, COVID, two wars and Donald Trump's tariffs have shaken world trade. With globalization already stalling, is this a temporary shock or the start of a great reversal?",
+      "date": "2026-09-29T10:35:00.000Z",
+      "firstSeen": "2026-10-13T15:15:22.367Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/global-trade-weathers-iran-ukraine-and-trump-s-tariffs/a-79352643?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "method": "rule_based_screening",
+      "verified": false
     }
   ]
 }
