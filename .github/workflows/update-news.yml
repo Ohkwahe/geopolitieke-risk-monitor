@@ -1,0 +1,52 @@
+name: Risk Monitor - nieuws ophalen en publiceren
+
+on:
+  schedule:
+    - cron: '10 8,18 * * *'
+      timezone: 'Europe/Brussels'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: risk-monitor-deploy
+  cancel-in-progress: false
+
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Node.js configureren
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: RSS feeds verwerken
+        run: node scripts/update-feed.mjs
+      - name: Bewaar historiek in repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/auto-news.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh RSS signals [skip ci]"
+            git push
+          fi
+      - name: Pages configureren
+        uses: actions/configure-pages@v5
+      - name: Publicatiepakket maken
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Publiceer GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
