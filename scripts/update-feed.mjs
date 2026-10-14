@@ -1,4 +1,4 @@
-/** Risk Monitor v2.2.0 — public RSS collector and transparent RULE-BASED triage.
+/** Risk Monitor v2.3.0 — public RSS collector and transparent RULE-BASED triage.
  * No AI inference, no independently verified reports, no emergency alerts.
  * Runs in GitHub Actions. Node.js standard library only. */
 import fs from 'node:fs/promises';
@@ -132,11 +132,13 @@ function assess(o,seenSourceNames){
   return {score:{military,belgium,novelty,reliability},total,category,belowReason,belgiumImpact,corroboratingSources:seenSourceNames,sourceEvidence:o.official?'official_publication':seenSourceNames.length>=2?'similar_headlines':'single_news_source',method:'rule_based_screening',verified:false};
 }
 async function loadOld(){try{let d=JSON.parse(await fs.readFile(PATH,'utf8'));return d&&typeof d==='object'?d:{};}catch{return {};}}
-async function fetchFeed(source){if(process.env.RISK_MONITOR_FEEDS_DIR){const filename=source.name.replace(/[^A-Za-z0-9]+/g,'_')+'.xml';const xml=await fs.readFile(process.env.RISK_MONITOR_FEEDS_DIR+'/'+filename,'utf8');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}const a=new AbortController();const timer=setTimeout(()=>a.abort(),12000);try{let r=await fetch(source.url,{signal:a.signal,headers:{'User-Agent':'RiskMonitor-v2.2-NonCommercial (+GitHub Actions)','Accept':'application/rss+xml,application/xml,text/xml,*/*'}});if(!r.ok)throw Error('HTTP '+r.status);let xml=await r.text();if(xml.length>4_000_000)throw Error('Feed te groot');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}finally{clearTimeout(timer);}}
+async function fetchFeed(source){if(process.env.RISK_MONITOR_FEEDS_DIR){const filename=source.name.replace(/[^A-Za-z0-9]+/g,'_')+'.xml';const xml=await fs.readFile(process.env.RISK_MONITOR_FEEDS_DIR+'/'+filename,'utf8');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}const a=new AbortController();const timer=setTimeout(()=>a.abort(),12000);try{let r=await fetch(source.url,{signal:a.signal,headers:{'User-Agent':'RiskMonitor-v2.3-NonCommercial (+GitHub Actions)','Accept':'application/rss+xml,application/xml,text/xml,*/*'}});if(!r.ok)throw Error('HTTP '+r.status);let xml=await r.text();if(xml.length>4_000_000)throw Error('Feed te groot');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}finally{clearTimeout(timer);}}
 
 const old=await loadOld();
 const oldSignals=Array.isArray(old.signals)?old.signals:[];
 const map=new Map(oldSignals.filter(o=>o?.id&&Date.parse(o.date)>=T-MAX_AGE).map(o=>[o.id,o]));
+const previousControlAt=Number.isFinite(Date.parse(old.generatedAt))?old.generatedAt:null;
+const changedIds=new Set(), newIds=new Set();
 const status=[];let ok=0,added=0,changed=0;
 for(let source of SOURCES){try{const entries=await fetchFeed(source);if(!entries.length)throw Error('Feed bevat geen bruikbare items');ok++;
   for(let e of entries){if(!RELEVANT.test(e.title+' '+e.summary))continue;const timestamp=Date.parse(e.date);if(!Number.isFinite(timestamp)||timestamp>T+36e5||timestamp<T-MAX_AGE)continue;if(!oldSignals.length&&timestamp<T-FIRST_AGE)continue;
@@ -145,18 +147,24 @@ for(let source of SOURCES){try{const entries=await fetchFeed(source);if(!entries
     if(map.has(id)){
       const earlier=map.get(id);
       if(earlier.title!==title||earlier.summary!==summary){
-        earlier.title=title;earlier.summary=summary;earlier.lastChangedAt=NOW.toISOString();changed++;
+        earlier.title=title;earlier.summary=summary;earlier.lastChangedAt=NOW.toISOString();changedIds.add(id);changed++;
       }
       continue;
     }
     let c=classify(title+' '+summary);
-    map.set(id,{id,title,summary,date:new Date(timestamp).toISOString(),firstSeen:NOW.toISOString(),source:e.source,official:e.official,url:e.url,topic:c.topic,region:c.region,status:'automatic_unverified'});added++;
+    map.set(id,{id,title,summary,date:new Date(timestamp).toISOString(),firstSeen:NOW.toISOString(),source:e.source,official:e.official,url:e.url,topic:c.topic,region:c.region,status:'automatic_unverified'});newIds.add(id);added++;
   }
   status.push({name:source.name,ok:true,items:entries.length});
  }catch(err){console.warn(source.name+': '+err.message);status.push({name:source.name,ok:false,error:String(err.message).slice(0,100)});}}
 if(!ok)throw Error('Alle nieuwsfeeds zijn onbereikbaar; geen verouderde publicatie overschrijven.');
 const entries=[...map.values()].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date)).slice(0,MAX_ITEMS);
-for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));e.belgiumAssessment=assessBelgium(e);e.dossier=dossierFor(e);e.evidence=evidenceFor(e);}
+for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));e.belgiumAssessment=assessBelgium(e);e.dossier=dossierFor(e);e.evidence=evidenceFor(e);
+ // Previous-run change detection is computed from real collector differences.
+ e.lastActivity=newIds.has(e.id)?'new':changedIds.has(e.id)?'updated':'unchanged';
+ e.lastActivityAt=e.lastActivity==='new'?e.firstSeen:e.lastActivity==='updated'?e.lastChangedAt:null;
+ e.reviewStatus='unverified';
+ e.reviewBasis=e.official?'official_publication':e.corroboratingSources.length>1?'similar_headlines':'single_media_report';
+}
 // Group only near-identical headlines about the same likely event within 24 hours.
 // Keep every original article in JSON; collapse duplicates only in presentation.
 // This is string similarity, NEVER factual corroboration or verification.
@@ -173,7 +181,9 @@ function deduplicateStories(items){
       if(common<4||overlap(anchor.title,other.title)<0.84)continue;
       other.duplicateOf=anchor.id;
       if(!Array.isArray(anchor.relatedCoverage))anchor.relatedCoverage=[];
-      anchor.relatedCoverage.push({source:other.source,title:other.title,url:other.url,date:other.date});hidden++;
+      anchor.relatedCoverage.push({id:other.id,source:other.source,title:other.title,url:other.url,date:other.date});
+      if(anchor.lastActivity==='unchanged'&&other.lastActivity!=='unchanged'){anchor.lastActivity='related';anchor.lastActivityAt=NOW.toISOString();}
+      hidden++;
     }
   }
   return hidden;
@@ -181,9 +191,9 @@ function deduplicateStories(items){
 const grouped=deduplicateStories(entries);
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
 const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,dossierCounts:Object.fromEntries([...new Set(entries.map(e=>e.dossier.id))].map(id=>[id,entries.filter(e=>e.dossier.id===id&&!e.duplicateOf).length])),important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'2.2.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
+const result={schemaVersion:'2.3.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),previousControlAt,sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
  sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects'},history,signals:entries};
 await fs.mkdir('data',{recursive:true});
 await fs.writeFile(PATH,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(`Risk Monitor 2.2.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
+console.log(`Risk Monitor 2.3.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);

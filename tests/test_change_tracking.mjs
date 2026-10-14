@@ -1,0 +1,30 @@
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const dir=await fs.mkdtemp(path.join(os.tmpdir(),'risk230-'));
+try{
+ const feedDir=path.join(dir,'feeds');await fs.mkdir(feedDir);
+ const sources=['BBC_News','The_Guardian','Deutsche_Welle','UN_News','Raad_van_de_EU'];
+ const title='Russia and Ukraine hold talks on NATO security after missile attack';
+ const feed=(name,summary='Regional security talks announced')=>`<rss><channel><item><title>${title}</title><description>${summary}</description><pubDate>${new Date().toUTCString()}</pubDate><link>https://example.org/${name}/item</link></item></channel></rss>`;
+ for(const source of sources)await fs.writeFile(path.join(feedDir,source+'.xml'),feed(source));
+ const run=(script)=>{const r=spawnSync(process.execPath,[path.join(root,'scripts',script)],{cwd:dir,env:{...process.env,RISK_MONITOR_FEEDS_DIR:feedDir},encoding:'utf8'});assert.equal(r.status,0,r.stdout+'\n'+r.stderr)};
+ const load=async()=>JSON.parse(await fs.readFile(path.join(dir,'data/auto-news.json'),'utf8'));
+ run('update-feed.mjs');run('validate-feed.mjs');let a=await load();
+ assert.equal(a.schemaVersion,'2.3.0');assert.equal(a.newCount,5);assert.equal(a.quality.groupedSimilarItems,4);
+ assert(a.signals.every(s=>s.reviewStatus==='unverified'));
+ assert(a.signals.every(s=>s.lastActivity==='new'));
+ run('update-feed.mjs');run('validate-feed.mjs');a=await load();
+ assert.equal(a.newCount,0);assert.equal(a.updatedCount,0);assert(a.signals.every(s=>s.lastActivity==='unchanged'));
+ await fs.writeFile(path.join(feedDir,'BBC_News.xml'),feed('BBC_News','New statement about revised security terms'));
+ run('update-feed.mjs');run('validate-feed.mjs');a=await load();
+ assert.equal(a.updatedCount,1);assert(a.signals.some(s=>s.lastActivity==='updated'));
+ const visible=a.signals.filter(s=>!s.duplicateOf);
+ assert(visible.some(s=>['new','updated','related'].includes(s.lastActivity)), 'Gegroepeerde wijzigingen moeten in nieuwsfilters verschijnen');
+ assert(a.previousControlAt);
+ console.log('Change tracking v2.3.0 OK');
+}finally{await fs.rm(dir,{recursive:true,force:true})}

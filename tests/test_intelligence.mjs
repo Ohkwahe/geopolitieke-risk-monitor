@@ -21,15 +21,19 @@ try{
  const run=()=>spawnSync(process.execPath,[path.join(root,'scripts/update-feed.mjs')],{cwd:temp,env:{...process.env,RISK_MONITOR_FEEDS_DIR:feeds},encoding:'utf8'});
  const result=run();assert.equal(result.status,0,result.stderr);
  const data=JSON.parse(await fs.readFile(path.join(temp,'data','auto-news.json'),'utf8'));
- assert.equal(data.schemaVersion,'2.2.0');assert.equal(data.signals.length,5);
+ assert.equal(data.schemaVersion,'2.3.0');assert.equal(data.signals.length,5);
  for(const item of data.signals){assert(item.dossier?.label);assert(item.evidence?.explanation);assert.equal(item.verified,false);assert.equal(item.method,'rule_based_screening')}
  const claim=data.signals.find(x=>x.source==='BBC News');assert.equal(claim.evidence.kind,'claim');assert.equal(claim.dossier.id,'oekraine-rusland');
  const official=data.signals.find(x=>x.source==='Raad van de EU');assert.equal(official.evidence.kind,'official_source');
  const trump=data.signals.find(x=>x.source==='The Guardian');assert.equal(trump.topic,'trump');
  assert(data.history[0].dossierCounts);
+ assert(data.signals.every(x=>x.reviewStatus==='unverified'&&x.lastActivity==='new'));
+ assert.equal(data.previousControlAt,null);
  // Subsequent reprocessing should not duplicate entries.
  const repeat=run();assert.equal(repeat.status,0,repeat.stderr);
  const after=JSON.parse(await fs.readFile(path.join(temp,'data','auto-news.json'),'utf8'));
  assert.equal(after.newCount,0);assert.equal(after.signals.length,5);
- console.log('Intelligence v2.2.0 OK — dossier, claim, official source, Trump, idempotence');
+ assert(after.signals.every(x=>x.lastActivity==='unchanged'));
+ assert(after.previousControlAt);
+ console.log('Intelligence v2.3.0 OK — dossier, claim, official source, Trump, idempotence');
 }finally{await fs.rm(temp,{recursive:true,force:true})}

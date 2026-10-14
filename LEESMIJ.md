@@ -1,30 +1,32 @@
-# Risk Monitor v2.2.0 – Intelligence & Monitoring
+# Risk Monitor v2.3.0 — Nieuw sinds controle & voorlezen
 
-**Status: releasekandidaat, nog geen GO.** Basis: de op 14 oktober 2026 aangeleverde v2.1.0 (News First). v2.1.0 blijft de terugvalversie.
+**Status:** releasekandidaat, nog niet GO. Gebaseerd op v2.2.0. Gebruik de v2.2.0- of eerder goedgekeurde versie als terugvaloptie totdat je op je iPhone test.
 
-## Wat zit erin?
+## Kernwijzigingen
 
-- Zoekbalk voor titels, samenvattingen, vertalingen, regio's en bronnen.
-- Nieuwskaarten als **gelezen** markeren en **bewaren**. Filters Bewaard, Ongelezen en BE/EU-context.
-- Status van gelezen/bewaard lokaal opgeslagen op **dit toestel** (geen cloudsync).
-- Conflictdossiers onder *Historiek*, met artikelen per onderwerp en bij voldoende data een verschil in artikelaantallen sinds de vorige controle.
-- Meer transparante automatische tekstaanduidingen: **claim**, **uitspraak/verwachting**, **officiële publicatie** of **nieuwsbericht**. Die etiketten zijn geen factcheck.
-- Nieuwheidsscore daalt als een artikel al 24–48 uur in de feed zit (tenzij bron inhoudelijk bijwerkt). De scores blijven **voorlopige trefwoordscores**, geen geverifieerde veiligheidsalarmen.
-- Belgische context: bestaande thematische screening behouden, nu ook snel te filteren op expliciete Belgische vermelding of EU-context; **geen bewijs van impact**.
-- Aanvoer om ongeveer 08:10 en 18:10 via GitHub Actions, vertaling met Argos, bestaande ChatGPT-meldingen blijven **apart**.
+- In Nieuws: compacte regel `Laatste controle: X nieuw · Y bijgewerkt` (vanaf twee controlemomenten).
+- Knop **Toon wijzigingen**: filtert nieuwsitems die deze controle nieuw, aangepast of opnieuw door een andere bron opgepikt zijn. De bestaande tabs, zoekfunctie, favorieten en periodefilter blijven werken.
+- Op berichtniveau subtiele labels `Nieuw sinds controle`, `Bericht bijgewerkt`, `Nieuwe bronvermelding`.
+- In **details**: expliciete verificatiestatus; overeenkomende headlines uit twee media zijn nog **geen onafhankelijke feitencontrole**.
+- **▶ Luister naar koppen**: leest maximaal 6 recente items in het geselecteerde tabblad voor, waar mogelijk in de voorkeurstaal, met de spraakfunctie van de browser. Stoppen is mogelijk; er wordt geen audio geüpload.
+- JSON-contract v2.3.0: `previousControlAt`, `lastActivity`, `lastActivityAt`, `reviewStatus`, `reviewBasis`.
+- Bugfix: de Argos-vertaler schrijft niet langer `schemaVersion: 1.4.0` over het modernere nieuwsbestand heen.
+- Nieuwe regressietests voor wijzigingen en mobiele bediening.
 
-## Grenzen
+## Beperkingen
 
-**Geen autonome AI-analyse of externe factchecking actief.** Zonder een eigen AI-verwerkingsdienst, model en bronverificatie kan deze gratis GitHub-collector geen betrouwbare inhoudelijke geopolitieke analyse leveren. Er is daarom geen gratis AI-model stilzwijgend toegevoegd, en er wordt niets naar een betaalde dienst verstuurd.
-
-**Geen push vanuit de PWA.** De ChatGPT-taken zijn niet gekoppeld aan de JSON-feed; de data zijn onafhankelijke stromen.
-
-**Publieke GitHub Pages:** de gepubliceerde nieuwsfeed is publiek leesbaar. Alleen favorieten/gelezen-status worden lokaal op je apparaat opgeslagen.
+- Dit is **geen autonome AI-factcheck**. De collector gebruikt transparante regels en bronvermeldingen. Risicoscores blijven indicatief en geen kansberekening.
+- "Nieuwe bronvermelding" betekent overeenkomende berichtgeving, **niet bevestiging van de claim**.
+- Audio is afhankelijk van de spraakfunctie en geïnstalleerde stemmen op je iPhone; uitspreekkwaliteit kan verschillen en audio begint uitsluitend na tikken.
+- ChatGPT-waarschuwingen blijven onafhankelijk van deze GitHub-feed.
+- GitHub Actions behoudt 08:10 / 18:10 Europe/Brussels; opstart en publicatie kunnen vertraagd zijn.
 
 ## Installatie
 
-Zie `START_HIER_GITHUB.md`. Het meegeleverde pakket bevat **geen** `data/auto-news.json` en overschrijft je actuele historie bij het uploaden niet. Een volgende GitHub-run voegt nieuwe gestructureerde velden toe aan het bestaande bestand.
+Zie `START_HIER_GITHUB.md`. Het live bestand `data/auto-news.json` zit bewust niet in het pakket.
 
-## Testen
+## Beveiliging en kosten
 
-De Node collector-tests, Python-vertaaltests en gesimuleerde mobiele Chromium-tests slagen. Werkelijke Argos-modelinstallatie en weergave in iOS Safari moeten op de eindinstallatie bevestigd worden. Test nooit met fictieve feiten op je publieke site.
+- Geen nieuwe accounts, cloud-AI, API-tokens, of betaalde diensten nodig.
+- GitHub Pages blijft openbaar; persoonlijke gelezen-/bewaardvoorkeuren blijven lokaal op het iPhone-toestel.
+- Externe RSS-inhoud verschijnt als platte tekst; links vereisen een geldig webadres.

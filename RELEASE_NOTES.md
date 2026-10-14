@@ -1,26 +1,24 @@
-# Release Notes — Risk Monitor v2.2.0
+# Risk Monitor — Release Notes
 
-**Datum:** 2026-10-14
-**Status:** Release candidate; v2.1.0 blijft GO-baseline zolang v2.2.0 niet is bevestigd.
+## v2.3.0 — 14 oktober 2026 — RC
 
-## Added
-- Mobiele zoekfunctie en filters Bewaard, Ongelezen en BE/EU-context.
-- Bewaar-knop en gelezenstatus met toestelgebonden opslag.
-- Conflictdossiers onder Historiek met bronartikelen per onderwerp.
-- Herkenning van toegeschreven claims, uitspraken/verwachtingen en officiële publicaties (uitsluitend patroonherkenning).
-- Per dossier verloop van artikeleenheden tussen controles indien beide momentopnamen beschikbaar zijn.
-- Extra collectorregressietest voor dossiers, statements en bronlabels.
+### Added
+- Per-controle wijzigingen (`new`, `updated`, `related`, `unchanged`) inclusief tijdstip van vorige controle.
+- Compacte vernieuwingssamenvatting en filter `Toon wijzigingen` in de nieuwsweergave.
+- Activiteitslabels per artikel, ook bij nieuwe vergelijkbare berichtgeving over een reeds gegroepeerd artikel.
+- Extra bronduiding in de uitklapbare details: nooit automatisch als onafhankelijk geverifieerd.
+- Browsergebaseerd voorlezen van maximaal zes koppen met hun korte samenvatting in geselecteerde rubriek.
+- Regressietests voor de collector, data-validatie en mobiele interacties.
 
-## Changed
-- De nieuwheidsscore kijkt naar de eerste detectie; na 24 uur neemt de score af, na 48 uur wordt ze nul. Deze score is geen maatstaf voor dreiging.
-- Historiek bevat nu `dossierCounts`; feedcontract heeft schemaVersion `2.2.0`.
-- Service-worker-cache naar v2.2.0; voorkeuren taal en tijdsperiode behouden.
+### Changed
+- `schemaVersion` van de nieuwsfeed nu `2.3.0` inclusief na automatische vertaling.
+- Service worker-cache-id naar v2.3.0; bestaande lokale voorkeuren blijven ongemoeid.
+- Volledige originele bronlinks behouden; geen onafhankelijke factcheck of pushalarm.
 
-## Unchanged
-- RSS-bronnen, automatiseringstijden, Argos Translate, ChatGPT-meldingen, wereldkaart, tabbladen en de nieuwsgerichte inrichting van v2.1.0.
-- Risicoscore maximaal 14, uitsluitend voorlopige screening.
+### Not included
+- Geen nieuwe automatische AI-modeldienst; geen verifieerbare feitencontrole zonder aanvullende betrouwbare input.
+- Geen automatische integratie van ChatGPT-taken naar GitHub, geen zelfstandige mobiele pushmeldingen.
 
-## Niet inbegrepen
-- Autonome, onafhankelijke AI-factchecking of veilig inhoudelijk gevalideerde risicoanalyse.
-- Directe ChatGPT→GitHub-synchronisatie, automatische veiligheids-pushmeldingen.
-- Synchronisatie van gelezen/bewaard tussen toestellen.
+### Compatibility
+- Voortbouwen op v2.2.0. Historische data en oude `data/auto-news.json` zijn leesbaar; eerste v2.3.0-run voegt metadata toe.
+- `data/auto-news.json` is uitgesloten van het upgradepakket.
