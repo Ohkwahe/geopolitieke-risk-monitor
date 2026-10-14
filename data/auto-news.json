@@ -1,12 +1,12 @@
 {
   "schemaVersion": "3.0.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-14T17:33:37.891Z",
-  "previousControlAt": "2026-10-14T17:19:56.271Z",
+  "generatedAt": "2026-10-14T17:58:04.163Z",
+  "previousControlAt": "2026-10-14T17:33:37.891Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
   "newCount": 1,
-  "updatedCount": 3,
+  "updatedCount": 1,
   "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
@@ -303,13 +303,106 @@
       "sourcesOk": 5,
       "translated": 4,
       "translationPending": 0
+    },
+    {
+      "at": "2026-10-14T17:58:04.163Z",
+      "added": 1,
+      "changed": 1,
+      "total": 183,
+      "grouped": 1,
+      "dossierCounts": {
+        "oekraine-rusland": 69,
+        "israel-palestina": 15,
+        "congo": 3,
+        "china-taiwan": 11,
+        "vs-beleid": 25,
+        "iran-regio": 26,
+        "soedan": 3,
+        "wereld": 28,
+        "nato-europa": 2
+      },
+      "important": 0,
+      "review": 1,
+      "below": 182,
+      "sourcesOk": 5,
+      "translated": 2,
+      "translationPending": 0
     }
   ],
   "signals": [
     {
+      "id": "RSS-ed5c958200455ab54d4902",
+      "title": "How Trump’s diesel deal with Russia will impact the United States and Ukraine",
+      "summary": "US President Trump’s diesel deal with Russia has alarmed Ukraine and its allies. What is he hoping to achieve at home, and what does the deal mean for Kyiv and Moscow?",
+      "date": "2026-10-14T17:55:00.000Z",
+      "firstSeen": "2026-10-14T17:58:04.163Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/how-trump-s-diesel-deal-with-russia-will-impact-the-united-states-and-ukraine/a-79658596?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-14T17:58:04.163Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T17:55:00.000Z",
+        "firstSeenAt": "2026-10-14T17:58:04.163Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "1bb19e6db2580b9b0466934e",
+        "title": "Hoe Trump",
+        "summary": "De Amerikaanse president Trump heeft de diesel deal met Rusland gealarmeerd Oekraïne en zijn bondgenoten. Wat hoopt hij thuis te bereiken en wat betekent de deal voor Kiev en Moskou?",
+        "at": "2026-10-14T17:59:49.451959+00:00"
+      }
+    },
+    {
       "id": "RSS-f035e96c75edb85dd9dc40",
       "title": "Japanese journalist arrest in Russia's Far East draws rebuke from Tokyo in latest diplomatic spat with Moscow",
-      "summary": "A journalist for a Japanese newspaper was arrested on suspicion of spying in Russia's Far East, where a geopolitical rivalry over disputed islands has recently caused tension.",
+      "summary": "A journalist for a Japanese newspaper was arrested on suspicion of spying in Russia's Far East. A geopolitical rivalry over disputed islands in the region has recently caused tension.",
       "date": "2026-10-14T17:28:00.000Z",
       "firstSeen": "2026-10-14T17:33:37.891Z",
       "source": "Deutsche Welle",
@@ -349,8 +442,8 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-14T17:33:37.891Z",
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-14T17:58:04.163Z",
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -361,18 +454,19 @@
         "linkedArticles": 1,
         "publishedAt": "2026-10-14T17:28:00.000Z",
         "firstSeenAt": "2026-10-14T17:33:37.891Z",
-        "lastChangedAt": null,
+        "lastChangedAt": "2026-10-14T17:58:04.163Z",
         "verified": false,
         "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
       },
+      "lastChangedAt": "2026-10-14T17:58:04.163Z",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "a31680ba9ad938bf1c940fc4",
+        "sourceHash": "64684c4babe3fa327a713166",
         "title": "Japanse journalist arrestatie in het Verre Oosten van Rusland trekt berisping uit Tokio in de laatste diplomatieke spuug met Moskou",
-        "summary": "Een journalist voor een Japanse krant werd gearresteerd op verdenking van spionage in het Verre Oosten van Rusland, waar een geopolitieke rivaliteit over omstreden eilanden onlangs spanning heeft veroorzaakt.",
-        "at": "2026-10-14T17:35:28.186215+00:00"
+        "summary": "Een journalist voor een Japanse krant werd gearresteerd op verdenking van spionage in het Verre Oosten van Rusland. Een geopolitieke rivaliteit over omstreden eilanden in de regio heeft onlangs spanningen veroorzaakt.",
+        "at": "2026-10-14T17:59:50.257338+00:00"
       }
     },
     {
@@ -418,8 +512,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "updated",
-      "lastActivityAt": "2026-10-14T17:33:37.891Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -488,8 +582,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "updated",
-      "lastActivityAt": "2026-10-14T17:33:37.891Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -777,8 +871,8 @@
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
       "lastChangedAt": "2026-10-14T17:33:37.891Z",
-      "lastActivity": "updated",
-      "lastActivityAt": "2026-10-14T17:33:37.891Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -13278,20 +13372,20 @@
   "translation": {
     "engine": "Argos Translate en→nl",
     "language": "nl",
-    "translatedThisRun": 4,
+    "translatedThisRun": 2,
     "pending": 0,
     "failedThisRun": 0,
     "status": "ok"
   },
   "briefing": {
-    "createdAt": "2026-10-14T17:33:37.891Z",
+    "createdAt": "2026-10-14T17:58:04.163Z",
     "period": "Avondcontrole",
     "kind": "headline_selection_unverified",
     "verified": false,
     "counts": {
       "important": 1,
       "trump": 25,
-      "below": 180
+      "below": 181
     },
     "important": [
       "RSS-38eb18e52567643e615e35"
@@ -13305,12 +13399,12 @@
       "RSS-581674487c50de023b4a05"
     ],
     "below": [
+      "RSS-ed5c958200455ab54d4902",
       "RSS-f035e96c75edb85dd9dc40",
       "RSS-738bbca4622ac3fcb1a036",
       "RSS-2e3f8fb74e6bb1176bd2c3",
       "RSS-0b8dbe079eb5e502fbafd3",
-      "RSS-4f59f251a400c1e614fce2",
-      "RSS-f72fa532500caca18a61e8"
+      "RSS-4f59f251a400c1e614fce2"
     ],
     "disclaimer": "Geselecteerde RSS-koppen. Geen onafhankelijke feitencontrole of officieel veiligheidsalarm."
   }
