@@ -1,14 +1,15 @@
-# Release notes — v3.0.1 (Speech Fix)
+# Risk Monitor v3.0.2 — GitHub CI Fix
 
-## Reparaties
-- Eerste spraakopdracht start zonder onnodige `speechSynthesis.cancel()`; eerste `speak()` gebeurt rechtstreeks in de klikhandler.
-- Actieve `SpeechSynthesisUtterance` blijft in geheugen tot einde/fout.
-- Kortere gesproken tekstblokken, stemkeuze voor NL/EN met fallback, en duidelijke `onstart`/`onerror`-meldingen.
-- Nieuwe, inklapbare geluidsdiagnose onder Instellingen met knop **Test voorleesstem**, stopknop en stemmenlijst.
-- Briefing en nieuwsvoorlezen gebruiken dezelfde gecorrigeerde speler.
-- Nieuw serviceworker-cache-ID zodat iPhone de nieuwe versie kan ophalen.
+**Type:** PATCH / releasekandidaat; gebaseerd op v3.0.1.
 
-## Scope
-- Geen aanpassingen aan GitHub Actions, RSS, Argos of opgeslagen nieuwsgegevens.
-- Geen betaalde diensten. Alle bestaande instellingen blijven opgeslagen.
-- **De fysieke geluidstest op de iPhone moet nog worden bevestigd.** Browser-simulaties kunnen geen werkelijke geluidsuitvoer bewijzen.
+## Probleem
+De workflow gebruikte `python -m unittest discover -s tests -p 'test_*.py'`. Sinds v3.0.1 stond `tests/test_speech_browser.py` ook in dat patroon. Het bestand importeerde bij laden Playwright, dat niet in de GitHub-teststap is geïnstalleerd. Dit veroorzaakte `ModuleNotFoundError: No module named 'playwright'` bij *Basistests vertaalmodule*.
+
+## Herstel
+- Alleen `test_translate.py` wordt door de translation-teststap ontdekt.
+- `test_speech_browser.py` is veilig te importeren en draait de browsercheck alleen bij rechtstreeks uitvoeren met Playwright.
+- Versie/bouwinformatie bijgewerkt naar v3.0.2.
+- Nieuwscollector, vertaallogica, voice-logica, schemas, bronconfiguratie en GitHub-planning ongewijzigd.
+
+## GO-check
+GitHub → Actions → workflow handmatig uitvoeren → stap *Basistests vertaalmodule* toont 5 geslaagde tests → volledige workflow groen → website opent, nieuws en vertalingen werken.

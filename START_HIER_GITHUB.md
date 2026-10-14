@@ -1,9 +1,15 @@
-# GitHub upgrade v3.0.1
+# v3.0.2 installeren op je bestaande GitHub
 
-- Gebruik de HTML-installer, pak ZIP uit en upload de bestanden in de bestaande repository op `main`.
-- Controleer `index.html` en `sw.js` op versie **v3.0.1**.
-- Er zijn **geen** wijzigingen aan `.github/workflows/update-news.yml`, dus geen handmatige GitHub Actions-run nodig.
-- Live `data/auto-news.json` zit niet in het upgradepakket.
-- Open je GitHub Pages-link in Safari en vernieuw; controleer de versie in Instellingen. Sluit daarna de PWA en open opnieuw.
-- Test Instellingen → Voorlezen testen en geluid oplossen → Test voorleesstem.
-- Test Luister naar koppen en Luister naar briefing.
+## Snelste methode — alleen workflow
+1. Open GitHub → Code → `.github/workflows/update-news.yml` en klik op Edit (potloodje).
+2. Vervang de regel met `-p 'test_*.py'` door `-p 'test_translate.py'`.
+3. Commit naar `main` en start de workflow bij Actions opnieuw. Dit herstelt de fout al, zonder een volledige installatie.
+
+## Volledige v3.0.2-upgrade
+1. Open de HTML-installer op Windows in Firefox, klik op **Maak en download ZIP-pakket** en pak het uit.
+2. Upload de uitgepakte inhoud naar je bestaande `geopolitieke-risk-monitor` op branch `main`, inclusief `.github` en `tests`.
+3. Controleer het bijgewerkte bestand `.github/workflows/update-news.yml`; GitHub overschrijft verborgen mappen soms niet bij het slepen.
+4. `data/auto-news.json` zit niet in de upgrade: behoud de bestaande live data.
+5. Ga naar Actions → Risk Monitor - nieuws ophalen en publiceren → Run workflow.
+6. De vijf vertaaltests moeten groen worden, daarna moet de workflow verder kunnen vertalen en publiceren.
+7. Controleer op je iPhone of nieuws normaal verschijnt. Geen nieuwe app-installatie nodig.
