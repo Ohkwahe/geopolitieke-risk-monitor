@@ -1,10 +1,11 @@
 {
-  "schemaVersion": "1.3.0",
+  "schemaVersion": "1.4.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-14T06:51:13.204Z",
+  "generatedAt": "2026-10-14T11:45:18.314Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
-  "newCount": 20,
+  "newCount": 14,
+  "updatedCount": 15,
   "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
@@ -33,6 +34,12 @@
       "items": 20
     }
   ],
+  "quality": {
+    "verifiedReports": 0,
+    "sourceFailures": 0,
+    "groupedSimilarItems": 1,
+    "assessment": "rule_based_unverified"
+  },
   "history": [
     {
       "at": "2026-10-13T15:15:22.367Z",
@@ -104,13 +111,558 @@
       "sourcesOk": 5,
       "translated": 20,
       "translationPending": 0
+    },
+    {
+      "at": "2026-10-14T11:45:18.314Z",
+      "added": 14,
+      "changed": 15,
+      "total": 160,
+      "grouped": 1,
+      "important": 0,
+      "review": 2,
+      "below": 158,
+      "sourcesOk": 5,
+      "translated": 29,
+      "translationPending": 0
     }
   ],
   "signals": [
     {
+      "id": "RSS-4458c877a3c243f70a2403",
+      "title": "EU says ‘no indication’ intelligence sharing with Ukraine has stopped as Russian attacks leave 600,000 without power – Europe live",
+      "summary": "European Commission declined to comment on reported disruption to Starlink’s services in Ukraine Rutte gets asked “is Russia foolish enough to consider attacking any of Nato countries?” He says “we don’t think so” and that there is “no imminent threat against Nato territory,” but stresses that “if we see a build up, we will react to it.” “We will never, ever mount a attack towards anyone else because that is not in…",
+      "date": "2026-10-14T11:39:12.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/live/2026/oct/14/russia-ukraine-war-latest-updates-zelenskyy-europe",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "cf85a96daefa67af4f688038",
+        "title": "De EU zegt dat er geen aanwijzing is dat het delen van informatie met Oekraïne is gestopt als Russische aanvallen 600.000 zonder stroom verlaten .",
+        "summary": "Europese Commissie weigerde commentaar te geven op gemelde verstoring van Starlinks-diensten in Oekraïne Rutte wordt gevraagd  Hij zegt dat we dat niet denken en dat er geen dreigende dreiging is tegen Nato-gebied, maar benadrukt dat als we een opbouw zien, we er op zullen reageren. We zullen nooit, ooit een aanval op iemand anders omdat dat niet in...",
+        "at": "2026-10-14T11:46:49.917803+00:00"
+      }
+    },
+    {
+      "id": "RSS-9ad998b3236ab60a99132e",
+      "title": "Trump heads to rallies in Arizona and Montana after campaign stop-off in Alaska – US politics live",
+      "summary": "Trump has taken to campaigning in conservative-leaning ​parts of competitive states, rather than in more politically diverse areas More than 14 months after National Guard members began patrolling the streets of the nation’s capital, a federal appeals court on Wednesday will hear arguments over whether they should be sent home. Oral arguments are scheduled in the US Court of Appeals for the District of Columbia Circ…",
+      "date": "2026-10-14T11:38:16.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/us-news/live/2026/oct/14/donald-trump-us-midterms-arizona-montana-politics-latest-news-updates",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "f9f36c733781c74e3020772e",
+        "title": "Trump heads to rallies in Arizona en Montana na campagne stop-off in Alaska",
+        "summary": "Trump heeft campagne gevoerd in conservatieve delen van concurrerende staten, in plaats van in meer politiek uiteenlopende gebieden Meer dan 14 maanden nadat leden van de Nationale Garde begonnen te patrouilleren in de straten van de hoofdstad van de natie, zal een federale beroepsrechtbank op woensdag argumenten horen over de vraag of ze naar huis moeten worden gestuurd. Mondelinge argumenten zijn gepland in het Amerikaanse Hof van Beroep voor het District van Columbia Circ...",
+        "at": "2026-10-14T11:46:51.635954+00:00"
+      }
+    },
+    {
+      "id": "RSS-202932fc1bd8beb072d181",
+      "title": "Manchester City did not raise Premier League charges with me, Burnham tells PMQs – UK politics live",
+      "summary": "Prime minister is taking questions from leader of the opposition and other MPs at PMQs PMQs is about to start. Here is the list of MPs down to ask a question. After @genevieveholl reported this last night, various sources in the Trump administration who are supportive of Farage said Badenoch was needlessly trying to cause a political row (per @katyballs @MrHarryCole) and accused her of undermining the Anglo-American…",
+      "date": "2026-10-14T11:36:43.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/politics/live/2026/oct/14/pmqs-andy-burnham-kemi-badenoch-zelenskyy-uk-politics-latest-news",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "0fbb1373f412d8430dab2f6a",
+        "title": "Manchester City heeft niet verhoogd Premier League aanklachten met mij, Burnham vertelt PMQs",
+        "summary": "Premier neemt vragen aan van de leider van de oppositie en andere parlementsleden bij PMQs PMQs staat op het punt te beginnen. Hier is de lijst van parlementsleden beneden om een vraag te stellen. Nadat @genevieveholl dit gisteravond meldde, verschillende bronnen in de Trump administratie die Farage steunen zei Badenoch was onnodig proberen om een politieke ruzie te veroorzaken (per @katyballs @MrHarryCole) en beschuldigde haar van het ondermijnen van de Anglo-Amerikaanse...",
+        "at": "2026-10-14T11:46:53.516943+00:00"
+      }
+    },
+    {
+      "id": "RSS-38baf772a938d90fba61ad",
+      "title": "Starlink restrictions affecting Ukraine's front line operations, Kyiv says",
+      "summary": "Elon Musk's system allows Kyiv to protect Ukrainian skies and effectively guide drones to Russian targets.",
+      "date": "2026-10-14T11:32:07.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "e4aa90d6fd589339bf20d0ae",
+        "title": "Starlink beperkingen van de Oekraïne front line operaties, Kiev zegt",
+        "summary": "Het systeem van Elon Musk stelt Kyiv in staat om Oekraïense luchten te beschermen en effectief drones naar Russische doelen te leiden.",
+        "at": "2026-10-14T11:46:54.131584+00:00"
+      }
+    },
+    {
+      "id": "RSS-72cc7b3c868ffc57d1a1be",
+      "title": "Family of man killed by tiger criticise online content after Trump reposts video",
+      "summary": "Relatives of William Chapman say footage of attack shared online ‘deeply offensive’ and causing them ‘severe distress’ The family of a man killed by a tiger at a wildlife park in the UK have spoken about their “severe distress” at the circulation of online media after Donald Trump reposted a video of the incident. William Chapman, 23, was mauled to death , on Saturday.",
+      "date": "2026-10-14T11:29:48.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/uk-news/2026/oct/14/william-chapman-family-tiger-attack-online-content-trump-reposts-video",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "c0864a174ac2ea7ceb2ad847",
+        "title": "Familie van de man gedood door tijger kritiek online inhoud na Trump reposts video",
+        "summary": "Familie van William Chapman zeggen beelden van de aanval gedeeld online, diep beledigend... en waardoor ze zwaar leed. De familie van een man gedood door een tijger in een wildpark in het Verenigd Koninkrijk hebben gesproken over hun . . . . . . . . . . . . . . . . . . . . William Chapman, 23, werd zaterdag doodgemaaid.",
+        "at": "2026-10-14T11:46:55.913442+00:00"
+      }
+    },
+    {
+      "id": "RSS-9cceae9a8d78d23d9df810",
+      "title": "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
+      "summary": "Ukraine accused SpaceX of restricting use of its Starlink system, impacting Kyiv's ability to control its drones as Russian attacks continue unabated.",
+      "date": "2026-10-14T11:07:00.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/ukraine-says-musk-s-spacex-limits-kyiv-s-starlink-access/a-79658015?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "fcad73140412a1b77b984c77",
+        "title": "Oekraïne zegt Musk SpaceX beperkt Kyiv's Starlink toegang",
+        "summary": "Oekraïne beschuldigde SpaceX van het beperken van het gebruik van zijn Starlink systeem, waardoor Kyiv's vermogen om zijn drones te controleren beïnvloedde terwijl Russische aanvallen onverminderd doorgaan.",
+        "at": "2026-10-14T11:46:56.718954+00:00"
+      }
+    },
+    {
+      "id": "RSS-581674487c50de023b4a05",
+      "title": "Trump's US Super Intelligence Force and AI czar Jay Clayton",
+      "summary": "Trump announced a new Super Intelligence taskforce with the White House AI czar Jay Clayton in charge of a group responsible for making sure the US leads international competition in artificial intelligence development.",
+      "date": "2026-10-14T10:58:00.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/trump-s-us-super-intelligence-force-and-ai-czar-jay-clayton/a-79598001?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "538c9b69884988b61d461fee",
+        "title": "Trump's US Super Intelligence Force en AI czar Jay Clayton",
+        "summary": "Trump kondigde een nieuwe Super Intelligence taskforce aan met de White House AI czar Jay Clayton die verantwoordelijk is voor een groep die ervoor moet zorgen dat de VS internationale concurrentie leidt in de ontwikkeling van kunstmatige intelligentie.",
+        "at": "2026-10-14T11:46:57.726002+00:00"
+      }
+    },
+    {
+      "id": "RSS-fa109a3f50b6e8acdbb393",
+      "title": "Pope Leo recovering from surgery after lung cancer diagnosis | First Thing",
+      "summary": "Vatican says operation on US-born head of Roman Catholic church was ‘successful’. Plus, after six decades in the US, Joni Mitchell has become a citizen Good morning. Pope Leo XIV, the head of the 1.4 billion-strong Roman Catholic church, has been . The Vatican made the announcement after Leo, 71, the first US-born leader to assume the role, underwent an operation and had the lower lobe of his right lung removed. A s…",
+      "date": "2026-10-14T10:15:14.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/us-news/2026/oct/14/first-thing-pope-leo-surgery-lung-cancer",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "e93934641171168a664cf13f",
+        "title": "Paus Leo herstellend van een operatie na longkanker diagnose",
+        "summary": "Vaticaan zegt operatie op Amerikaans-geboren hoofd van de rooms-katholieke kerk was succesvol. Plus, na zes decennia in de VS, Joni Mitchell is een burger geworden Goedemorgen. Paus Leo XIV, het hoofd van de 1,4 miljard-sterke rooms-katholieke kerk, is geweest. Het Vaticaan deed de aankondiging na Leo, 71, de eerste Amerikaanse leider die de rol op zich nam, onderging een operatie en liet de onderste kwab van zijn rechterlong verwijderen. Een...",
+        "at": "2026-10-14T11:46:59.561703+00:00"
+      }
+    },
+    {
+      "id": "RSS-d90c17e4b1366366bf32ce",
+      "title": "Ukrainian soldiers in combat have access to Starlink satellite internet restricted",
+      "summary": "Outage of terminals managed by Elon Musk’s SpaceX comes as Russia launches ballistic missiles at Ukraine without any advance warning from US Ukrainian soldiers in combat have suddenly had their access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long-range strikes on Russia’s oil industry immediately. The terminals, which are distributed an…",
+      "date": "2026-10-14T10:05:36.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "0002ff2961a7c8737f52b1eb",
+        "title": "Oekraïense soldaten in gevecht hebben toegang tot Starlink satelliet internet beperkt",
+        "summary": "Uitgang van terminals beheerd door Elon Musk. SpaceX komt als Rusland lanceert ballistische raketten op Oekraïne zonder enige voorafgaande waarschuwing van de VS Oekraïense soldaten in de strijd hebben plotseling hun toegang tot Starlink satelliet internet terminals beperkt als de regering Trump heeft verhoogde druk op Oekraïne te stoppen lange-afstand stakingen op de Russische olie-industrie onmiddellijk. De terminals, die worden gedistribueerd...",
+        "at": "2026-10-14T11:47:00.877620+00:00"
+      }
+    },
+    {
+      "id": "RSS-bfffa358273f0f5256b520",
+      "title": "Trump announces plans for major oil, gas and mineral exploration in Greenland",
+      "summary": "The US president has claimed Greenland holds vast and easily accessible oil reserves without providing evidence or details. His announcement follows a deal expanding the US military presence on the Arctic island.",
+      "date": "2026-10-14T10:00:00.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/trump-announces-plans-for-major-oil-gas-and-mineral-exploration-in-greenland/a-79656889?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "d8e57a8ec30e757a376b527d",
+        "title": "Trump kondigt plannen voor grote olie-, gas- en minerale exploratie in Groenland",
+        "summary": "De Amerikaanse president heeft beweerd dat Groenland grote en gemakkelijk toegankelijke oliereserves heeft zonder bewijs of details. Zijn aankondiging volgt op een deal die de Amerikaanse militaire aanwezigheid op het Arctische eiland uitbreidt.",
+        "at": "2026-10-14T11:47:01.755468+00:00"
+      }
+    },
+    {
+      "id": "RSS-fcd01b7e9f9a501ef8c926",
+      "title": "What we know about Russia's overnight strikes on Ukraine",
+      "summary": "BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes.",
+      "date": "2026-10-14T09:25:03.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 3,
+        "belgium": 0,
+        "novelty": 0,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "bbd950263c48cdfd55b308d3",
+        "title": "Wat we weten over de Russische nachtelijke stakingen op Oekraïne",
+        "summary": "BBC Ukraine Correspondent Dan Johnson is in Kiev, waar minstens drie mensen werden gedood in een nachtstaking.",
+        "at": "2026-10-14T11:47:02.307756+00:00"
+      }
+    },
+    {
+      "id": "RSS-36c83416c268be9b3e42a5",
+      "title": "Fact check: Misleading graph about alleged Russian bot activity",
+      "summary": "Did attacks on Russian data centers reduce bot activity around Germany's AfD? A viral graph claims they did. But it contains significant inconsistencies and provides no evidence to support the claim.",
+      "date": "2026-10-14T09:08:00.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/fact-check-misleading-graph-about-alleged-russian-bot-activity/a-79651769?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "7a0b2c5e0f77d355b5776d44",
+        "title": "Feit controle: Misleidende grafiek over vermeende Russische bot activiteit",
+        "summary": "Hebben aanvallen op Russische datacenters de botactiviteit rond de Duitse AfD verminderd? Een virale grafiek beweert van wel. Het bevat echter aanzienlijke inconsistenties en levert geen bewijs om de claim te ondersteunen.",
+        "at": "2026-10-14T11:47:03.036017+00:00"
+      }
+    },
+    {
+      "id": "RSS-d665eecdb86e7933ad5444",
+      "title": "Video recording device found in cabin of HMAS Leeuwin navy ship in Cairns",
+      "summary": "Defence announcement comes after Jacqui Lambie tells parliament a camera had been found concealed in a women’s shower on board Get our , or A “video recording device” was found in the cabin of a ship in Cairns, the defence department has revealed, just hours after senator Jacqui Lambie alleged in parliament that a camera had been found concealed in a women’s shower on the vessel. The department confirmed on Wednesda…",
+      "date": "2026-10-14T07:19:06.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/australia-news/2026/oct/14/video-recording-device-found-in-cabin-of-hmas-leeuwin-navy-ship-in-cairns",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "2225ac65f1322156cb632225",
+        "title": "Video opname apparaat gevonden in cabine van HMAS Leeuwin marineschip in Cairns",
+        "summary": "Defensie aankondiging komt nadat Jacqui Lambie het parlement vertelt een camera was gevonden verborgen in een vrouwen douche aan boord Get ons , of Een video opname apparaat werd gevonden in de cabine van een schip in Cairns, de defensie afdeling heeft onthuld, slechts uren nadat senator Jacqui Lambie beweerde in het parlement dat een camera was gevonden verborgen in een vrouwen douche op het schip. De afdeling bevestigde op Wednesda...",
+        "at": "2026-10-14T11:47:04.636029+00:00"
+      }
+    },
+    {
+      "id": "RSS-df9fb411dd9a01785ab201",
+      "title": "Germany news: Merz to set out EU priorities after urging reforms",
+      "summary": "Chancellor Merz is giving a major policy statement. Meanwhile, a Ukrainian man is going on trial in Hamburg in the case of a 2022 attack on major gas pipelines. DW has more.",
+      "date": "2026-10-14T06:51:00.000Z",
+      "firstSeen": "2026-10-14T11:45:18.314Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/germany-news-merz-to-set-out-eu-priorities-after-urging-reforms/live-79656436?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "3995f135bc97a473a47e31b8",
+        "title": "Duitsland nieuws: Merz stelt prioriteiten voor de EU na hervormingen",
+        "summary": "Kanselier Merz geeft een belangrijke beleidsverklaring. Ondertussen wordt een Oekraïense man terechtgesteld in Hamburg in het geval van een aanval van 2022 op grote gaspijpleidingen. DW heeft meer.",
+        "at": "2026-10-14T11:47:05.354588+00:00"
+      }
+    },
+    {
       "id": "RSS-eae6326e16335e5ed18d5b",
-      "title": "Ukrainian soldier to go on trial over sabotage of Nord Stream gas pipelines",
-      "summary": "Special forces officer Serhii Kuznetsov denies involvement in the 2022 blasts that left pipelines badly damaged A Ukrainian soldier is to go on trial in Hamburg accused of taking part in one of the most brazen acts of sabotage in postwar European history – the 2022 attack on the Nord Stream gas pipelines between Russia and Germany. Serhii Kuznetsov, a special forces officer from the Ukrainian military, is accused by…",
+      "title": "Ukrainian soldier goes on trial over sabotage of Nord Stream gas pipelines",
+      "summary": "Special forces officer Serhii Kuznetsov denies involvement in the 2022 blasts that left pipelines badly damaged A Ukrainian soldier has gone on trial in Hamburg accused of taking part in one of the most brazen acts of sabotage in postwar European history – the 2022 attack on the Nord Stream gas pipelines between Russia and Germany. Serhii Kuznetsov, a special forces officer from the Ukrainian military, is accused by…",
       "date": "2026-10-14T06:00:47.000Z",
       "firstSeen": "2026-10-14T06:51:13.204Z",
       "source": "The Guardian",
@@ -123,26 +675,27 @@
         "military": 3,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 7,
-      "category": "review",
-      "belowReason": "Verdere beoordeling vereist.",
+      "total": 6,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "The Guardian",
-        "BBC News"
+        "The Guardian"
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "ae97237f720417a7828d03b4",
-        "title": "Oekraïense soldaat te gaan terecht wegens sabotage van Nord Stream gas pijpleidingen",
-        "summary": "Special Forces Officer Serhii Kuznetsov ontkent betrokkenheid bij de 2022 ontploffingen die pijpleidingen zwaar beschadigde Een Oekraïense soldaat wordt terechtgesteld in Hamburg beschuldigd van deelname aan een van de meest brutale sabotagedaden in de naoorlogse Europese geschiedenis.De 2022 aanval op de Nord Stream gaspijpleidingen tussen Rusland en Duitsland. Serhii Kuznetsov, een officier van het Oekraïense leger, wordt beschuldigd van...",
-        "at": "2026-10-14T06:52:55.901161+00:00"
+        "sourceHash": "fb9a9f5f18db20d081b27232",
+        "title": "Oekraïense soldaat gaat terecht wegens sabotage van Nord Stream gasleidingen",
+        "summary": "Special Forces Officer Serhii Kuznetsov ontkent betrokkenheid bij de 2022 ontploffingen die de pijpleidingen ernstig beschadigde Een Oekraïense soldaat is terechtgesteld in Hamburg beschuldigd van deelname aan een van de meest brutale sabotagedaden in de naoorlogse Europese geschiedenis.De aanval van 2022 op de Nord Stream gaspijpleidingen tussen Rusland en Duitsland. Serhii Kuznetsov, een officier van het Oekraïense leger, wordt beschuldigd van...",
+        "at": "2026-10-14T11:47:07.099303+00:00"
       }
     },
     {
@@ -180,7 +733,8 @@
         "title": "Woensdag briefing: Waarom kleine boot kruisingen zijn hier om te blijven",
         "summary": "In de nieuwsbrief vandaag: De ineenstorting van het Verenigd Koninkrijk een in, een uit een asiel deal met Frankrijk blootlegt de grenzen van de grenshandhaving die weinig deed om te stoppen kruisingen, en alleen maakte ze gevaarlijker Goedemorgen. Je zou vergeven worden dat je het mist. Eerder deze maand heeft de regering stilletjes haar één in, één uit een deal met Frankrijk. Het partnerschap moest kleine bootovergangen elimineren door af te schrikken als...",
         "at": "2026-10-14T06:52:57.446588+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-6ce44b153fb8ce7a0dd0e5",
@@ -217,7 +771,8 @@
         "title": "Iran: Politieke strijd verdiept zich naarmate de economische ellende stijgt tijdens de oorlog",
         "summary": "Hardliners verhogen de druk op de Iraanse regering en roepen op tot de verwijdering van minister van Buitenlandse Zaken Abbas Araghchi. De minister van olie heeft ontslag genomen, maar dat doet weinig om de druk op president Masoud Pezeshkian te verlichten.",
         "at": "2026-10-14T06:52:58.458275+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-72373fdc8469d93260644b",
@@ -254,7 +809,8 @@
         "title": "Russische stakingen getroffen belangrijke centrale in Kyiv, Zelensky zegt",
         "summary": "De Oekraïense president zegt dat de ballistisch-raketaanvallen kwamen met \"geen waarschuwing van onze partners.\"",
         "at": "2026-10-14T06:52:59.004178+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-ff05ec65f3c23c4f7f1953",
@@ -292,11 +848,20 @@
         "title": "Rechter breidt toegang tot verboden media CNN, MS Now en Politico uit",
         "summary": "District rechtbank rechter Timothy Kelly was uitspraak nadat de Trump administratie geblokkeerd toegang tot de drie verkooppunten in september Een federale rechter bevolen het Witte Huis op dinsdag te blijven toestaan journalisten van CNN, MS Now en Politico toegang tot het gebouw als de media coalitie een rechtszaak tegen de Trump regering speelt. Timothy Kelly, een rechtbank rechter, had op 24 september voor de nieuwsorganisatie...",
         "at": "2026-10-14T06:53:00.645097+00:00"
-      }
+      },
+      "sourceEvidence": "similar_headlines",
+      "relatedCoverage": [
+        {
+          "source": "Deutsche Welle",
+          "title": "US judge extends media outlets' White House access",
+          "url": "https://www.dw.com/en/us-judge-extends-media-outlets-white-house-access/a-79656346?maca=en-rss-en-all-1573-xml-mrss",
+          "date": "2026-10-14T03:46:00.000Z"
+        }
+      ]
     },
     {
       "id": "RSS-06c51049c71246156ef2d2",
-      "title": "Russia arrests Japanese journalist on alleged espionage",
+      "title": "Russia arrests Japanese journalist on spying charges",
       "summary": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo.",
       "date": "2026-10-14T04:10:49.000Z",
       "firstSeen": "2026-10-14T06:51:13.204Z",
@@ -310,25 +875,28 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 1
+        "reliability": 2
       },
-      "total": 3,
+      "total": 4,
       "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "BBC News"
+        "BBC News",
+        "The Guardian"
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "similar_headlines",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "5601cf52b8ae689ca9d0f5d8",
-        "title": "Rusland arresteert Japanse journalist op vermeende spionage",
+        "sourceHash": "f04a0ee7f061eff04aab04f4",
+        "title": "Rusland arresteert Japanse journalist op spionage aanklacht",
         "summary": "De Hokkaido Shimbun journalist wordt beschuldigd van het verzamelen van informatie over Moskou's defensiecapaciteiten voor Tokio.",
-        "at": "2026-10-14T06:53:01.170433+00:00"
+        "at": "2026-10-14T11:47:07.625016+00:00"
       }
     },
     {
@@ -366,7 +934,8 @@
         "title": "De Iraanse vrouw heeft de doodstraf opgelegd wegens godslastering.",
         "summary": "Rechtengroepen waarschuwen voor het regime van Teheran dat steeds vaker terechtstellingen worden gebruikt om dissidenten te onderdrukken, met minstens 600 mensenrechtengroepen dit jaar hebben de alarmklok geslagen over het toenemende aantal doodstraffen en executies in Iran, na berichten dat een 23-jarige vrouw, Najmeh Amini, over een sociale mediapost. Amini, een boekhouder, wordt vastgehouden in de gevangenis van Vakilabad in de noordoostelijke stad Mashhad. Ze is...",
         "at": "2026-10-14T06:53:02.839382+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-0a8cca9dbeaed25657e3d8",
@@ -403,12 +972,13 @@
         "title": "Oekraïne is bezaaid met landmijnen op een schaal die het laatst gezien is in Vietnam. Hoe kunnen ze worden verwijderd?",
         "summary": "Geconfronteerd met dodelijker bedreigingen, ontmijning groepen komen met nieuwe manieren van werken met behulp van drones en AI Crouched over op haar handen en knieën in een veld van onkruid, Olena Kabanova is graven in de grond. Met een schep en een vaste hand graaft de 58-jarige een nette vierkant rond de plek waar een mijndetector een verdacht voorwerp heeft gezien. Vier jaar geleden werd dit gebied in Oost-Oekraïne bezet door Russische...",
         "at": "2026-10-14T06:53:04.638524+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-c9ccb398e8c0619cfc3237",
       "title": "US judge extends media outlets' White House access",
-      "summary": "A federal judge extended the order that blocks the Trump administration from banning three media outlets from the White House. The outlets have reasonable grounds to think they'll win the case, the judge said.",
+      "summary": "A federal judge extended an order that blocks the Trump administration from banning media outlets from the White House. The outlets have reasonable grounds to think they'll win the case, the judge said.",
       "date": "2026-10-14T03:46:00.000Z",
       "firstSeen": "2026-10-14T06:51:13.204Z",
       "source": "Deutsche Welle",
@@ -433,14 +1003,17 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "similar_headlines",
+      "duplicateOf": "RSS-ff05ec65f3c23c4f7f1953",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "098040bb3183f48ba31403f2",
+        "sourceHash": "98e60c1286c5dfcd35cc8af6",
         "title": "Amerikaanse rechter breidt media outlets 'Wittehuis toegang",
-        "summary": "Een federale rechter verlengde het bevel dat de Trump administratie blokkeert om drie media outlets van het Witte Huis te verbieden. De verkooppunten hebben redelijke redenen om te denken dat ze de zaak zullen winnen, zei de rechter.",
-        "at": "2026-10-14T06:53:05.493087+00:00"
+        "summary": "Een federale rechter verlengde een bevel dat de regering van Trump verhindert om media te verbieden van het Witte Huis. De verkooppunten hebben redelijke redenen om te denken dat ze de zaak zullen winnen, zei de rechter.",
+        "at": "2026-10-14T11:47:08.459568+00:00"
       }
     },
     {
@@ -478,7 +1051,8 @@
         "title": "Bank of America getroffen met $ 1,2 miljard boete voor het witwassen van geld tekortkomingen",
         "summary": "De bank onvoldoende gemarkeerd transacties gekoppeld aan potentiële Chinese witwasnetwerken, de Schatkist zei.",
         "at": "2026-10-14T06:53:05.990573+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-58704160ada9937d1d6aac",
@@ -496,14 +1070,15 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 1
+        "reliability": 2
       },
-      "total": 3,
+      "total": 4,
       "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "The Guardian"
+        "The Guardian",
+        "BBC News"
       ],
       "method": "rule_based_screening",
       "verified": false,
@@ -515,7 +1090,8 @@
         "title": "Rusland arresteert Japanse journalist op beschuldigingen van spionage",
         "summary": "De FSB veiligheidsdienst zei dat verslaggever werd gearresteerd op het eiland Sakhalin, beweerde dat hij informatie verzamelde over Russische verdedigingen Rusland heeft een Japanse journalist gearresteerd op het verre oosten eiland Sakhalin en beschuldigd van spionage, in het laatste teken van toenemende spanningen tussen Moskou en Tokio. Russische minister van Buitenlandse Zaken woordvoerder Maria Zakharova identificeerde de verslaggever als Yuki Imai, van de Hokkaido Shimbun...",
         "at": "2026-10-14T06:53:07.464465+00:00"
-      }
+      },
+      "sourceEvidence": "similar_headlines"
     },
     {
       "id": "RSS-a91145d7cb0f75a1aa61ec",
@@ -552,7 +1128,8 @@
         "title": "Afgestudeerde student beschuldigd van vergiftiging collega en proberen te vluchten naar China gearresteerd op LAX",
         "summary": "Microbioloog Aili Wang, 32, vergiftigde thee van collega in Wyoming die patenten had, aanklagers beweren Een Wyoming microbiologie afgestudeerde student uit China is gearresteerd op beschuldiging dat ze vergiftigde de thee van een collega die patenten had en met wie ze niet kon opschieten, vervolgens probeerde het land te ontvluchten nadat de politie haar ondervroeg. Aili Wang, 32, werd gearresteerd 6 oktober in Los Angeles International...",
         "at": "2026-10-14T06:53:09.068220+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-a129607b7c784f903bc512",
@@ -589,12 +1166,13 @@
         "title": "Houthis lanceert nieuwe raketten in Saoedi-Arabië",
         "summary": "Zowel de Houthis als de Saoedische coalitie voerden aanvallen uit op energie-infrastructuur. Vier mensen raakten gewond door puin van onderschepte raketten in Riyadh. DW heeft het laatste nieuws.",
         "at": "2026-10-14T06:53:09.974837+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-682415106c6cc7b9ba3c34",
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
-      "summary": "Four years after the attacks, Serhii K will appear in court accused of a plot to destroy Russia's gas pipelines to Germany.",
+      "summary": "Four years after the attacks, Serhii K is in court accused of a plot to destroy Russia's gas pipelines to Germany.",
       "date": "2026-10-13T23:42:22.000Z",
       "firstSeen": "2026-10-14T06:51:13.204Z",
       "source": "BBC News",
@@ -607,26 +1185,27 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "BBC News",
-        "The Guardian"
+        "BBC News"
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "80105395dd80b4655d8ed112",
+        "sourceHash": "2583886d1e93465f7ad4dde3",
         "title": "Duitsland zet Oekraïner terecht wegens het opblazen van Nord Stream pijpleidingen",
-        "summary": "Vier jaar na de aanslagen verschijnt Serhii K voor de rechtbank beschuldigd van een complot om de Russische gaspijpleidingen naar Duitsland te vernietigen.",
-        "at": "2026-10-14T06:53:10.628102+00:00"
+        "summary": "Vier jaar na de aanslagen wordt Serhii K beschuldigd van een complot om de Russische gaspijpleidingen naar Duitsland te vernietigen.",
+        "at": "2026-10-14T11:47:09.079112+00:00"
       }
     },
     {
@@ -664,7 +1243,8 @@
         "title": "Ik zou met de TV praten: De betaalde metgezellen brengen warmte naar China's eenzame",
         "summary": "Naarmate de eenzaamheid in China groeit, ontstaat er een nieuwe industrie om gezelschap en steun te bieden.",
         "at": "2026-10-14T06:53:11.144519+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-bb637ece0a5f4eb62f9b62",
@@ -701,11 +1281,12 @@
         "title": "Waarom de eenzamen in China 'tijdelijke kinderen' inhuren",
         "summary": "In China is een nieuwe industrie ontstaan, die de \"loneliness economy\" wordt genoemd.",
         "at": "2026-10-14T06:53:11.848880+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-994246342d5e43ad1ff114",
-      "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "title": "Saudi employee charged with planting recording device in OpenAI office",
       "summary": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
       "date": "2026-10-13T21:42:49.000Z",
       "firstSeen": "2026-10-14T06:51:13.204Z",
@@ -730,14 +1311,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "149b1d9f31c84f1b04244af9",
-        "title": "Saudische man belast met planten 'geavanceerde' opnameapparaat in OpenAI kantoor",
+        "sourceHash": "186825001d7223f8d02842ec",
+        "title": "Saudische werknemer belast met het planten van opnameapparaat in OpenAI kantoor",
         "summary": "De aanklagers zeggen dat het apparaat, verpakt in toiletpapier, werd gevonden in een USB-poort op de achterkant van een TV in een conferentieruimte.",
-        "at": "2026-10-14T06:53:12.638532+00:00"
+        "at": "2026-10-14T11:47:09.793856+00:00"
       }
     },
     {
@@ -775,7 +1358,8 @@
         "title": "Burnham te gast Zelenskyy op nr. 10 in show van rock-solid",
         "summary": "Premier herhaalt dat de Britse steun na de Oekraïense president de laatste ronde van problemen met Donald Trump Andy Burnham zal organiseren Volodymyr Zelenskyy in Downing Street op woensdag als het Verenigd Koninkrijk probeert verder te benadrukken zijn steun voor de Oekraïense president, in tegenstelling tot zijn problemen met Donald Trump. De Britse minister-president zei zijn boodschap aan Zelenskyy en zijn land zou zijn: ...",
         "at": "2026-10-14T06:53:14.270396+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-b3c57356233e53a0f0555f",
@@ -812,12 +1396,13 @@
         "title": "OpenAI zegt werknemer gevangen planten afluisterapparaat",
         "summary": "Een Saudische onderdaan van het kunstmatige inlichtingenlab is gearresteerd nadat een afluisterapparaat in een conferentieruimte van het bedrijf was geplaatst.",
         "at": "2026-10-14T06:53:14.884202+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-723fdd12074bdad55a5d0a",
-      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
-      "summary": "The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa.",
+      "title": "Houthi missile hits Aramco building after Saudi-led coalition hits Yemen fuel depot",
+      "summary": "The Saudi energy ministry says the Houthi attack caused a \"limited fire\" at Aramco's headquarters complex in Dhahran.",
       "date": "2026-10-13T20:02:15.000Z",
       "firstSeen": "2026-10-13T21:12:47.035Z",
       "source": "BBC News",
@@ -827,28 +1412,30 @@
       "region": "midden-oosten",
       "status": "automatic_unverified",
       "score": {
-        "military": 0,
-        "belgium": 0,
+        "military": 2,
+        "belgium": 1,
         "novelty": 2,
         "reliability": 1
       },
-      "total": 3,
+      "total": 6,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
       "corroboratingSources": [
         "BBC News"
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "6f0e02f725a42118384ecf47",
-        "title": "Raketten onderschept nabij Riyadh nadat Saoedische coalitie Jemen brandstofdepot raakt",
-        "summary": "De Saoedische coalitie in Jemen sloeg een brandstofdepot in bij de door Houthi gecontroleerde hoofdstad Sanaa.",
-        "at": "2026-10-13T21:14:32.000382+00:00"
+        "sourceHash": "ebcf6ff2ec3a4b088099c190",
+        "title": "Houthi raket raakt Aramco gebouw na Saudi-led coalitie raakt Jemen brandstof depot",
+        "summary": "De Saoedische energie ministerie zegt dat de Houthi aanval veroorzaakte een \"beperkt vuur\" op Aramco's hoofdkwartier complex in Dhahran.",
+        "at": "2026-10-14T11:47:10.557395+00:00"
       }
     },
     {
@@ -886,12 +1473,13 @@
         "title": "Uitbreiding: EU opent toetredingsonderhandelingen met Oekraïne over interne markt, concurrentievermogen en inclusieve groei",
         "summary": "De EU en Oekraïne hebben onderhandelingen geopend over het EU-acquis inzake interne markt, concurrentievermogen en inclusieve groei.",
         "at": "2026-10-13T21:14:32.615948+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-3bb4e3718ecf4e7ff84cea",
       "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
-      "summary": "Guilfoyle the allegations of improper conduct are \"false\" and being ambassador was the \"honour of a lifetime\".",
+      "summary": "Guilfoyle said the allegations of improper conduct were false and that being ambassador was the \"honour of a lifetime\".",
       "date": "2026-10-13T19:23:28.000Z",
       "firstSeen": "2026-10-13T21:12:47.035Z",
       "source": "BBC News",
@@ -904,26 +1492,27 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "BBC News",
-        "Deutsche Welle"
+        "BBC News"
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "6365a7cd0a6c2199ee0f6c72",
+        "sourceHash": "fbe14b182c537bd880cd33fa",
         "title": "Trump ousts Kimberly Guilfoyle als Amerikaanse ambassadeur naar Griekenland na corruptie beschuldigingen",
-        "summary": "Guilfoyle de beschuldigingen van ongepast gedrag zijn \"vals\" en ambassadeur zijn was de \"eer van je leven.\"",
-        "at": "2026-10-13T21:14:33.241536+00:00"
+        "summary": "Guilfoyle zei dat de beschuldigingen van ongepast gedrag vals waren en dat ambassadeur zijn de \"eer van je leven\" was.",
+        "at": "2026-10-14T11:47:11.245989+00:00"
       }
     },
     {
@@ -961,7 +1550,8 @@
         "title": "Voer de Zachbot: Trump",
         "summary": "Katie Zacharia's eerste briefing was afschuwelijk... tenminste haar voorganger had haar propaganda goed afgeleverd. , de nieuwe pers secretaresse van het Witte Huis, maakte haar debuut op het podium op dinsdag met alle warmte, wijsheid en politieke behendigheid Zacharia was allemaal gestilde levering, nerveuze tics en gebrek aan oogcontact. Met een griezelig gebrek aan emotie, ze serveerde pro-Trump talking punten, nam alleen...",
         "at": "2026-10-13T21:14:35.048575+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-53be8841f3114cf8fbcf85",
@@ -998,7 +1588,8 @@
         "title": "Duitsland nieuws: linkse coalitiebesprekingen in Berlijn breken af",
         "summary": "De EPD's en de groenen in Berlijn hebben de verkennende coalitiegesprekken met de Linkse Partij stopgezet temidden van een geschil over het Israëlische beleid en antisemitisme. DW heeft meer.",
         "at": "2026-10-13T21:14:35.856426+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-3a20c6565540c3e73b3174",
@@ -1035,12 +1626,13 @@
         "title": "Oekraïne bondgenoten in Polen na Starlink sabotage, Trump diesel deal",
         "summary": "De Duitse Johann Wadephul zei hybride percelen zoals de Starlink brand toonde Europa was \"in Rusland's vizier.\" De Britse Ed Miliband zei dat Trump's Russische diesel deal leidde tot een \"zeer moeilijke paar dagen\" diplomatiek.",
         "at": "2026-10-13T21:14:36.807217+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-91d56252ef5545c26a1456",
       "title": "Ukraine and the US: What's next after Trump's diesel deal with Russia?",
-      "summary": "Donald Trump plans to allow the purchase of Russian diesel, drawing criticism at home and abroad. What is behind the US president’s decision and what should Ukraine do next? DW spoke with experts.",
+      "summary": "Donald Trump plans to allow the purchase of Russian diesel, drawing criticism at home and abroad. What is behind the US president's decision and what should Ukraine do next? DW spoke with experts.",
       "date": "2026-10-13T18:51:00.000Z",
       "firstSeen": "2026-10-13T21:12:47.035Z",
       "source": "Deutsche Welle",
@@ -1053,26 +1645,27 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "Deutsche Welle",
-        "BBC News"
+        "Deutsche Welle"
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "389cdd700e50ce3ff1083808",
+        "sourceHash": "5c530ea17df125a092e1a051",
         "title": "Oekraïne en de VS: Wat is de volgende stap na Trump's diesel deal met Rusland?",
-        "summary": "Donald Trump is van plan om de aankoop van Russische diesel toestaan, het tekenen van kritiek in binnen-en buitenland. Wat zit er achter de Amerikaanse president en wat moet Oekraïne nu doen? DW sprak met experts.",
-        "at": "2026-10-13T21:14:37.656130+00:00"
+        "summary": "Donald Trump is van plan om de aankoop van Russische diesel toestaan, het tekenen van kritiek in binnen-en buitenland. Wat zit er achter de beslissing van de Amerikaanse president en wat moet Oekraïne nu doen? DW sprak met experts.",
+        "at": "2026-10-14T11:47:12.175403+00:00"
       }
     },
     {
@@ -1110,7 +1703,8 @@
         "title": "Rechter beveelt Trump administratie om het werk aan historische DC golfbaan stop te zetten",
         "summary": "District rechter Ana Reyes stopt boomhakken op de Oost-Potomac golfbaan tot 26 oktober, en nu vereist voorafgaande kennisgeving voordat het maken van koerswijzigingen Amerikaanse district rechter Ana Reyes op dinsdag bestelde een halt toe te brengen aan boomhakken op de Oost-Potomac golfbaan tot 26 oktober, zet een op het werk op de historische Washington DC cursus die deel is geweest van Donald Trump Reyes...",
         "at": "2026-10-13T21:14:39.126440+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-c82a8a05bc3890ff4636a0",
@@ -1147,7 +1741,8 @@
         "title": "Far-right en Iran voegen toe aan de mix van terreurdreigingen Britse geconfronteerd met",
         "summary": "Jaarlijkse update van MI5 chief benadrukte een complexe cocktail die real-life gevolgen zou kunnen hebben voor Groot-Brittannië MI5 De terreurdreiging is diverser geworden, met extreemrechtse anti-migrantendreigingen in opkomst, terwijl Iran nu stevig naast Rusland is opgekomen als een land dat gewelddadige en dodelijke complotten wil plegen in het Verenigd Koninkrijk. Er is geen wet...",
         "at": "2026-10-13T21:14:40.793255+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-9f6ccc1e2d409b493683a1",
@@ -1184,7 +1779,8 @@
         "title": "Saudi-Arabië slaat olie depots in Jemen en zegt raketten gelanceerd richting de locatie van Saudi-Aramco HQ",
         "summary": "Burgers gewaarschuwd om het doel gebied in de buurt van Sana De aanvallen op beide...",
         "at": "2026-10-13T21:14:41.956355+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-bd235f6ff55be3cbb4a144",
@@ -1221,7 +1817,8 @@
         "title": "Iran op zoek naar 'hardere doelen' voor aanvallen in het buitenland, Groot-Brittannië waarschuwt",
         "summary": "De waarschuwing van het hoofd van de Britse binnenlandse veiligheidsdienst komt na PM Burnham zei dat een poging tot plot op een luchtmachtbasis waar Amerikaanse bommenwerpers werden \"bijna zeker\" gecoördineerd in Teheran.",
         "at": "2026-10-13T21:14:42.779938+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-a68718034a2d8fb36a3a9d",
@@ -1258,7 +1855,8 @@
         "title": "Binnen Katie Zacharia's briefing van het Witte Huis",
         "summary": "De BBC's Sarah Smith was in de kamer en beschrijft Zacharia's optreden en het moment dat ze het nieuws vertelde over Kimberly Guilfoyle die werd gevraagd ontslag te nemen.",
         "at": "2026-10-13T21:14:43.552527+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-f1dbf53724ced89a6eb568",
@@ -1295,7 +1893,8 @@
         "title": "De militaire strijd van Saoedi-Arabië tegen Houthi-aanvallen",
         "summary": "Houthi-aanvallen op luchthavens en energiefaciliteiten zetten Saoedi-Arabië onder druk. Zou een internationaal militair offensief van Saoedi-Arabië kunnen slagen tegen de door Iran gebonden Houthi-militie in Jemen?",
         "at": "2026-10-13T16:27:28.226413+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-780c2373974356bf43bcc5",
@@ -1332,7 +1931,8 @@
         "title": "Kimberly Guilfoye: VS ambassadeur naar Griekenland neemt ontslag temidden van wangedrag beschuldigingen",
         "summary": "Kimberly Guilfoyle is afgetreden als Amerikaanse ambassadeur in Griekenland. President Trump zei eerder dat hij ongelukkig was met haar te midden van berichten van een omkoping schandaal en ethische schendingen.",
         "at": "2026-10-13T16:27:29.137777+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-291095c2d1fdbb68f2a8d7",
@@ -1369,7 +1969,8 @@
         "title": "MI5 chief waarschuwt voor bedreigingen voor het Verenigd Koninkrijk vanuit Rusland, Iran en AI",
         "summary": "Sir Ken McCallum zegt dat operaties ter bestrijding van terrorisme en staatsdreigingen nu ongeveer van een \"gelijke schaal\" zijn.",
         "at": "2026-10-13T21:14:44.182235+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d2f5f5a4df7f2041903a0c",
@@ -1406,7 +2007,8 @@
         "title": "DR Congo: een stap naar M23 roept vragen op over vrede",
         "summary": "Voormalig president van DR Congo Joseph Kabila heeft zich aangesloten bij een nieuw politiek-militaire front dat de door Rwandese gesteunde AFC/M23-coalitie verenigt. Analisten zeggen dat het de oppositie tegen president Felix Tshisekedi kan veranderen.",
         "at": "2026-10-13T16:27:30.126326+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-14954086efcb046b5c84ef",
@@ -1443,7 +2045,8 @@
         "title": "Rusland probeerde zich te mengen in Brexit referendum, het hoofd van MI5 bevestigt",
         "summary": "Ken McCallum zegt dat Kremlin via social media en tv-berichten probeerde om de stemming te beïnvloeden, maar dat Rusland weinig invloed had op het Brexit referendum door middel van sociale media en televisierapporten, zei het hoofd van MI5, maar hij voegde eraan toe dat het Kremlin geen invloed had op het resultaat. Ken McCallum steunde, die de kwestie de afgelopen twee dagen aan de orde stelde, hoewel hij zei verder te gaan met de discussie...",
         "at": "2026-10-13T16:27:31.788087+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-b26f094ea80fe2f440790b",
@@ -1480,7 +2083,8 @@
         "title": "MI5 chief Ken McCallum bevestigt dat Rusland zich bemoeide met Brexit referendum, maar zegt dat het weinig impact had.",
         "summary": "Hij voerde aan dat er geen bewijs was om aan te geven dat het resultaat van de Brexit-stemming was beïnvloed als gevolg van de inspanning Zia Yusuf , Hervorming van de Britse binnenlandse zaken woordvoerder, heeft gezegd dat hij het niet eens is met zijn collega Suella Braverman. Gevraagd over haar standpunten in een interview, Yusuf zei: Naar mijn mening is Ashley Cole de beste Engelse fullback in de geschiedenis, en ik zal geen...",
         "at": "2026-10-13T16:27:33.682919+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-6f53e5239e0406943a5d3f",
@@ -1498,15 +2102,14 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "Deutsche Welle",
-        "BBC News"
+        "Deutsche Welle"
       ],
       "method": "rule_based_screening",
       "verified": false,
@@ -1518,7 +2121,8 @@
         "title": "Het Witte Huis vraagt de Amerikaanse ambassadeur naar Griekenland Kimberly Guilfoyle om af te treden temidden van wangedrag beschuldigingen",
         "summary": "Trump heeft eerder gezegd dat hij ongelukkig was met Guilfoyle temidden van rapporten van een omkoping schandaal en ethische schendingen.",
         "at": "2026-10-13T16:27:34.484661+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-f8e452bfe008f124a5241b",
@@ -1555,7 +2159,8 @@
         "title": "VS ambassadeur in Griekenland Kimberly Guilfoye neemt ontslag temidden van wangedrag beschuldigingen",
         "summary": "Kimberly Guilfoyle is afgetreden als Amerikaanse ambassadeur in Griekenland. President Trump zei eerder dat hij ongelukkig was met haar te midden van berichten van een omkoping schandaal en ethische schendingen.",
         "at": "2026-10-13T16:27:35.355344+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-4f6477a9e5ebee7eead58f",
@@ -1592,7 +2197,8 @@
         "title": "Kimberly Guilfoyle vroeg om ontslag als ambassadeur na rapporten ze vroeg Trump donor om de rekening te betalen",
         "summary": "Beslissing over de Amerikaanse ambassadeur naar Griekenland aangekondigd door het Witte Huis nadat Trump en Rubio waren naar verluidt woedend over beschuldigingen Kimberly Guilfoyle is gevraagd om af te treden als Amerikaanse ambassadeur in Griekenland, na weken van berichten dat ze verzocht betaling van een Trump donor in ruil voor toegang tot de administratie ambtenaren. De beslissing, aangekondigd door het Witte Huis op dinsdagmorgen, eindigt de diplomatieke carrière van een van...",
         "at": "2026-10-13T16:27:36.904379+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-42abfce8cf9e42e898f5e6",
@@ -1629,7 +2235,8 @@
         "title": "Geallieerden waarschuwden Kyiv niet voor Russische ballistische raketten, zegt Zelenskyy",
         "summary": "Oekraïnse president... opmerkingen over de aanvallen komen nadat de VS dreigden te stoppen met het delen van informatie Oekraïne... ontving geen vroege waarschuwing van haar partners... over een aanval van Russische ballistische raketten op Kyiv... waarin vijf raketten civiele infrastructuur raakten, zei Volodymyr Zelenskyy op dinsdag. De Oekraïense president als zeer verachtelijk. Hij benadrukte dat het ontvangen van inlichtingen uit Oekraïne...",
         "at": "2026-10-13T16:27:38.442167+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-812f4788888a1a0fd17694",
@@ -1666,7 +2273,8 @@
         "title": "50 jaar vanaf Arts Britain Ignores: hoeveel is er veranderd voor zwarte en Aziatische kunstenaars?",
         "summary": "Conferentie ter verkenning van de erfenis van Naseem Khan uit 1976 rapport over de uitsluiting van etnische minderheden kunstenaars Het is 50 jaar geleden dat culturele historicus Naseem Khan een uitdaging aan de Britse kunsten establishment voor het eerst werd gepubliceerd, en de vraag wie en wat telt als Brits blijft worden betwist. De Arts Britain Ignores, een baanbrekend rapport uit 1976, in opdracht van organisaties zoals de toenmalige Ar...",
         "at": "2026-10-13T16:27:40.134507+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-7949ed2f7a7cd4441e93c1",
@@ -1703,7 +2311,8 @@
         "title": "Ex-president benoemd tot leider van de nieuwe rebellencoalitie van DR Congo",
         "summary": "Joseph Kabila had eerder ontkend banden te hebben met de M23 rebellen, die veel van Oost-DR Congo controleren.",
         "at": "2026-10-13T16:27:40.767414+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-8fbcb34bf24eac7d5b187d",
@@ -1740,7 +2349,8 @@
         "title": "Heeft Zelensky gelijk om te zeggen dat de stakingen Russische bots hebben uitgeschakeld?",
         "summary": "Experts zeggen dat er geen bewijs is dat Russische trollen zijn getroffen door de aanvallen van Oekraïne.",
         "at": "2026-10-13T16:27:41.388485+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-29b075dba4ab5ea7e13da9",
@@ -1777,7 +2387,8 @@
         "title": "Nord Stream: Proef van Oekraïense aanval verdachte begint in Duitsland",
         "summary": "Een Oekraïense burger staat voor de rechtbank in Hamburg, beschuldigd van het aanvallen van de Nord Stream gaspijpleidingen in 2022. Het roept vragen op over de mogelijke rol van Kyiv in de explosies. Ook de Duitse steun aan Oekraïne wordt onderzocht.",
         "at": "2026-10-13T16:27:42.198725+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-df04a37bb70f559f7d8b4f",
@@ -1814,12 +2425,13 @@
         "title": "Nord Stream: Duitsland zet verdachte Oekraïense pijpleiding saboteur terecht",
         "summary": "Een Oekraïense burger staat voor de rechtbank in Hamburg, beschuldigd van het aanvallen van de Nord Stream gaspijpleidingen in 2022. Het roept vragen op over de mogelijke rol van Kyiv in de explosies. Ook de Duitse steun aan Oekraïne wordt onderzocht.",
         "at": "2026-10-13T16:27:43.009945+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-06700bbe948b4a02bb4a10",
       "title": "Critics warn of espionage risks as Slovakia restores military-diplomatic representation with Russia",
-      "summary": "Slovakia is restoring military-diplomatic relations with Russia for the first time since 2022. The government has defended the move; critics warn of espionage risks and further damage to trust within NATO.",
+      "summary": "Slovakia is restoring military-diplomatic relations with Russia for the first time since 2022. The government has defended the move but critics warn of espionage risks and further damage to trust within NATO.",
       "date": "2026-10-13T12:04:00.000Z",
       "firstSeen": "2026-10-13T15:15:22.367Z",
       "source": "Deutsche Welle",
@@ -1843,14 +2455,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "9cf063f93bc7bc05553af277",
+        "sourceHash": "e021d05cc85bb30556284dc3",
         "title": "Critici waarschuwen voor spionagerisico's als Slowakije herstelt militaire diplomatieke vertegenwoordiging met Rusland",
-        "summary": "Slowakije herstelt voor het eerst sinds 2022 de militaire diplomatieke betrekkingen met Rusland. De regering heeft de beweging verdedigd; critici waarschuwen voor spionagerisico's en verdere schade aan het vertrouwen binnen de NAVO.",
-        "at": "2026-10-13T16:27:43.868941+00:00"
+        "summary": "Slowakije herstelt voor het eerst sinds 2022 de militaire diplomatieke betrekkingen met Rusland. De regering heeft de beweging verdedigd, maar critici waarschuwen voor spionagerisico's en verdere schade aan het vertrouwen binnen de NAVO.",
+        "at": "2026-10-14T11:47:13.089715+00:00"
       }
     },
     {
@@ -1888,7 +2502,8 @@
         "title": "Wereldnieuws in het kort: West-Afrikaanse migrantenovergangen, Argentinië neemt het Verenigd Koninkrijk naar maritieme rechtbank, landbouw in Gaza, geestelijke gezondheid update",
         "summary": "Minder mensen uit West-Afrika bereiken Europa over zee, maar de reis is niet veiliger geworden, zei het VN-migratieagentschap (IOM) dinsdag.",
         "at": "2026-10-13T21:14:45.009427+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-86f8d0c3fb176e2a23aa5b",
@@ -1925,7 +2540,8 @@
         "title": "Nood voor de VN is nooit groter geweest, zegt de VN-chef, voorstellen slanker $3,3 miljard budget voor 2027",
         "summary": "Temidden van klimaatverstoring, een AI-revolutie, oorlog en groeiende honger, is de behoefte aan de Verenigde Naties nooit groter geweest, aldus secretaris-generaal António Guterres op dinsdag, met een budgetvoorstel van $3,3 miljard voor volgend jaar, een verlaging van $40,8 miljoen.",
         "at": "2026-10-13T21:14:46.201118+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-38eb18e52567643e615e35",
@@ -1962,7 +2578,8 @@
         "title": "Oekraïne: Bewoners gedood en tientallen gewonden bij aanvallen op Kharkiv en Kyiv",
         "summary": "Russische aanvallen in de afgelopen dagen op Oekraïne hebben twee grootste steden opnieuw doden en gewonden burgers, beschadigde huizen en civiele infrastructuur, de VN hulp coördinatie kantoor (OCHA) zei op dinsdag.",
         "at": "2026-10-13T21:14:46.956319+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-51f44e1506a640788b1d25",
@@ -1999,7 +2616,8 @@
         "title": "Jemen: Houthi-belegering, cholera-uitbraak en hulpsneden zetten burgers in het vizier",
         "summary": "Jemens zuidwestelijke stad Taiz wordt geconfronteerd met een ontredderde humanitaire crisis als escalerende spanningen zijn dramatisch het verhogen van de voedselprijzen en het veroorzaken van tekorten aan voorraden, de VN woordvoerder zei op dinsdag.",
         "at": "2026-10-14T06:53:15.895066+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-b3a6c416413c46cd7a74f9",
@@ -2036,7 +2654,8 @@
         "title": "Houthis en Saoedi's slaan elkaar in de laatste escalatie.",
         "summary": "De gevechten tussen door Iran gesteunde rebellen en Saoedi-Arabië zijn voortgezet, waardoor de economie en de veiligheid van het koninkrijk negatief zijn beïnvloed. Toch zijn Saoedische ambtenaren gestopt met het waarschuwen voor Houthi-aanvallen om angsten te kalmeren.",
         "at": "2026-10-13T16:27:44.793935+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-1133ed9cb913ff9511f943",
@@ -2054,15 +2673,14 @@
         "military": 3,
         "belgium": 2,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 9,
-      "category": "review",
-      "belowReason": "Verdere beoordeling vereist.",
+      "total": 8,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Mogelijke Europese economische gevolgen; specifieke Belgische impact nog niet vastgesteld.",
       "corroboratingSources": [
-        "The Guardian",
-        "BBC News"
+        "The Guardian"
       ],
       "method": "rule_based_screening",
       "verified": false,
@@ -2074,7 +2692,8 @@
         "title": "Zelenskyy zegt dat Rusland geen gehoor gaf. Trumps roepen op tot een staakt-het-vuren en gaven geen vroegtijdige waarschuwing voordat stakingen op Kyiv",
         "summary": "De president van Oekraïne zegt dat zijn land twee dagen na de aankondiging van het staakt-het-vuren van Trump een staking op de Russische olieraffinaderijen heeft stopgezet · Op bevroren Russische activa, zegt Polen. Sikorski dat het gebruik van bevroren Russische activa een ingewikkeld probleem is, maar neemt een zeer duidelijk standpunt in antwoord op elke suggestie om ze terug te geven aan",
         "at": "2026-10-13T16:27:46.385255+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d4dd94774c0b693d1dce2e",
@@ -2111,7 +2730,8 @@
         "title": "Is het straffen van de arme Trump?",
         "summary": "De pre-midterm defenseratie van ACA-inschrijvingen ziet eruit als politieke waanzin maar de president lijkt te geloven dat het slaan van arme mensen zou kunnen werken voor hem · Er is een manische kwaliteit aan Donald Trump",
         "at": "2026-10-13T16:27:47.627429+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-0883ac512f2e2de65b15b9",
@@ -2119,19 +2739,19 @@
       "region": "overig",
       "topic": "conflict",
       "title": "UK asks Interpol to reject Argentina’s ‘politically motivated’ requests for Falklands oil arrests",
-      "summary": "Exclusive: Caution urged over Javier Milei government’s ‘red notice’ requests for arrest of individuals linked to oil project · Britain has appealed to Interpol to reject Argentina’s requests for the arrest of individuals involved in a large oil project off the Falkland Islands. · With tensions over the sovereignty of the British overseas territor",
+      "summary": "Exclusive: Caution urged over Javier Milei government’s ‘red notice’ requests for arrest of individuals linked to oil project Britain has appealed to Interpol to reject Argentina’s requests for the arrest of individuals involved in a large oil project off the Falkland Islands. With tensions over the sovereignty of the British overseas territory reaching levels not seen since the war with Argentina in 1982, UK offici…",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/uk-news/2026/oct/13/britain-interpol-reject-argentina-falkland-islands-arrests",
       "firstSeen": "2026-10-13T11:22:51.075Z",
       "status": "automatic_unverified",
       "official": false,
       "score": {
-        "military": 0,
+        "military": 1,
         "belgium": 0,
         "novelty": 2,
         "reliability": 1
       },
-      "total": 3,
+      "total": 4,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -2140,14 +2760,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "d55867a2e9b4a2da2d43a959",
+        "sourceHash": "47f641ab3f14789ffbe7c318",
         "title": "Het Verenigd Koninkrijk vraagt Interpol om Argentinië te verwerpen...",
-        "summary": "Exclusief: Voorzichtigheid bij de regering van Javier Milei vraagt om arrestatie van personen die betrokken zijn bij een olieproject · Groot-Brittannië doet een beroep op Interpol om verzoeken van Argentinië om arrestatie van personen die betrokken zijn bij een groot olieproject buiten de Falklandeilanden af te wijzen. · Met spanningen over de soevereiniteit van de Britse overzeese territor",
-        "at": "2026-10-13T16:27:49.051134+00:00"
+        "summary": "Exclusief: Waarschuwing bij de regering van Javier Milei: verzoeken om arrestatie van personen in verband met olieproject Groot-Brittannië heeft Interpol opgeroepen om Argentinië's verzoeken tot arrestatie van personen die betrokken zijn bij een groot olieproject van de Falklandeilanden te verwerpen. Met spanningen over de soevereiniteit van het Britse overzeese gebied die geen niveau bereikten sinds de oorlog met Argentinië in 1982, Groot-Brittannië...",
+        "at": "2026-10-14T11:47:14.681234+00:00"
       }
     },
     {
@@ -2185,7 +2807,8 @@
         "title": "Bulgarije roept Russische ambassadeur na schip zinkt in Zwarte Zee drone aanval",
         "summary": "Elf bemanningsleden worden vermist nadat een koopvaardijschip 's nachts is gezonken, zeggen lokale functionarissen.",
         "at": "2026-10-13T16:27:49.610555+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-7a42fa955e0fbb6a697b52",
@@ -2222,7 +2845,8 @@
         "title": "Eerste ding: Democratische leiders veroordelen de federale inval op Ilhan Omar als ze belooft niet het zwijgen op te leggen",
         "summary": "Minnesota congreslid bekritiseerde inval als poging van Trump-administratie om politieke vijanden te richten en rechtshandhaving te wapenen. En wat moet er gedaan worden aan het wereldrecord in de marathon van de vrouwen? Goedemorgen. Ilhan Omar heeft gezegd dat ze niet zal worden",
         "at": "2026-10-13T16:27:50.780661+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-a9a193d01b61bcec723567",
@@ -2259,7 +2883,8 @@
         "title": "Trump richt Ilhan Omar op de rally na inval op haar huis.",
         "summary": "President zegt Somalië, de geboorteplaats van het Democratische Congreslid van Minnesota, is een van de slechtste landen op de planeet",
         "at": "2026-10-13T16:27:51.448581+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-41f1b1d51f2a574b3c2daf",
@@ -2296,7 +2921,8 @@
         "title": "Immigratieagenten doorzoeken congreslid Ilhan Omar's huis",
         "summary": "Omar, een uitgesproken Trump criticus, zei dat de zoektocht was \"een poging om politieke vijanden te richten\" en ze \"zullen niet het zwijgen worden opgelegd.\"",
         "at": "2026-10-13T16:27:52.128890+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-f895ac6630c9b12b8a3c0e",
@@ -2333,7 +2959,8 @@
         "title": "Bulgarije veroordeelt drone-aanvallen in de Zwarte Zee naarmate de Russische oorlog in Oekraïne overloopt naar Oost-Europa",
         "summary": "Bulgarije heeft de afgelopen week de tweede golf van droneaanvallen op koopvaardijschepen voor zijn kust gezien. Rusland wordt ervan beschuldigd zich herhaaldelijk op civiele vrachtschepen in het gebied te richten.",
         "at": "2026-10-13T16:27:53.016119+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-da63dc5c465266d88d9560",
@@ -2370,7 +2997,8 @@
         "title": "Miljoenen ontvangers van medische hulp om vanaf 1 januari te kunnen voldoen aan draconische eisen",
         "summary": "Trump Het is een datum houden Amerikaanse zorgverleners up 's nachts: 1 januari 2027. · Als de tussentijdse verkiezingen beginnen, iedereen van ziekenhuis leiders en patiënten pleiten",
         "at": "2026-10-13T16:27:54.183044+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d345635f31312ac48eb8f1",
@@ -2407,7 +3035,8 @@
         "title": "Britse vakantie vraag kan hebben pieken te midden van de kosten van levensonderhoud knijp, zegt reisindustrie",
         "summary": "Spanje blijft de populairste bestemming als Britten boek later in de hoop op betere aanbiedingen, Abta rapport vindt · Business live",
         "at": "2026-10-13T16:27:55.049207+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-0fa2380f51589013b16c31",
@@ -2444,7 +3073,8 @@
         "title": "Farage ontkent dat Reform troepen kleine boten zouden laten schieten na Jenrick.",
         "summary": "Partijleider zegt dat Jenrick... commentaar misvatting, nadat MP zei Royal Marines zou worden toegestaan om te schieten op die op boten.",
         "at": "2026-10-13T16:27:55.988035+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-c3ae3d6240491c6346ef60",
@@ -2481,7 +3111,8 @@
         "title": "Duitsland's China berekening verschuift als invoerdruk eclips exportvoordelen",
         "summary": "Duitsland heeft zich lang verzet tegen hardere actie tegen China, bang voor vergelding. Maar de toenemende druk op de belangrijkste industrieën heeft Berlijn ertoe aangezet om te streven naar sterkere handelsbeschermingsbevoegdheden van de EU om haar industriële basis te beschermen.",
         "at": "2026-10-13T16:27:56.908865+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-9fa7d260484c8b3f6c8f01",
@@ -2518,7 +3149,8 @@
         "title": "Wat houdt de Schengenambities van Cyprus tegen?",
         "summary": "De Europese Commissie zegt dat Cyprus klaar is om toe te treden tot het Schengengebied. De kwestie van de divisie van het eiland en de Britse militaire bases zou echter nog steeds de weg naar de Europese zone zonder grenzen kunnen bemoeilijken.",
         "at": "2026-10-13T16:27:57.720019+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-85ed3d77cb5a5d27d8c06c",
@@ -2555,7 +3187,8 @@
         "title": "Dinsdagbriefing: Kan Burnham Engeland terugnemen naar de EU?",
         "summary": "In de nieuwsbrief vandaag: De minister-president roept op tot nauwere banden met de EU, maar wat kan dit betekenen? Goedemorgen. Na een vakantie doorgebracht contracteren kinderkamer insecten van een 11-maand-oude, is het goed om terug te keren. Gisteren markeerde Andy Burnham zijn eerste dag terug na de partijconferentie door te pleiten voor nauwere betrekkingen met de EU en",
         "at": "2026-10-13T16:27:59.169496+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-ebf339358c81ac7d7193df",
@@ -2592,7 +3225,8 @@
         "title": "Waar de Amerikaanse tussentijdse verkiezingen zullen worden gewonnen en verloren",
         "summary": "Een diepgaande blik op de belangrijkste peilingen, races en kwesties voorafgaand aan een verkiezing die Trumps laatste twee jaar zal definiëren als president.",
         "at": "2026-10-13T16:27:59.726218+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-157b5c5b02cd66606f3634",
@@ -2629,7 +3263,8 @@
         "title": "Rusland's aanval vermogen is gebroken, Kyiv's voormalige top generaal vertelt BBC",
         "summary": "In zijn eerste interview sinds hij van zijn post werd gedwongen, spreekt Gen Syrskyi over de toekomst van Oekraïne in de oorlog.",
         "at": "2026-10-13T16:28:00.344550+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-0202ae2f375421a155ade9",
@@ -2666,7 +3301,8 @@
         "title": "De Saoedische minister belooft 'ernstige reactie' op de aanvallen van Houthi op luchthavens",
         "summary": "Het komt nadat de gewapende groep Riyadh's internationale luchthaven raakte en een andere faciliteit, waarbij 13 mensen werden gedood, in een aanzienlijke escalatie.",
         "at": "2026-10-13T16:28:01.037483+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-2dfc2d8fe8c905cfa0dc4e",
@@ -2703,7 +3339,8 @@
         "title": "Orkaan Simon en Tropische storm Rachel doden vijf mensen aan de Mexicaanse Pacifische kust",
         "summary": "Beveiligingstroepen gebruiken helikopters om tientallen mensen te redden als de twee stormen schade infrastructuur en veroorzaken flits overstromingen Ten minste vijf mensen zijn gestorven nadat orkaan Simon en Tropische storm Rachel verpletterden Mexico's Pacifische kust, waardoor overstromingen die bomen en elektriciteitspalen omlaag, geblokkeerde wegen en overstroomde huizen. Simon eiste het leven van een 71-jarige man die stierf toen een muur instortte in Chilpancing...",
         "at": "2026-10-13T16:28:02.715210+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d3d86283ba9c7eb9cf859e",
@@ -2740,7 +3377,8 @@
         "title": "BBC's Orla Guerin reist met Jemen's zuidelijke nationale veiligheidstroepen door woestijnslagveld",
         "summary": "Orla Guerin reisde door Jemen, met krachten die loyaal waren aan haar internationaal erkende regering, naar een afgelegen woestijnslagveld waar Houthi-rebellen enkele dagen geleden werden losgelaten.",
         "at": "2026-10-13T16:28:03.629098+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-858a145164c4b0536cbb2c",
@@ -2777,7 +3415,8 @@
         "title": "Zes Oekraïense energie sites getroffen door Rusland sinds Trump aangekondigd staakt-het-vuren, Zelensky zegt",
         "summary": "Ondanks de aankondiging van de Amerikaanse president van energie-infrastructuur zou niet gericht stakingen zijn voortgezet, zegt Oekraïne.",
         "at": "2026-10-13T16:28:04.254997+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-4725a39aeee2a5e75254c2",
@@ -2814,7 +3453,8 @@
         "title": "Analyse: Trump's wereldwijde hoofdpijn verergeren weken voor cruciale verkiezingen",
         "summary": "Naarmate de verkiezingsdag nadert, kijkt de president in het buitenland naar hulp bij een dringend huishoudelijk probleem.",
         "at": "2026-10-13T16:28:04.765114+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-8e6d2a07fa9c13d91ddcfd",
@@ -2851,7 +3491,8 @@
         "title": "Waarom Moskou blijft strak op Trump's energie staakt-het-vuren",
         "summary": "Terwijl Volodymyr Zelensky van Oekraïne suggereert dat hij een staakt-het-vuren voor energie-infrastructuur zou ondertekenen, heeft Rusland weinig gezegd.",
         "at": "2026-10-13T16:28:05.408866+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-28aa7b9571c1a22188fab6",
@@ -2888,7 +3529,8 @@
         "title": "UK: Iran 'zeer waarschijnlijk' achter RAF Fairford incident",
         "summary": "Premier Andy Burnham vertelde het parlement dat er \"sterke aanwijzingen\" waren voor Iraanse betrokkenheid. De regering riep de ambassadeur van Iran op. De schrik bij RAF Fairford leidde tot de terugtrekking van USAF B-1 zware bommenwerpers.",
         "at": "2026-10-13T16:28:06.369350+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-3ddbb7bafbd420b9114839",
@@ -2925,7 +3567,8 @@
         "title": "Honderden Franse supermarkten getroffen door een cyberaanval die koelsystemen ontdooide",
         "summary": "Honderden Franse supermarkten zagen hun koelsystemen ontdooien, tonnen bevroren voedsel bederven. De ongekende aanval heeft ernstige vragen doen rijzen over voedselzekerheid in heel Europa.",
         "at": "2026-10-13T16:28:07.119533+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-6568378aad0562bfaa3246",
@@ -2962,7 +3605,8 @@
         "title": "Polen meldt arrestaties van 2 Turkse burgers in Duitsland in verband met brand in Starlink station vorige maand",
         "summary": "De Poolse autoriteiten hebben de arrestatie van twee Turkse burgers in Duitsland gemeld in verband met de vermeende sabotage van een Starlink station vorige maand. Premier Donald Tusk noemde het vuur een daad van \"hybride oorlogvoering.\"",
         "at": "2026-10-13T16:28:08.087294+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-566321cf8d0b92b0e2edfb",
@@ -2999,7 +3643,8 @@
         "title": "Mediaadvies - Raad Algemene Zaken en toetredingsconferenties met Albanië, de Republiek Moldavië en Oekraïne van 13 oktober 2026",
         "summary": "Belangrijkste agendapunten, geschatte timing, publieke sessies en perskansen.",
         "at": "2026-10-13T16:28:08.631080+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-ef578e29fb163b3a4ea4ed",
@@ -3036,7 +3681,8 @@
         "title": "Duitsland nieuws: Merz zegt dat Trump's Russische diesel deal 'uit de hand' voor Europa",
         "summary": "Bondskanselier Friedrich Merz heeft gezegd dat de dieselovereenkomst van Donald Trump met Rusland \"geen optie\" zou zijn voor Duitsland en de EU. Ondertussen is de heersende coalitie geschokt door een groot ontslag.",
         "at": "2026-10-13T16:28:09.547518+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-92f27a6603f8f7778c6bda",
@@ -3054,16 +3700,14 @@
         "military": 0,
         "belgium": 1,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 5,
+      "total": 4,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
       "corroboratingSources": [
-        "BBC News",
-        "The Guardian",
-        "Deutsche Welle"
+        "BBC News"
       ],
       "method": "rule_based_screening",
       "verified": false,
@@ -3075,7 +3719,8 @@
         "title": "Kijk: Wat kan het energie staakt-het-vuren van Trump betekenen voor Oekraïne?",
         "summary": "De BBC's Dan Johnson meldt van Kyiv, waar Oekraïners weer een winter tegemoet gaan met stroomuitval.",
         "at": "2026-10-13T16:28:10.136140+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-89e576d4d126b2554ad072",
@@ -3083,7 +3728,7 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport",
-      "summary": "Energy minister says ‘fear has no place in the Saudi lexicon’ as paramilitary group again breaches stretched defences · Why are the Houthis attacking Saudi airports and how are the missiles getting through? · Saud",
+      "summary": "Energy minister says ‘fear has no place in the Saudi lexicon’ as paramilitary group again breaches stretched defences Saudi Arabia has been forced to suspend all flights to and from its main international airport in Riyadh until next Saturday after a caused more damage and left one person dead. Some airlines, including Gulf Air, had already said they were cancelling flights until next Saturday. More missiles were fi…",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/12/saudi-arabia-suspends-flights-latest-deadly-houthi-attack-airport",
       "firstSeen": "2026-10-13T11:22:51.075Z",
@@ -3104,14 +3749,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "8e819f61977c0dbd4447303b",
+        "sourceHash": "3b38433396e1ef1896e600cb",
         "title": "Saudi-Arabië schorst vluchten na de laatste dodelijke Houthi aanval op de luchthaven",
-        "summary": "De minister van Energie zegt dat angst geen plaats heeft in het Saoedische lexicon... als paramilitairen weer aanvallen op uitgestrekte verdedigingen... Waarom vallen de Houthi's Saoedische luchthavens aan en hoe komen de raketten erdoor? · Saud",
-        "at": "2026-10-13T16:28:11.123629+00:00"
+        "summary": "De minister van Energie zegt dat angst geen plaats heeft in het Saoedische lexicon... omdat paramilitairen opnieuw de verdediging schenden. Saudi-Arabië is gedwongen om alle vluchten van en naar zijn belangrijkste internationale luchthaven in Riyadh op te schorten... tot volgende week zaterdag na een oorzaak van meer schade en één persoon dood achtergelaten. Sommige luchtvaartmaatschappijen, waaronder Gulf Air, hadden al gezegd dat ze vluchten zouden annuleren tot zaterdag. Meer raketten waren...",
+        "at": "2026-10-14T11:47:16.342942+00:00"
       }
     },
     {
@@ -3149,7 +3796,8 @@
         "title": "Amerikaanse federale agenten zoeken thuis van Trump criticus Ilhan Omar",
         "summary": "Justitie ambtenaren zeiden dat de Washington residentie van Democratische Congreslid Ilhan Omar, een uitgesproken tegenstander van president Trump, werd overvallen als \"deel van een lopend federaal onderzoek.\"",
         "at": "2026-10-13T16:28:11.836111+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-97ce1ff1a1c2f25995a6e3",
@@ -3186,7 +3834,8 @@
         "title": "Starlink India lancering: Waarom Elon Musk nog steeds wacht",
         "summary": "Ondanks het veiligstellen van belangrijke goedkeuringen, blijft de Starlink-satellietinternetservice in de regelgeving limbo, wat vragen oproept over veiligheidsmachtigingen, concurrentie en India's investeringsklimaat.",
         "at": "2026-10-13T16:28:12.582251+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d94c47a81394a9a6218f69",
@@ -3223,7 +3872,8 @@
         "title": "Noord-Korea: Raad voegt drie personen en vier entiteiten toe aan sanctieslijsten voor nucleaire, raketprogramma's en banden met Rusland",
         "summary": "De Raad heeft beperkende maatregelen aangenomen tegen drie personen en vier entiteiten die de massavernietigingswapensprogramma's van Noord-Korea ondersteunen en VN-sancties schenden, onder meer door samenwerking tussen Rusland en DPRK.",
         "at": "2026-10-13T16:28:13.551682+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-f6db5e5398e7b384942050",
@@ -3260,7 +3910,8 @@
         "title": "Kunnen Zuid-Korea en Oekraïne hun diplomatieke spuug over Noord-Koreaanse krijgsgevangenen oplossen?",
         "summary": "Seoul en Kyiv handelen beschuldigingen na de overdracht van twee Noord-Koreaanse krijgsgevangenen aan Zuid-Korea. Het Zuiden dringt erop aan dat de verhuizing geheim werd gehouden omdat het probeert te voorkomen dat Pyongyang wordt tegengehouden.",
         "at": "2026-10-13T16:28:14.504359+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-bc3da381a585a884979b57",
@@ -3268,7 +3919,7 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "NAZA: Netanyahu orders identification and prosecution of film’s interviewees",
-      "summary": "Israeli PM calls for criminal investigation into soldiers and officers interviewed in Guardian-produced documentary · The Israeli prime minister, Benjamin Netanyahu, has ordered the country’s attorney general and the head of the Shin Bet security service to reveal the identities of soldiers and officers interviewed in the investigative documentary <a",
+      "summary": "Israeli PM calls for criminal investigation into soldiers and officers interviewed in Guardian-produced documentary The Israeli prime minister, Benjamin Netanyahu, has ordered the country’s attorney general and the head of the Shin Bet security service to reveal the identities of soldiers and officers interviewed in the investigative documentary The award-winning documentary, directed by the Oscar-winning film-maker…",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/film/2026/oct/12/naza-netanyahu-orders-identification-prosecution-interviewees-documentary-film",
       "firstSeen": "2026-10-13T11:22:51.075Z",
@@ -3289,14 +3940,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "143aee6238a74b8178d56216",
+        "sourceHash": "e4d6a286f32cbc058c723eec",
         "title": "NAZA: Netanyahu beveelt identificatie en vervolging van geïnterviewden",
-        "summary": "De Israëlische premier Benjamin Netanyahu heeft het hoofd van de veiligheidsdienst van Shin Bet opgedragen de identiteit van soldaten en officieren te onthullen die geïnterviewd zijn in de onderzoeksdocumentaire.",
-        "at": "2026-10-13T16:28:15.427492+00:00"
+        "summary": "Israëlische premier roept op tot strafrechtelijk onderzoek naar soldaten en officieren geïnterviewd in Guardian-geproduceerde documentaire De Israëlische premier Benjamin Netanyahu heeft de procureur-generaal van het land en het hoofd van de Shin Bet veiligheidsdienst opdracht gegeven om de identiteit van soldaten en officieren te onthullen die geïnterviewd zijn in de onderzoeksdocumentaire. De bekroonde documentaire, geregisseerd door de Oscar-winnende filmmaker...",
+        "at": "2026-10-14T11:47:17.962158+00:00"
       }
     },
     {
@@ -3334,7 +3987,8 @@
         "title": "Libanon: EU stelt nieuwe GVDB-ondersteuningsmissie in om defensie- en veiligheidsinstellingen te versterken",
         "summary": "De Raad heeft de ondersteuningsmissie van de EU in Libanon (EUSM Libanon) opgericht om de Libanese strijdkrachten en interne veiligheidstroepen te versterken en de stabiliteit in het land te ondersteunen.",
         "at": "2026-10-13T16:28:16.227737+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-05a62423accbb1d9ea6455",
@@ -3371,7 +4025,8 @@
         "title": "Rusland heeft een agressiestrijd tegen Oekraïne: de EU stemt in met het grootste pakket lijsten ooit gericht op bijna 1600 personen en entiteiten in Rusland.",
         "summary": "De Raad heeft beperkende maatregelen aangenomen tegen 826 Russische bedrijven en 743 personen die in Rusland actief zijn in een militair-industriële complex, in één grote reeks lijsten sinds het begin van de Russische oorlog tegen Oekraïne.",
         "at": "2026-10-13T16:28:17.258440+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-fc07649294118057d90d30",
@@ -3408,7 +4063,8 @@
         "title": "Oekraïnse territoriale integriteit: Raad noemt 77 personen over de illegale Russische staat Doema 'verkiezingen' in de tijdelijk bezette gebieden van Oekraïne",
         "summary": "De Raad heeft beperkende maatregelen vastgesteld tegen 77 personen die als kandidaat of lid van de centrale verkiezingscommissie van de Russische Federatie betrokken waren bij de illegale zogenaamde \"verkiezingen\" voor de Russische Doema, die in september 2026 plaatsvond op het grondgebied van Oekraïne dat Rusland tijdelijk en illegaal bezet heeft.",
         "at": "2026-10-13T16:28:18.472919+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-cc1852ad81be8243caf0f8",
@@ -3445,7 +4101,8 @@
         "title": "Waarom is het zo moeilijk om tegen de Houthi's te vechten?",
         "summary": "Veiligheidscorrespondent Frank Gardner legt uit hoe de Iran-gesteunde Houthis' precisiestakingen en guerrilla tactieken het voor Saoedische troepen moeilijk hebben gemaakt om de overhand te krijgen.",
         "at": "2026-10-13T16:28:19.277597+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-b8c832d11bc7b48a87e267",
@@ -3482,7 +4139,8 @@
         "title": "Algemene Vergadering neemt een pandemische verklaring aan, maar niet bij consensus.",
         "summary": "De Algemene Vergadering heeft maandag een politieke verklaring aangenomen over preventie, paraatheid en reactie op pandemie, met 153 stemmen vóór en 3 stemmen tegen (Argentinië, Israël en de Verenigde Staten) bij 2 onthoudingen (Nieuw-Zeeland en Paraguay).",
         "at": "2026-10-13T16:28:20.174144+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-b7600be984a428bc8f3f35",
@@ -3490,7 +4148,7 @@
       "region": "midden-oosten",
       "topic": "conflict",
       "title": "Security Council LIVE: Syria’s fragile transition – economic strain, Israeli incursions and progress towards elections",
-      "summary": "The Security Council is meeting on Syria as the country’s transition faces pressure on several fronts. Economic hardship is fuelling unrest, Israeli incursions continue in the south and sectarian tensions persist in Sweida, even as Damascus reports progress on its chemical weapons programme and talks about future elections. Millions, meanwhile, remain displa",
+      "summary": "The Security Council met to debate Syria's thorny transition Monday as it faces pressure on several fronts. Economic hardship is fuelling unrest, Israeli incursions continue in the south and sectarian tensions persist in Sweida, even as Damascus reports progress on its chemical weapons programme and talks about future elections. Millions, meanwhile, remain displaced. Follow live below and go here for full meetings c…",
       "source": "UN News",
       "url": "https://news.un.org/feed/view/en/story/2026/10/1168578",
       "firstSeen": "2026-10-13T11:22:51.075Z",
@@ -3511,14 +4169,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "official_publication",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "279abf7be0023be275dfc841",
+        "sourceHash": "66224f8f1d3ae5f04f212d62",
         "title": "Veiligheidsraad LIVE: Syrië fragiele transitie economische druk, Israëlische invallen en vooruitgang op weg naar verkiezingen",
-        "summary": "De Veiligheidsraad komt over Syrië bijeen omdat de overgang van het land onder druk staat op verschillende fronten. De economische ontberingen voeden onrust, Israëlische invallen blijven in het zuiden en sektarische spanningen blijven bestaan in Sweida, zelfs als Damascus verslag uitbrengt over de voortgang van zijn programma voor chemische wapens en praat over toekomstige verkiezingen. Miljoenen, ondertussen, blijven displa",
-        "at": "2026-10-13T16:28:21.521465+00:00"
+        "summary": "De Veiligheidsraad kwam maandag bijeen om de doornige overgang van Syrië te bespreken, aangezien het op verschillende fronten onder druk staat. De economische ontberingen voeden onrust, Israëlische invallen blijven in het zuiden en sektarische spanningen blijven bestaan in Sweida, zelfs als Damascus verslag uitbrengt over de voortgang van zijn programma voor chemische wapens en praat over toekomstige verkiezingen. Miljoenen blijven ondertussen ontheemd. Volg live hieronder en ga hier voor volledige vergaderingen c...",
+        "at": "2026-10-14T11:47:19.546838+00:00"
       }
     },
     {
@@ -3556,7 +4216,8 @@
         "title": "Sudan: Droogte en oorlog duwen Darfur en Kordofan naar hongersnood",
         "summary": "Het risico van hongersnood neemt toe in delen van Soedan die al door oorlog zijn verscheurd, omdat een ernstige droogte in El Niño het leven nog moeilijker maakt in Groter Darfur en Groter Kordofan, waarschuwde de door de VN gesteunde wereldwijde hongermonitor maandag.",
         "at": "2026-10-13T16:28:22.529541+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-241cc1dca45d488afbfced",
@@ -3593,7 +4254,8 @@
         "title": "Colombia vredesdeal moet volhouden naarmate de onzekerheid groeit, hoort de Veiligheidsraad",
         "summary": "Bijna 10 jaar nadat Colombia een historisch vredesakkoord heeft ondertekend om een decennialange opstand te beëindigen, staat de deal onder druk van groeiende onveiligheid en de VN-topambtenaar in het land zegt dat het niet mag wankelen.",
         "at": "2026-10-13T16:28:23.431180+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-0916073d991c450ec87511",
@@ -3601,7 +4263,7 @@
       "region": "azie",
       "topic": "conflict",
       "title": "EU to limit Chinese hybrid vehicle imports to 350,000 a year",
-      "summary": "Brussels uses WTO rules to quickly impose quota, which will halve Chinese market share to 3% · Business live – latest updates · <a href=\"",
+      "summary": "Brussels uses WTO rules to quickly impose quota, which will halve Chinese market share to 3% The EU is to limit the number of hybrid electric vehicles imported from China to 350,000 cars a year, the European Commission has confirmed. Imports have been soaring in the past two years; about 800,000 battery and plug-in hybrids are likely to be sold this year.",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/oct/12/eu-deal-china-limit-imports-hybrid-electric-vehicles",
       "firstSeen": "2026-10-13T11:22:51.075Z",
@@ -3622,14 +4284,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "0b044c12577533a17579bf3b",
+        "sourceHash": "d489a5b5de276a5dca9eba47",
         "title": "EU om de invoer van Chinese hybride voertuigen te beperken tot 350.000 per jaar",
-        "summary": "Brussel gebruikt de WTO-regels om snel quota op te leggen, waardoor het Chinese marktaandeel wordt gehalveerd tot 3% · Business live",
-        "at": "2026-10-13T16:28:24.180987+00:00"
+        "summary": "Brussel gebruikt de WTO-regels om snel quota op te leggen, die het Chinese marktaandeel tot 3% zullen halveren De EU beperkt het aantal uit China ingevoerde hybride elektrische voertuigen tot 350.000 auto's per jaar, heeft de Europese Commissie bevestigd. De invoer is in de afgelopen twee jaar gestegen; ongeveer 800.000 batterij en plug-in hybriden zullen dit jaar waarschijnlijk worden verkocht.",
+        "at": "2026-10-14T11:47:20.850834+00:00"
       }
     },
     {
@@ -3667,7 +4331,8 @@
         "title": "Programma voor flexibele en snelle innovatie op defensiegebied: Raad geeft definitief groen licht",
         "summary": "De Raad heeft formeel zijn goedkeuring gehecht aan de verordening tot vaststelling van het programma voor agile en snelle defensie-innovatie (AGILE), een nieuw programma van 115 miljoen euro ter ondersteuning van kleine en middelgrote ondernemingen die nieuwe en ontwrichtende defensieproducten ontwikkelen.",
         "at": "2026-10-13T16:28:25.091129+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-2bf0b713d1d22bf2d4e167",
@@ -3704,7 +4369,8 @@
         "title": "Kijken: CCTV toont mensen dekking als raket raakt Riyadh luchthaven",
         "summary": "Beelden van binnen het vliegveld tonen het moment dat de aanval op zaterdag.",
         "at": "2026-10-13T16:28:25.568994+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-9260364d7cc64745bc85dd",
@@ -3741,7 +4407,8 @@
         "title": "Documenten vervalst om belasting op Abramovitsj's rijkdom te ontwijken, vindt BBC",
         "summary": "Backdated papierwerk maakte ook de Russische oligarchen jachten en herenhuizen verdwijnen van rekeningen, onderzoek vondsten.",
         "at": "2026-10-13T16:28:26.199494+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-c85d70cd1e15bc1003a062",
@@ -3759,15 +4426,14 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "BBC News",
-        "Deutsche Welle"
+        "BBC News"
       ],
       "method": "rule_based_screening",
       "verified": false,
@@ -3779,7 +4445,8 @@
         "title": "Trump gezichten groeiende terugslag over plannen om diesel te importeren uit Rusland",
         "summary": "Zowel Republikeinse als Democratische wetgevers hebben kritiek geleverd op de overeenkomst, die weken voor de Amerikaanse tussentijdse verkiezingen werd aangekondigd.",
         "at": "2026-10-13T16:28:26.841670+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d969e1731fd072c5487e49",
@@ -3816,7 +4483,8 @@
         "title": "Amerikaanse boeren worstelen met stijgende kosten - en hun loyaliteit aan Trump",
         "summary": "Veel boeren in staten die de president steunen zeggen dat ze van alle kanten worden getroffen, met de cruciale tussentijdse verkiezingen slechts enkele weken verder.",
         "at": "2026-10-13T16:28:27.476070+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-79519ba896b72cabd8ab3c",
@@ -3853,7 +4521,8 @@
         "title": "Riyadh vliegveld weer getroffen na dodelijke Houthi raketaanval, Saoedische autoriteiten zeggen",
         "summary": "Ongeïdentificeerde projectiel slaat Koning Khalid luchthaven, het doden van een en verwonden 11, als escalerende aanvallen dreigen meer landen in Jemen conflict te trekken · Analyse: aanval zal dwingen om te heroverwegen van Trump strategie · Een proj",
         "at": "2026-10-13T16:28:28.448675+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-4c28a2f1987f920ece6251",
@@ -3890,7 +4559,8 @@
         "title": "Wie zijn de Oekraïense 'vrijwilligers' onder Russisch bevel?",
         "summary": "Rusland heeft een bataljon aangekondigd bestaande uit Oekraïense \"vrijwilligers.\" Maar veteranen en voormalige krijgsgevangenen hebben verschillende accounts.",
         "at": "2026-10-13T16:28:28.906670+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-34b9d08cc8ae5b287284b8",
@@ -3927,7 +4597,8 @@
         "title": "Midden-Oosten crisis: Riyadh luchthaven opnieuw getroffen als Houthis claim aanvallen, waaronder staking die 12 doden . .",
         "summary": "Deze live blog is nu gesloten. U kunt ons laatste volledige verslag hier lezen: · Riyadh luchthaven opnieuw getroffen na dodelijke Houthi raketaanval, Saoedische autoriteiten zeggen · Wat meer Golf reactie op Houthi dodelijke luchthaven atta",
         "at": "2026-10-13T16:28:30.062012+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-09cec1f6e809608c5b20ff",
@@ -3964,7 +4635,8 @@
         "title": "Polen houdt de verdachte van de moord op premier Tusk vast.",
         "summary": "De politie kreeg geloofwaardige informatie over mogelijke aanvallen op Donald Tusk en zijn minister van Defensie.",
         "at": "2026-10-13T16:28:30.525859+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-a923c6a37b18a95189aa00",
@@ -3972,7 +4644,7 @@
       "region": "azie",
       "topic": "conflict",
       "title": "Volkswagen boss backs EU plan to bolster domestic European industry",
-      "summary": "Oliver Blume says ‘Made in Europe’ rules to counter rapid rise of lower-price Chinese brands ‘must reward real value creation’ · The boss of Volkswagen has backed EU proposals to boost its domestic industry, arguing European carmakers need to be able to “compete under comparable conditions” with Chinese rivals. · Oliver Blume said “Made in Europe”",
+      "summary": "Oliver Blume says ‘Made in Europe’ rules to counter rapid rise of lower-price Chinese brands ‘must reward real value creation’ The boss of Volkswagen has backed EU proposals to boost its domestic industry, arguing European carmakers need to be able to “compete under comparable conditions” with Chinese rivals. Oliver Blume said “Made in Europe” rules from the EU “must reward real value creation in Europe”, speaking i…",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/business/2026/oct/11/volkswagen-boss-backs-eu-plan-to-boost-domestic-european-industry",
       "firstSeen": "2026-10-13T11:22:51.075Z",
@@ -3993,14 +4665,16 @@
       ],
       "method": "rule_based_screening",
       "verified": false,
+      "lastChangedAt": "2026-10-14T11:45:18.314Z",
+      "sourceEvidence": "single_news_source",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "14ad934b720af0a02b958185",
+        "sourceHash": "faf8e73c4d099f1cae582607",
         "title": "Volkswagen baas steunt EU-plan om de binnenlandse Europese industrie te versterken",
-        "summary": "Oliver Blume zegt \"Made in Europe\" regels om een snelle stijging van de lagere prijs Chinese merken tegen te gaan . . must belonen echte waarde creatie · De baas van Volkswagen heeft steun gegeven aan EU-voorstellen om zijn binnenlandse industrie te stimuleren, omdat Europese autofabrikanten onder vergelijkbare voorwaarden moeten kunnen concurreren met Chinese rivalen. Oliver Blume zei: \"Made in Europe\"",
-        "at": "2026-10-13T16:28:31.879215+00:00"
+        "summary": "Oliver Blume zegt \"Made in Europe\" regels om een snelle stijging van goedkopere Chinese merken tegen te gaan . . must reward real value creation De baas van Volkswagen heeft steun gegeven aan EU-voorstellen om zijn binnenlandse industrie te stimuleren, omdat Europese autofabrikanten onder vergelijkbare voorwaarden moeten kunnen concurreren met Chinese rivalen. Oliver Blume zei: \"Made in Europe\" regels uit de EU \"moet belonen echte waarde creatie in Europa [...]",
+        "at": "2026-10-14T11:47:22.462510+00:00"
       }
     },
     {
@@ -4038,7 +4712,8 @@
         "title": "Kinderen onder 139 doden na het kapsel van Djibouti, zegt de VN",
         "summary": "De boot reisde van Djibouti naar Jemen met 305 mensen aan boord, toen hij in de buurt van de havenstad Obock op donderdagavond kapseisde.",
         "at": "2026-10-13T16:28:32.640498+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d60732d7eb26547ed91d3b",
@@ -4056,15 +4731,14 @@
         "military": 0,
         "belgium": 1,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 5,
+      "total": 4,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
       "corroboratingSources": [
-        "Deutsche Welle",
-        "BBC News"
+        "Deutsche Welle"
       ],
       "method": "rule_based_screening",
       "verified": false,
@@ -4076,7 +4750,8 @@
         "title": "Trump beweert dat Rusland en Oekraïne akkoord zijn gegaan met een \"energie staakt-het-vuren\"",
         "summary": "De Amerikaanse president Donald Trump zegt dat beide partijen hebben ingestemd om te stoppen met het richten van olieraffinaderijen, energiecentrales en andere energie-infrastructuur onmiddellijk.",
         "at": "2026-10-13T16:32:51.803626+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-9c456bbec7c9470c9513eb",
@@ -4113,7 +4788,8 @@
         "title": "Oekraïne slaat Yandex datacenter in derde aanval op Russische tech gigant",
         "summary": "Het is de derde keer deze week dat Oekraïne heeft gericht Russische tech gigant Yandex, dwingt het bedrijf om haar activiteiten op te schorten.",
         "at": "2026-10-13T16:32:52.274753+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-46ee2fe0635c6d70743a40",
@@ -4150,7 +4826,8 @@
         "title": "Levensvatbaarheid te midden van crisis in Gaza",
         "summary": "Nidaa, Hanaa en Hanin hebben verschillende verhalen, maar delen een gemeenschappelijke draad: de vastberadenheid om iets van hun eigen bouwen en houden het gaan ondanks buitengewone uitdagingen geconfronteerd met hen in de oorlog verwoest Gaza.",
         "at": "2026-10-13T16:32:52.904698+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-9d0850cf1121946e4b18d5",
@@ -4187,7 +4864,8 @@
         "title": "Deze aanvallen moeten onmiddellijk stoppen. Guterres veroordeelt een dodelijke Houthi-aanval op de luchthaven van Riyad",
         "summary": "De secretaris-generaal van de Verenigde Naties António Guterres heeft een Houthi-raketaanval op de belangrijkste luchthaven van Riyadh veroordeeld, waarvan de Saoedische autoriteiten zeggen dat hij 12 mensen heeft gedood en meer dan 300 gewonden heeft.",
         "at": "2026-10-13T16:32:53.634128+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-103a191fb6e98c9900cd5c",
@@ -4224,7 +4902,8 @@
         "title": "Georgische surrogaatindustrie bloeit, maar tegen welke prijs?",
         "summary": "Georgië werd een hub voor draagmoeder zwangerschappen na Rusland's grootschalige invasie van Oekraïne in 2022. DW sprak met ouders, en degenen die ouders wilden worden, over de verborgen kosten van een bloeiende industrie.",
         "at": "2026-10-13T16:32:54.233472+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-ce12374564504518dbe928",
@@ -4261,7 +4940,8 @@
         "title": "Operations Plan Duitsland: Hoe de Bundeswehr traint voor de collectieve defensie van de NAVO",
         "summary": "Hoe is Duitsland voorbereid op nationale verdediging? Het antwoord ligt in het operatieplan Duitsland. Militaire oefeningen zoals \"Red Storm Charlie\" zijn ontworpen om deze preparaten op de proef te stellen in realistische scenario's.",
         "at": "2026-10-13T16:32:54.805052+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-dc4ef4238541c96b613170",
@@ -4298,7 +4978,8 @@
         "title": "Internationaal Strafhof: Verklaring van de hoge vertegenwoordiger namens de EU na de aankondiging van Amerikaanse sancties",
         "summary": "De EU heeft een verklaring afgelegd waarin zij haar volledige steun bevestigt voor de onafhankelijkheid van het ICC en haar rol bij het waarborgen van de verantwoordingsplicht voor de ernstigste internationale misdrijven. De EU betreurt de VS-sancties tegen het Hof en roept op tot hun omkering via diplomatie.",
         "at": "2026-10-13T16:32:55.611853+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-3493e3e0484fb7f47ac954",
@@ -4335,7 +5016,8 @@
         "title": "ICJ rechter Navi Pillay wint Nobelprijs voor de vrede ter bevordering van internationaal recht",
         "summary": "Het Comité erkent het werk van Zuid-Afrika dat voorzitter was van de VN-commissie die concludeerde dat Israël schuldig was aan genocide in Gaza De Nobelprijs voor de vrede is toegekend aan Navi Pillay, de Zuid-Afrikaanse voormalige VN-hoofd voor de mensenrechten die de VN-commissie voorzat. De Noorse Nobelcommissie zei dat Pillay, die als rechter aan het internationale gerechtshof (ICJ) werkt, heeft gehuldigd dat juridische maatregelen kunnen helpen...",
         "at": "2026-10-13T16:32:56.773137+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-485b41bf2fb40ad0ad5486",
@@ -4372,7 +5054,8 @@
         "title": "Polen: Levenslijn voor Oekraïense vluchtelingen confronteert donormoeheid en online misbruik als anti-Oekraïnse sentiment groeit",
         "summary": "Een Oekraïense vrouw die de oorlog in haar land ontvluchtte bouwde een reddingslijn voor vluchtelingen in Polen. Nu wordt haar organisatie geconfronteerd met donormoeheid, bezuinigingen en toenemende vijandigheid als steun voor Oekraïners in Polen.",
         "at": "2026-10-13T16:32:57.525608+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-a25f287fea187a92c602c5",
@@ -4409,7 +5092,8 @@
         "title": "Cop31 gastheer spoort rijke landen aan om veel meer te besteden aan klimaat dan defensie",
         "summary": "Het klimaatprobleem is het veiligheidsvraagstuk, zegt de Turkse minister op de top van de Pacific pre-Cop in Fiji Rijke landen zou veel meer moeten besteden aan de aanpak van de klimaatcrisis dan de 5% van het bbp beloofd door Nato-leden voor defensie, omdat de klimaatkwestie de veiligheid is, de gastheer van de volgende VN-top heeft gezegd. Maar in opmerkingen die waarschijnlijk controversieel zullen blijken, de Cop31-voorzitter, Murat Kurum...",
         "at": "2026-10-13T16:32:58.686388+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-e9b57befdc71e9251c9df8",
@@ -4446,7 +5130,8 @@
         "title": "Wereldnieuws in het kort: Een verschrikkelijke aanval in Soedan, Israëlische invallen in Syrië intensiveren, de meeste vrouwen en meisjes dakloos in Gaza",
         "summary": "Een vermoedelijke drone-aanval heeft minstens 40 doden achtergelaten in de Soedanese Blauwe Nijl-staat vlakbij de Ethiopische grens - volgens de eerste berichten van de grond, volgens VN-woordvoerder Stéphane Dujarric. De meeste slachtoffers waren vrouwen en meisjes.",
         "at": "2026-10-13T16:32:59.597457+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-9f223d25a2caa85890392e",
@@ -4483,7 +5168,8 @@
         "title": "Veiligheidsraad LIVE: Cyclus van escalerende aanvallen op burgers in Oekraïne moeten nu eindigen",
         "summary": "Het escaleren van geweld en mensenrechtenschendingen in de vierjarige Rusland-Oekraïne-oorlog staat vrijdag in de schijnwerpers in de Veiligheidsraad na een reeks Russische aanvallen op civiele doelen en infrastructuur in de afgelopen dagen.",
         "at": "2026-10-13T16:33:00.309020+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-7014a2ddf1def1e280cea7",
@@ -4520,7 +5206,8 @@
         "title": "Een serieuze klap: Guterres veroordeelt nieuwe Amerikaanse sancties tegen het Internationaal Strafhof",
         "summary": "De Verenigde Staten hebben sancties opgelegd aan het Internationaal Strafhof (ICC) als een instelling, met de minister van Buitenlandse Zaken Marco Rubio vowing op vrijdag om het ICC te ontmantelen, steen voor steen, tenzij het een einde maakt aan wat Washington beschouwt als een bedreiging voor zijn burgers.",
         "at": "2026-10-13T16:33:01.098147+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-e6f4361c726f2b6e72e06c",
@@ -4557,7 +5244,8 @@
         "title": "Jemen is teruggevallen in oorlog, waarschuwt VN-gezant.",
         "summary": "De Veiligheidsraad kwam vrijdag bijeen om de crisis in Jemen te bespreken, waar een Houthi-offensief dat in september is gelanceerd, de 12-jarige oorlog om het land te controleren sterk heeft doen escaleren en de spill-over van de VS-Iran-oorlog een nieuwe verplaatsingscrisis heeft veroorzaakt. Live dekking hieronder en voor volledige vergaderingen updates, ga hier.",
         "at": "2026-10-13T16:33:01.990389+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-63a2edd9e03824cdafd21d",
@@ -4594,7 +5282,8 @@
         "title": "World Cup 2034: Stellen Saoedi-Arabië Neom Stadion problemen?",
         "summary": "Sinds het winnen van het recht op het houden van de 2034 World Cup zonder tegenstand, Saudi-Arabië heeft zich teruggetrokken uit de sport. Met berichten dat het meest ambitieuze stadionproject zal worden opgegeven, wat betekent dit voor het Wereldkampioenschap?",
         "at": "2026-10-13T16:33:02.671270+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-10143e67f95c98319af7d3",
@@ -4631,7 +5320,8 @@
         "title": "Finland, 's werelds gelukkigste natie, staat voor een sombere winter",
         "summary": "Finnen hebben veel redenen om tevreden te zijn, maar de hoop schulden van het land is daar niet een van. De Russische oorlog in Oekraïne heeft de belastingdruk verhoogd. Kan de Noordse natie nog een schok opvangen?",
         "at": "2026-10-13T16:33:03.215428+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-12d8e672504c5b0b9819c2",
@@ -4668,7 +5358,8 @@
         "title": "Wereldnieuws in het kort: Russische aanvallen blijven doorgaan in Oekraïne, Gazanen schuilen in overstromingsgevoelige gebieden, houden zicht op ooggezondheid",
         "summary": "De VN-mensenrechtenchef Volker Türk zei donderdag dat hij ontzet was door een golf van aanvallen die burgers in Oekraïne hebben gedood in de afgelopen vier dagen.",
         "at": "2026-10-13T16:33:03.899208+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-62b823eec8a44b2924ec07",
@@ -4705,7 +5396,8 @@
         "title": "Darfur: Gezondheidszorg heeft meer middelen nodig als de Veiligheidsraad de Soedanese sancties uitbreidt",
         "summary": "Meer dan 700.000 ontheemden in Tawila, in de door oorlog geteisterde regio Darfur in Soedan, kampen met ernstige tekorten aan gezondheidszorg, voedsel, water en bescherming, waarschuwde de Wereldgezondheidsorganisatie (WHO) op donderdag, toen zij riep op tot een dringende toename van de middelen.",
         "at": "2026-10-13T16:33:04.627018+00:00"
-      }
+      },
+      "sourceEvidence": "official_publication"
     },
     {
       "id": "RSS-cfcd2de0c8536c2f0cec11",
@@ -4742,7 +5434,8 @@
         "title": "Veiligheid in het Zwarte-Zeegebied: is Bulgarije de zwakke schakel in de verdediging van Europa tegen bedreigingen van Rusland?",
         "summary": "Twee schepen zijn voor de kust van Bulgarije en Roemenië gezonken na droneaanvallen in de afgelopen dagen. Bulgarije heeft de vinger op Rusland gedrukt. Wat betekent dat voor de veiligheid in de Zwarte Zee en de regio?",
         "at": "2026-10-13T16:33:05.237768+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-afc60f7038b31fef978502",
@@ -4779,7 +5472,8 @@
         "title": "Hoe een miljard dollar olieveld de Britse-Argentinië vete over de Falklands heeft ontstoken",
         "summary": "Argentinië en het Verenigd Koninkrijk vochten ooit een oorlog over de Falklandeilanden. Het olieproject Sea Lion van meerdere miljarden dollars heeft oude spanningen hersteld, met Buenos Aires die de plannen willen stoppen.",
         "at": "2026-10-13T16:33:05.989247+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-abcecf80b9a35b48694062",
@@ -4816,7 +5510,8 @@
         "title": "Zuid-Korea herinnert Oekraïne ambassadeur te midden van POW geschil",
         "summary": "Zuid-Korea heeft gezegd dat het zijn ambassadeur in Oekraïne zal terugroepen. Seoul is overstuur over een overdracht van Noord-Koreaanse krijgsgevangenen die publieke kennis bij de VN hadden geëist, maar geen excuses hadden ontvangen.",
         "at": "2026-10-13T16:33:06.619907+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-422ed056ccfecc1cb0f7c8",
@@ -4853,7 +5548,8 @@
         "title": "Als Rusland aanvallen op Oekraïense datacenters opvoert, kan Oekraïne dan binnenkort offline zijn?",
         "summary": "Terwijl Rusland zich steeds meer richt op de datacenters van Oekraïne, zeggen deskundigen dat het internetsysteem van het land te robuust is om volledig te sluiten. Diensten kunnen echter duurder worden.",
         "at": "2026-10-13T16:33:07.240104+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-4de7ef13ca02ad17d2ada2",
@@ -4890,7 +5586,8 @@
         "title": "Duitse Bundeswehr: Een nieuwe marinehaven in Emden beoogt de Duitse defensiecapaciteit te vergroten",
         "summary": "De Duitse marine heeft besloten een tweede haven aan de Noordzeekust op te richten. Emden werd gekozen als locatie.",
         "at": "2026-10-13T16:33:07.810156+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-be9d20789dda0e45063518",
@@ -4927,7 +5624,8 @@
         "title": "Middencorridor: Kan Bulgarije een veilige toegangspoort zijn voor Aziatische invoer naar de EU?",
         "summary": "De EU wil meer handel via de Middencorridor, die grote voordelen voor Bulgarije kan opleveren. Maar de aanvallen van dinsdag op commerciële schepen voor de Bulgaarse kust herinneren ons aan de veiligheidsrisico's.",
         "at": "2026-10-13T16:33:08.491171+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-d27a094a6292caa5de1c97",
@@ -4964,7 +5662,8 @@
         "title": "Gerhard Schröder bezoekt de laatste Russische werkgever, Hyperglobus",
         "summary": "Voormalig Duitse bondskanselier Gerhard Schröder bezocht een Moskouse supermarkt in zijn nieuwe rol in de raad van commissarissen. Schröder is niet vreemd aan pensioenbetalingen in Rusland of het schandaal dat hen begeleidt.",
         "at": "2026-10-13T16:33:09.136230+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-1da2384bf011271fab508c",
@@ -5001,7 +5700,8 @@
         "title": "Duits spionnenschandaal bedreigt de nationale veiligheid",
         "summary": "De arrestatie van de voormalige Duitse inlichtingenchef August Hanning zou de nationale veiligheid kunnen ondermijnen, waarschuwen deskundigen, zoals bondgenoten hun inlichtingenrelaties kunnen heroverwegen.",
         "at": "2026-10-13T16:33:09.577536+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-67a3d5085497938e6b3b2e",
@@ -5038,7 +5738,8 @@
         "title": "Verdachte longpest in Siberië: Wat we weten over de ziekte",
         "summary": "Na de dood van een arbeider bij een Russische pestonderzoeksinstituut in Siberië op 2 oktober 2026 werden bijna 200 van haar contacten onder medische observatie geplaatst. Maar de autoriteiten ontkenden dat de longpest de dood had veroorzaakt.",
         "at": "2026-10-13T16:33:10.257703+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-987273430f178b45759f44",
@@ -5075,7 +5776,8 @@
         "title": "De EU zoekt naar manieren om de uitbreiding voor de leden beter te doen verlopen",
         "summary": "De Europese Commissie heeft ideeën naar voren gebracht waarvan zij hoopt dat zij het uitbreidingsproces van de EU zal vergemakkelijken en de bezorgdheid onder de bestaande leden zal wegnemen. Verschillende landen, niet in de laatste plaats Oekraïne, behoren tot de kandidaten.",
         "at": "2026-10-13T16:33:10.936709+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-7aa80a63f021d2cff59b4a",
@@ -5112,7 +5814,8 @@
         "title": "Duitslands extreemrechtse AfD maakt weer geschiedenis in Saksen-Anhalt",
         "summary": "Voor het eerst sinds het einde van de Tweede Wereldoorlog heeft een Duits staatsparlement gekozen voor het parlement van extreem-rechts: Tobias Rausch van het alternatief voor Duitsland (AfD).",
         "at": "2026-10-13T16:33:11.515336+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-553be7bd244e1de3c33925",
@@ -5149,7 +5852,8 @@
         "title": "Feitcontrole: Misleidende claims vonkpest angsten in Rusland",
         "summary": "De dood van een labmedewerker bij een pestonderzoeksinstituut in Rusland heeft geleid tot claims over een lab ongeval, honderden infecties en internationale verspreiding. Sommige van deze virale verhalen zijn misleidend.",
         "at": "2026-10-13T16:33:12.097936+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-3b504d6a3288203afdb5ae",
@@ -5186,7 +5890,8 @@
         "title": "Duitsland wordt geconfronteerd met een drievoudige bedreiging van Rusland, China en binnenlandse extreemrechtse extremisten",
         "summary": "Tijdens een zeldzame openbare hoorzitting identificeerden de Duitse inlichtingendiensten Rusland als de gevaarlijkste tegenstander van het land. De dreiging van China komt ook in beeld. En de zelfopgegroeide extreem-rechts vormt ook een uitdaging.",
         "at": "2026-10-13T16:33:12.682405+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-aac125bf6a9a6ec0ba9feb",
@@ -5223,7 +5928,8 @@
         "title": "Duitsland nieuws: Far-right AfD krijgt eerste huisspreker in een Duits staatsparlement",
         "summary": "Voor het eerst sinds de Tweede Wereldoorlog heeft een extreemrechtse partij een huisspreker in een Duits staatsparlement. De Duitse minister van Buitenlandse Zaken heeft gewaarschuwd dat de klimaatcrisis extremisme kan aanwakkeren.",
         "at": "2026-10-13T16:33:13.321543+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-93ada91f8e8aae7efa8686",
@@ -5260,7 +5966,8 @@
         "title": "Merz, Macron streven naar strengere EU-maatregelen tegen oneerlijke handel",
         "summary": "Emmanuel Macron en Friedrich Merz hebben Ursula von der Leyen geschreven, waarin wordt opgeroepen tot strengere EU-mechanismen tegen oneerlijke handelspraktijken van andere landen. Ze noemen geen namen maar lijken China of de VS in gedachten te hebben.",
         "at": "2026-10-13T16:33:13.972970+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-4f1de4b874c69ba503303b",
@@ -5297,7 +6004,8 @@
         "title": "Australië, Nieuw-Zeeland sonde Flydubai piloot tijd daar",
         "summary": "De Flydubai piloot uit Oman vermoedde dat hij een vliegtuig in Israël probeerde te laten neerstorten en bracht als jongeman tijd door in Oceanië. De politie in zowel Australië als Nieuw-Zeeland zei dat ze zijn banden met de landen zouden onderzoeken.",
         "at": "2026-10-13T16:33:14.661470+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-1113a8af269481772311b0",
@@ -5334,7 +6042,8 @@
         "title": "Duitsland nieuws: Spionagechef waarschuwt Rusland conflict risico groeiende",
         "summary": "Moskou voert al een \"schaduwoorlog\" tegen Europa, zegt het hoofd van de Duitse buitenlandse inlichtingendienst. De Linkse Partij neemt een zaak over opmerkingen van de CDU Katherina Reiche voor een topgerechtshof.",
         "at": "2026-10-13T16:33:15.270364+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-92c98f24b1335321cdd7c8",
@@ -5371,7 +6080,8 @@
         "title": "\"NAZA\": Israëlische militaire verklaringen over film",
         "summary": "De bekroonde documentaire \"NAZA\" blijft aanleiding geven tot controverse in Israël. Het Israëlische leger heeft nu een multi-page statement gepubliceerd met de naam \"vervormd.\"",
         "at": "2026-10-13T16:33:15.795746+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-26d354f49892ed82dc0723",
@@ -5408,7 +6118,8 @@
         "title": "ARD-Deutschlandtrend enquête: Duitsers verenigen zich in frustratie over de overheid",
         "summary": "Op de 36ste verjaardag van de hereniging zijn Duitsers ontevreden over de politieke leiders van het land. Ze geloven niet dat ze de uitdagingen van AI, Rusland en Donald Trump aankunnen.",
         "at": "2026-10-13T16:33:16.437355+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-8995e90c6b7694c680ab0c",
@@ -5445,7 +6156,8 @@
         "title": "Heeft de Amerikaanse president Donald Trump het recht om AI te hernoemen als 'Super Intelligence'?",
         "summary": "Donald Trump denkt dat de naam kunstmatige intelligentie klinkt \"nep\" en heeft opgedragen Amerikaanse agentschappen te gebruiken \"Super Intelligence\" in plaats daarvan. Toch hebben techbedrijven en onderzoekers weinig reden om mee te spelen.",
         "at": "2026-10-13T16:33:17.212082+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-30aeb7b53144720d07f7d1",
@@ -5482,7 +6194,8 @@
         "title": "Ierland zal het Eurovisie weer boycotten vanwege Israëls deelname, maar de songwedstrijd is nog steeds aan het uitbreiden",
         "summary": "Het Eurovisiesongfestival 2026 werd verscheurd door boycots uit protest tegen de deelname van Israël aan de oorlog tegen Gaza. Het blijft groeien.",
         "at": "2026-10-13T16:33:17.912163+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     },
     {
       "id": "RSS-dd69c8914dbd27a04786ca",
@@ -5519,13 +6232,14 @@
         "title": "Wereldhandelsweer Iran, Oekraïne en de tarieven van Trump",
         "summary": "In de afgelopen zes jaar hebben COVID, twee oorlogen en de tarieven van Donald Trump de wereldhandel geschokt. Is dit nu al een tijdelijke schok of het begin van een grote omkering?",
         "at": "2026-10-13T16:33:18.539388+00:00"
-      }
+      },
+      "sourceEvidence": "single_news_source"
     }
   ],
   "translation": {
     "engine": "Argos Translate en→nl",
     "language": "nl",
-    "translatedThisRun": 20,
+    "translatedThisRun": 29,
     "pending": 0,
     "failedThisRun": 0,
     "status": "ok"
