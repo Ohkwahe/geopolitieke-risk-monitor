@@ -1,3 +1,11 @@
+# Risk Monitor v2.0.0 — releasekandidaat
+
+- Schematische klikbare wereldregiokaart, gebaseerd op de bestaande regio-classificatie; niet geschikt om feitelijke incidentlocaties weer te geven.
+- Standaardtaal NL/EN onder Instellingen, bewaard in localStorage.
+- Dynamische knop Vertaal naar Engels / Vertaal naar Nederlands als beide teksten aanwezig zijn.
+- Nieuwsperiode (24 uur/7 dagen/30 dagen) blijft behouden na heropenen.
+- Geen wijzigingen in RSS, Argos, GitHub-workflow of bestaand datamodel.
+
 # Release v1.6.0 — Trends & Signal Thresholds
 
 Status: RELEASEKANDIDAAT; GO na controle op iPhone en GitHub.

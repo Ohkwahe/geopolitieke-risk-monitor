@@ -1,7 +1,3 @@
-# Risk Monitor v1.6.0
+# Risk Monitor v2.0.0
 
-Mobiele geopolitieke nieuwsmonitor met RSS-signalen, Argos-vertaling, historische controlegrafiek en lokale visuele signaaldrempel.
-
-**Veiligheidsbeperking:** trefwoordclassificatie is geen verificatie of betrouwbare voorspelling van oorlogsdreiging. Een score bepaalt uitsluitend de aandacht in de app. De grafiek toont volume nieuwe berichten, niet het conflictgevaar. Geen automatische PWA-pushmeldingen.
-
-Zie START_HIER_GITHUB.md voor installatie.
+Mobiele nieuwsmonitor. De wereldkaart is een schematische navigatiekaart, geen kaart van troepenposities of veiligheidsrisico’s. NL/EN-voorkeur en nieuwsperiode worden lokaal per browser/installatie bewaard. Engels is de originele feedtaal voor de automatisch vertaalde berichten. Vertaling is alleen beschikbaar wanneer de automatische vertaalvelden in de feed bestaan.
