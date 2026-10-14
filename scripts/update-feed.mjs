@@ -1,4 +1,4 @@
-/** Risk Monitor v1.4.0 — public RSS collector and transparent RULE-BASED triage.
+/** Risk Monitor v2.2.0 — public RSS collector and transparent RULE-BASED triage.
  * No AI inference, no independently verified reports, no emergency alerts.
  * Runs in GitHub Actions. Node.js standard library only. */
 import fs from 'node:fs/promises';
@@ -85,6 +85,27 @@ function assessBelgium(o){
  const level=direct?'directe_vermelding':european?'europese_context':domains.length?'indirect_thema':'niet_vastgesteld';
  return {level,domains,explanation:direct?'België wordt in het bronfragment genoemd. Concrete impact is niet onafhankelijk bevestigd.':european?'Europese context genoemd. Belgische gevolgen zijn niet rechtstreeks vastgesteld.':domains.length?'Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.':'Geen concreet verband met België gevonden in titel of samenvatting.',verified:false};
 }
+// Conflict dossiers are topical indexes, not verified event clusters.
+const TOPIC_DOSSIERS=[
+ {id:'oekraine-rusland',label:'Rusland – Oekraïne',re:/\b(ukrain\w*|russi\w*|kremlin|zelensk\w*)\b/i},
+ {id:'iran-regio',label:'Iran en de regio',re:/\b(iran\w*|tehran|houthi\w*|hormuz|saudi\w*|yemen)\b/i},
+ {id:'israel-palestina',label:'Israël – Palestina',re:/\b(israel\w*|gaza|palestin\w*|hamas|west bank)\b/i},
+ {id:'china-taiwan',label:'China – Taiwan',re:/\b(taiwan\w*|beijing|china|chinese)\b/i},
+ {id:'korea',label:'Korea',re:/\b(korea|pyongyang|kim jong)\b/i},
+ {id:'soedan',label:'Soedan',re:/\b(sudan|khartoum|darfur)\b/i},
+ {id:'congo',label:'Congo',re:/\b(congo|kinshasa|goma|m23)\b/i},
+ {id:'nato-europa',label:'NAVO en Europa',re:/\b(nato|otan|european union|belgium|brussels)\b/i},
+ {id:'vs-beleid',label:'VS-beleid',re:/\b(trump|white house|pentagon|tariff\w*)\b/i}
+];
+function dossierFor(o){let t=o.title+' '+o.summary;let found=TOPIC_DOSSIERS.find(x=>x.re.test(t));return found?{id:found.id,label:found.label}:{id:'wereld',label:'Wereldwijde ontwikkelingen'};}
+// An attributed claim is a claim in a headline, not an independently checked fact.
+function evidenceFor(o){
+ const t=o.title+' '+o.summary;
+ if(/\b(alleges?|claims?|unverified|rumou?r|reportedly|according to|denies?|disputed)\b/i.test(t))return {kind:'claim',label:'Claim of betwiste uitspraak',explanation:'De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron.'};
+ if(o.official)return {kind:'official_source',label:'Officiële mededeling',explanation:'Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd.'};
+ if(/\b(says|warns|announces|plans|considers|may|could|would|expected)\b/i.test(o.title))return {kind:'statement',label:'Uitspraak of verwachting',explanation:'De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit.'};
+ return {kind:'news_report',label:'Nieuwsbericht',explanation:'Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport.'};
+}
 function assess(o,seenSourceNames){
   const t=o.title+' '+o.summary;
   let military=HAS.critical.test(o.title)?4:HAS.major.test(o.title)?3:HAS.moderate.test(o.title)?2:/\b(war|conflict|military|nuclear|missile)\b/i.test(t)?1:0;
@@ -94,6 +115,9 @@ function assess(o,seenSourceNames){
   let novelty=2;
   if(HAS.decision.test(o.title)&&!HAS.talk.test(o.title))novelty=3;
   if(EXCLUSION.test(o.title))novelty=0;
+  const firstSeen=Date.parse(o.firstSeen||o.date);
+  if(Number.isFinite(firstSeen)&&T-firstSeen>48*36e5)novelty=(Number.isFinite(Date.parse(o.lastChangedAt))&&T-Date.parse(o.lastChangedAt)<24*36e5)?1:0;
+  else if(Number.isFinite(firstSeen)&&T-firstSeen>24*36e5)novelty=Math.min(novelty,1);
   let reliability=seenSourceNames.length>=2?2:o.official?2:1;
   // Reliability 3 is never assigned automatically: corroboration is not verification.
   const total=military+belgium+novelty+reliability;
@@ -108,7 +132,7 @@ function assess(o,seenSourceNames){
   return {score:{military,belgium,novelty,reliability},total,category,belowReason,belgiumImpact,corroboratingSources:seenSourceNames,sourceEvidence:o.official?'official_publication':seenSourceNames.length>=2?'similar_headlines':'single_news_source',method:'rule_based_screening',verified:false};
 }
 async function loadOld(){try{let d=JSON.parse(await fs.readFile(PATH,'utf8'));return d&&typeof d==='object'?d:{};}catch{return {};}}
-async function fetchFeed(source){if(process.env.RISK_MONITOR_FEEDS_DIR){const filename=source.name.replace(/[^A-Za-z0-9]+/g,'_')+'.xml';const xml=await fs.readFile(process.env.RISK_MONITOR_FEEDS_DIR+'/'+filename,'utf8');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}const a=new AbortController();const timer=setTimeout(()=>a.abort(),12000);try{let r=await fetch(source.url,{signal:a.signal,headers:{'User-Agent':'RiskMonitor-v1.4-NonCommercial (+GitHub Actions)','Accept':'application/rss+xml,application/xml,text/xml,*/*'}});if(!r.ok)throw Error('HTTP '+r.status);let xml=await r.text();if(xml.length>4_000_000)throw Error('Feed te groot');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}finally{clearTimeout(timer);}}
+async function fetchFeed(source){if(process.env.RISK_MONITOR_FEEDS_DIR){const filename=source.name.replace(/[^A-Za-z0-9]+/g,'_')+'.xml';const xml=await fs.readFile(process.env.RISK_MONITOR_FEEDS_DIR+'/'+filename,'utf8');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}const a=new AbortController();const timer=setTimeout(()=>a.abort(),12000);try{let r=await fetch(source.url,{signal:a.signal,headers:{'User-Agent':'RiskMonitor-v2.2-NonCommercial (+GitHub Actions)','Accept':'application/rss+xml,application/xml,text/xml,*/*'}});if(!r.ok)throw Error('HTTP '+r.status);let xml=await r.text();if(xml.length>4_000_000)throw Error('Feed te groot');return parseFeed(xml).map(x=>({...x,source:source.name,official:source.official}));}finally{clearTimeout(timer);}}
 
 const old=await loadOld();
 const oldSignals=Array.isArray(old.signals)?old.signals:[];
@@ -132,7 +156,7 @@ for(let source of SOURCES){try{const entries=await fetchFeed(source);if(!entries
  }catch(err){console.warn(source.name+': '+err.message);status.push({name:source.name,ok:false,error:String(err.message).slice(0,100)});}}
 if(!ok)throw Error('Alle nieuwsfeeds zijn onbereikbaar; geen verouderde publicatie overschrijven.');
 const entries=[...map.values()].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date)).slice(0,MAX_ITEMS);
-for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));e.belgiumAssessment=assessBelgium(e);}
+for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));e.belgiumAssessment=assessBelgium(e);e.dossier=dossierFor(e);e.evidence=evidenceFor(e);}
 // Group only near-identical headlines about the same likely event within 24 hours.
 // Keep every original article in JSON; collapse duplicates only in presentation.
 // This is string similarity, NEVER factual corroboration or verification.
@@ -156,10 +180,10 @@ function deduplicateStories(items){
 }
 const grouped=deduplicateStories(entries);
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
-const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'1.6.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
+const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,dossierCounts:Object.fromEntries([...new Set(entries.map(e=>e.dossier.id))].map(id=>[id,entries.filter(e=>e.dossier.id===id&&!e.duplicateOf).length])),important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
+const result={schemaVersion:'2.2.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
  sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects'},history,signals:entries};
 await fs.mkdir('data',{recursive:true});
 await fs.writeFile(PATH,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(`Risk Monitor 1.6.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
+console.log(`Risk Monitor 2.2.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
