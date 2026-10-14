@@ -10,7 +10,7 @@
 <meta name="description" content="Mobiel geopolitiek nieuwsdashboard met automatische signaalscreening">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icons/icon-180.png">
-<title>Risk Monitor v1.3.0</title>
+<title>Risk Monitor v1.4.0</title>
 <style>
 :root {color-scheme:dark;--bg:#08111d;--surface:#132338;--surface2:#1b2e43;--stroke:#314559;--text:#f2f6fb;--dim:#bdd0df;--muted:#8da5b9;--blue:#8acfff;--mint:#71dbc3;--orange:#fac780;--red:#fca3a6}
 *{box-sizing:border-box;min-width:0}
@@ -33,7 +33,7 @@ header h1{font-size:25px;line-height:1.18;letter-spacing:-.7px;margin:18px 0 7px
 .controls{display:flex;justify-content:space-between;gap:9px;align-items:center;margin:12px 0 14px}.controls select{border:1px solid #395166;border-radius:10px;padding:9px;background:#142639;color:var(--text);font-size:12px;max-width:45%}.controls .hint{font-size:11px;color:var(--muted);flex:1;text-align:right;overflow-wrap:anywhere}
 .cards{display:grid;grid-template-columns:minmax(0,1fr);gap:11px;width:100%}
 .card{width:100%;max-width:100%;background:var(--surface);border:1px solid var(--stroke);border-radius:15px;overflow:hidden;overflow-wrap:anywhere;word-break:normal}
-.card-inner{padding:15px}.card .meta{display:flex;gap:8px;justify-content:space-between;align-items:center;font-size:10px;font-weight:770;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}.score{white-space:nowrap;border:1px solid #4d697b;padding:4px 7px;border-radius:8px;color:var(--dim);font-weight:800;font-size:11px}.score.hot{border-color:#9f6470;color:var(--red)}.score.medium{border-color:#86724b;color:var(--orange)}.score.calm{border-color:#478879;color:var(--mint)}
+.card-inner{padding:15px}.card .meta{display:flex;gap:8px;justify-content:space-between;align-items:center;font-size:10px;font-weight:770;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}.score{white-space:nowrap;border:1px solid #4d697b;padding:4px 7px;border-radius:8px;color:var(--dim);font-weight:800;font-size:11px}.score.hot{border-color:#99754b;color:var(--orange)}.score.medium{border-color:#86724b;color:var(--orange)}.score.calm{border-color:#478879;color:var(--mint)}
 .card h3{font-size:16px;line-height:1.38;margin:10px 0 7px;overflow-wrap:anywhere;white-space:normal;font-weight:775;letter-spacing:-.25px}
 .card p{font-size:13px;color:#d2deeb;line-height:1.53;margin:0 0 10px;overflow-wrap:anywhere;white-space:normal}
 .cardfoot{display:flex;justify-content:space-between;gap:8px;align-items:center;color:var(--muted);font-size:11px;flex-wrap:wrap}
@@ -62,7 +62,7 @@ header h1{font-size:25px;line-height:1.18;letter-spacing:-.7px;margin:18px 0 7px
  <div class="brand"><div class="logo" aria-hidden="true">◎</div><div class="brand-text"><div class="eyebrow">World Intelligence</div><div class="name">Risk Monitor</div></div><button id="refresh" class="refresh" type="button">↻ Vernieuw</button></div>
  <h1>Wereldnieuws. Helder en mobiel.</h1>
  <p>Automatische nieuwsselectie · Belgische aandachtspunten · geen alarm zonder verificatie</p>
- <div class="statusline"><span class="pill" id="lastUpdate">Nog niet bijgewerkt</span><span class="pill" id="sourceStatus">Bronnen: —</span><span class="pill">v1.3.0</span></div>
+ <div class="statusline"><span class="pill" id="lastUpdate">Nog niet bijgewerkt</span><span class="pill" id="sourceStatus">Bronnen: —</span><span class="pill">v1.4.0</span></div>
 </header>
 <main class="content">
   <section class="section active" id="page-news" aria-label="Nieuws">
@@ -71,7 +71,7 @@ header h1{font-size:25px;line-height:1.18;letter-spacing:-.7px;margin:18px 0 7px
       <div class="stat"><strong class="o" id="nTrump">—</strong><label>Trump – VS</label></div>
       <div class="stat"><strong class="g" id="nBelow">—</strong><label>Onder drempel</label></div>
     </div>
-    <div class="notice"><strong>Automatische screening, geen bevestigd alarm.</strong> De scores zijn een regelgebaseerde eerste selectie op basis van publieke nieuwsfeeds. Voor ernstige veiligheidswaarschuwingen blijft officiële bevestiging noodzakelijk. De aparte ChatGPT-meldingen blijven actief.</div>
+    <div class="notice"><strong>Voorlopige signalen — geen bevestigd alarm.</strong> Belangrijke artikelen zijn geselecteerd op basis van trefwoorden, niet onafhankelijk geverifieerd. Een score van 10/14 is geen kans op oorlog.  Voor ernstige veiligheidswaarschuwingen blijft officiële bevestiging noodzakelijk. De aparte ChatGPT-meldingen blijven actief.</div>
     <div class="tabs" role="tablist" aria-label="Nieuwsrubrieken">
       <button type="button" class="tab active" role="tab" aria-selected="true" data-tab="important">Belangrijk</button>
       <button type="button" class="tab" role="tab" aria-selected="false" data-tab="trump">Trump – VS</button>
@@ -79,7 +79,7 @@ header h1{font-size:25px;line-height:1.18;letter-spacing:-.7px;margin:18px 0 7px
     </div>
     <div class="controls"><select id="period" aria-label="Periode"><option value="1">Laatste 24 uur</option><option value="7" selected>Laatste 7 dagen</option><option value="30">Laatste 30 dagen</option></select><span class="hint" id="listCount">Nieuws laden…</span></div>
     <div id="categoryIntro" class="list-note"></div><div id="newsCards" class="cards"></div>
-    <p class="footer">Brongegevens zijn nieuwsheadlines en korte RSS-fragmenten. De app toont automatische Nederlandse vertalingen waar beschikbaar. Vertalingen en feiten zijn niet onafhankelijk gecontroleerd. Onzekerheid wordt daarom nadrukkelijk aangegeven.</p>
+    <p class="footer">Sterk gelijkende nieuwsheadlines kunnen worden gegroepeerd; alle bronlinks blijven beschikbaar onder details. Brongegevens zijn nieuwsheadlines en korte RSS-fragmenten. De app toont automatische Nederlandse vertalingen waar beschikbaar. Vertalingen en feiten zijn niet onafhankelijk gecontroleerd. Onzekerheid wordt daarom nadrukkelijk aangegeven.</p>
   </section>
   <section class="section" id="page-regions" aria-label="Regio's">
     <div class="sectiontitle"><h2>Regio's en conflicten</h2><span>Automatische selectie</span></div>
@@ -92,7 +92,7 @@ header h1{font-size:25px;line-height:1.18;letter-spacing:-.7px;margin:18px 0 7px
     <div class="sectiontitle"><h2>Laatste nieuwsitems</h2></div><div id="recentCards" class="cards"></div>
   </section>
   <section class="section" id="page-settings" aria-label="Instellingen">
-    <div class="sectiontitle"><h2>Instellingen &amp; werkwijze</h2><span>v1.3.0</span></div>
+    <div class="sectiontitle"><h2>Instellingen &amp; werkwijze</h2><span>v1.4.0</span></div>
     <div class="setting"><h3>Nieuwsaanvoer</h3><p>GitHub Actions controleert nieuwsfeeds rond 08:10 en 18:10 Belgische tijd. Nieuwe gegevens verschijnen hier bij het openen of verversen van de app. Werkelijke uitvoeringstijd kan afwijken.</p><p id="feedDetail" class="small"></p></div>
     <div class="setting"><h3>Nederlandse vertalingen</h3><p>GitHub Actions vertaalt de Engelse RSS-titels en samenvattingen offline via Argos Translate. Dit is een automatische vertaling, geen menselijke controle. Per nieuwskaart kun je de oorspronkelijke tekst bekijken. Als Argos niet beschikbaar is, blijft het oorspronkelijke bericht zichtbaar.</p><p id="translateDetail" class="small">Vertaalstatus laden…</p></div>
     <div class="setting"><h3>Score (0–14)</h3><p>Militaire escalatie 0–4, mogelijke Belgische impact 0–4, nieuwheid 0–3, bronbetrouwbaarheid 0–3. 10–14 = belangrijk signaal; 7–9 = nog te beoordelen; 0–6 = onder drempel. Een enkele nieuwsbron blijft normaal onder de drempel. Dit is geen voorspellend model.</p></div>
@@ -110,7 +110,7 @@ header h1{font-size:25px;line-height:1.18;letter-spacing:-.7px;margin:18px 0 7px
 </nav>
 <script>
 (()=>{'use strict';
-const VERSION='1.3.0',FEED='./data/auto-news.json',STORE='geopolitieke_monitor_v1_data';
+const VERSION='1.4.0',FEED='./data/auto-news.json',STORE='geopolitieke_monitor_v1_data';
 const $=id=>document.getElementById(id);
 const REGION_NAMES={'europa':'Europa / NAVO','midden-oosten':'Midden-Oosten','azie':'Azië','afrika':'Afrika','amerika':'Amerika','overig':'Overig'};
 let feed={generatedAt:null,sourcesOk:0,sourcesTotal:0,signals:[],history:[]},manual=[],tab='important',period=7,page='news',region=null,loading=false,error='';
@@ -123,13 +123,13 @@ function local(){try{let v=JSON.parse(localStorage.getItem(STORE)||'{}');manual=
 function saveLocal(){try{localStorage.setItem(STORE,JSON.stringify({items:manual,updatedAt:new Date().toISOString(),demo:false}))}catch(e){$('importStatus').textContent='Opslag op dit toestel mislukt: '+e.message}}
 function scoreOf(x){let s=x.score||{};let num=(k,max)=>Math.min(max,Math.max(0,Number(s[k])||0));return Math.round(num('military',4)+num('belgium',4)+num('novelty',3)+num('reliability',3))}
 function categoryOf(x){if(x.manual){if(x.topic==='trump')return 'trump';let total=scoreOf(x);return total>=10||x.officialCritical||x.reviewed?'important':total>=7?'review':'below'}if(x.topic==='trump')return 'trump';return x.category==='important'?'important':x.category==='review'?'review':'below'}
-function signals(){let base=feed.signals.filter(x=>x&&x.title&&x.date&&safeUrl(x.url)).map(x=>({...x,manual:false}));let ids=new Set(base.map(x=>x.id));let localItems=manual.filter(x=>x&&x.title&&x.date&&!ids.has(x.id)).map(x=>({...x,manual:true}));return [...base,...localItems].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))}
+function signals(){let base=feed.signals.filter(x=>x&&x.title&&x.date&&safeUrl(x.url)&&!x.duplicateOf).map(x=>({...x,manual:false}));let ids=new Set(base.map(x=>x.id));let localItems=manual.filter(x=>x&&x.title&&x.date&&!ids.has(x.id)).map(x=>({...x,manual:true}));return [...base,...localItems].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))}
 const inPeriod=x=>Number.isFinite(Date.parse(x.date))&&Date.parse(x.date)>=Date.now()-period*864e5;
 function trumpImportant(x){return x.topic==='trump'&&(x.manual?!!x.trumpSignificant:(x.category==='important'))}
 function isBelow(x){return categoryOf(x)==='below'||(x.topic==='trump'&&!trumpImportant(x))}
 function counts(rows){return {important:rows.filter(x=>categoryOf(x)==='important'||categoryOf(x)==='review').length,trump:rows.filter(x=>categoryOf(x)==='trump').length,below:rows.filter(isBelow).length}}
 function makeCard(x){
- const isManual=x.manual,category=categoryOf(x),s=scoreOf(x),type=isManual?'Handmatig beoordeeld':'Automatisch gescreend';
+ const isManual=x.manual,category=categoryOf(x),s=scoreOf(x),type=isManual?'Lokaal toegevoegd':'Automatische screening';
  const card=el('article','card');let inner=el('div','card-inner');let top=el('div','meta');top.append(el('span','',REGION_NAMES[x.region]||'Wereld'),el('span','score '+(category==='important'?'hot':category==='review'?'medium':'calm'),s+'/14'));inner.append(top);
  const origTitle=cleanText(x.title),origSummary=cleanText(x.summary||'');
  const tr=x.translation;
@@ -140,17 +140,17 @@ function makeCard(x){
  const langRow=el('div','translate-line');
  langRow.append(el('span','translation-status',hasTranslation?'Automatisch vertaald · Argos':isManual?'Handmatig toegevoegd':'Originele taal · vertaling volgt of is niet beschikbaar'));
  if(hasTranslation){let original=false;const toggle=el('button','original-toggle','Toon origineel');toggle.type='button';toggle.setAttribute('aria-pressed','false');toggle.addEventListener('click',()=>{original=!original;heading.textContent=original?origTitle:cleanText(tr.title);lead.textContent=original?(origSummary||'Alleen een nieuwskop beschikbaar.'):(cleanText(tr.summary||'')||'Alleen een nieuwskop beschikbaar.');toggle.textContent=original?'Toon Nederlands':'Toon origineel';toggle.setAttribute('aria-pressed',String(original))});langRow.append(toggle)}
- inner.append(langRow);
- let foot=el('div','cardfoot');foot.append(el('span','category '+(isManual?'verified':category==='review'?'warn':''),category==='important'?'Belangrijk signaal':category==='review'?'Te beoordelen':category==='trump'?(trumpImportant(x)?'Trump · belangrijk':'Trump · onder drempel'):'Onder drempel'),el('span','',td(x.date)));inner.append(foot);card.append(inner);
+ inner.append(langRow);if(!isManual){let evidence=x.sourceEvidence==='official_publication'?'Officiële publicatie (niet onafhankelijk gecheckt)':(x.corroboratingSources||[]).length>=2?'Overeenkomstige koppen uit meerdere bronnen':'Eén nieuwsbron';inner.append(el('div','translation-status','Bronstatus: '+evidence));}
+ let foot=el('div','cardfoot');foot.append(el('span','category '+(isManual?'verified':category==='review'?'warn':''),category==='important'?'Prioritaire controle':category==='review'?'Extra controle':category==='trump'?(trumpImportant(x)?'Trump · belangrijk':'Trump · onder drempel'):'Onder drempel'),el('span','',td(x.date)));inner.append(foot);card.append(inner);
  const button=el('button','details-toggle','Toon details en bronnen ▾');button.type='button';button.setAttribute('aria-expanded','false');const detail=el('div','detail');
  const field=(heading,value)=>{detail.append(el('h4','',heading),el('p','',cleanText(value||'Niet vastgesteld in de beschikbare feed.')))};
- field('Beoordeling',isManual?'Lokaal ingevoerd of geïmporteerd item.':type+' met vaste trefwoordregels, geen onafhankelijke feitelijke verificatie.');
+ field('Beoordeling',isManual?'Lokaal ingevoerd of geïmporteerd item; broncontrole hangt af van de invoer.':type+' met vaste trefwoordregels. De nieuwsinhoud is niet onafhankelijk geverifieerd. De score is geen kansberekening.');
  field('Mogelijke gevolgen voor België',x.belgiumImpact||'Geen specifieke Belgische gevolgen vastgesteld in de korte nieuwsfeed.');
  field('Onzekerheid',x.uncertainty||(isManual?'Niet opgegeven.':'De inhoud, omvang en gevolgen van het bericht zijn niet onafhankelijk bevestigd.'));
  if(category==='below'||category==='trump')field('Waarom hier?',x.belowReason||(category==='trump'?(trumpImportant(x)?'Belangrijk Trump-besluit volgens voorlopige screening.':'Nog onder de meldingsdrempel; in deze rubriek ter opvolging.'):'Geen voldoende bevestigde nieuwe impact.'));
  if(x.score){const sc=x.score;field('Scoreverdeling',`Militair ${sc.military||0}/4 · België ${sc.belgium||0}/4 · Nieuwheid ${sc.novelty||0}/3 · Bronnen ${sc.reliability||0}/3`)}
  if(!isManual&&Array.isArray(x.corroboratingSources)&&x.corroboratingSources.length>1)field('Vergelijkbare berichtgeving',x.corroboratingSources.join(', ')+' · Automatische tekstovereenkomst, geen volledige factcheck.');
- detail.append(el('h4','','Bronnen'));const src=el('div','sources');let links=isManual?(Array.isArray(x.sources)?x.sources:[]):[{title:x.source||'Open bronartikel',url:x.url}];let count=0;for(let source of links){let url=safeUrl(source.url);if(!url)continue;let a=el('a','',source.title||'Bronartikel');a.href=url;a.target='_blank';a.rel='noopener noreferrer';src.append(a);count++;}if(!count)src.append(el('p','','Geen geldige bronlinks beschikbaar.'));detail.append(src);
+ detail.append(el('h4','','Bronnen'));const src=el('div','sources');let links=isManual?(Array.isArray(x.sources)?x.sources:[]):[{title:x.source||'Open bronartikel',url:x.url}];if(!isManual&&Array.isArray(x.relatedCoverage))links=[...links,...x.relatedCoverage];let count=0;for(let source of links){let url=safeUrl(source.url);if(!url)continue;let a=el('a','',source.title||'Bronartikel');a.href=url;a.target='_blank';a.rel='noopener noreferrer';src.append(a);count++;}if(!count)src.append(el('p','','Geen geldige bronlinks beschikbaar.'));detail.append(src);
  button.addEventListener('click',()=>{let open=detail.classList.toggle('open');button.setAttribute('aria-expanded',String(open));button.textContent=open?'Verberg details ▴':'Toon details en bronnen ▾'});
  card.append(button,detail);return card;
 }
@@ -160,17 +160,17 @@ function renderNews(){const rows=signals().filter(inPeriod);const c=counts(rows)
  document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===tab);b.setAttribute('aria-selected',String(b.dataset.tab===tab))});
  let selected=rows.filter(x=>tab==='important'?(categoryOf(x)==='important'||categoryOf(x)==='review'):tab==='trump'?categoryOf(x)==='trump':isBelow(x));
  $('listCount').textContent=selected.length+' items · '+period+' d';
- $('categoryIntro').textContent=tab==='important'?'Automatische alarmscreening en items die extra controle vragen. Geen officieel gevalideerde dreigingsmeldingen.':tab==='trump'?'Trump-nieuws zonder direct conflictverband. Uitspraken worden niet automatisch als beleidsbesluit beschouwd.':'GEEN ALARM · Lage score, onvoldoende verificatie of beperkte impact. Niet-belangrijk Trump-nieuws verschijnt hier ook. De items blijven zichtbaar voor evaluatie.';
+ $('categoryIntro').textContent=tab==='important'?'Prioritaire signalen voor menselijke controle. Geen bevestigd alarm of onafhankelijk gevalideerde dreigingsmelding.':tab==='trump'?'Trump-nieuws zonder direct conflictverband. Uitspraken worden niet automatisch als beleidsbesluit beschouwd.':'GEEN ALARM · Lage score, onvoldoende verificatie of beperkte impact. Niet-belangrijk Trump-nieuws verschijnt hier ook. De items blijven zichtbaar voor evaluatie.';
  cardsInto($('newsCards'),selected,80);
 }
 function renderRegions(){let rows=signals().filter(inPeriod);let container=$('regionButtons');container.replaceChildren();for(let [id,label] of Object.entries(REGION_NAMES)){let subset=rows.filter(x=>x.region===id),b=el('button','regionbtn');b.type='button';b.append(el('strong','',label),el('span','',subset.length+' signalen'));if(region===id)b.style.borderColor='var(--blue)';b.addEventListener('click',()=>{region=region===id?null:id;renderRegions()});container.append(b)}let selected=region?rows.filter(x=>x.region===region):rows;$('regionTitle').textContent=region?REGION_NAMES[region]:'Alle regio’s';$('regionCount').textContent=selected.length+' items';cardsInto($('regionCards'),selected,45)}
-function renderHistory(){let history=Array.isArray(feed.history)?feed.history:[];$('historyCount').textContent=history.length+' controles';let parent=$('historyList');parent.replaceChildren();if(!history.length){empty(parent,'Nog geen automatische historiek','Vanaf de eerste v1.3.0 GitHub-run worden hier controlepunten opgeslagen.')}else{for(let h of [...history].reverse().slice(0,20)){let box=el('div','hist-item');box.append(el('strong','',day(h.at)+' · '+(h.added||0)+' nieuw'),el('span','','Bronnen '+(h.sourcesOk||0)+' · Belangrijke signalen '+(h.important||0)+' · Verder beoordelen '+(h.review||0)+' · Onder drempel '+(h.below||0)));parent.append(box)}}cardsInto($('recentCards'),signals().slice(0,20),20)}
-function renderMeta(){let ok=feed.generatedAt&&Number.isFinite(Date.parse(feed.generatedAt));let hours=ok?(Date.now()-Date.parse(feed.generatedAt))/36e5:Infinity;$('lastUpdate').textContent=ok?(hours>30?'⚠ Gegevens verouderd: ':'Bijgewerkt: ')+td(feed.generatedAt):'Nog geen gegevens';$('sourceStatus').textContent='Bronnen: '+(feed.sourcesOk||0)+'/'+(feed.sourcesTotal||0);$('feedDetail').textContent=ok?'Laatste RSS-verwerking: '+day(feed.generatedAt)+(error?' · Fout bij verversen: '+error:''):'Nog geen bruikbare gegevens.'+(error?' '+error:'');let t=feed.translation||{};$('translateDetail').textContent=t.engine?(t.engine+' · '+(t.translatedThisRun||0)+' nieuwsitems deze ronde vertaald · '+(t.pending||0)+' nog te vertalen'+(t.status==='model_unavailable'||t.status==='translation_failed'?' · Vertaalfout: origineel blijft beschikbaar':'') ): 'Nog geen vertaalstatus ontvangen. Voer de nieuwe GitHub-workflow uit.'}
+function renderHistory(){let history=Array.isArray(feed.history)?feed.history:[];$('historyCount').textContent=history.length+' controles';let parent=$('historyList');parent.replaceChildren();if(!history.length){empty(parent,'Nog geen automatische historiek','Vanaf de eerste v1.4.0 GitHub-run worden hier controlepunten opgeslagen.')}else{for(let h of [...history].reverse().slice(0,20)){let box=el('div','hist-item');box.append(el('strong','',day(h.at)+' · '+(h.added||0)+' nieuw'),el('span','','Bronnen '+(h.sourcesOk||0)+' · Belangrijke signalen '+(h.important||0)+' · Verder beoordelen '+(h.review||0)+' · Onder drempel '+(h.below||0)+' · Gewijzigd '+(h.changed||0)+' · Gegroepeerd '+(h.grouped||0)));parent.append(box)}}cardsInto($('recentCards'),signals().slice(0,20),20)}
+function renderMeta(){let ok=feed.generatedAt&&Number.isFinite(Date.parse(feed.generatedAt));let hours=ok?(Date.now()-Date.parse(feed.generatedAt))/36e5:Infinity;$('lastUpdate').textContent=ok?(hours>30?'⚠ Gegevens verouderd: ':'Bijgewerkt: ')+td(feed.generatedAt):'Nog geen gegevens';$('sourceStatus').textContent='Bronnen: '+(feed.sourcesOk||0)+'/'+(feed.sourcesTotal||0)+(feed.sourcesOk<feed.sourcesTotal?' · deels mislukt':'');$('feedDetail').textContent=ok?'Laatste RSS-verwerking: '+day(feed.generatedAt)+(feed.sourcesOk<feed.sourcesTotal?' · Let op: '+(feed.sourcesTotal-feed.sourcesOk)+' feeds niet bereikbaar ('+(feed.sources||[]).filter(x=>!x.ok).map(x=>x.name).join(', ')+')':'')+' · '+(feed.quality?.groupedSimilarItems||0)+' vrijwel identieke artikelen samengevoegd in de weergave'+(error?' · Fout bij verversen: '+error:''):'Nog geen bruikbare gegevens.'+(error?' '+error:'');let t=feed.translation||{};$('translateDetail').textContent=t.engine?(t.engine+' · '+(t.translatedThisRun||0)+' nieuwsitems deze ronde vertaald · '+(t.pending||0)+' nog te vertalen'+(t.status==='model_unavailable'||t.status==='translation_failed'?' · Vertaalfout: origineel blijft beschikbaar':'') ): 'Nog geen vertaalstatus ontvangen. Voer de nieuwe GitHub-workflow uit.'}
 function render(){renderMeta();renderNews();renderRegions();renderHistory();document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===page));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id==='page-'+page));}
 async function refresh(){if(loading)return;loading=true;$('refresh').textContent='↻ Laden…';try{let response=await fetch(FEED+'?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);let data=await response.json();if(data.type!=='automated_headline_feed'||!Array.isArray(data.signals))throw Error('Ongeldig nieuwsbestand');feed={...data,signals:data.signals.filter(x=>x&&typeof x.title==='string'&&typeof x.date==='string'),history:Array.isArray(data.history)?data.history:[]};error='';}catch(e){error=e.message||String(e)}finally{loading=false;$('refresh').textContent='↻ Vernieuw';render()}}
 function importManual(){let status=$('importStatus');try{let val=JSON.parse($('pasteJson').value);let items=Array.isArray(val)?val:val.items;if(!Array.isArray(items)||items.length>200)throw Error('Gebruik een JSON-object met maximaal 200 items.');let byId=new Map(manual.map(x=>[x.id,x]));for(let o of items){if(!o||!o.title||!Number.isFinite(Date.parse(o.date)))throw Error('Titel en geldige datum vereist');let id=String(o.id||('M-'+cryptoRandom()));byId.set(id,{...o,id,manual:true});}manual=[...byId.values()];saveLocal();status.textContent=items.length+' beoordeelde items opgeslagen.';render()}catch(e){status.textContent='Import mislukt: '+e.message}}
 function cryptoRandom(){return Math.random().toString(36).slice(2,10)}
-function exportLocal(){let blob=new Blob([JSON.stringify({schemaVersion:VERSION,items:manual},null,2)],{type:'application/json'}),u=URL.createObjectURL(blob);let a=el('a');a.href=u;a.download='risk-monitor-lokale-items-v1.3.0.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function exportLocal(){let blob=new Blob([JSON.stringify({schemaVersion:VERSION,items:manual},null,2)],{type:'application/json'}),u=URL.createObjectURL(blob);let a=el('a');a.href=u;a.download='risk-monitor-lokale-items-v1.4.0.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{tab=b.dataset.tab;renderNews()}));
 document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>{page=b.dataset.page;render();window.scrollTo(0,0)}));
 $('period').addEventListener('change',e=>{period=Number(e.target.value)||7;render()});$('refresh').addEventListener('click',refresh);$('importJson').addEventListener('click',importManual);$('exportData').addEventListener('click',exportLocal);

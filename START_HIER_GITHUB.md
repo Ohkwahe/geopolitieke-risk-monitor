@@ -1,29 +1,21 @@
-# Risk Monitor v1.3.0 installeren via GitHub (bestaande app behouden)
+# Risk Monitor v1.4.0 installeren op jouw bestaande GitHub
 
-**Release-kandidaat; v1.2.0 blijft de goedgekeurde fallback totdat de automatische Argos-run op GitHub en de iPhone-weergave bevestigd zijn.**
+**Geen nieuwe repository of nieuwe app op de iPhone aanmaken.** Hou v1.3.0 als terugvalversie.
 
-## Upgraden zonder opnieuw installeren
+1. Download/maak ZIP via de meegeleverde HTML-installer en pak het uit op Windows.
+2. Open je bestaande repository op GitHub → **Code** → **Add file → Upload files**.
+3. Upload de inhoud van het pakket op de branch `main`, **niet de bovenliggende map**. Neem `index.html`, `sw.js`, `manifest.webmanifest`, `requirements-translate.txt`, `scripts/`, `tests/` en `icons/` mee. Commit als `release: Risk Monitor v1.4.0 RC`.
+4. Controleer onder **Code** of het verborgen bestand `.github/workflows/update-news.yml` daadwerkelijk is bijgewerkt. GitHub/Windows kan verborgen mappen bij slepen overslaan. Zo nodig: open dat bestand op GitHub, klik op **Edit** (potlood) en plak de inhoud uit het meegeleverde `.txt`-bestand (als apart download beschikbaar) of het bestand uit het uitgepakte ZIP. Commit.
+5. **Belangrijk: upload of overschrijf NOOIT je bestaande `data/auto-news.json`.** Het upgradepakket bevat dit bestand niet; GitHub behoudt je levende nieuwsdata en historiek.
+6. Ga naar **Actions** → `Risk Monitor - nieuws ophalen en publiceren` → **Run workflow** op `main`. Controleer de nieuwe jobs `Test RSS-verwerking en nieuwsregels`, `Argos-modelcache herstellen`, `Nieuwe headlines automatisch naar Nederlands vertalen`, `Controleer gegenereerd nieuwsbestand` en `Publiceer GitHub Pages`.
+7. Controleer onder `Argos-modelcache herstellen`: de eerste v1.4.0-run toont mogelijk `Cache not found`, dat is normaal door de nieuwe cache sleutel. Controleer bij de volgende run dat hij cache terugvindt. De eerste run mag langer duren.
+8. Open eerst de GitHub Pages-site in Safari; vernieuw. Controleer `v1.4.0`. Open daarna de bestaande iPhone-app opnieuw zonder het beginschermicoon te verwijderen.
+9. Test: (a) NL + Toon origineel, (b) Belangrijk / Trump – VS / Onder drempel, (c) details-bronlinks, (d) onder Instellingen het aantal beschikbare RSS-feeds en gegroepeerde berichten, (e) geen horizontaal scrollen.
 
-1. Bewaar desgewenst een kopie van je GO-versie v1.2.0 (ZIP) en exporteer eventuele handmatige items op de iPhone via Instellingen.
-2. Pak `Risk_Monitor_PWA_v1.3.0_NL_Argos.zip` uit op je Windows-computer.
-3. Open dezelfde GitHub-repository `geopolitieke-risk-monitor` → **Code** → **Add file** → **Upload files**.
-4. Upload de **inhoud** van het pakket naar de repository-root; behoud de mapstructuur. Upload zeker `index.html`, `sw.js`, `scripts/update-feed.mjs`, `scripts/translate-feed.py`, `requirements-translate.txt`, `tests/`, `.github/workflows/update-news.yml` en de iconen/manifest. Maak geen extra bovenliggende map aan.
-5. **Het actuele bestand `data/auto-news.json` niet verwijderen of vervangen.** Het zit niet in de ZIP; je bestaande nieuws- en controlehistoriek blijft staan.
-6. Bevestig op branch `main` met commitbericht `release: Risk Monitor v1.3.0 NL Argos`.
-7. Open **Actions** → **Risk Monitor - nieuws ophalen en publiceren** → **Run workflow** → branch `main` → groene knop **Run workflow**.
-8. Controleer of deze stappen groen zijn: `RSS feeds verwerken`, `Basistests vertaalmodule`, `Argos Translate installeren`, `Nieuwe headlines automatisch naar Nederlands vertalen`, `Publiceer GitHub Pages`.
-9. Ga onder **Code → data → auto-news.json**. Verwacht `schemaVersion: "1.3.0"` en `translation.status` met `ok`, `partial` of `up_to_date`. Bij `model_unavailable` of `translation_failed` is de vertaalstap nog niet operationeel, maar nieuws blijft bereikbaar. `signals[...].translation.title` bevat de NL tekst voor vertaalde items.
-10. Open je gepubliceerde GitHub Pages-adres eerst in Safari, ververs, controleer dat **v1.3.0** zichtbaar is, sluit daarna de beginscherm-app helemaal af en open opnieuw. Bij een vertaald bericht staat `Automatisch vertaald · Argos` met de knop **Toon origineel**.
+### Als de workflow rood wordt
 
-## Let op
+Ga naar **Actions → mislukte uitvoering → update-and-publish** en kopieer de exacte naam van de rode stap en de foutmelding. Eventueel kun je in GitHub `History`/`Commits` terug naar de laatste GO (v1.3.0). Verwijder nooit zomaar de map `data`.
 
-- Bestaande headlines worden maximaal 70 per run verwerkt, nieuwste eerst. De eerste uitvoering kan daarom deels Nederlandstalig zijn. Bij volgende runs komt de rest aan de beurt.
-- De eerste workflowrun downloadt Python-afhankelijkheden en het taalmodel; daardoor kan hij aanzienlijk langer duren. De modelcache versnelt latere runs. Cache mag door GitHub worden verwijderd en dan wordt opnieuw gedownload.
-- De geplande runs blijven rond **08:10 en 18:10 Belgische tijd**. De separate ChatGPT-waarschuwingen blijven rond **08:00 en 18:00** bestaan.
-- Er is geen DeepL-account, vertaal-API-sleutel of betaald AI-abonnement nodig. GitHub Actions heeft eigen gebruikslimieten en storingen zijn mogelijk.
-- Automatische vertalingen kunnen fout zijn; **Toon origineel** en de oorspronkelijke bronlink blijven altijd beschikbaar.
-- Automatische RSS-scores zijn **voorlopige signalen, geen onafhankelijk gecontroleerde dreigingsbeoordelingen**.
+### Aandachtspunt bij caching
 
-## Wanneer deze release GO wordt
-
-Na een groene GitHub Action-run met beschikbare Nederlandse vertalingen, correcte tabbladen, geen horizontaal scrollen en behoud van de iPhone-historiek. Tot dan blijft v1.2.0 de formele GO-versie.
+De nieuwe Argos-cache werkt zodra er één succesvolle run het en→nl-model in de cache heeft opgeslagen. Als de cache vervolgens niet gevonden wordt, kijk in de logs van `Argos-modelcache herstellen` en de vertaalstap. De maximale jobduur is 35 minuten; bij overschrijden verschijnt een GitHub-fout en geen nieuwe publicatie.

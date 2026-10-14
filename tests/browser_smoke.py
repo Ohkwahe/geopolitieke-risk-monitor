@@ -39,7 +39,7 @@ with sync_playwright() as p:
         if width==390:
             page.locator('[data-page="news"]').click()
             page.locator('[data-tab="important"]').click()
-            page.screenshot(path=str(ROOT / 'test_mobiel_v1.3.0.png'),full_page=True)
+            page.screenshot(path=str(ROOT / 'test_mobiel_v1.4.0.png'),full_page=True)
         print(f'{width}px: OK / geen horizontaal scrollen / NL-EN-knop / tabs / instellingen')
         page.close()
     browser.close()

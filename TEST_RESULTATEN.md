@@ -1,10 +1,21 @@
-# Risk Monitor v1.3.0 — testresultaten
+# Testresultaten — Risk Monitor v1.4.0
 
-Datum: 2026-10-13
+Getest lokaal op 2026-10-13, met kunstmatige RSS-voorbeelden (geen actueel nieuws).
 
-- 5 Python-unit-tests: **OK**. Getest: Nederlandse velden toegevoegd, origineel/score ongewijzigd, bronhash-cache, vertaling na gewijzigde bron, fallback bij model-/vertaalfout, begrenzing per run.
-- RSS-integratietest met 5 opgeslagen openbare feedfixtures: **OK** (8 testitems, alle 5 feeds verwerkt).
-- Chromium/Playwright mobiel: **OK** bij 320, 375, 390, 430 en 768 pixels; geen horizontale scroll, categorie-tabs werken, knop Toon origineel schakelt naar Engelse testkop en terug, vertaalstatus Instellingen aanwezig.
-- JavaScript Node-syntax: **OK**.
-- NIET hier getest: daadwerkelijke Argos-modeldownload en echte machinevertaalkwaliteit (deze runtime bevat het Argos-model niet en heeft geen uitvoerbare netwerktoegang tot de package index). Test op GitHub Actions noodzakelijk vóór GO.
-- De gebruikte headlines in testfixtures zijn **fictieve TESTDATA** en geen actuele nieuwsfeiten.
+| Onderdeel | Resultaat |
+| --- | --- |
+| Node JavaScript syntaxcheck collector en validator | GO |
+| Collector 5/5 offline RSS-fixtures | GO |
+| Bijna identieke headlines uit verschillende bronnen gegroepeerd | GO |
+| Originele bronrecords en URL's behouden | GO |
+| Bij tweede run geen dubbele nieuwe records | GO |
+| Gewijzigde RSS-samenvatting gedetecteerd | GO |
+| Bronbetrouwbaarheid blijft maximaal 2, auto-verified=false | GO |
+| Datacontract validator | GO |
+| Python vertaaltests (gesimuleerde vertaaldienst) | 5/5 GO |
+| Browser (Chromium) 320, 375, 390, 430 en 768 px | GO |
+| Geen horizontaal scrollen, tabbladen, NL/EN-wissel, instellingen | GO |
+| Echte GitHub Actions-cache, Argos-model-hergebruik | NOG TE CONTROLEREN NA INSTALLATIE |
+| Live RSS-kwaliteit en GitHub Pages publicatie | NOG TE CONTROLEREN NA INSTALLATIE |
+
+**Betekenis:** lokaal testgeslaagd; niet automatisch GO voor de productie-installatie. v1.3.0 blijft de laatste formeel door de gebruiker gevalideerde versie totdat v1.4.0 op GitHub/iPhone bevestigd is.

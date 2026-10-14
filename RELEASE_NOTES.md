@@ -1,25 +1,31 @@
-# Risk Monitor — releasehistoriek
+# Release Notes — Risk Monitor
 
-## v1.3.0 — kandidaat (2026-10-13)
+## v1.4.0 (2026-10-13) — Releasekandidaat
 
-**Nieuw**
-- Automatische offline Nederlandse vertaling via Argos Translate (Engels → Nederlands) als stap ná RSS-ophaling en scoring.
-- Vertaalcache per bericht met SHA-256-brontekstfingerprint; maximaal 70 nieuwe/oude berichten per uitvoering, recentste eerst.
-- Mobiele vertaalde titels en samenvattingen, met per nieuwskaart `Toon origineel` / `Toon Nederlands`.
-- Vertaalstatus in Instellingen, inclusief aantal deze ronde en nog te verwerken items.
-- Model-/pip-cache in GitHub Actions om overbodige downloads te verminderen.
-- Eenheidstests voor vertaling, gewijzigde bron, cache, mislukte vertaling en modelstoring.
+Type: MINOR, omdat er nieuwe gebruikerszichtbare functies zijn.
 
-**Behouden**
-- Alle nieuwsfilters, Trump-tab, onder-drempel-items, risicoscores, Belgische impact, 08:10/18:10-schema, iPhone lokaal opgeslagen handmatige items, bronlinks en historiek.
-- Zonder model blijft Engelse bron leesbaar en publicatie bereikbaar.
+### Added
+- Conservatieve groepering van bijna identieke cross-source headlines, met afzonderlijk bewaarde bronlinks en originele data.
+- Transparant zichtbaar bronbewijs per nieuwskaart (officiële publicatie / meerdere gelijkaardige koppen / één bron).
+- Foutdiagnose voor onbereikbare RSS-bronnen, en groepsaantallen in Instellingen en Historiek.
+- Vastleggen van tussentijds gewijzigde RSS-titels/samenvattingen.
+- `scripts/validate-feed.mjs` en `tests/test_collector.mjs` voor automatische controles.
 
-**Bekende beperkingen**
-- Machinevertalingen kunnen nuances en namen verkeerd vertalen.
-- Alleen de RSS-titels en samenvattingen worden vertaald. Volledige artikelen blijven bij de oorspronkelijke bron.
-- Geen eigen AI-factcheck of automatische koppeling van ChatGPT-beoordelingen aan GitHub.
-- Argos-taalmodel is tijdens het ontwikkelen niet end-to-end gedownload/gevalideerd; deze stap wordt pas na een succesvolle GitHub-run GO.
+### Fixed
+- `ARGOS_PACKAGE_DIR` vervangen door de correct gedocumenteerde `ARGOS_PACKAGES_DIR` voor hergebruik van de modelcache.
+- GitHub Actions cachepad en Argos-modelinstallatielocatie zijn gelijkgetrokken.
+- Eerdere vertalingen worden niet opnieuw vertaald wanneer de Engelse tekst onveranderd is.
+
+### Changed
+- GitHub-job heeft `timeout-minutes: 35`.
+- Prioritaire signalen heten expliciet 'Prioritaire controle', niet een bevestigd alarm.
+- De bronbetrouwbaarheid en Belgische impact blijven indicaties, niet onafhankelijk geverifieerde feiten.
+
+### Regression
+- Nederlandse vertaling en origineel, tabbladen, periodeselectie, regio's, historie, PWA-cache, lokaal opgeslagen data ongewijzigd.
+
+## v1.3.0 (2026-10-13) — GO
+Automatische Nederlandse vertaling met Argos Translate en knop 'Toon origineel'.
 
 ## v1.2.0 — GO
-
-Vorige stabiele release: mobiele layout, drie gekoppelde rubrieken, regelgebaseerde screening, Belgisch impactveld en controlehistoriek.
+Mobiele rendering-fix, tabbladen en voorlopige regelgebaseerde analyse.

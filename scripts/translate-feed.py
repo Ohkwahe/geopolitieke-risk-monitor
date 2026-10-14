@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Risk Monitor 1.3.0: translate PUBLIC RSS headlines/summaries to Dutch with local Argos.
+"""Risk Monitor 1.4.0: translate PUBLIC RSS headlines/summaries to Dutch with local Argos.
 
 Only source English text is translated; original and rule-based scores remain untouched.
 Failure to load model leaves the feed available in English and prints GitHub warning.
@@ -24,13 +24,16 @@ def fingerprint(title: str, summary: str) -> str:
 
 def get_argos_engine():
     """Install only the en→nl model, reusing cached packages across runner jobs."""
-    model_dir = os.environ.get("ARGOS_PACKAGE_DIR")
+    model_dir = os.environ.get("ARGOS_PACKAGES_DIR")
     if model_dir:
         Path(model_dir).mkdir(parents=True, exist_ok=True)
     from argostranslate import package, translate
 
     pairs = {(p.from_code, p.to_code) for p in package.get_installed_packages() if p.type == "translate"}
-    if ("en", "nl") not in pairs:
+    if ("en", "nl") in pairs:
+        print("Argos en→nl: geïnstalleerd taalmodel hergebruikt (cache beschikbaar)")
+    else:
+        print("Argos en→nl: taalmodel ontbreekt; ophalen en installeren")
         package.update_package_index()
         matches = [p for p in package.get_available_packages() if p.from_code == "en" and p.to_code == "nl" and p.type == "translate"]
         if not matches:
@@ -113,9 +116,9 @@ def main():
     if doc.get("type") != "automated_headline_feed":
         raise ValueError("Geen ondersteunde Risk Monitor feed")
     doc, status = process(doc)
-    doc["schemaVersion"] = "1.3.0"
+    doc["schemaVersion"] = "1.4.0"
     FEED_FILE.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Risk Monitor 1.3.0 vertaling:", json.dumps(status, ensure_ascii=False))
+    print("Risk Monitor 1.4.0 vertaling:", json.dumps(status, ensure_ascii=False))
     if status["status"] in ("model_unavailable", "translation_failed"):
         print("::warning::Vertaling tijdelijk niet beschikbaar. Originele berichten blijven leesbaar.")
 
