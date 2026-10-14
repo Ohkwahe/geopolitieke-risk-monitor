@@ -1,4 +1,4 @@
-/** Risk Monitor v2.4.0 — public RSS collector and transparent RULE-BASED triage.
+/** Risk Monitor v3.0.0 — public RSS collector and transparent RULE-BASED triage.
  * No AI inference, no independently verified reports, no emergency alerts.
  * Runs in GitHub Actions. Node.js standard library only. */
 import fs from 'node:fs/promises';
@@ -147,7 +147,7 @@ for(let source of SOURCES){try{const entries=await fetchFeed(source);if(!entries
     if(map.has(id)){
       const earlier=map.get(id);
       if(earlier.title!==title||earlier.summary!==summary){
-        earlier.title=title;earlier.summary=summary;earlier.lastChangedAt=NOW.toISOString();changedIds.add(id);changed++;
+        earlier.title=title;earlier.summary=summary;delete earlier.aiAnalysis;earlier.lastChangedAt=NOW.toISOString();changedIds.add(id);changed++;
       }
       continue;
     }
@@ -207,7 +207,7 @@ for(const item of entries){
 
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
 const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,dossierCounts:Object.fromEntries([...new Set(entries.map(e=>e.dossier.id))].map(id=>[id,entries.filter(e=>e.dossier.id===id&&!e.duplicateOf).length])),important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'2.4.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),previousControlAt,sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
+const result={schemaVersion:'3.0.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),previousControlAt,sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
  sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects',sourceAudit:'observed_rss_links_only'},history,signals:entries};
 await fs.mkdir('data',{recursive:true});

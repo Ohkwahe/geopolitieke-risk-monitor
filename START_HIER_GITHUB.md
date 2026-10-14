@@ -1,13 +1,15 @@
-# GitHub-upgrade v2.4.0
+# Risk Monitor v3.0.0 — upgrade in GitHub
 
-1. Maak bij voorkeur eerst een kopie/backup van je werkende repository. De actieve v2.3.0 was nog een releasekandidaat; v2.4.0 is een doorontwikkeling, geen automatische GO.
-2. Download en open `Risk_Monitor_v2.4.0_HTML_Installer.html` op je Windows-pc in Firefox.
-3. Klik **Maak en download ZIP-pakket**, pak het ZIP uit en open de map met bestanden.
-4. Open GitHub → `Ohkwahe/geopolitieke-risk-monitor` → Code → Add file → Upload files en upload de inhoud (niet de ZIP). Zorg dat `.github/workflows/update-news.yml` mee updatet. Commit naar `main`.
-5. **Niet vervangen:** `data/auto-news.json`, want dit bestand bevat je live data en historiek (het zit niet in het upgradepakket).
-6. Ga naar GitHub → Actions → **Risk Monitor - nieuws ophalen en publiceren** → **Run workflow**, branch `main`. Controleer groen vinkje.
-7. In GitHub → Code → data → `auto-news.json` moet na de run `schemaVersion: "2.4.0"` staan. Open een artikel in het bestand en controleer `sourceAudit` met `verified: false`.
-8. Open de GitHub Pages-site op je iPhone in Safari en vernieuw die. Sluit de beginscherm-PWA volledig en open opnieuw. Controleer het versienummer v2.4.0.
-9. Open een nieuwssectie → **Kort overzicht van deze rubriek**. Tik een kop en controleer de kaart. Open **Toon details en bronnen** en controleer **Controleer het bronspoor**. Test de bronfilter en bestaande tabbladen.
+1. Open de HTML-installer in Firefox op Windows en klik op **Maak en download ZIP-pakket**.
+2. Pak de lokaal gemaakte ZIP uit.
+3. Open je bestaande repository `Ohkwahe/geopolitieke-risk-monitor` in GitHub, branch **main**. Maak geen nieuwe repository.
+4. Kies **Code → Add file → Upload files**. Upload de *inhoud* van het pakket (niet de buitenste map). Controleer dat `index.html`, `sw.js`, `.github/workflows/update-news.yml`, `scripts/*`, `tests/*` en `manifest.webmanifest` vervangen worden.
+5. Omdat GitHub verborgen mappen soms moeilijk uploadt: open daarna `Code → .github → workflows → update-news.yml`. Controleer expliciet of de nieuwe stappen `Maak automatische ochtend- of avondbriefing`, `Optionele AI-duiding` en `Optionele iPhone-signalen via ntfy` zichtbaar zijn. Indien niet: gebruik in GitHub het potloodje om het bestand te vervangen door de versie uit het pakket.
+6. Klik **Commit changes** op `main`.
+7. Open **Actions → Risk Monitor - nieuws ophalen en publiceren → Run workflow → main**. Controleer een groene uitvoering. Je hoeft AI- of ntfy-secrets niet in te stellen voor de standaardwerking.
+8. Open via Safari de GitHub Pages-site, ververs en controleer `v3.0.0`. Sluit de oude iPhone-PWA volledig af en open opnieuw. *Verwijder de app niet*: lokale favorieten/instellingen blijven dan behouden.
+9. Controleer de briefing, de 3 tabbladen, vertaling en 'Toon origineel', de tijdsfilter, de kaart-dossiers, voorlezen en de historiek.
 
-Let op: de briefing is geen AI-factcheck. Er zijn geen nieuwe pushmeldingen of betalende diensten.
+**Bij problemen**: bewaar v2.4.0 als terugvalversie, noteer de laatste GitHub Actions-stap die mislukt, en wijzig nog geen API- of betaalinstellingen.
+
+**Nieuwsdata**: het pakket bevat bewust geen live bestand `data/auto-news.json`. GitHub Actions beheert dat zelf. De workflow zal pas de eerste briefing toevoegen bij een succesvolle nieuwe run.

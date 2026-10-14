@@ -1,19 +1,22 @@
-# Risk Monitor – Release Notes
+# Release notes — v3.0.0
 
-## v2.4.0 — 14 oktober 2026 — Releasekandidaat
+## Nieuw
 
-### Toegevoegd
-- **Kort overzicht van deze rubriek:** optionele, standaard ingeklapte leeslijst met maximaal vijf bestaande nieuwsheadlines. Tik op een kop om het originele nieuwskaartje te bereiken. Geen automatische inhoudelijke conclusie of AI-samenvatting.
-- **Bronspoor in berichtdetails:** oorsprong (officiële instelling, overeenkomstige mediaheadlines of één nieuwsbron), eerste waarneming, eventuele wijziging, geobserveerd aantal bronnen en oorspronkelijke links.
-- **Filter op type bron:** verborgen onder een klein uitklapveld zodat het nieuws centraal blijft. De keuze blijft bewaard op hetzelfde toestel.
-- `sourceAudit`-metadata per item in `data/auto-news.json`; validator en tests toetsen dat onafhankelijk geverifieerd nooit automatisch op `true` staat.
+- Automatisch gegenereerde ochtend-/avondbriefing op basis van gecontroleerd verzamelde headlines, niet op basis van geverifieerde feiten.
+- Voorlezen van briefing vanuit uitklapbaar nieuwsoverzicht, met stopknop en lokale speech synthesis.
+- Doorklikbare conflictdossiers onder de bestaande regiokaart.
+- Optionele AI-duiding voor maximaal vier nieuwe belangrijke berichten per run; alleen bij expliciete configuratie in GitHub Secrets. Geen wijziging van risicoscores of verificatiestatus.
+- Optionele ntfy-nieuwssignalen bij score ≥10/14, alleen met expliciet ingestelde geheime topicnaam. Werkt via afzonderlijke ntfy-app; native webpush niet inbegrepen.
+- Nieuwe releasevalidatie en mobiele browsertest.
 
-### Behouden
-- Nieuws eerst, tabs Belangrijk/Trump–VS/Onder drempel, tijdsfilter, taalkeuze en vertaalknop, favorieten, gelezen-status, regio's, conflictdossiers, historiek, voorlezen en Nederlandse vertaling.
-- Twee geplande GitHub Actions-controles. Geen wijziging aan de scheduler, API's of tokens.
-- Bestaande live feed, opgeslagen voorkeuren en lokale items. Het archief bevat bewust geen `data/auto-news.json`.
+## Behouden
 
-### Grenzen
-- Dit is **nog geen AI-factcheck**. Verificatie betekent niet dat een officiële mededeling alle beweringen bewezen heeft, noch dat overeenkomstige koppen onafhankelijk bevestiging zijn.
-- De briefing zet bestaande titels onder elkaar en formuleert geen nieuwe geopolitieke feiten, causaliteit of aanbevelingen.
-- ChatGPT-taakmeldingen blijven gescheiden van GitHub en dit dashboard. Geen zelfstandig mobiel pushalarm.
+- Nederlandstalige Argos-vertaling en taalvoorkeur, originele bronlinks, drie nieuwstabbladen, opgeslagen nieuwsperiode, zoek/filterfuncties, favorieten/gelezen-status, trend- en historische dossiers.
+- GitHub Actions-runs volgens bestaande Belgische planning en afzonderlijke ChatGPT-meldingen.
+- Behoud van `data/auto-news.json` bij installatie: niet opgenomen in upgradepakket.
+
+## Grenzen en vervolg
+
+- Geen ingebouwde gratis en onafhankelijk controlerende AI-factchecker. Modelduiding blijft afhankelijk van een apart gekozen provider en diens voorwaarden.
+- Geen native iOS-PWA-pushbackend of automatische overdracht van ChatGPT-notificaties naar GitHub. ntfy is een optionele externe meldingsroute.
+- Vóór GO op gebruikerstoestel: één echte GitHub Actions-run, Nederlandse weergave, voorlezen, dossiers en optionele diensten indien ingesteld controleren.

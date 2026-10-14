@@ -1,24 +1,27 @@
-# Risk Monitor v2.4.0 — Broncontrole & Kort Overzicht
+# Risk Monitor v3.0.0 — Complete Intelligence Platform
 
-Mobiele GitHub Pages/PWA voor het lezen van actuele geopolitieke headlines.
+**Status: releasekandidaat.** Gebaseerd op v2.4.0 (laatste beschikbare bronpakket); behoudt de goedgekeurde configuratie en lokale opslag van eerdere versies.
 
-## Installeren
+De app heeft drie tabbladen (Belangrijk, Trump – VS, Onder drempel), RSS-verzameling, Nederlandse vertaling, voorlopige 0–14-screening, Belgische themarelevantie, bronsporen, dossiers, kaart, historiek, zoeken, favorieten, gelezen-status, periode- en taalvoorkeur.
 
-Gebruik de **HTML-installer**, lokaal openen in Firefox, ZIP laten maken, uitpakken en de inhoud uploaden naar je **bestaande** GitHub-repository op branch `main`. Controleer specifiek `.github/workflows/update-news.yml` en de bestanden in `scripts/`. Vervang de eerder gemaakte workflow niet door een andere planning.
+Nieuw in v3.0.0:
+- Ochtend-/avondbriefing op basis van de headlinefeed; leesbaar en voorleesbaar op de telefoon.
+- Dossierkoppelingen vanuit de kaart naar de historiek.
+- Optionele **AI-duiding** via een zelf aangesloten HTTPS chat/completions-modeldienst. Standaard UIT. Het model verifieert geen feiten en verandert geen basisscores.
+- Optionele nieuwsnotificaties via **ntfy-app** op iPhone. Standaard UIT; instellen via GitHub Secrets. **Niet** hetzelfde als native PWA Web Push.
+- Veiligheidscontroles voor de briefing en optionele AI-output; sterke validatie zonder bronverificatie te claimen.
 
-**Bewaar je nieuwsdata:** `data/auto-news.json` zit niet in dit pakket; de GitHub Actions-run werkt dit bestand na het uploaden bij. Verwijder je PWA niet van je iPhone: voorkeuren en lokale lijstjes staan in de browseropslag.
+## Essentiële grenzen
 
-## Gebruiken op iPhone
+1. Zonder eigen AI-modelprovider bevat deze release *geen volwaardige AI-analyse of automatische onafhankelijke factcheck*. De standaard blijft een regelgebaseerde nieuwsvoorselectie.
+2. Headlines, vertalingen, geautomatiseerde notities en meerdere vergelijkbare mediaberichten bewijzen niet dat een gebeurtenis feitelijk klopt. Raadpleeg originele en officiële bronnen.
+3. Optionele ntfy-berichten zijn **onbevestigde nieuwssignalen**, geen onmiddellijke veiligheidswaarschuwing. De bestaande ChatGPT-controles blijven afzonderlijk functioneren.
+4. Met publieke GitHub Pages zijn het dashboard en gepubliceerde nieuwsdata publiek toegankelijk. Zet nooit persoonlijke geheimen of API-tokens in de publicatiemap.
 
-- **Nieuws → Kort overzicht van deze rubriek:** open/sluit een lijstje van maximaal vijf bestaande artikelen. Tik op een kop om naar de uitgebreide nieuwskaart te springen.
-- **Nieuws → Filter op type bron:** uitklapbaar; Alle bronnen / Officiële publicatie / Vergelijkbare mediaberichten / Eén bronartikel. De selectie wordt lokaal onthouden.
-- **Nieuwskaart → Toon details en bronnen → Controleer het bronspoor:** wat er daadwerkelijk geobserveerd is, bronlinks en eerste waarneming.
-- Andere filters en voorleesknoppen blijven werken.
+## Upgrade
 
-## Wat de app wel/niet doet
+Gebruik `START_HIER_GITHUB.md`. Upload de inhoud van het installatiepakket naar dezelfde repository op `main`. Het pakket bevat GEEN `data/auto-news.json` en overschrijft geen live data. Bewaar je bestaande lokale instellingen/favorieten; verwijder de geïnstalleerde iPhone-app niet.
 
-De app verwerkt openbare RSS-headlines en voegt regelgebaseerde metadata toe. Een officiële publicatie is niet gelijk aan onafhankelijk geverifieerde feiten; gelijkaardige nieuwskoppen kunnen een gemeenschappelijke bron volgen. Iedere automatisch aangemaakte beoordeling blijft **niet onafhankelijk geverifieerd**. Risicoscores zijn selectiehulpmiddelen en geen oorlogskansen. Geen betaalde AI-dienst of nieuwe accounts nodig.
+## Versiebeheer
 
-## Technisch
-
-`index.html` = mobiele UI; `scripts/update-feed.mjs` = nieuwscollector; `scripts/translate-feed.py` = Argos; `scripts/validate-feed.mjs` = contractcontrole; `.github/workflows/update-news.yml` = geplande uitvoering; `sw.js` = PWA cache. Testen met `node tests/test_intelligence.mjs`, `node tests/test_change_tracking.mjs`, `node tests/test_collector.mjs`, `python -m unittest discover -s tests -p 'test_*.py'` en optioneel `python tests/browser_check_v240.py` met Playwright/Chromium.
+MAJOR.MINOR.PATCH = 3.0.0. `RELEASE_NOTES.md` bevat wijzigingen; `BUILDINFO.json` identificeert build en compatibiliteit.

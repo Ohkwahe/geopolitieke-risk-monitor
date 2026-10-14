@@ -20,7 +20,7 @@ try{
     const x=spawnSync(process.execPath,[path.join(root,'scripts',script)],{cwd:temp,env:{...process.env,RISK_MONITOR_FEEDS_DIR:feeds},encoding:'utf8'});
     assert.equal(x.status,0,x.stdout+'\n'+x.stderr);
   };
-  run('update-feed.mjs');run('validate-feed.mjs');
+  run('update-feed.mjs');run('prepare-briefing.mjs');run('validate-feed.mjs');
   let a=JSON.parse(await fs.readFile(path.join(data,'auto-news.json'),'utf8'));
   assert.equal(a.sourcesOk,5);
   assert.equal(a.newCount,5);
@@ -28,13 +28,13 @@ try{
   assert.equal(a.signals.filter(s=>!s.duplicateOf).length,1);
   assert(a.signals.every(s=>s.verified===false));
   assert(a.signals.every(s=>s.score.reliability<=2));
-  run('update-feed.mjs');run('validate-feed.mjs');
+  run('update-feed.mjs');run('prepare-briefing.mjs');run('validate-feed.mjs');
   a=JSON.parse(await fs.readFile(path.join(data,'auto-news.json'),'utf8'));
   assert.equal(a.newCount,0);
   assert.equal(a.updatedCount,0);
   assert.equal(a.history.length,2);
   await fs.writeFile(path.join(feeds,'BBC_News.xml'),xml('BBC_News','New statement about an updated agreement'));
-  run('update-feed.mjs');run('validate-feed.mjs');
+  run('update-feed.mjs');run('prepare-briefing.mjs');run('validate-feed.mjs');
   a=JSON.parse(await fs.readFile(path.join(data,'auto-news.json'),'utf8'));
   assert.equal(a.updatedCount,1);
   assert.equal(a.history.at(-1).changed,1);

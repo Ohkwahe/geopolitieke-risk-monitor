@@ -21,7 +21,7 @@ try{
  const run=()=>spawnSync(process.execPath,[path.join(root,'scripts/update-feed.mjs')],{cwd:temp,env:{...process.env,RISK_MONITOR_FEEDS_DIR:feeds},encoding:'utf8'});
  const result=run();assert.equal(result.status,0,result.stderr);
  const data=JSON.parse(await fs.readFile(path.join(temp,'data','auto-news.json'),'utf8'));
- assert.equal(data.schemaVersion,'2.4.0');assert.equal(data.signals.length,5);
+ assert.equal(data.schemaVersion,'3.0.0');assert.equal(data.signals.length,5);
  for(const item of data.signals){assert(item.dossier?.label);assert(item.evidence?.explanation);assert.equal(item.verified,false);assert.equal(item.method,'rule_based_screening')}
  const claim=data.signals.find(x=>x.source==='BBC News');assert.equal(claim.evidence.kind,'claim');assert.equal(claim.dossier.id,'oekraine-rusland');
  const official=data.signals.find(x=>x.source==='Raad van de EU');assert.equal(official.evidence.kind,'official_source');
