@@ -1,12 +1,12 @@
 {
-  "schemaVersion": "2.3.0",
+  "schemaVersion": "2.4.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-14T16:44:54.972Z",
-  "previousControlAt": "2026-10-14T16:28:21.804Z",
+  "generatedAt": "2026-10-14T17:19:56.271Z",
+  "previousControlAt": "2026-10-14T16:44:54.972Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
   "newCount": 1,
-  "updatedCount": 1,
+  "updatedCount": 5,
   "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
@@ -40,7 +40,8 @@
     "sourceFailures": 0,
     "groupedSimilarItems": 1,
     "assessment": "rule_based_unverified",
-    "belgiumScreening": "topic_matches_not_confirmed_effects"
+    "belgiumScreening": "topic_matches_not_confirmed_effects",
+    "sourceAudit": "observed_rss_links_only"
   },
   "history": [
     {
@@ -252,9 +253,102 @@
       "sourcesOk": 5,
       "translated": 2,
       "translationPending": 0
+    },
+    {
+      "at": "2026-10-14T17:19:56.271Z",
+      "added": 1,
+      "changed": 5,
+      "total": 181,
+      "grouped": 1,
+      "dossierCounts": {
+        "israel-palestina": 15,
+        "congo": 3,
+        "china-taiwan": 11,
+        "vs-beleid": 25,
+        "iran-regio": 26,
+        "oekraine-rusland": 67,
+        "soedan": 3,
+        "wereld": 28,
+        "nato-europa": 2
+      },
+      "important": 0,
+      "review": 1,
+      "below": 180,
+      "sourcesOk": 5,
+      "translated": 6,
+      "translationPending": 0
     }
   ],
   "signals": [
+    {
+      "id": "RSS-738bbca4622ac3fcb1a036",
+      "title": "New UK sanctions powers will enable action against supporters of illegal Israeli settlements",
+      "summary": "Global human rights commitment adopted by government extends reach to enablers of unlawful activity The UK is expanding its sanctions powers to freeze assets and target entities enabling illegal Israeli settlements, obstructing humanitarian aid or unlawfully holding prisoners. The statutory instrument introducing the Global Human Rights and International Humanitarian Law sanctions adds three new grounds to the 2020…",
+      "date": "2026-10-14T16:51:25.000Z",
+      "firstSeen": "2026-10-14T17:19:56.271Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/politics/2026/oct/14/uk-sanctions-powers-action-supporters-israeli-settlements",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "israel-palestina",
+        "label": "Israël – Palestina"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-14T17:19:56.271Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T16:51:25.000Z",
+        "firstSeenAt": "2026-10-14T17:19:56.271Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "49622ea40ec0246c5a439d50",
+        "title": "Nieuwe Britse sancties kunnen optreden tegen aanhangers van illegale Israëlische nederzettingen",
+        "summary": "Wereldwijde mensenrechtentoezegging van de regering breidt het bereik uit tot actoren van onwettige activiteiten Het Verenigd Koninkrijk breidt zijn sanctiebevoegdheden uit om tegoeden en doelentiteiten te bevriezen die illegale Israëlische nederzettingen mogelijk maken, humanitaire hulp belemmeren of gevangenen illegaal vasthouden. Het wettelijk instrument voor de invoering van de Global Human Rights and International Humanitarian Law sancties voegt drie nieuwe gronden toe aan de 2020...",
+        "at": "2026-10-14T17:21:45.030844+00:00"
+      }
+    },
     {
       "id": "RSS-2e3f8fb74e6bb1176bd2c3",
       "title": "Kenya confirms second Ebola case as relative of country's first victim",
@@ -298,8 +392,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-14T16:44:54.972Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "translation": {
@@ -310,12 +404,24 @@
         "title": "Kenia bevestigt tweede Ebola zaak als familielid van het eerste slachtoffer van het land",
         "summary": "Het volgt op de dood vorige week van een man die in Kenia was aangekomen na zijn reis vanuit DR Congo.",
         "at": "2026-10-14T16:46:51.662167+00:00"
+      },
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T16:23:40.000Z",
+        "firstSeenAt": "2026-10-14T16:44:54.972Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
       }
     },
     {
       "id": "RSS-0b8dbe079eb5e502fbafd3",
-      "title": "UK’s ‘incoherent’ approach to China plagued by a lack of expertise, report says",
-      "summary": "International grouping of China-sceptic legislators warns of risks inherent in misjudging bilateral relationship The UK’s approach to China is “beset by incoherence” and plagued by a lack of senior expertise, according to a report warning of the risks inherent in misjudging the bilateral relationship. Wednesday’s audit by the Inter-Parliamentary Alliance on China (Ipac), an international grouping of China-sceptic le…",
+      "title": "UK’s ‘incoherent’ approach to China plagued by lack of expertise, report says",
+      "summary": "International alliance of China-sceptic legislators warns of risks inherent in misjudging bilateral relationship The UK’s approach to China is “beset by incoherence” and plagued by a lack of senior expertise, according to a report warning of the risks inherent in misjudging the bilateral relationship. An audit by the Inter-Parliamentary Alliance on China (Ipac), an international grouping of China-sceptic legislators…",
       "date": "2026-10-14T16:13:49.000Z",
       "firstSeen": "2026-10-14T16:28:21.804Z",
       "source": "The Guardian",
@@ -355,24 +461,37 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-14T17:19:56.271Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "lastChangedAt": "2026-10-14T17:19:56.271Z",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T16:13:49.000Z",
+        "firstSeenAt": "2026-10-14T16:28:21.804Z",
+        "lastChangedAt": "2026-10-14T17:19:56.271Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "1d3a64b73f9c3de9ed2d7073",
-        "title": "Groot-Brittannië incoherente aanpak van China geplaagd door een gebrek aan expertise, rapport zegt",
-        "summary": "Internationale groepering van China-sceptische wetgevers waarschuwt voor risico's die inherent zijn aan het verkeerd beoordelen van bilaterale betrekkingen De aanpak van het Verenigd Koninkrijk ten aanzien van China wordt  Woensdag een audit door de Inter-Parlementaire Alliantie over China (Ipac), een internationale groepering van China-sceptic le...",
-        "at": "2026-10-14T16:30:05.538213+00:00"
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+        "sourceHash": "b4d4adf3a8789c93a18a874b",
+        "title": "Groot-Brittannië incoherente aanpak van China geplaagd door gebrek aan expertise, rapport zegt",
+        "summary": "Internationale alliantie van China-sceptische wetgevers waarschuwt voor risico's die inherent zijn aan het verkeerd beoordelen van bilaterale betrekkingen De Britse aanpak van China wordt beïnvloed door onsamenhangendheid en geplaagd door een gebrek aan deskundigheid van hoge kwaliteit, volgens een rapport waarin wordt gewaarschuwd voor de risico's die inherent zijn aan het verkeerd beoordelen van de bilaterale relatie. Een audit door de Inter-Parlementaire Alliantie over China (Ipac), een internationale groepering van China-sceptische wetgevers...",
+        "at": "2026-10-14T17:21:45.970392+00:00"
+      }
     },
     {
       "id": "RSS-4f59f251a400c1e614fce2",
       "title": "Trump administration promises social security recipients 3.6% increase in 2027",
-      "summary": "‘Seniors have spent years watching their expenses outpacing their benefits’ advocate says recipients will see a 3.6% cost-of-living adjustment (Cola) in 2027, increasing retirement benefits by an average of $75 per month as millions of Americans continue to grapple with rising prices. Nearly 72 million social security beneficiaries will see higher payments beginning in January 2027, while approximately 7.3 million s…",
+      "summary": "‘Seniors have spent years watching their expenses outpacing their benefits’ advocate says recipients will see a 3.6% cost-of-living adjustment (Cola) in 2027, increasing retirement benefits by an average of $75 a month as millions of Americans continue to grapple with rising prices. Nearly 72 million social security beneficiaries will see higher payments beginning in January 2027, while approximately 7.3 million sup…",
       "date": "2026-10-14T16:08:35.000Z",
       "firstSeen": "2026-10-14T16:28:21.804Z",
       "source": "The Guardian",
@@ -412,19 +531,32 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-14T17:19:56.271Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "lastChangedAt": "2026-10-14T17:19:56.271Z",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T16:08:35.000Z",
+        "firstSeenAt": "2026-10-14T16:28:21.804Z",
+        "lastChangedAt": "2026-10-14T17:19:56.271Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "67a4eb415d3d0dea802018ac",
+        "sourceHash": "80b3d9ffaab2ddc7e720e1a8",
         "title": "Trump administratie belooft sociale zekerheid ontvangers 3,6% stijging in 2027",
-        "summary": "Senioren hebben jaren gekeken naar hun uitgaven outpacing hun voordelen ??advocaat zegt ontvangers zal zien een 3,6% kosten-van-leven aanpassing (Cola) in 2027, het verhogen van de pensioenuitkeringen met een gemiddelde van $ 75 per maand als miljoenen Amerikanen blijven kronkelen met stijgende prijzen. Bijna 72 miljoen uitkeringsgerechtigden van de sociale zekerheid zullen in januari 2027 hogere betalingen ontvangen, terwijl ongeveer 7,3 miljoen s...",
-        "at": "2026-10-14T16:30:07.031485+00:00"
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+        "summary": "Senioren hebben jaren doorgebracht met het bekijken van hun uitgaven outpacing hun voordelen .. advocaat zegt ontvangers zal zien een 3,6% kosten-van-leven aanpassing (Cola) in 2027, het verhogen van de pensioenuitkeringen met een gemiddelde van $ 75 per maand als miljoenen Amerikanen blijven kronkelen met stijgende prijzen. Bijna 72 miljoen uitkeringsgerechtigden van de sociale zekerheid zullen in januari 2027 hogere betalingen ontvangen, terwijl ongeveer 7,3 miljoen...",
+        "at": "2026-10-14T17:21:46.816495+00:00"
+      }
     },
     {
       "id": "RSS-f72fa532500caca18a61e8",
@@ -481,12 +613,24 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T15:54:04.000Z",
+        "firstSeenAt": "2026-10-14T16:28:21.804Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-cf2086fe29c5d581310571",
-      "title": "Container ship sinks near strait of Hormuz amid surge in Iranian attacks",
-      "summary": "Second vessel also reportedly sinking as rise in strikes suggests Iran trying to close waterway before US elections A container ship has ⁠sunk near the strait of Hormuz and a second cargo vessel was reportedly sinking amid the sharpest rise in Iranian attacks on shipping since the start of the US-Israel war with Iran. The increase in attacks suggests Iran is trying to fully close the strategic waterway in a delibera…",
+      "title": "Two container ships sink near strait of Hormuz amid surge in Iranian attacks",
+      "summary": "Vessels hit by missiles as rise in strikes suggests Iran is trying to close waterway before US midterm elections Two container ships have ⁠sunk near the strait of Hormuz after being struck by missiles amid the sharpest rise in Iranian attacks on shipping since the start of the US-Israel war with Iran. The increase in attacks suggests Iran is trying to fully close the strategic waterway in a deliberate attempt to fru…",
       "date": "2026-10-14T15:35:33.000Z",
       "firstSeen": "2026-10-14T16:28:21.804Z",
       "source": "The Guardian",
@@ -531,23 +675,35 @@
         "label": "Iran en de regio"
       },
       "evidence": {
-        "kind": "claim",
-        "label": "Claim of betwiste uitspraak",
-        "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastChangedAt": "2026-10-14T16:44:54.972Z",
+      "lastChangedAt": "2026-10-14T17:19:56.271Z",
       "lastActivity": "updated",
-      "lastActivityAt": "2026-10-14T16:44:54.972Z",
+      "lastActivityAt": "2026-10-14T17:19:56.271Z",
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T15:35:33.000Z",
+        "firstSeenAt": "2026-10-14T16:28:21.804Z",
+        "lastChangedAt": "2026-10-14T17:19:56.271Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "f6e582c6254d26c3489ed4bd",
-        "title": "Containerschip zinkt in de buurt van de Straat van Hormuz temidden van piek in Iraanse aanvallen",
-        "summary": "Tweede schip zou ook zinken als stijging van stakingen suggereert Iran proberen om de waterweg te sluiten voor de verkiezingen van de VS Een containerschip heeft .sunk in de buurt van de Straat van Hormuz en een tweede vrachtschip was naar verluidt zinken te midden van de scherpste stijging van de Iraanse aanvallen op de scheepvaart sinds het begin van de VS-Israël oorlog met Iran. De toename van de aanvallen suggereert dat Iran probeert de strategische waterweg volledig te sluiten in een delibera...",
-        "at": "2026-10-14T16:46:53.442498+00:00"
+        "sourceHash": "c3a1d6841e7707cc3e29bf51",
+        "title": "Twee containerschepen zinken in de buurt van Hormuz temidden van een golf van Iraanse aanvallen",
+        "summary": "Schepen getroffen door raketten als stijging van stakingen suggereert Iran probeert te sluiten waterweg voor de Amerikaanse tussentijdse verkiezingen Twee containerschepen zijn in de buurt van de Straat van Hormuz gezonken nadat ze zijn getroffen door raketten temidden van de scherpste stijging van Iraanse aanvallen op de scheepvaart sinds het begin van de oorlog tussen de VS en Israël met Iran. De toename van de aanvallen suggereert dat Iran probeert de strategische waterweg volledig te sluiten in een opzettelijke poging om...",
+        "at": "2026-10-14T17:21:47.758026+00:00"
       }
     },
     {
@@ -610,7 +766,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T15:29:00.000Z",
+        "firstSeenAt": "2026-10-14T15:36:37.476Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ea06751ee2159581057479",
@@ -667,7 +835,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T15:13:00.000Z",
+        "firstSeenAt": "2026-10-14T15:19:45.901Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-589e31fdc122a0b0fb6a00",
@@ -724,7 +904,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T14:25:00.000Z",
+        "firstSeenAt": "2026-10-14T14:59:49.804Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-fcd12a715c315f415be0d3",
@@ -786,7 +978,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T14:15:00.000Z",
+        "firstSeenAt": "2026-10-14T14:59:49.804Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-c1d34bad02a968741f23a4",
@@ -843,7 +1047,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T13:30:00.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-93a41ac6af09d26f24f4da",
@@ -900,7 +1116,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T13:30:00.000Z",
+        "firstSeenAt": "2026-10-14T14:59:49.804Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-fc4075cbffe7d773b1d598",
@@ -957,7 +1185,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T13:19:17.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-e7c3af778fcfbca899b53d",
@@ -1015,7 +1255,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T13:09:51.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": "2026-10-14T16:28:21.804Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ee5f9789b5b30ac50a0ef0",
@@ -1078,7 +1330,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T13:08:28.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": "2026-10-14T15:36:37.476Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-2a975baaf202526e01d72c",
@@ -1135,7 +1399,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T12:34:00.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4a9290fd2a61d1968c4bc6",
@@ -1192,7 +1468,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T12:00:00.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-fcb9c6a7add39b0040154e",
@@ -1249,7 +1537,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T12:00:00.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-c4c936a301516d35671863",
@@ -1306,7 +1606,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:54:29.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d9f7bab1ead48910a72ecf",
@@ -1363,7 +1675,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:48:00.000Z",
+        "firstSeenAt": "2026-10-14T11:51:05.398Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ad3a278243b7ff77ab7b19",
@@ -1420,7 +1744,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:48:00.000Z",
+        "firstSeenAt": "2026-10-14T13:40:04.782Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4458c877a3c243f70a2403",
@@ -1483,12 +1819,24 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:39:12.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T15:19:45.901Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-9ad998b3236ab60a99132e",
-      "title": "Trump heads to rallies in Arizona and Montana after campaign stop-off in Alaska – US politics live",
-      "summary": "Trump has taken to campaigning in conservative-leaning ​parts of competitive states, rather than in more politically diverse areas Donald Trump has yet to weigh in on the late night ruling from a federal judge that blocks him from barring CNN, MS Now and Politico access to the White House grounds. Previously, the president had blasted Judge Timothy Kelly – a Trump appointee – for issuing a temporary pause on his med…",
+      "title": "DoJ threatens California over alleged noncitizen voting as Trump tries to rally support for Republicans – US politics live",
+      "summary": "Justice department gives state officials 48 hours to review list of ‘likely noncitizens’ as president heads to campaign rallies in Arizona and Montana Donald Trump has yet to weigh in on the late night ruling from a federal judge that blocks him from barring CNN, MS Now and Politico access to the White House grounds. Previously, the president had blasted Judge Timothy Kelly – a Trump appointee – for issuing a tempor…",
       "date": "2026-10-14T11:38:16.000Z",
       "firstSeen": "2026-10-14T11:45:18.314Z",
       "source": "The Guardian",
@@ -1513,16 +1861,7 @@
       "sourceEvidence": "single_news_source",
       "method": "rule_based_screening",
       "verified": false,
-      "lastChangedAt": "2026-10-14T13:40:04.782Z",
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "7a4b67ed90ed898372e3eecb",
-        "title": "Trump heads to rallies in Arizona en Montana na campagne stop-off in Alaska",
-        "summary": "Trump heeft genomen om campagne te voeren in conservatieve-leaning delen van concurrerende staten, in plaats van in meer politiek diverse gebieden Donald Trump heeft nog te wegen in op de late avond uitspraak van een federale rechter die hem blokkeert om CNN, MS Now en Politici toegang tot het Witte Huis gronden. Eerder had de president rechter Timothy Kelly een Trump benoemd voor het geven van een tijdelijke pauze op zijn med...",
-        "at": "2026-10-14T13:41:37.998138+00:00"
-      },
+      "lastChangedAt": "2026-10-14T17:19:56.271Z",
       "belgiumAssessment": {
         "level": "niet_vastgesteld",
         "domains": [],
@@ -1538,15 +1877,36 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-14T17:19:56.271Z",
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:38:16.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T17:19:56.271Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "66ce6400dc9cd6c297815add",
+        "title": "DoJ bedreigt Californië over vermeende niet-burgers stemmen als Trump probeert steun voor Republikeinen te rally live",
+        "summary": "Justitie departement geeft staat ambtenaren 48 uur om de lijst van waarschijnlijk niet-burgers te beoordelen als president hoofden van campagne rally's in Arizona en Montana Donald Trump heeft nog te wegen in op de late avond uitspraak van een federale rechter die hem blokkeert om CNN, MS Now en Politico toegang tot het Witte Huis gronden. Eerder had de president rechter Timothy Kelly een Trump benoemd voor het uitgeven van een tempo...",
+        "at": "2026-10-14T17:21:48.787709+00:00"
+      }
     },
     {
       "id": "RSS-202932fc1bd8beb072d181",
-      "title": "Burnham tells Zelenskyy’s UK’s support for Ukraine ‘will not change’ – UK politics live",
-      "summary": "Burnham said Zelenskyy was ‘prepared to sit down and discuss’ the energy ceasefire proposed by Trump PMQs is about to start. Here is the list of MPs down to ask a question. After @genevieveholl reported this last night, various sources in the Trump administration who are supportive of Farage said Badenoch was needlessly trying to cause a political row (per @katyballs @MrHarryCole) and accused her of undermining the…",
+      "title": "Burnham tells Zelenskyy’s UK’s support for Ukraine ‘will not change’ – as it happened",
+      "summary": "Zelenskyy says he will be discussing intelligence sharing ‘difficulties’ and Starlink access with Burnham PMQs is about to start. Here is the list of MPs down to ask a question. After @genevieveholl reported this last night, various sources in the Trump administration who are supportive of Farage said Badenoch was needlessly trying to cause a political row (per @katyballs @MrHarryCole) and accused her of undermining…",
       "date": "2026-10-14T11:36:43.000Z",
       "firstSeen": "2026-10-14T11:45:18.314Z",
       "source": "The Guardian",
@@ -1557,34 +1917,25 @@
       "status": "automatic_unverified",
       "score": {
         "military": 0,
-        "belgium": 1,
+        "belgium": 0,
         "novelty": 2,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
         "The Guardian"
       ],
       "sourceEvidence": "single_news_source",
       "method": "rule_based_screening",
       "verified": false,
-      "lastChangedAt": "2026-10-14T16:28:21.804Z",
+      "lastChangedAt": "2026-10-14T17:19:56.271Z",
       "belgiumAssessment": {
-        "level": "indirect_thema",
-        "domains": [
-          {
-            "key": "energie",
-            "label": "Energie"
-          },
-          {
-            "key": "diplomatie",
-            "label": "Diplomatie"
-          }
-        ],
-        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
         "verified": false
       },
       "dossier": {
@@ -1596,19 +1947,31 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-14T17:19:56.271Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:36:43.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T17:19:56.271Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "6abf6c9af84a504b4d738cb5",
+        "sourceHash": "5a77e4d0c2fa1113286174db",
         "title": "Burnham vertelt Zelenskyy",
-        "summary": "Burnham zei Zelenskyy was bereid om te gaan zitten en te bespreken de energie staakt-het-vuren voorgesteld door Trump PMQs staat op het punt te beginnen. Hier is de lijst van parlementsleden beneden om een vraag te stellen. Nadat @genevieveholl rapporteerde dit gisteravond, verschillende bronnen in de Trump administratie die Farage steunen zei Badenoch was onnodig proberen om een politieke ruzie (per @katyballs @MrHarryCole) te veroorzaken en beschuldigde haar van het ondermijnen van de...",
-        "at": "2026-10-14T16:30:11.618059+00:00"
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+        "summary": "Zelenskyy zegt dat hij zal bespreken intelligence delen en Starlink toegang met Burnham PMQs staat op het punt te beginnen. Hier is de lijst van parlementsleden beneden om een vraag te stellen. Nadat @genevieveholl dit gisteravond gemeld, verschillende bronnen in de Trump administratie die Farage steunen zei Badenoch was onnodig proberen om een politieke ruzie (per @katyballs @MrHarryCole) te veroorzaken en beschuldigde haar van ondermijning...",
+        "at": "2026-10-14T17:21:49.755508+00:00"
+      }
     },
     {
       "id": "RSS-38baf772a938d90fba61ad",
@@ -1666,7 +2029,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:32:07.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T14:08:45.284Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-72cc7b3c868ffc57d1a1be",
@@ -1723,7 +2098,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:29:48.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-9cceae9a8d78d23d9df810",
@@ -1780,7 +2167,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T11:07:00.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-581674487c50de023b4a05",
@@ -1838,7 +2237,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T10:58:00.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T13:40:04.782Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-fa109a3f50b6e8acdbb393",
@@ -1895,7 +2306,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T10:15:14.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d90c17e4b1366366bf32ce",
@@ -1962,7 +2385,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T10:05:36.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T16:28:21.804Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-bfffa358273f0f5256b520",
@@ -2028,7 +2463,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T10:00:00.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-fcd01b7e9f9a501ef8c926",
@@ -2086,7 +2533,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T09:25:03.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": "2026-10-14T11:51:05.398Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-36c83416c268be9b3e42a5",
@@ -2143,7 +2602,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T09:08:00.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d665eecdb86e7933ad5444",
@@ -2205,7 +2676,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T07:19:06.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-df9fb411dd9a01785ab201",
@@ -2262,7 +2745,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T06:51:00.000Z",
+        "firstSeenAt": "2026-10-14T11:45:18.314Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-eae6326e16335e5ed18d5b",
@@ -2329,7 +2824,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T06:00:47.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-328642c19395a2d7d8eba7",
@@ -2386,7 +2893,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T05:44:34.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-6ce44b153fb8ce7a0dd0e5",
@@ -2448,7 +2967,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T05:30:00.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-72373fdc8469d93260644b",
@@ -2510,7 +3041,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T04:36:06.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ff05ec65f3c23c4f7f1953",
@@ -2577,7 +3120,20 @@
           "url": "https://www.dw.com/en/us-judge-extends-media-outlets-white-house-access/a-79656346?maca=en-rss-en-all-1573-xml-mrss",
           "date": "2026-10-14T03:46:00.000Z"
         }
-      ]
+      ],
+      "sourceAudit": {
+        "state": "similar_reporting",
+        "sourceNames": [
+          "The Guardian",
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 2,
+        "publishedAt": "2026-10-14T04:34:29.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Meerdere media publiceerden vergelijkbare koppen. Onafhankelijke feitencontrole is niet vastgesteld."
+      }
     },
     {
       "id": "RSS-06c51049c71246156ef2d2",
@@ -2641,7 +3197,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "similar_headlines"
+      "reviewBasis": "similar_headlines",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T04:10:49.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ca2247a37e98f64353de62",
@@ -2698,7 +3266,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T04:00:44.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-0a8cca9dbeaed25657e3d8",
@@ -2755,7 +3335,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T04:00:43.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-c9ccb398e8c0619cfc3237",
@@ -2815,7 +3407,19 @@
       "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "similar_headlines",
-      "duplicateOf": "RSS-ff05ec65f3c23c4f7f1953"
+      "duplicateOf": "RSS-ff05ec65f3c23c4f7f1953",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T03:46:00.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-1429e29f28cf5f2d4fd3d0",
@@ -2872,7 +3476,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T02:05:32.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-58704160ada9937d1d6aac",
@@ -2930,7 +3546,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "similar_headlines"
+      "reviewBasis": "similar_headlines",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T01:05:25.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a91145d7cb0f75a1aa61ec",
@@ -2987,7 +3615,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T00:53:36.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a129607b7c784f903bc512",
@@ -3049,7 +3689,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-14T00:50:00.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-682415106c6cc7b9ba3c34",
@@ -3107,7 +3759,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T23:42:22.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": "2026-10-14T13:40:04.782Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a7c922face60d97728e9ae",
@@ -3164,7 +3828,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T22:02:09.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-bb637ece0a5f4eb62f9b62",
@@ -3226,7 +3902,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T22:00:20.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-994246342d5e43ad1ff114",
@@ -3289,7 +3977,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T21:42:49.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-bddd371f683d190c7b95bf",
@@ -3346,7 +4046,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T21:30:35.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-b3c57356233e53a0f0555f",
@@ -3403,7 +4115,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T21:24:00.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-723fdd12074bdad55a5d0a",
@@ -3470,7 +4194,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T20:02:15.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": "2026-10-14T13:40:04.782Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-626acd227b42bf53a0b4dd",
@@ -3527,7 +4263,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T19:26:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-3bb4e3718ecf4e7ff84cea",
@@ -3585,7 +4333,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T19:23:28.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-aa14a6dc8799e58cfe8438",
@@ -3642,7 +4402,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T19:22:02.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-53be8841f3114cf8fbcf85",
@@ -3704,7 +4476,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T19:22:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-3a20c6565540c3e73b3174",
@@ -3766,7 +4550,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T18:52:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-91d56252ef5545c26a1456",
@@ -3824,7 +4620,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T18:51:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-57e79aef40cd1cc36dab59",
@@ -3881,7 +4689,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T18:50:19.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-c82a8a05bc3890ff4636a0",
@@ -3938,7 +4758,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T17:58:40.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-9f6ccc1e2d409b493683a1",
@@ -4000,7 +4832,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T17:26:08.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-bd235f6ff55be3cbb4a144",
@@ -4057,7 +4901,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T17:23:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a68718034a2d8fb36a3a9d",
@@ -4114,7 +4970,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T17:04:37.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-f1dbf53724ced89a6eb568",
@@ -4180,7 +5048,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T16:11:00.000Z",
+        "firstSeenAt": "2026-10-13T16:12:51.158Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-780c2373974356bf43bcc5",
@@ -4237,7 +5117,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T16:08:00.000Z",
+        "firstSeenAt": "2026-10-13T16:12:51.158Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-291095c2d1fdbb68f2a8d7",
@@ -4294,7 +5186,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T15:52:15.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d2f5f5a4df7f2041903a0c",
@@ -4356,7 +5260,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T15:46:00.000Z",
+        "firstSeenAt": "2026-10-13T16:08:38.258Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-14954086efcb046b5c84ef",
@@ -4413,7 +5329,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T15:15:45.000Z",
+        "firstSeenAt": "2026-10-13T16:08:38.258Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-b26f094ea80fe2f440790b",
@@ -4470,7 +5398,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T14:39:37.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-6f53e5239e0406943a5d3f",
@@ -4527,7 +5467,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T14:37:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-f8e452bfe008f124a5241b",
@@ -4584,7 +5536,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T14:37:00.000Z",
+        "firstSeenAt": "2026-10-13T16:08:38.258Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4f6477a9e5ebee7eead58f",
@@ -4641,7 +5605,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T14:23:41.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-42abfce8cf9e42e898f5e6",
@@ -4703,7 +5679,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T13:51:50.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-812f4788888a1a0fd17694",
@@ -4760,7 +5748,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T13:48:05.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-7949ed2f7a7cd4441e93c1",
@@ -4817,7 +5817,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T13:40:45.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-8fbcb34bf24eac7d5b187d",
@@ -4874,7 +5886,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T13:27:31.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-29b075dba4ab5ea7e13da9",
@@ -4931,7 +5955,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:40:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-df04a37bb70f559f7d8b4f",
@@ -4993,7 +6029,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:40:00.000Z",
+        "firstSeenAt": "2026-10-13T16:08:38.258Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-06700bbe948b4a02bb4a10",
@@ -5056,7 +6104,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:04:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-e95b4ea33463c87a6dd20f",
@@ -5113,7 +6173,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-86f8d0c3fb176e2a23aa5b",
@@ -5170,7 +6242,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-38eb18e52567643e615e35",
@@ -5227,7 +6311,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T21:12:47.035Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-51f44e1506a640788b1d25",
@@ -5284,7 +6380,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T12:00:00.000Z",
+        "firstSeenAt": "2026-10-14T06:51:13.204Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-b3a6c416413c46cd7a74f9",
@@ -5346,7 +6454,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T11:56:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-1133ed9cb913ff9511f943",
@@ -5412,7 +6532,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T11:08:16.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d4dd94774c0b693d1dce2e",
@@ -5469,7 +6601,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T11:00:56.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-0883ac512f2e2de65b15b9",
@@ -5532,7 +6676,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T11:00:55.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-fb245af0673954a9f2b78b",
@@ -5589,7 +6745,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T10:57:17.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-7a42fa955e0fbb6a697b52",
@@ -5646,7 +6814,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T10:55:22.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a9a193d01b61bcec723567",
@@ -5703,7 +6883,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T10:42:23.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-41f1b1d51f2a574b3c2daf",
@@ -5760,7 +6952,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T10:37:39.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-f895ac6630c9b12b8a3c0e",
@@ -5817,7 +7021,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T10:15:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-da63dc5c465266d88d9560",
@@ -5874,7 +7090,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T10:00:03.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d345635f31312ac48eb8f1",
@@ -5931,7 +7159,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T09:30:20.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-0fa2380f51589013b16c31",
@@ -5993,7 +7233,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T08:56:16.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-c3ae3d6240491c6346ef60",
@@ -6059,7 +7311,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T08:47:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-9fa7d260484c8b3f6c8f01",
@@ -6121,7 +7385,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T06:26:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-85ed3d77cb5a5d27d8c06c",
@@ -6178,7 +7454,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T05:42:46.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ebf339358c81ac7d7193df",
@@ -6235,7 +7523,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T05:02:44.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-157b5c5b02cd66606f3634",
@@ -6292,7 +7592,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T05:02:34.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-0202ae2f375421a155ade9",
@@ -6349,7 +7661,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T04:30:09.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-2dfc2d8fe8c905cfa0dc4e",
@@ -6411,7 +7735,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T04:29:46.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d3d86283ba9c7eb9cf859e",
@@ -6468,7 +7804,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-13T04:27:22.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-858a145164c4b0536cbb2c",
@@ -6534,7 +7882,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T21:20:51.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4725a39aeee2a5e75254c2",
@@ -6591,7 +7951,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T21:07:25.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-8e6d2a07fa9c13d91ddcfd",
@@ -6657,7 +8029,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T20:17:37.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-28aa7b9571c1a22188fab6",
@@ -6714,7 +8098,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T19:02:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-3ddbb7bafbd420b9114839",
@@ -6776,7 +8172,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T18:15:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-6568378aad0562bfaa3246",
@@ -6838,7 +8246,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T18:05:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-566321cf8d0b92b0e2edfb",
@@ -6895,7 +8315,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T17:51:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-ef578e29fb163b3a4ea4ed",
@@ -6952,7 +8384,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T16:01:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-92f27a6603f8f7778c6bda",
@@ -7018,7 +8462,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T15:51:30.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-89e576d4d126b2554ad072",
@@ -7081,7 +8537,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T15:42:37.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a7b525d0da3e636ac747f6",
@@ -7138,7 +8606,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T15:12:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-97ce1ff1a1c2f25995a6e3",
@@ -7195,7 +8675,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T14:33:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d94c47a81394a9a6218f69",
@@ -7257,7 +8749,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T13:20:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-f6db5e5398e7b384942050",
@@ -7314,7 +8818,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T13:10:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-bc3da381a585a884979b57",
@@ -7372,7 +8888,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:59:56.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-b57040765a94b3e41dac79",
@@ -7434,7 +8962,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:40:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-05a62423accbb1d9ea6455",
@@ -7496,7 +9036,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:33:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-fc07649294118057d90d30",
@@ -7553,7 +9105,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:27:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-cc1852ad81be8243caf0f8",
@@ -7610,7 +9174,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:15:01.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-b8c832d11bc7b48a87e267",
@@ -7667,7 +9243,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-b7600be984a428bc8f3f35",
@@ -7730,7 +9318,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-45473804e2bb263ed73878",
@@ -7787,7 +9387,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-241cc1dca45d488afbfced",
@@ -7849,7 +9461,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-0916073d991c450ec87511",
@@ -7912,7 +9536,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T11:23:55.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-e30d098fdb5e9ec2cdc920",
@@ -7974,7 +9610,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T10:10:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-2bf0b713d1d22bf2d4e167",
@@ -8036,7 +9684,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T09:38:03.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-9260364d7cc64745bc85dd",
@@ -8093,7 +9753,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-12T05:00:52.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-c85d70cd1e15bc1003a062",
@@ -8150,7 +9822,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T23:18:45.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d969e1731fd072c5487e49",
@@ -8207,7 +9891,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T23:13:51.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-79519ba896b72cabd8ab3c",
@@ -8269,7 +9965,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T22:28:50.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4c28a2f1987f920ece6251",
@@ -8326,7 +10034,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T18:57:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-34b9d08cc8ae5b287284b8",
@@ -8388,7 +10108,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T18:03:22.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-09cec1f6e809608c5b20ff",
@@ -8450,7 +10182,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T17:27:24.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a923c6a37b18a95189aa00",
@@ -8508,7 +10252,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T16:53:01.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": "2026-10-14T11:45:18.314Z",
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-247efd53ed44311dd3cd20",
@@ -8570,7 +10326,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T15:32:23.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d60732d7eb26547ed91d3b",
@@ -8636,7 +10404,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T14:47:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-9c456bbec7c9470c9513eb",
@@ -8693,7 +10473,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T14:38:10.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-46ee2fe0635c6d70743a40",
@@ -8750,7 +10542,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-9d0850cf1121946e4b18d5",
@@ -8812,7 +10616,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-103a191fb6e98c9900cd5c",
@@ -8874,7 +10690,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-11T07:45:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-ce12374564504518dbe928",
@@ -8936,7 +10764,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-10T12:02:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-dc4ef4238541c96b613170",
@@ -8998,7 +10838,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "Raad van de EU"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-10T11:35:00.000Z",
+        "firstSeenAt": "2026-10-13T11:22:51.075Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-3493e3e0484fb7f47ac954",
@@ -9055,7 +10907,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T16:30:09.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-485b41bf2fb40ad0ad5486",
@@ -9112,7 +10976,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T12:50:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-a25f287fea187a92c602c5",
@@ -9178,7 +11054,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T12:00:28.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-e9b57befdc71e9251c9df8",
@@ -9235,7 +11123,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-9f223d25a2caa85890392e",
@@ -9292,7 +11192,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-7014a2ddf1def1e280cea7",
@@ -9349,7 +11261,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-e6f4361c726f2b6e72e06c",
@@ -9406,7 +11330,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-63a2edd9e03824cdafd21d",
@@ -9463,7 +11399,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T11:43:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-10143e67f95c98319af7d3",
@@ -9520,7 +11468,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-09T08:12:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-12d8e672504c5b0b9819c2",
@@ -9577,7 +11537,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-62b823eec8a44b2924ec07",
@@ -9634,7 +11606,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "official_publication"
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T12:00:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      }
     },
     {
       "id": "RSS-cfcd2de0c8536c2f0cec11",
@@ -9696,7 +11680,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T11:45:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-afc60f7038b31fef978502",
@@ -9758,7 +11754,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T11:40:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-abcecf80b9a35b48694062",
@@ -9815,7 +11823,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T10:55:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-422ed056ccfecc1cb0f7c8",
@@ -9872,7 +11892,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T10:52:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4de7ef13ca02ad17d2ada2",
@@ -9938,7 +11970,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T09:34:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-be9d20789dda0e45063518",
@@ -10000,7 +12044,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-08T08:38:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-d27a094a6292caa5de1c97",
@@ -10057,7 +12113,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-07T16:39:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-1da2384bf011271fab508c",
@@ -10114,7 +12182,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-07T12:39:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-67a3d5085497938e6b3b2e",
@@ -10171,7 +12251,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-07T09:44:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-987273430f178b45759f44",
@@ -10228,7 +12320,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-06T18:02:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-7aa80a63f021d2cff59b4a",
@@ -10285,7 +12389,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-06T13:27:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-553be7bd244e1de3c33925",
@@ -10342,7 +12458,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-06T11:07:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-3b504d6a3288203afdb5ae",
@@ -10399,7 +12527,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-06T09:41:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-aac125bf6a9a6ec0ba9feb",
@@ -10456,7 +12596,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-06T06:21:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-93ada91f8e8aae7efa8686",
@@ -10518,7 +12670,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-05T17:23:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-4f1de4b874c69ba503303b",
@@ -10575,7 +12739,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-05T15:02:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-1113a8af269481772311b0",
@@ -10632,7 +12808,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-05T12:33:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-92c98f24b1335321cdd7c8",
@@ -10694,7 +12882,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-02T15:55:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-26d354f49892ed82dc0723",
@@ -10751,7 +12951,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-02T11:17:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-8995e90c6b7694c680ab0c",
@@ -10808,7 +13020,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-09-30T09:33:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-30aeb7b53144720d07f7d1",
@@ -10865,7 +13089,19 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-09-30T09:18:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     },
     {
       "id": "RSS-dd69c8914dbd27a04786ca",
@@ -10927,13 +13163,25 @@
       "lastActivity": "unchanged",
       "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report"
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-09-29T10:35:00.000Z",
+        "firstSeenAt": "2026-10-13T15:15:22.367Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      }
     }
   ],
   "translation": {
     "engine": "Argos Translate en→nl",
     "language": "nl",
-    "translatedThisRun": 2,
+    "translatedThisRun": 6,
     "pending": 0,
     "failedThisRun": 0,
     "status": "ok"
