@@ -1,32 +1,24 @@
-# Risk Monitor v2.3.0 — Nieuw sinds controle & voorlezen
+# Risk Monitor v2.4.0 — Broncontrole & Kort Overzicht
 
-**Status:** releasekandidaat, nog niet GO. Gebaseerd op v2.2.0. Gebruik de v2.2.0- of eerder goedgekeurde versie als terugvaloptie totdat je op je iPhone test.
+Mobiele GitHub Pages/PWA voor het lezen van actuele geopolitieke headlines.
 
-## Kernwijzigingen
+## Installeren
 
-- In Nieuws: compacte regel `Laatste controle: X nieuw · Y bijgewerkt` (vanaf twee controlemomenten).
-- Knop **Toon wijzigingen**: filtert nieuwsitems die deze controle nieuw, aangepast of opnieuw door een andere bron opgepikt zijn. De bestaande tabs, zoekfunctie, favorieten en periodefilter blijven werken.
-- Op berichtniveau subtiele labels `Nieuw sinds controle`, `Bericht bijgewerkt`, `Nieuwe bronvermelding`.
-- In **details**: expliciete verificatiestatus; overeenkomende headlines uit twee media zijn nog **geen onafhankelijke feitencontrole**.
-- **▶ Luister naar koppen**: leest maximaal 6 recente items in het geselecteerde tabblad voor, waar mogelijk in de voorkeurstaal, met de spraakfunctie van de browser. Stoppen is mogelijk; er wordt geen audio geüpload.
-- JSON-contract v2.3.0: `previousControlAt`, `lastActivity`, `lastActivityAt`, `reviewStatus`, `reviewBasis`.
-- Bugfix: de Argos-vertaler schrijft niet langer `schemaVersion: 1.4.0` over het modernere nieuwsbestand heen.
-- Nieuwe regressietests voor wijzigingen en mobiele bediening.
+Gebruik de **HTML-installer**, lokaal openen in Firefox, ZIP laten maken, uitpakken en de inhoud uploaden naar je **bestaande** GitHub-repository op branch `main`. Controleer specifiek `.github/workflows/update-news.yml` en de bestanden in `scripts/`. Vervang de eerder gemaakte workflow niet door een andere planning.
 
-## Beperkingen
+**Bewaar je nieuwsdata:** `data/auto-news.json` zit niet in dit pakket; de GitHub Actions-run werkt dit bestand na het uploaden bij. Verwijder je PWA niet van je iPhone: voorkeuren en lokale lijstjes staan in de browseropslag.
 
-- Dit is **geen autonome AI-factcheck**. De collector gebruikt transparante regels en bronvermeldingen. Risicoscores blijven indicatief en geen kansberekening.
-- "Nieuwe bronvermelding" betekent overeenkomende berichtgeving, **niet bevestiging van de claim**.
-- Audio is afhankelijk van de spraakfunctie en geïnstalleerde stemmen op je iPhone; uitspreekkwaliteit kan verschillen en audio begint uitsluitend na tikken.
-- ChatGPT-waarschuwingen blijven onafhankelijk van deze GitHub-feed.
-- GitHub Actions behoudt 08:10 / 18:10 Europe/Brussels; opstart en publicatie kunnen vertraagd zijn.
+## Gebruiken op iPhone
 
-## Installatie
+- **Nieuws → Kort overzicht van deze rubriek:** open/sluit een lijstje van maximaal vijf bestaande artikelen. Tik op een kop om naar de uitgebreide nieuwskaart te springen.
+- **Nieuws → Filter op type bron:** uitklapbaar; Alle bronnen / Officiële publicatie / Vergelijkbare mediaberichten / Eén bronartikel. De selectie wordt lokaal onthouden.
+- **Nieuwskaart → Toon details en bronnen → Controleer het bronspoor:** wat er daadwerkelijk geobserveerd is, bronlinks en eerste waarneming.
+- Andere filters en voorleesknoppen blijven werken.
 
-Zie `START_HIER_GITHUB.md`. Het live bestand `data/auto-news.json` zit bewust niet in het pakket.
+## Wat de app wel/niet doet
 
-## Beveiliging en kosten
+De app verwerkt openbare RSS-headlines en voegt regelgebaseerde metadata toe. Een officiële publicatie is niet gelijk aan onafhankelijk geverifieerde feiten; gelijkaardige nieuwskoppen kunnen een gemeenschappelijke bron volgen. Iedere automatisch aangemaakte beoordeling blijft **niet onafhankelijk geverifieerd**. Risicoscores zijn selectiehulpmiddelen en geen oorlogskansen. Geen betaalde AI-dienst of nieuwe accounts nodig.
 
-- Geen nieuwe accounts, cloud-AI, API-tokens, of betaalde diensten nodig.
-- GitHub Pages blijft openbaar; persoonlijke gelezen-/bewaardvoorkeuren blijven lokaal op het iPhone-toestel.
-- Externe RSS-inhoud verschijnt als platte tekst; links vereisen een geldig webadres.
+## Technisch
+
+`index.html` = mobiele UI; `scripts/update-feed.mjs` = nieuwscollector; `scripts/translate-feed.py` = Argos; `scripts/validate-feed.mjs` = contractcontrole; `.github/workflows/update-news.yml` = geplande uitvoering; `sw.js` = PWA cache. Testen met `node tests/test_intelligence.mjs`, `node tests/test_change_tracking.mjs`, `node tests/test_collector.mjs`, `python -m unittest discover -s tests -p 'test_*.py'` en optioneel `python tests/browser_check_v240.py` met Playwright/Chromium.

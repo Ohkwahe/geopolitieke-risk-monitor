@@ -1,24 +1,19 @@
-# Risk Monitor — Release Notes
+# Risk Monitor – Release Notes
 
-## v2.3.0 — 14 oktober 2026 — RC
+## v2.4.0 — 14 oktober 2026 — Releasekandidaat
 
-### Added
-- Per-controle wijzigingen (`new`, `updated`, `related`, `unchanged`) inclusief tijdstip van vorige controle.
-- Compacte vernieuwingssamenvatting en filter `Toon wijzigingen` in de nieuwsweergave.
-- Activiteitslabels per artikel, ook bij nieuwe vergelijkbare berichtgeving over een reeds gegroepeerd artikel.
-- Extra bronduiding in de uitklapbare details: nooit automatisch als onafhankelijk geverifieerd.
-- Browsergebaseerd voorlezen van maximaal zes koppen met hun korte samenvatting in geselecteerde rubriek.
-- Regressietests voor de collector, data-validatie en mobiele interacties.
+### Toegevoegd
+- **Kort overzicht van deze rubriek:** optionele, standaard ingeklapte leeslijst met maximaal vijf bestaande nieuwsheadlines. Tik op een kop om het originele nieuwskaartje te bereiken. Geen automatische inhoudelijke conclusie of AI-samenvatting.
+- **Bronspoor in berichtdetails:** oorsprong (officiële instelling, overeenkomstige mediaheadlines of één nieuwsbron), eerste waarneming, eventuele wijziging, geobserveerd aantal bronnen en oorspronkelijke links.
+- **Filter op type bron:** verborgen onder een klein uitklapveld zodat het nieuws centraal blijft. De keuze blijft bewaard op hetzelfde toestel.
+- `sourceAudit`-metadata per item in `data/auto-news.json`; validator en tests toetsen dat onafhankelijk geverifieerd nooit automatisch op `true` staat.
 
-### Changed
-- `schemaVersion` van de nieuwsfeed nu `2.3.0` inclusief na automatische vertaling.
-- Service worker-cache-id naar v2.3.0; bestaande lokale voorkeuren blijven ongemoeid.
-- Volledige originele bronlinks behouden; geen onafhankelijke factcheck of pushalarm.
+### Behouden
+- Nieuws eerst, tabs Belangrijk/Trump–VS/Onder drempel, tijdsfilter, taalkeuze en vertaalknop, favorieten, gelezen-status, regio's, conflictdossiers, historiek, voorlezen en Nederlandse vertaling.
+- Twee geplande GitHub Actions-controles. Geen wijziging aan de scheduler, API's of tokens.
+- Bestaande live feed, opgeslagen voorkeuren en lokale items. Het archief bevat bewust geen `data/auto-news.json`.
 
-### Not included
-- Geen nieuwe automatische AI-modeldienst; geen verifieerbare feitencontrole zonder aanvullende betrouwbare input.
-- Geen automatische integratie van ChatGPT-taken naar GitHub, geen zelfstandige mobiele pushmeldingen.
-
-### Compatibility
-- Voortbouwen op v2.2.0. Historische data en oude `data/auto-news.json` zijn leesbaar; eerste v2.3.0-run voegt metadata toe.
-- `data/auto-news.json` is uitgesloten van het upgradepakket.
+### Grenzen
+- Dit is **nog geen AI-factcheck**. Verificatie betekent niet dat een officiële mededeling alle beweringen bewezen heeft, noch dat overeenkomstige koppen onafhankelijk bevestiging zijn.
+- De briefing zet bestaande titels onder elkaar en formuleert geen nieuwe geopolitieke feiten, causaliteit of aanbevelingen.
+- ChatGPT-taakmeldingen blijven gescheiden van GitHub en dit dashboard. Geen zelfstandig mobiel pushalarm.

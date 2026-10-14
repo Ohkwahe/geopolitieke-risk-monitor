@@ -1,28 +1,13 @@
-# Installatie Risk Monitor v2.3.0 — op bestaande GitHub Pages
+# GitHub-upgrade v2.4.0
 
-1. Open `Risk_Monitor_v2.3.0_HTML_Installer.html` in Firefox op je Windows-pc.
-2. Klik **Maak en download ZIP-pakket** en pak het lokaal gemaakte ZIP-bestand uit.
-3. Open de **bestaande** repository `Ohkwahe/geopolitieke-risk-monitor`, branch `main`.
-4. Open **Code → Add file → Upload files** en upload de *inhoud* van het pakket. Controleer of `.github/workflows/update-news.yml` werkelijk mee vervangen is. Dit verborgen pad raakt bij uploads soms overgeslagen.
-5. Controleer specifiek de nieuwste `index.html`, `sw.js`, `scripts/update-feed.mjs`, `scripts/translate-feed.py`, `scripts/validate-feed.mjs` en `tests/test_change_tracking.mjs`.
-6. Kies **Commit changes** op `main`. Laat `data/auto-news.json` ongemoeid: dit live bestand zit niet in het pakket.
-7. Ga naar **Actions → Risk Monitor - nieuws ophalen en publiceren → Run workflow → main**. De run moet groen worden.
-8. In **Code → data → auto-news.json** verschijnen na afloop `schemaVersion: 2.3.0`, `previousControlAt` en activiteitslabels in de berichten.
-9. Open je gepubliceerde website in Safari, herlaad en controleer het versienummer v2.3.0. Sluit daarna de beginscherm-app op de iPhone volledig en open ze opnieuw.
+1. Maak bij voorkeur eerst een kopie/backup van je werkende repository. De actieve v2.3.0 was nog een releasekandidaat; v2.4.0 is een doorontwikkeling, geen automatische GO.
+2. Download en open `Risk_Monitor_v2.4.0_HTML_Installer.html` op je Windows-pc in Firefox.
+3. Klik **Maak en download ZIP-pakket**, pak het ZIP uit en open de map met bestanden.
+4. Open GitHub → `Ohkwahe/geopolitieke-risk-monitor` → Code → Add file → Upload files en upload de inhoud (niet de ZIP). Zorg dat `.github/workflows/update-news.yml` mee updatet. Commit naar `main`.
+5. **Niet vervangen:** `data/auto-news.json`, want dit bestand bevat je live data en historiek (het zit niet in het upgradepakket).
+6. Ga naar GitHub → Actions → **Risk Monitor - nieuws ophalen en publiceren** → **Run workflow**, branch `main`. Controleer groen vinkje.
+7. In GitHub → Code → data → `auto-news.json` moet na de run `schemaVersion: "2.4.0"` staan. Open een artikel in het bestand en controleer `sourceAudit` met `verified: false`.
+8. Open de GitHub Pages-site op je iPhone in Safari en vernieuw die. Sluit de beginscherm-PWA volledig en open opnieuw. Controleer het versienummer v2.4.0.
+9. Open een nieuwssectie → **Kort overzicht van deze rubriek**. Tik een kop en controleer de kaart. Open **Toon details en bronnen** en controleer **Controleer het bronspoor**. Test de bronfilter en bestaande tabbladen.
 
-## Controle op iPhone
-
-- In Nieuws verschijnt na minstens twee controles `Laatste controle: ... nieuw · ... bijgewerkt`.
-- Tik **Toon wijzigingen** en opnieuw **Toon alle nieuws**.
-- Controleer `Nieuw sinds controle`, `Bericht bijgewerkt` of `Nieuwe bronvermelding` waar van toepassing.
-- Tik **▶ Luister naar koppen**; de iPhone zou de bovenste nieuwsitems uit de gekozen rubriek moeten uitspreken. Tik **■ Stop voorlezen** om te stoppen.
-- Controleer `Belangrijk`, `Trump – VS`, `Onder drempel`, taalkeuze, periode, zoekfunctie, favorieten en Historiek.
-- Bij een melding zonder wijzigingen mogen er geen nieuwe labels verschijnen. De huidige nieuwsfeed blijft gewoon beschikbaar.
-
-## Bij fouten
-
-- Rood kruis: open de betreffende GitHub Actions-stap voor de foutmelding.
-- Oud scherm op iPhone: herlaad eerst de GitHub Pages-site in Safari, daarna de PWA volledig sluiten en heropenen; wis geen lokale opslag.
-- Geen geluid: controleer stiltemodus/volume, Safari-weergave en of het toestel een passende stem beschikbaar heeft. Spraak vereist een expliciete tik en browserondersteuning.
-
-**Status:** v2.3.0 is pas GO na de controles op jouw iPhone.
+Let op: de briefing is geen AI-factcheck. Er zijn geen nieuwe pushmeldingen of betalende diensten.

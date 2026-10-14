@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Risk Monitor 2.3.0: translate PUBLIC RSS headlines/summaries to Dutch with local Argos.
+"""Risk Monitor 2.4.0: translate PUBLIC RSS headlines/summaries to Dutch with local Argos.
 
 Only source English text is translated; original and rule-based scores remain untouched.
 Failure to load model leaves the feed available in English and prints GitHub warning.
@@ -116,9 +116,9 @@ def main():
     if doc.get("type") != "automated_headline_feed":
         raise ValueError("Geen ondersteunde Risk Monitor feed")
     doc, status = process(doc)
-    doc["schemaVersion"] = "2.3.0"
+    doc["schemaVersion"] = "2.4.0"
     FEED_FILE.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Risk Monitor 2.3.0 vertaling:", json.dumps(status, ensure_ascii=False))
+    print("Risk Monitor 2.4.0 vertaling:", json.dumps(status, ensure_ascii=False))
     if status["status"] in ("model_unavailable", "translation_failed"):
         print("::warning::Vertaling tijdelijk niet beschikbaar. Originele berichten blijven leesbaar.")
 

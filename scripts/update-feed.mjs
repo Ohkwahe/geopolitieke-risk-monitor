@@ -1,4 +1,4 @@
-/** Risk Monitor v2.3.0 — public RSS collector and transparent RULE-BASED triage.
+/** Risk Monitor v2.4.0 — public RSS collector and transparent RULE-BASED triage.
  * No AI inference, no independently verified reports, no emergency alerts.
  * Runs in GitHub Actions. Node.js standard library only. */
 import fs from 'node:fs/promises';
@@ -189,11 +189,27 @@ function deduplicateStories(items){
   return hidden;
 }
 const grouped=deduplicateStories(entries);
+// Source audit is an evidence trail, NOT AI verification or confirmation.
+// Store only feed-observed evidence and links that were actually collected.
+for(const item of entries){
+ const related=(Array.isArray(item.relatedCoverage)?item.relatedCoverage:[]).filter(x=>x?.url&&x?.source);
+ const sourceNames=[...new Set([item.source,...related.map(x=>x.source)])];
+ const state=item.official?'primary_statement':sourceNames.length>=2?'similar_reporting':'single_report';
+ const explanation=state==='primary_statement'
+   ?'Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering.'
+   :state==='similar_reporting'
+     ?'Meerdere media publiceerden vergelijkbare koppen. Onafhankelijke feitencontrole is niet vastgesteld.'
+     :'Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken.';
+ item.sourceAudit={state,sourceNames,linkedArticles:1+related.length,
+   publishedAt:item.date,firstSeenAt:item.firstSeen,lastChangedAt:item.lastChangedAt||null,
+   verified:false,explanation};
+}
+
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
 const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,dossierCounts:Object.fromEntries([...new Set(entries.map(e=>e.dossier.id))].map(id=>[id,entries.filter(e=>e.dossier.id===id&&!e.duplicateOf).length])),important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'2.3.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),previousControlAt,sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
+const result={schemaVersion:'2.4.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),previousControlAt,sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
- sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects'},history,signals:entries};
+ sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects',sourceAudit:'observed_rss_links_only'},history,signals:entries};
 await fs.mkdir('data',{recursive:true});
 await fs.writeFile(PATH,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(`Risk Monitor 2.3.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
+console.log(`Risk Monitor 2.4.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);

@@ -12,7 +12,7 @@ for i,item in enumerate(feed['signals']):
     item['lastActivity']=['new','updated','related','unchanged'][i%4]
     item['reviewStatus']='unverified'
     item['reviewBasis']='single_media_report'
-feed['schemaVersion']='2.3.0'
+feed['schemaVersion']='2.4.0'
 feed['previousControlAt']=now
 feed['history']=[{'at':now,'added':2,'changed':0,'sourcesOk':5},
                  {'at':now,'added':1,'changed':1,'sourcesOk':5}]
@@ -52,7 +52,7 @@ with sync_playwright() as p:
         assert page.locator('#newsCards article').count()>=1
         page.locator('[data-page="settings"]').click()
         assert page.locator('#preferredLanguage').count()==1
-        assert 'v2.3.0' in page.locator('#page-settings').inner_text()
+        assert 'v2.4.0' in page.locator('#page-settings').inner_text()
         context.close()
-        print('v2.3.0 mobile OK',width)
+        print('v2.4.0 mobile OK',width)
     browser.close()

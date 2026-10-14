@@ -15,7 +15,7 @@ try{
  const run=(script)=>{const r=spawnSync(process.execPath,[path.join(root,'scripts',script)],{cwd:dir,env:{...process.env,RISK_MONITOR_FEEDS_DIR:feedDir},encoding:'utf8'});assert.equal(r.status,0,r.stdout+'\n'+r.stderr)};
  const load=async()=>JSON.parse(await fs.readFile(path.join(dir,'data/auto-news.json'),'utf8'));
  run('update-feed.mjs');run('validate-feed.mjs');let a=await load();
- assert.equal(a.schemaVersion,'2.3.0');assert.equal(a.newCount,5);assert.equal(a.quality.groupedSimilarItems,4);
+ assert.equal(a.schemaVersion,'2.4.0');assert.equal(a.newCount,5);assert.equal(a.quality.groupedSimilarItems,4);
  assert(a.signals.every(s=>s.reviewStatus==='unverified'));
  assert(a.signals.every(s=>s.lastActivity==='new'));
  run('update-feed.mjs');run('validate-feed.mjs');a=await load();
@@ -26,5 +26,5 @@ try{
  const visible=a.signals.filter(s=>!s.duplicateOf);
  assert(visible.some(s=>['new','updated','related'].includes(s.lastActivity)), 'Gegroepeerde wijzigingen moeten in nieuwsfilters verschijnen');
  assert(a.previousControlAt);
- console.log('Change tracking v2.3.0 OK');
+ console.log('Change tracking v2.4.0 OK');
 }finally{await fs.rm(dir,{recursive:true,force:true})}

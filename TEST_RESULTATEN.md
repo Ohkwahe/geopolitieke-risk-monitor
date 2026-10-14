@@ -1,11 +1,9 @@
-# Testresultaten Risk Monitor v2.3.0
+# Testresultaten v2.4.0 (lokale uitvoering)
 
-- Collector-regressietest: **geslaagd**, met dubbele koppen, herhaalde runs en gewijzigde RSS-inhoud.
-- Intelligence-classificatietest: **geslaagd**, inclusief claimlabel, officiële publicatie en Trump-indeling.
-- Nieuwe wijzigingstest `tests/test_change_tracking.mjs`: **geslaagd** (nieuwe items, onveranderde tweede run, gewijzigde kop/samenvatting en zichtbaarheid bij gegroepeerde items).
-- Python-vertaling: **5 tests geslaagd** met testengine; geen echte Argos-run in deze lokale test.
-- Mobiele Chromium-test: **geslaagd** voor 320, 375, 390 en 430 px, zonder horizontale overloop; nieuwe filter, wisseling van tabbladen, details en Instellingen.
-- Browsergebaseerd voorlezen: aanwezigheid van knop/JavaScript bevestigd; **echt geluid op iOS nog niet getest**.
-- GitHub Actions en live publicatie: **nog te testen** op gebruikersrepository.
-- Live actualiteit, onafhankelijk geverifieerde claims en professionele AI-analyse: **niet getest en niet aanwezig**.
-- HTML-installer: **geslaagd** in Chromium; lokaal gegenereerd ZIP-bestand heeft exact dezelfde SHA-256 als het afzonderlijk gecontroleerde upgradepakket (23 bestanden).
+- Collector: groen (vergelijkbare koppen, geen dubbele opslag bij herhaalde runs, updates).
+- Intelligence metadata: groen (dossiers, Trump, toegeschreven claims, officiële oorsprong, bronspoor `verified: false`).
+- Change tracking: groen (nieuwe en gewijzigde koppen, gerelateerde bronvermelding).
+- Vertaalmodule: 5/5 tests groen met simulatie; echte Argos-modeldownload niet opnieuw uitgevoerd.
+- Mobiele Chromium-test: 320, 375, 390, 430 pixels groen, geen horizontale overloop, briefing openen/sluiten, naar artikel springen, bronfilter, bronspoor, bestaande tabbladen.
+- GitHub Actions en iPhone-installatie: **nog niet bij de gebruiker getest**; geen GO.
+- Echte geopolitieke verificatie: **niet aanwezig en niet geclaimd**.
