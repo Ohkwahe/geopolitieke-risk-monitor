@@ -1,17 +1,17 @@
 {
   "schemaVersion": "1.4.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-14T14:08:45.284Z",
+  "generatedAt": "2026-10-14T14:59:49.804Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
-  "newCount": 0,
-  "updatedCount": 2,
+  "newCount": 3,
+  "updatedCount": 1,
   "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
       "name": "BBC News",
       "ok": true,
-      "items": 27
+      "items": 28
     },
     {
       "name": "The Guardian",
@@ -164,9 +164,115 @@
       "sourcesOk": 5,
       "translated": 2,
       "translationPending": 0
+    },
+    {
+      "at": "2026-10-14T14:59:49.804Z",
+      "added": 3,
+      "changed": 1,
+      "total": 173,
+      "grouped": 1,
+      "important": 0,
+      "review": 2,
+      "below": 171,
+      "sourcesOk": 5,
+      "translated": 4,
+      "translationPending": 0
     }
   ],
   "signals": [
+    {
+      "id": "RSS-589e31fdc122a0b0fb6a00",
+      "title": "Climate change and drone attacks exacerbate the humanitarian crisis in war-torn Sudan",
+      "summary": "Aid groups warn of an imminent collapse of the health system as fighting continues to displace civilians amid the planting season. The UN has extended an arms embargo, but only for Darfur.",
+      "date": "2026-10-14T14:25:00.000Z",
+      "firstSeen": "2026-10-14T14:59:49.804Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/climate-change-and-drone-attacks-exacerbate-the-humanitarian-crisis-in-war-torn-sudan/a-79659603?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "afrika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 2,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "feaf65aa29bb65e0d2d9dff0",
+        "title": "Klimaatverandering en drone-aanvallen verergeren de humanitaire crisis in Soedan die door oorlog wordt geteisterd",
+        "summary": "Hulpgroepen waarschuwen voor een dreigende ineenstorting van het gezondheidssysteem, terwijl de strijd burgers blijft verhuizen tijdens het plantenseizoen. De VN heeft een wapenembargo uitgebreid, maar alleen voor Darfur.",
+        "at": "2026-10-14T15:01:26.528709+00:00"
+      }
+    },
+    {
+      "id": "RSS-fcd12a715c315f415be0d3",
+      "title": "Trump's diesel deal with Russia is unlikely to significantly lower global fuel prices despite expectations of rapid relief",
+      "summary": "As the world's largest diesel exporter, the US benefits from high prices. At home, however, consumers are feeling the strain of rising living costs. Why Donald Trump's deal with Russia is unlikely to change that.",
+      "date": "2026-10-14T14:15:00.000Z",
+      "firstSeen": "2026-10-14T14:59:49.804Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/trump-s-diesel-deal-with-russia-is-unlikely-to-significantly-lower-global-fuel-prices-despite-expectations-of-rapid-relief/a-79659601?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "energie",
+            "label": "Energie"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "ab35c4c69ca2fbb3c8931c53",
+        "title": "Trump's diesel deal met Rusland is onwaarschijnlijk dat aanzienlijk lagere wereldwijde brandstofprijzen ondanks verwachtingen van snelle verlichting",
+        "summary": "Als grootste dieselexporteur ter wereld profiteert de VS van hoge prijzen. Thuis echter voelen consumenten de druk van stijgende kosten van levensonderhoud. Waarom Donald Trump's deal met Rusland zal dat waarschijnlijk niet veranderen.",
+        "at": "2026-10-14T15:01:27.435532+00:00"
+      }
+    },
     {
       "id": "RSS-c1d34bad02a968741f23a4",
       "title": "Palestine: Statement by the High Representative on behalf of the European Union on the postponement of elections",
@@ -209,6 +315,50 @@
         "domains": [],
         "explanation": "Europese context genoemd. Belgische gevolgen zijn niet rechtstreeks vastgesteld.",
         "verified": false
+      }
+    },
+    {
+      "id": "RSS-93a41ac6af09d26f24f4da",
+      "title": "Palestine: Statement by the High Representative on behalf of the European Union on the postponement of elections",
+      "summary": "The High Representative issued a statement on behalf of the European Union on the postponement of elections in Palestine.",
+      "date": "2026-10-14T13:30:00.000Z",
+      "firstSeen": "2026-10-14T14:59:49.804Z",
+      "source": "Raad van de EU",
+      "official": true,
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/14/palestinestar-statement-by-the-high-representative-on-behalf-of-the-european-union-on-the-postponement-of-elections/",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Raad van de EU"
+      ],
+      "sourceEvidence": "official_publication",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "europese_context",
+        "domains": [],
+        "explanation": "Europese context genoemd. Belgische gevolgen zijn niet rechtstreeks vastgesteld.",
+        "verified": false
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "7cf9a0377150b4d0a17b91e0",
+        "title": "Palestina: Verklaring van de hoge vertegenwoordiger namens de Europese Unie over het uitstel van de verkiezingen",
+        "summary": "De hoge vertegenwoordiger heeft namens de Europese Unie een verklaring afgelegd over het uitstel van de verkiezingen in Palestina.",
+        "at": "2026-10-14T15:01:27.978478+00:00"
       }
     },
     {
@@ -976,7 +1126,7 @@
     {
       "id": "RSS-d90c17e4b1366366bf32ce",
       "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-      "summary": "Outage of terminals managed by Elon Musk’s SpaceX comes as Russia launches ballistic missiles at Ukraine without any advance warning from US Ukraine’s military has suddenly had its access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long-range strikes on Russia’s oil industry immediately. The terminals, which are distributed and managed by…",
+      "summary": "Launch of Russian ballistic missiles on Ukraine, with no US warning, coincides with outage of Starlink managed by Musk’s SpaceX Ukraine’s military has suddenly had its access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long-range strikes on Russia’s oil industry immediately. The terminals, which are distributed and managed by Elon Musk’s S…",
       "date": "2026-10-14T10:05:36.000Z",
       "firstSeen": "2026-10-14T11:45:18.314Z",
       "source": "The Guardian",
@@ -1001,7 +1151,7 @@
       "sourceEvidence": "single_news_source",
       "method": "rule_based_screening",
       "verified": false,
-      "lastChangedAt": "2026-10-14T14:08:45.284Z",
+      "lastChangedAt": "2026-10-14T14:59:49.804Z",
       "belgiumAssessment": {
         "level": "indirect_thema",
         "domains": [
@@ -1021,10 +1171,10 @@
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "2f1076bbc388dc0d934fb5c1",
+        "sourceHash": "33a602948de48e4a595b4977",
         "title": "Oekraïense militairen toegang tot Starlink satelliet internet plotseling beperkt",
-        "summary": "Uitgang van terminals beheerd door Elon Musk. SpaceX komt als Rusland lanceert ballistische raketten in Oekraïne zonder enige voorafgaande waarschuwing uit de VS OekraÃ ̄ne heeft plotseling zijn toegang tot Starlink satelliet internet terminals beperkt als de regering Trump heeft verhoogde druk op Oekraïne te stoppen lange afstand stakingen op de Russische olie-industrie onmiddellijk. De terminals, die worden gedistribueerd en beheerd door...",
-        "at": "2026-10-14T14:10:32.608719+00:00"
+        "summary": "Lancering van Russische ballistische raketten op Oekraïne, zonder waarschuwing van de VS, valt samen met het verdwijnen van Starlink beheerd door Musk. SpaceX Oekraïnes militaire heeft plotseling zijn toegang tot Starlink satelliet internet terminals beperkt als de regering Trump heeft verhoogde druk op Oekraïne te stoppen lange afstand stakingen op de Russische olie-industrie onmiddellijk. De terminals worden gedistribueerd en beheerd door Elon Musk...",
+        "at": "2026-10-14T15:01:29.366027+00:00"
       }
     },
     {
@@ -8032,7 +8182,7 @@
   "translation": {
     "engine": "Argos Translate en→nl",
     "language": "nl",
-    "translatedThisRun": 2,
+    "translatedThisRun": 4,
     "pending": 0,
     "failedThisRun": 0,
     "status": "ok"
