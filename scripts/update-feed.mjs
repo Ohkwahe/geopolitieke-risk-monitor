@@ -157,9 +157,9 @@ function deduplicateStories(items){
 const grouped=deduplicateStories(entries);
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
 const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'1.5.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
+const result={schemaVersion:'1.6.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
  sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects'},history,signals:entries};
 await fs.mkdir('data',{recursive:true});
 await fs.writeFile(PATH,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(`Risk Monitor 1.5.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
+console.log(`Risk Monitor 1.6.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);

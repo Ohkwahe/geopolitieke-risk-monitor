@@ -1,10 +1,11 @@
-# Risk Monitor v1.5.0 — Intelligence & Belgium Impact (fase 1)
+# Release v1.6.0 — Trends & Signal Thresholds
 
-Status: releasekandidaat; v1.4.1 blijft terugvalversie.
+Status: RELEASEKANDIDAAT; GO na controle op iPhone en GitHub.
 
-- Belgische themascreening met categorieën veiligheid, cyber/sabotage, energie, economie en diplomatie.
-- Expliciet onderscheid tussen een directe vermelding van België, Europese context, indirect thema en geen vastgesteld verband.
-- Bij nieuwskaarten een compacte Belgische relevantie-indicator en details.
-- De Engelstalige brondata blijven basis voor scores, Nederlandse Argos-vertalingen blijven behouden.
-- Geen automatische AI-factcheck of bevestigde crisiswaarschuwing: daarvoor is een aparte analyse-engine nodig.
-- Bestaande GitHub-workflow ongewijzigd; data/auto-news.json niet meegeleverd om historiek te behouden.
+- Trendgrafiek van nieuwe automatisch gevonden RSS-signalen (max. 12 controles).
+- Verschil tussen de laatste twee controles.
+- Instelbare visuele drempel (7, 9, 10, 12 op 14) per toestel.
+- Signaaloverzicht met aantal recente signalen.
+- Geen push-notificaties, geen AI-factcheck: vermijdt onterechte beloftes.
+- Bestaande tabbladen, Nederlandstalige Argos-vertaling, scorelogica en nieuwsopslag behouden.
+- Service worker cacheversie verhoogd voor mobiele update.
