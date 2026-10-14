@@ -1,5 +1,5 @@
-/* Risk Monitor v3.0.0 — network-first, prevents stale installed iPhone PWA */
-const CACHE='geopolitieke-risk-monitor-v3.0.0';
+/* Risk Monitor v3.0.1 — network-first, prevents stale installed iPhone PWA */
+const CACHE='geopolitieke-risk-monitor-v3.0.1';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-180.png','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(
  caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())
