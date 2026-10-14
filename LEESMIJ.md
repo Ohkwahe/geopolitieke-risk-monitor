@@ -1,11 +1,26 @@
-# Risk Monitor v3.0.2 — Workflow Hotfix
+# Risk Monitor v3.0.3 – English Audio Fix
 
-Dit pakket corrigeert uitsluitend de mislukte GitHub Actions-stap *Basistests vertaalmodule* uit v3.0.1.
+**Status:** releasekandidaat. De werkelijke audioweergave op de iPhone moet nog bevestigd worden.
 
-**Oorzaak:** de browser-spraaktest vereist Playwright, maar de unittest-stap installeert die dependency niet. Vertaaltests zijn onafhankelijk van de browsertest.
+## Waarom deze correctie
 
-**Oplossing:** selecteer uitsluitend `test_translate.py`; browsertest alleen bij expliciete uitvoering.
+De vorige versies gebruikten `speechSynthesis` van iOS Safari. Omdat dat bij de gebruiker ook na een eerdere correctie stil bleef, gebruikt deze release echte Engelse MP3-bestanden.
 
-- Geen API-sleutels, betalende diensten of aanvullende afhankelijkheden nodig.
-- Data-archief `data/auto-news.json` niet in het pakket.
-- `START_HIER_GITHUB.md` bevat de snelle en volledige installatieroute.
+- Standaardtaal voor de *tekst* blijft instelbaar op Nederlands of Engels.
+- Gesproken audioberichten zijn **altijd Engels**, ongeacht de teksttaal.
+- De app speelt gewone MP3-bestanden af met een zichtbare, bedienbare audiobalk.
+- De test-MP3 zit in het installatiepakket, zodat je geluid meteen kunt testen.
+- Nieuws-MP3's worden door GitHub Actions gemaakt bij iedere RSS-controle (eSpeak NG en FFmpeg, offline, gratis).
+- De Engelse stem klinkt eenvoudiger/robotischer dan een commerciële AI-stem.
+- Headlines worden uit de originele RSS-teksten voorgelezen; de audiobestanden zijn vooraf gegenereerd en volgen niet alle persoonlijke filters of taalweergave van de app.
+- Bij een probleem toont de app een fout en een rechtstreekse Safari-testlink.
+
+**Zonder extra API-sleutel of abonnement.** De automatische nieuwsanalyse en feitencontrole blijven ongewijzigd; voorgelezen koppen zijn niet onafhankelijk geverifieerd.
+
+## GitHub-upgrade
+
+Zie `START_HIER_GITHUB.md`. Bestaande `data/auto-news.json` en historiek niet overschrijven.
+
+## Beperkingen
+
+Safari en iOS-PWA's kunnen audioproblemen hebben. Een browsertest bewijst niet dat je iPhone luidspreker daadwerkelijk geluid geeft. De ingebouwde Safari-testlink helpt dit te onderscheiden. Nieuwe nieuws-audio verschijnt pas na een geslaagde GitHub-actie met de stap **Engelse audio voorbereiden**.

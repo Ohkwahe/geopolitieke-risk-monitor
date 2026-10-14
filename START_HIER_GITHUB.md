@@ -1,15 +1,13 @@
-# v3.0.2 installeren op je bestaande GitHub
+# Start hier – installeren via GitHub
 
-## Snelste methode — alleen workflow
-1. Open GitHub → Code → `.github/workflows/update-news.yml` en klik op Edit (potloodje).
-2. Vervang de regel met `-p 'test_*.py'` door `-p 'test_translate.py'`.
-3. Commit naar `main` en start de workflow bij Actions opnieuw. Dit herstelt de fout al, zonder een volledige installatie.
+1. Open de meegeleverde HTML-installer op Windows in Firefox; klik **Maak ZIP-pakket**.
+2. Pak de ZIP uit. Open je bestaande GitHub-repository `Ohkwahe/geopolitieke-risk-monitor` → **Code** → **Add file** → **Upload files**.
+3. Upload de volledige inhoud op `main`: zeker `index.html`, `sw.js`, `icons/speech-test-en.mp3`, `.github/workflows/update-news.yml` en `scripts/build-english-audio.py`. **Upload geen live `data/auto-news.json`.**
+4. Klik **Commit changes**. Controleer apart onder **Code → .github → workflows → update-news.yml** dat de stap `Engelse audio voorbereiden (gratis, lokaal)` zichtbaar is. Verborgen `.github`-mappen gaan bij slepen soms niet mee.
+5. Ga naar **Actions** → **Risk Monitor - nieuws ophalen en publiceren** → **Run workflow**, branch `main`. Controleer bij de groene run vooral de stap **Engelse audio voorbereiden (gratis, lokaal)**; die mag niet zijn overgeslagen of rood. De overige workflowstappen moeten ook slagen.
+6. Open in Safari je GitHub Pages-site en ververs. Controleer **v3.0.3**. Open daarna de iPhone beginscherm-app opnieuw.
+7. **Eerste test zonder nieuwsrun:** Instellingen → **Engelse audio testen en geluid oplossen** → **Test Engels geluid**. De test-MP3 is onderdeel van het pakket. Als het stil blijft, klik **Open het testgeluid rechtstreeks in Safari**.
+8. **Nieuws-audio:** Nieuws → **Luister in Engels** of **Ochtend-/avondbriefing → Listen in English**. De audiobalk verschijnt met eigen play/pauze.
+9. Werkt de Safari-test maar niet de beginscherm-app? Test voorlopig in Safari; dit kan samenhangen met iOS WebKit-PWA audio.
 
-## Volledige v3.0.2-upgrade
-1. Open de HTML-installer op Windows in Firefox, klik op **Maak en download ZIP-pakket** en pak het uit.
-2. Upload de uitgepakte inhoud naar je bestaande `geopolitieke-risk-monitor` op branch `main`, inclusief `.github` en `tests`.
-3. Controleer het bijgewerkte bestand `.github/workflows/update-news.yml`; GitHub overschrijft verborgen mappen soms niet bij het slepen.
-4. `data/auto-news.json` zit niet in de upgrade: behoud de bestaande live data.
-5. Ga naar Actions → Risk Monitor - nieuws ophalen en publiceren → Run workflow.
-6. De vijf vertaaltests moeten groen worden, daarna moet de workflow verder kunnen vertalen en publiceren.
-7. Controleer op je iPhone of nieuws normaal verschijnt. Geen nieuwe app-installatie nodig.
+De gewone nieuwstaal (NL/EN), historiek en ChatGPT-notificaties blijven ongewijzigd. Geen extra account of abonnement.

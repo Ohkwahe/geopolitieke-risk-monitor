@@ -36,3 +36,7 @@ De workflow bewaart alleen reeds gemelde openbare nieuwssignaal-ID's in `data/no
 ## Native PWA Web Push
 
 Voor native iPhone-webpush via het Risk Monitor-icoon zijn onder andere een pushabonnement, een serviceworker, beveiligde sleutelopslag en een bereikbare pushbackend nodig. GitHub Pages alleen levert die backend niet. Daarom is native push **niet** als werkend onderdeel inbegrepen in v3.0.0. Dit pakket doet geen alsof-melding.
+
+
+## v3.0.3 Engelse audio
+GitHub maakt bij de normale nieuwsrun Engelse MP3-bestanden aan via de gratis lokale eSpeak NG-synthese. Dit is onafhankelijk van AI-duiding en ntfy-meldingen. De iPhone leest deze MP3-bestanden via een HTML-audio-element.

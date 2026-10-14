@@ -1,15 +1,23 @@
-# Risk Monitor v3.0.2 — GitHub CI Fix
+# Release notes – v3.0.3
 
-**Type:** PATCH / releasekandidaat; gebaseerd op v3.0.1.
+## Fixed
+- Stop met de stille iPhone-`speechSynthesis`-spraakmotor als primaire voorleesroute.
+- Geluidstest gebruikt meegeleverd echt Engels MP3-bestand.
+- Nieuws- en briefingknoppen gebruiken gepubliceerde Engelse MP3-bestanden.
+- Zichtbare audio-balk met handmatige play/pauze en stop, inclusief foutstatus.
+- Service worker vraagt audio steeds vers op.
 
-## Probleem
-De workflow gebruikte `python -m unittest discover -s tests -p 'test_*.py'`. Sinds v3.0.1 stond `tests/test_speech_browser.py` ook in dat patroon. Het bestand importeerde bij laden Playwright, dat niet in de GitHub-teststap is geïnstalleerd. Dit veroorzaakte `ModuleNotFoundError: No module named 'playwright'` bij *Basistests vertaalmodule*.
+## New
+- Script `scripts/build-english-audio.py` voor vier Engelstalige MP3-briefings.
+- Automatische synthese via eSpeak NG en FFmpeg in GitHub Actions (geen API-kosten).
+- Tests voor audiogenerator en browserplayer.
 
-## Herstel
-- Alleen `test_translate.py` wordt door de translation-teststap ontdekt.
-- `test_speech_browser.py` is veilig te importeren en draait de browsercheck alleen bij rechtstreeks uitvoeren met Playwright.
-- Versie/bouwinformatie bijgewerkt naar v3.0.2.
-- Nieuwscollector, vertaallogica, voice-logica, schemas, bronconfiguratie en GitHub-planning ongewijzigd.
+## Unchanged
+- Nederlandstalige vertaling en weergavekeuze, nieuwsbriefing, bronnen, scores, waarschuwingen, historiek, controles 08:10/18:10.
+- `data/auto-news.json` blijft buiten het installatiepakket.
 
-## GO-check
-GitHub → Actions → workflow handmatig uitvoeren → stap *Basistests vertaalmodule* toont 5 geslaagde tests → volledige workflow groen → website opent, nieuws en vertalingen werken.
+## Known limitations
+- Alleen korte, vooraf gegenereerde English headlinebriefings per rubriek, maximaal 6 artikelen.
+- eSpeak klinkt elektronisch en is niet vergelijkbaar met AI-spraak.
+- iPhone PWA-audio kan afhangen van de iOS-versie; test zowel in Safari als vanaf beginscherm.
+- AI-factchecking en zelfstandige geverifieerde veiligheidswaarschuwingen worden niet toegevoegd.

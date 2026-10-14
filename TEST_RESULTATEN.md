@@ -1,11 +1,11 @@
-# Testresultaten v3.0.1 — Speech Fix
+# Testresultaten – v3.0.3
 
-- JavaScript-parsercheck via Node: geslaagd.
-- Simulatie van NL/EN toestelstemmen: eerste `speak()` direct vanuit de knop; geen voorafgaande `cancel()`: geslaagd.
-- Nederlandstalige en Engelstalige stemkeuze: geslaagd.
-- Uitspraakcyclus `onstart`, `onend`, `onerror`, stop en foutweergave: geslaagd.
-- Voorleesknop bij nieuwsberichten: geslaagd met gesimuleerde stem.
-- Mobiel: 320, 375, 390 en 430 px zonder horizontaal scrollen: geslaagd.
-- Collector-/analyse-/vertaalregressie: geslaagd (5/5 vertaaltests, offline fallback verwacht).
-- De echte hoorbare geluidsuitvoer op iPhone Safari en iOS PWA **niet fysiek getest**. Voor GO moet de gebruiker geluidsproef en nieuwsvoorlezen op eigen iPhone bevestigen.
-- GitHub Actions/automatische data ongewijzigd, dus geen nieuwsrun vereist voor deze update.
+- Node parser voor inline JS: geslaagd.
+- Audio-browserbediening met gesimuleerde HTMLMediaElement playback op 320 / 375 / 390 / 430 pixels: geslaagd.
+- Engelse bron-MP3's met echte lokale eSpeak + FFmpeg geproduceerd, `ffprobe` bestanden geldig: geslaagd.
+- Meegeleverde Engelse audiotest-MP3 geldig en afspeelbaar in software: geslaagd.
+- Test audiogenerator: 3/3 geslaagd.
+- Bestaande RSS-collector-, classification-, change tracking- en v3-regressietests: geslaagd.
+- Bestaande Argos-vertalingstests: 5/5 geslaagd, test bij offline modelverlies verwacht.
+- Upgrade-ZIP en HTML-installer worden gecontroleerd.
+- **Niet fysiek getest:** hoorbare audio op de iPhone en eSpeak NG-installatie op de echte GitHub-run. Controle bij gebruiker vereist.

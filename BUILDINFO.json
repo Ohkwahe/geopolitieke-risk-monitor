@@ -1,8 +1,8 @@
 {
   "name": "Risk Monitor",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "releaseChannel": "release-candidate",
-  "baseline": "3.0.1",
+  "baseline": "3.0.2",
   "dataSchema": "3.0.0",
   "interface": "iPhone-first PWA on GitHub Pages",
   "collector": "GitHub Actions RSS headlines",
@@ -10,5 +10,6 @@
   "optionalAI": "external provider, opt-in only",
   "optionalNotifications": "ntfy iPhone app, opt-in only",
   "liveDataIncluded": false,
-  "notes": "Fix GitHub Actions translation smoke-test importing Playwright-only browser test. News, speech and feed unchanged."
+  "notes": "Switch from iOS speechSynthesis to English MP3 generated on GitHub Actions; keep prior news/translation.",
+  "audio": "English MP3 via GitHub Actions; browser audio with Safari fallback"
 }
