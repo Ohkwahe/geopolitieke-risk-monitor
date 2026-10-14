@@ -1,9 +1,10 @@
-# Installatie v2.0.0
+# Installatie v2.1.0
 
-1. Download de HTML-installer en maak het ZIP-pakket in Firefox.
-2. Upload de bestanden naar de bestaande GitHub-repository op main, inclusief index.html.
-3. Laat data/auto-news.json ongemoeid.
-4. Controleer GitHub Pages, ververs Safari en sluit/heropen de beginscherm-app.
-5. Test de kaart, beide taalinstellingen en het onthouden van de periode.
+1. Open de HTML-installer in Firefox.
+2. Download het lokaal gegenereerde ZIP-pakket en pak het uit.
+3. Upload de inhoud in je bestaande GitHub-repository op `main`; vervang `index.html` en `sw.js`.
+4. Upload **niet** je bestaande `data/auto-news.json` opnieuw.
+5. Controleer de nieuwe Pages-publicatie en herlaad Safari. Sluit vervolgens de beginscherm-app en open opnieuw.
+6. Controleer dat informatie pas onderaan na de nieuwskaarten staat en Instellingen compact is.
 
-Er is geen handmatige GitHub Actions-run nodig: de feedworkflow is ongewijzigd.
+Voor deze interface-update hoeft de nieuwsworkflow niet handmatig gestart te worden.
