@@ -1,11 +1,12 @@
 {
-  "schemaVersion": "1.4.0",
+  "schemaVersion": "2.3.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-14T16:28:21.804Z",
+  "generatedAt": "2026-10-14T16:44:54.972Z",
+  "previousControlAt": "2026-10-14T16:28:21.804Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
-  "newCount": 4,
-  "updatedCount": 3,
+  "newCount": 1,
+  "updatedCount": 1,
   "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
@@ -227,9 +228,90 @@
       "sourcesOk": 5,
       "translated": 7,
       "translationPending": 0
+    },
+    {
+      "at": "2026-10-14T16:44:54.972Z",
+      "added": 1,
+      "changed": 1,
+      "total": 180,
+      "grouped": 1,
+      "dossierCounts": {
+        "congo": 3,
+        "china-taiwan": 11,
+        "vs-beleid": 25,
+        "iran-regio": 26,
+        "oekraine-rusland": 67,
+        "soedan": 3,
+        "israel-palestina": 14,
+        "wereld": 28,
+        "nato-europa": 2
+      },
+      "important": 0,
+      "review": 1,
+      "below": 179,
+      "sourcesOk": 5,
+      "translated": 2,
+      "translationPending": 0
     }
   ],
   "signals": [
+    {
+      "id": "RSS-2e3f8fb74e6bb1176bd2c3",
+      "title": "Kenya confirms second Ebola case as relative of country's first victim",
+      "summary": "It follows the death last week of a man who had arrived in Kenya after travelling from DR Congo.",
+      "date": "2026-10-14T16:23:40.000Z",
+      "firstSeen": "2026-10-14T16:44:54.972Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn8rn04ljo?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "afrika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "congo",
+        "label": "Congo"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-14T16:44:54.972Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "1eb71dd9ec6f18b29eaa5832",
+        "title": "Kenia bevestigt tweede Ebola zaak als familielid van het eerste slachtoffer van het land",
+        "summary": "Het volgt op de dood vorige week van een man die in Kenia was aangekomen na zijn reis vanuit DR Congo.",
+        "at": "2026-10-14T16:46:51.662167+00:00"
+      }
+    },
     {
       "id": "RSS-0b8dbe079eb5e502fbafd3",
       "title": "UK’s ‘incoherent’ approach to China plagued by a lack of expertise, report says",
@@ -281,7 +363,11 @@
         "title": "Groot-Brittannië incoherente aanpak van China geplaagd door een gebrek aan expertise, rapport zegt",
         "summary": "Internationale groepering van China-sceptische wetgevers waarschuwt voor risico's die inherent zijn aan het verkeerd beoordelen van bilaterale betrekkingen De aanpak van het Verenigd Koninkrijk ten aanzien van China wordt  Woensdag een audit door de Inter-Parlementaire Alliantie over China (Ipac), een internationale groepering van China-sceptic le...",
         "at": "2026-10-14T16:30:05.538213+00:00"
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4f59f251a400c1e614fce2",
@@ -334,7 +420,11 @@
         "title": "Trump administratie belooft sociale zekerheid ontvangers 3,6% stijging in 2027",
         "summary": "Senioren hebben jaren gekeken naar hun uitgaven outpacing hun voordelen ??advocaat zegt ontvangers zal zien een 3,6% kosten-van-leven aanpassing (Cola) in 2027, het verhogen van de pensioenuitkeringen met een gemiddelde van $ 75 per maand als miljoenen Amerikanen blijven kronkelen met stijgende prijzen. Bijna 72 miljoen uitkeringsgerechtigden van de sociale zekerheid zullen in januari 2027 hogere betalingen ontvangen, terwijl ongeveer 7,3 miljoen s...",
         "at": "2026-10-14T16:30:07.031485+00:00"
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-f72fa532500caca18a61e8",
@@ -387,12 +477,16 @@
         "title": "Toiletpapier en geheime recorders: Wat we weten over de arrestatie van de Saoedische OpenAI ingenieur",
         "summary": "Abdulrahman Alfozan werkte meer dan een jaar voor de AI reus voordat hij werd gearresteerd door de FBI.",
         "at": "2026-10-14T16:30:07.676037+00:00"
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-cf2086fe29c5d581310571",
       "title": "Container ship sinks near strait of Hormuz amid surge in Iranian attacks",
-      "summary": "Second vessel also reportedly sinking as uptick in strikes suggests Iran trying to close waterway before US elections A container ship has ⁠sunk near the strait of Hormuz and a second cargo vessel was reportedly sinking amid the sharpest uptick in Iranian attacks on shipping since the start of the US-Israel war with Iran. The surge of attacks suggests Iran is trying to fully close the strategic waterway in a deliber…",
+      "summary": "Second vessel also reportedly sinking as rise in strikes suggests Iran trying to close waterway before US elections A container ship has ⁠sunk near the strait of Hormuz and a second cargo vessel was reportedly sinking amid the sharpest rise in Iranian attacks on shipping since the start of the US-Israel war with Iran. The increase in attacks suggests Iran is trying to fully close the strategic waterway in a delibera…",
       "date": "2026-10-14T15:35:33.000Z",
       "firstSeen": "2026-10-14T16:28:21.804Z",
       "source": "The Guardian",
@@ -441,14 +535,19 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
+      "lastChangedAt": "2026-10-14T16:44:54.972Z",
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-14T16:44:54.972Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "dd3e1407ef8c76cf3e510a74",
+        "sourceHash": "f6e582c6254d26c3489ed4bd",
         "title": "Containerschip zinkt in de buurt van de Straat van Hormuz temidden van piek in Iraanse aanvallen",
-        "summary": "Tweede schip zou ook zinken als uptick in stakingen suggereert Iran proberen om de waterweg te sluiten voor de verkiezingen van de VS Een containerschip is verzonken in de buurt van de Straat van Hormuz en een tweede vrachtschip zou zinken te midden van de scherpste uptick in Iran aanvallen op de scheepvaart sinds het begin van de VS-Israël oorlog met Iran. De golf van aanvallen suggereert dat Iran probeert de strategische waterweg volledig te sluiten in een deliber...",
-        "at": "2026-10-14T16:30:09.327869+00:00"
+        "summary": "Tweede schip zou ook zinken als stijging van stakingen suggereert Iran proberen om de waterweg te sluiten voor de verkiezingen van de VS Een containerschip heeft .sunk in de buurt van de Straat van Hormuz en een tweede vrachtschip was naar verluidt zinken te midden van de scherpste stijging van de Iraanse aanvallen op de scheepvaart sinds het begin van de VS-Israël oorlog met Iran. De toename van de aanvallen suggereert dat Iran probeert de strategische waterweg volledig te sluiten in een delibera...",
+        "at": "2026-10-14T16:46:53.442498+00:00"
       }
     },
     {
@@ -507,7 +606,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-ea06751ee2159581057479",
@@ -560,7 +663,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-589e31fdc122a0b0fb6a00",
@@ -613,7 +720,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-fcd12a715c315f415be0d3",
@@ -671,7 +782,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-c1d34bad02a968741f23a4",
@@ -724,7 +839,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-93a41ac6af09d26f24f4da",
@@ -777,7 +896,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-fc4075cbffe7d773b1d598",
@@ -830,7 +953,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-e7c3af778fcfbca899b53d",
@@ -884,7 +1011,11 @@
         "title": "Burnham zegt dat hij bruggen wil repareren tussen Oekraïne en de VS.",
         "summary": "De premier ontmoet president Zelensky in Downing Street.",
         "at": "2026-10-14T16:30:09.752527+00:00"
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-ee5f9789b5b30ac50a0ef0",
@@ -943,7 +1074,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-2a975baaf202526e01d72c",
@@ -996,7 +1131,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4a9290fd2a61d1968c4bc6",
@@ -1049,7 +1188,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-fcb9c6a7add39b0040154e",
@@ -1102,7 +1245,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-c4c936a301516d35671863",
@@ -1155,7 +1302,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d9f7bab1ead48910a72ecf",
@@ -1208,7 +1359,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-ad3a278243b7ff77ab7b19",
@@ -1261,7 +1416,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4458c877a3c243f70a2403",
@@ -1320,7 +1479,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-9ad998b3236ab60a99132e",
@@ -1374,7 +1537,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-202932fc1bd8beb072d181",
@@ -1437,7 +1604,11 @@
         "title": "Burnham vertelt Zelenskyy",
         "summary": "Burnham zei Zelenskyy was bereid om te gaan zitten en te bespreken de energie staakt-het-vuren voorgesteld door Trump PMQs staat op het punt te beginnen. Hier is de lijst van parlementsleden beneden om een vraag te stellen. Nadat @genevieveholl rapporteerde dit gisteravond, verschillende bronnen in de Trump administratie die Farage steunen zei Badenoch was onnodig proberen om een politieke ruzie (per @katyballs @MrHarryCole) te veroorzaken en beschuldigde haar van het ondermijnen van de...",
         "at": "2026-10-14T16:30:11.618059+00:00"
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-38baf772a938d90fba61ad",
@@ -1491,7 +1662,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-72cc7b3c868ffc57d1a1be",
@@ -1544,7 +1719,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-9cceae9a8d78d23d9df810",
@@ -1597,7 +1776,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-581674487c50de023b4a05",
@@ -1651,7 +1834,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-fa109a3f50b6e8acdbb393",
@@ -1704,7 +1891,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d90c17e4b1366366bf32ce",
@@ -1767,7 +1958,11 @@
         "title": "Oekraïense militairen toegang tot Starlink satelliet internet plotseling beperkt",
         "summary": "Lancering van Russische ballistische raketten op Oekraïne, zonder waarschuwing van de VS, valt samen met het verdwijnen van Starlink beheerd door Musk. SpaceX Oekraïnes militaire heeft plotseling zijn toegang tot Starlink satelliet internet terminals beperkt als de regering Trump heeft verhoogde druk op Oekraïne te stoppen lange afstand stakingen op de Russische olie-industrie onmiddellijk. De terminals, die worden geproduceerd door Elon Musk...",
         "at": "2026-10-14T16:30:12.934361+00:00"
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-bfffa358273f0f5256b520",
@@ -1829,7 +2024,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-fcd01b7e9f9a501ef8c926",
@@ -1883,7 +2082,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-36c83416c268be9b3e42a5",
@@ -1936,7 +2139,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d665eecdb86e7933ad5444",
@@ -1994,7 +2201,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-df9fb411dd9a01785ab201",
@@ -2047,7 +2258,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-eae6326e16335e5ed18d5b",
@@ -2110,7 +2325,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-328642c19395a2d7d8eba7",
@@ -2163,7 +2382,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-6ce44b153fb8ce7a0dd0e5",
@@ -2221,7 +2444,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-72373fdc8469d93260644b",
@@ -2279,7 +2506,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-ff05ec65f3c23c4f7f1953",
@@ -2334,8 +2565,13 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "similar_headlines",
       "relatedCoverage": [
         {
+          "id": "RSS-c9ccb398e8c0619cfc3237",
           "source": "Deutsche Welle",
           "title": "US judge extends media outlets' White House access",
           "url": "https://www.dw.com/en/us-judge-extends-media-outlets-white-house-access/a-79656346?maca=en-rss-en-all-1573-xml-mrss",
@@ -2401,7 +2637,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "similar_headlines"
     },
     {
       "id": "RSS-ca2247a37e98f64353de62",
@@ -2454,7 +2694,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-0a8cca9dbeaed25657e3d8",
@@ -2507,7 +2751,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-c9ccb398e8c0619cfc3237",
@@ -2563,6 +2811,10 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "similar_headlines",
       "duplicateOf": "RSS-ff05ec65f3c23c4f7f1953"
     },
     {
@@ -2616,7 +2868,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-58704160ada9937d1d6aac",
@@ -2670,7 +2926,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "similar_headlines"
     },
     {
       "id": "RSS-a91145d7cb0f75a1aa61ec",
@@ -2723,7 +2983,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a129607b7c784f903bc512",
@@ -2781,7 +3045,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-682415106c6cc7b9ba3c34",
@@ -2835,7 +3103,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a7c922face60d97728e9ae",
@@ -2888,7 +3160,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-bb637ece0a5f4eb62f9b62",
@@ -2946,7 +3222,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-994246342d5e43ad1ff114",
@@ -3005,7 +3285,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-bddd371f683d190c7b95bf",
@@ -3058,7 +3342,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-b3c57356233e53a0f0555f",
@@ -3111,7 +3399,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-723fdd12074bdad55a5d0a",
@@ -3174,7 +3466,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-626acd227b42bf53a0b4dd",
@@ -3227,7 +3523,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-3bb4e3718ecf4e7ff84cea",
@@ -3281,7 +3581,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-aa14a6dc8799e58cfe8438",
@@ -3334,7 +3638,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-53be8841f3114cf8fbcf85",
@@ -3392,7 +3700,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-3a20c6565540c3e73b3174",
@@ -3450,7 +3762,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-91d56252ef5545c26a1456",
@@ -3504,7 +3820,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-57e79aef40cd1cc36dab59",
@@ -3557,7 +3877,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-c82a8a05bc3890ff4636a0",
@@ -3610,7 +3934,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-9f6ccc1e2d409b493683a1",
@@ -3668,7 +3996,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-bd235f6ff55be3cbb4a144",
@@ -3721,7 +4053,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a68718034a2d8fb36a3a9d",
@@ -3774,7 +4110,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-f1dbf53724ced89a6eb568",
@@ -3836,7 +4176,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-780c2373974356bf43bcc5",
@@ -3889,7 +4233,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-291095c2d1fdbb68f2a8d7",
@@ -3942,7 +4290,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d2f5f5a4df7f2041903a0c",
@@ -4000,7 +4352,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-14954086efcb046b5c84ef",
@@ -4053,7 +4409,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-b26f094ea80fe2f440790b",
@@ -4106,7 +4466,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-6f53e5239e0406943a5d3f",
@@ -4159,7 +4523,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-f8e452bfe008f124a5241b",
@@ -4212,7 +4580,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4f6477a9e5ebee7eead58f",
@@ -4265,7 +4637,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-42abfce8cf9e42e898f5e6",
@@ -4323,7 +4699,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-812f4788888a1a0fd17694",
@@ -4376,7 +4756,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-7949ed2f7a7cd4441e93c1",
@@ -4429,7 +4813,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-8fbcb34bf24eac7d5b187d",
@@ -4482,7 +4870,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-29b075dba4ab5ea7e13da9",
@@ -4535,7 +4927,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-df04a37bb70f559f7d8b4f",
@@ -4593,7 +4989,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-06700bbe948b4a02bb4a10",
@@ -4652,7 +5052,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-e95b4ea33463c87a6dd20f",
@@ -4705,7 +5109,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-86f8d0c3fb176e2a23aa5b",
@@ -4758,7 +5166,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-38eb18e52567643e615e35",
@@ -4811,7 +5223,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-51f44e1506a640788b1d25",
@@ -4864,7 +5280,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-b3a6c416413c46cd7a74f9",
@@ -4922,7 +5342,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-1133ed9cb913ff9511f943",
@@ -4984,7 +5408,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d4dd94774c0b693d1dce2e",
@@ -5037,7 +5465,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-0883ac512f2e2de65b15b9",
@@ -5096,7 +5528,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-fb245af0673954a9f2b78b",
@@ -5149,7 +5585,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-7a42fa955e0fbb6a697b52",
@@ -5202,7 +5642,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a9a193d01b61bcec723567",
@@ -5255,7 +5699,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-41f1b1d51f2a574b3c2daf",
@@ -5308,7 +5756,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-f895ac6630c9b12b8a3c0e",
@@ -5361,7 +5813,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-da63dc5c465266d88d9560",
@@ -5414,7 +5870,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d345635f31312ac48eb8f1",
@@ -5467,7 +5927,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-0fa2380f51589013b16c31",
@@ -5525,7 +5989,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-c3ae3d6240491c6346ef60",
@@ -5587,7 +6055,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-9fa7d260484c8b3f6c8f01",
@@ -5645,7 +6117,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-85ed3d77cb5a5d27d8c06c",
@@ -5698,7 +6174,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-ebf339358c81ac7d7193df",
@@ -5751,7 +6231,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-157b5c5b02cd66606f3634",
@@ -5804,7 +6288,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-0202ae2f375421a155ade9",
@@ -5857,7 +6345,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-2dfc2d8fe8c905cfa0dc4e",
@@ -5915,7 +6407,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d3d86283ba9c7eb9cf859e",
@@ -5968,7 +6464,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-858a145164c4b0536cbb2c",
@@ -6030,7 +6530,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4725a39aeee2a5e75254c2",
@@ -6083,7 +6587,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-8e6d2a07fa9c13d91ddcfd",
@@ -6145,7 +6653,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-28aa7b9571c1a22188fab6",
@@ -6198,7 +6710,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-3ddbb7bafbd420b9114839",
@@ -6256,7 +6772,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-6568378aad0562bfaa3246",
@@ -6314,7 +6834,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-566321cf8d0b92b0e2edfb",
@@ -6367,7 +6891,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-ef578e29fb163b3a4ea4ed",
@@ -6420,7 +6948,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-92f27a6603f8f7778c6bda",
@@ -6482,7 +7014,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-89e576d4d126b2554ad072",
@@ -6541,7 +7077,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a7b525d0da3e636ac747f6",
@@ -6594,7 +7134,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-97ce1ff1a1c2f25995a6e3",
@@ -6647,7 +7191,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d94c47a81394a9a6218f69",
@@ -6705,7 +7253,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-f6db5e5398e7b384942050",
@@ -6758,7 +7310,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-bc3da381a585a884979b57",
@@ -6812,7 +7368,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-b57040765a94b3e41dac79",
@@ -6870,7 +7430,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-05a62423accbb1d9ea6455",
@@ -6928,7 +7492,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-fc07649294118057d90d30",
@@ -6981,7 +7549,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-cc1852ad81be8243caf0f8",
@@ -7034,7 +7606,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-b8c832d11bc7b48a87e267",
@@ -7087,7 +7663,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-b7600be984a428bc8f3f35",
@@ -7146,7 +7726,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-45473804e2bb263ed73878",
@@ -7199,7 +7783,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-241cc1dca45d488afbfced",
@@ -7257,7 +7845,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-0916073d991c450ec87511",
@@ -7316,7 +7908,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-e30d098fdb5e9ec2cdc920",
@@ -7374,7 +7970,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-2bf0b713d1d22bf2d4e167",
@@ -7432,7 +8032,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-9260364d7cc64745bc85dd",
@@ -7485,7 +8089,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-c85d70cd1e15bc1003a062",
@@ -7538,7 +8146,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d969e1731fd072c5487e49",
@@ -7591,7 +8203,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-79519ba896b72cabd8ab3c",
@@ -7649,7 +8265,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4c28a2f1987f920ece6251",
@@ -7702,7 +8322,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-34b9d08cc8ae5b287284b8",
@@ -7760,7 +8384,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-09cec1f6e809608c5b20ff",
@@ -7818,7 +8446,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a923c6a37b18a95189aa00",
@@ -7872,7 +8504,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-247efd53ed44311dd3cd20",
@@ -7930,7 +8566,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d60732d7eb26547ed91d3b",
@@ -7992,7 +8632,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-9c456bbec7c9470c9513eb",
@@ -8045,7 +8689,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-46ee2fe0635c6d70743a40",
@@ -8098,7 +8746,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-9d0850cf1121946e4b18d5",
@@ -8156,7 +8808,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-103a191fb6e98c9900cd5c",
@@ -8214,7 +8870,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-ce12374564504518dbe928",
@@ -8272,7 +8932,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-dc4ef4238541c96b613170",
@@ -8330,7 +8994,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-3493e3e0484fb7f47ac954",
@@ -8383,7 +9051,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-485b41bf2fb40ad0ad5486",
@@ -8436,7 +9108,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-a25f287fea187a92c602c5",
@@ -8498,7 +9174,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-e9b57befdc71e9251c9df8",
@@ -8551,7 +9231,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-9f223d25a2caa85890392e",
@@ -8604,7 +9288,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-7014a2ddf1def1e280cea7",
@@ -8657,7 +9345,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-e6f4361c726f2b6e72e06c",
@@ -8710,7 +9402,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-63a2edd9e03824cdafd21d",
@@ -8763,7 +9459,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-10143e67f95c98319af7d3",
@@ -8816,7 +9516,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-12d8e672504c5b0b9819c2",
@@ -8869,7 +9573,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-62b823eec8a44b2924ec07",
@@ -8922,7 +9630,11 @@
         "kind": "official_source",
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication"
     },
     {
       "id": "RSS-cfcd2de0c8536c2f0cec11",
@@ -8980,7 +9692,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-afc60f7038b31fef978502",
@@ -9038,7 +9754,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-abcecf80b9a35b48694062",
@@ -9091,7 +9811,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-422ed056ccfecc1cb0f7c8",
@@ -9144,7 +9868,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4de7ef13ca02ad17d2ada2",
@@ -9206,7 +9934,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-be9d20789dda0e45063518",
@@ -9264,7 +9996,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-d27a094a6292caa5de1c97",
@@ -9317,7 +10053,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-1da2384bf011271fab508c",
@@ -9370,7 +10110,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-67a3d5085497938e6b3b2e",
@@ -9423,7 +10167,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-987273430f178b45759f44",
@@ -9476,7 +10224,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-7aa80a63f021d2cff59b4a",
@@ -9529,7 +10281,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-553be7bd244e1de3c33925",
@@ -9582,7 +10338,11 @@
         "kind": "claim",
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-3b504d6a3288203afdb5ae",
@@ -9635,7 +10395,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-aac125bf6a9a6ec0ba9feb",
@@ -9688,7 +10452,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-93ada91f8e8aae7efa8686",
@@ -9746,7 +10514,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-4f1de4b874c69ba503303b",
@@ -9799,7 +10571,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-1113a8af269481772311b0",
@@ -9852,7 +10628,11 @@
         "kind": "statement",
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-92c98f24b1335321cdd7c8",
@@ -9910,7 +10690,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-26d354f49892ed82dc0723",
@@ -9963,7 +10747,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-8995e90c6b7694c680ab0c",
@@ -10016,7 +10804,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-30aeb7b53144720d07f7d1",
@@ -10069,7 +10861,11 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     },
     {
       "id": "RSS-dd69c8914dbd27a04786ca",
@@ -10127,13 +10923,17 @@
         "kind": "news_report",
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      }
+      },
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report"
     }
   ],
   "translation": {
     "engine": "Argos Translate en→nl",
     "language": "nl",
-    "translatedThisRun": 7,
+    "translatedThisRun": 2,
     "pending": 0,
     "failedThisRun": 0,
     "status": "ok"
