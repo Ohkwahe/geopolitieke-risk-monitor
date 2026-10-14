@@ -68,6 +68,23 @@ function crossSources(item,list){
   }
   return [...listOfSources];
 }
+// v1.5.0 — explanation-first indicative Belgian exposure screening.
+// Matches are topic indicators, NOT actual incidents in Belgium.
+const BELGIUM_DOMAINS=[
+ {key:'veiligheid',label:'Militaire veiligheid',re:/\b(nato|otan|military|troops|warship|missile|nuclear|invasion|airstrike|defence|defense)\b/i},
+ {key:'cyber',label:'Cyber en sabotage',re:/\b(cyberattack|ransomware|hacking|hackers|sabotage|undersea cable|critical infrastructure)\b/i},
+ {key:'energie',label:'Energie',re:/\b(oil|gas supply|energy|pipeline|electricity|strait of hormuz|lng|fuel prices|refinery)\b/i},
+ {key:'economie',label:'Economie en handel',re:/\b(tariff|trade|sanction|exports|imports|shipping|port|supply chain|economy|inflation)\b/i},
+ {key:'diplomatie',label:'Diplomatie',re:/\b(summit|ceasefire|treaty|talks|negotiation|diplomacy|agreement|peace deal)\b/i}
+];
+function assessBelgium(o){
+ const t=o.title+' '+o.summary;
+ const direct=BELGIUM.test(t);
+ const european=EUROPE.test(t);
+ const domains=BELGIUM_DOMAINS.filter(d=>d.re.test(t)).map(d=>({key:d.key,label:d.label}));
+ const level=direct?'directe_vermelding':european?'europese_context':domains.length?'indirect_thema':'niet_vastgesteld';
+ return {level,domains,explanation:direct?'België wordt in het bronfragment genoemd. Concrete impact is niet onafhankelijk bevestigd.':european?'Europese context genoemd. Belgische gevolgen zijn niet rechtstreeks vastgesteld.':domains.length?'Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.':'Geen concreet verband met België gevonden in titel of samenvatting.',verified:false};
+}
 function assess(o,seenSourceNames){
   const t=o.title+' '+o.summary;
   let military=HAS.critical.test(o.title)?4:HAS.major.test(o.title)?3:HAS.moderate.test(o.title)?2:/\b(war|conflict|military|nuclear|missile)\b/i.test(t)?1:0;
@@ -115,7 +132,7 @@ for(let source of SOURCES){try{const entries=await fetchFeed(source);if(!entries
  }catch(err){console.warn(source.name+': '+err.message);status.push({name:source.name,ok:false,error:String(err.message).slice(0,100)});}}
 if(!ok)throw Error('Alle nieuwsfeeds zijn onbereikbaar; geen verouderde publicatie overschrijven.');
 const entries=[...map.values()].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date)).slice(0,MAX_ITEMS);
-for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));}
+for(const e of entries){e.title=clip(textOnly(e.title),220);e.summary=clip(textOnly(e.summary),420);e.official=!!(SOURCES.find(s=>s.name===e.source)?.official);Object.assign(e,classify(e.title+' '+e.summary));Object.assign(e,assess(e,crossSources(e,entries)));e.belgiumAssessment=assessBelgium(e);}
 // Group only near-identical headlines about the same likely event within 24 hours.
 // Keep every original article in JSON; collapse duplicates only in presentation.
 // This is string similarity, NEVER factual corroboration or verification.
@@ -140,9 +157,9 @@ function deduplicateStories(items){
 const grouped=deduplicateStories(entries);
 const past=Array.isArray(old.history)?old.history.filter(x=>x&&Number.isFinite(Date.parse(x.at))).slice(-119):[];
 const history=[...past,{at:NOW.toISOString(),added,changed,total:entries.length,grouped,important:entries.filter(x=>x.category==='important').length,review:entries.filter(x=>x.category==='review').length,below:entries.filter(x=>x.category==='below').length,sourcesOk:ok}].slice(-120);
-const result={schemaVersion:'1.4.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
+const result={schemaVersion:'1.5.0',type:'automated_headline_feed',generatedAt:NOW.toISOString(),sourcesOk:ok,sourcesTotal:SOURCES.length,newCount:added,updatedCount:changed,
  notice:'Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.',
- sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified'},history,signals:entries};
+ sources:status,quality:{verifiedReports:0,sourceFailures:SOURCES.length-ok,groupedSimilarItems:grouped,assessment:'rule_based_unverified',belgiumScreening:'topic_matches_not_confirmed_effects'},history,signals:entries};
 await fs.mkdir('data',{recursive:true});
 await fs.writeFile(PATH,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(`Risk Monitor 1.4.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);
+console.log(`Risk Monitor 1.5.0: bronnen ${ok}/${SOURCES.length}, nieuw ${added}, gewijzigd ${changed}, total ${entries.length}, belangrijke signalen ${entries.filter(x=>x.category==='important').length}.`);

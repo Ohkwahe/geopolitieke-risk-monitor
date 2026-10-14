@@ -1,3 +1,2 @@
-# Risk Monitor v1.4.1
-
-Kleine gebruiksvriendelijkheidsupdate op v1.4.0. RSS, NL Argos, scores en GitHub-planning blijven ongewijzigd. Zie START_HIER_GITHUB.md.
+# Risk Monitor v1.5.0
+Automatische nieuwsselectie + gratis Nederlandse vertaling + Belgische themascreening. Dit is geen zelfstandig denkende AI-analist; gevolgtrekkingen zijn indicatief. Het pakket sluit aan op v1.4.1.
