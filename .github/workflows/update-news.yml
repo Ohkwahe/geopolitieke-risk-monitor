@@ -72,6 +72,12 @@ jobs:
         run: node scripts/ai-enrichment.mjs
       - name: Controleer gegenereerd nieuwsbestand
         run: node scripts/validate-feed.mjs
+      - name: Engelse audio voorbereiden (gratis, lokaal)
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python scripts/build-english-audio.py
       - name: Optionele iPhone-signalen via ntfy
         continue-on-error: true
         env:
