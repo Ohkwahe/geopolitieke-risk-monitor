@@ -18,6 +18,11 @@ concurrency:
 jobs:
   update-and-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      # Argos reads ARGOS_PACKAGES_DIR (plural). The same location is cached below.
+      ARGOS_PACKAGES_DIR: /home/runner/.cache/risk-monitor-argos-models
+      ARGOS_DEVICE_TYPE: cpu
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -30,6 +35,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test RSS-verwerking en nieuwsregels
+        run: node tests/test_collector.mjs
       - name: RSS feeds verwerken
         run: node scripts/update-feed.mjs
       - name: Python configureren voor gratis Nederlandse vertaling
@@ -44,14 +51,14 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/risk-monitor-argos-models
-          key: risk-monitor-argos-en-nl-v1
+          key: risk-monitor-argos-en-nl-${{ runner.os }}-v2
       - name: Argos Translate installeren
         continue-on-error: true
-        run: python -m pip install -r requirements-translate.txt
+        run: python -m pip install --disable-pip-version-check -r requirements-translate.txt
       - name: Nieuwe headlines automatisch naar Nederlands vertalen
-        env:
-          ARGOS_PACKAGE_DIR: /home/runner/.cache/risk-monitor-argos-models
         run: python scripts/translate-feed.py
+      - name: Controleer gegenereerd nieuwsbestand
+        run: node scripts/validate-feed.mjs
       - name: Bewaar historiek in repository
         run: |
           git config user.name "github-actions[bot]"
