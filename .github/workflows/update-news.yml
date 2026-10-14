@@ -36,7 +36,9 @@ jobs:
         with:
           node-version: '22'
       - name: Test RSS-verwerking en nieuwsregels
-        run: node tests/test_collector.mjs
+        run: |
+          node tests/test_collector.mjs
+          node tests/test_intelligence.mjs
       - name: RSS feeds verwerken
         run: node scripts/update-feed.mjs
       - name: Python configureren voor gratis Nederlandse vertaling
