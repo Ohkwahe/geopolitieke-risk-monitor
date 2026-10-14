@@ -39,6 +39,7 @@ jobs:
         run: |
           node tests/test_collector.mjs
           node tests/test_intelligence.mjs
+          node tests/test_change_tracking.mjs
       - name: RSS feeds verwerken
         run: node scripts/update-feed.mjs
       - name: Python configureren voor gratis Nederlandse vertaling
