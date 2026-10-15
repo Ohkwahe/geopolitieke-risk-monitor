@@ -1,5 +1,5 @@
-/* Risk Monitor v3.0.3 — network-first, prevents stale installed iPhone PWA */
-const CACHE='geopolitieke-risk-monitor-v3.0.3';
+/* Risk Monitor v3.0.4 — network-first, prevents stale installed iPhone PWA */
+const CACHE='geopolitieke-risk-monitor-v3.0.4';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-180.png','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(
  caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())
@@ -11,7 +11,7 @@ self.addEventListener('fetch',event=>{
  const request=event.request;
  if(request.method!=='GET'||new URL(request.url).origin!==self.location.origin)return;
  const url=new URL(request.url);
- const live=url.pathname.endsWith('/')||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/auto-news.json')||url.pathname.includes('/data/audio/');
+ const live=url.pathname.endsWith('/')||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/auto-news.json');
  if(live){event.respondWith(fetch(request,{cache:'no-store'}).then(response=>{
    if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(request,copy)))}
    return response;

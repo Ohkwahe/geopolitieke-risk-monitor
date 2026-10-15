@@ -41,10 +41,10 @@ with sync_playwright() as p:
         assert not errors,(width,errors)
         assert page.evaluate('document.body.scrollWidth <= innerWidth'),width
         # navigation and other existing behavior
-        page.locator('[data-tab="trump"]').click()
-        page.locator('[data-tab="below"]').click()
+        page.locator('[data-jump="trump"]').click()
+        page.locator('[data-jump="below"]').click()
         page.locator('[data-page="settings"]').click()
-        assert 'v2.4.0' in page.locator('#page-settings').inner_text()
+        assert 'v3.0.4' in page.locator('#page-settings').inner_text()
         print('v2.4.0 brief/audit mobile OK',width)
         page.close()
     browser.close()

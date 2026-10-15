@@ -43,12 +43,12 @@ window.fetch = async function(url){ if (String(url).includes('auto-news.json')) 
             assert not errs,(w,errs)
             dims=page.evaluate('({body:document.body.scrollWidth, viewport:innerWidth})')
             assert dims['body']<=dims['viewport'],(w,dims)
-            page.locator('[data-tab="below"]').click()
+            page.locator('[data-jump="below"]').click()
             assert page.locator('#newsCards article').count()>=1
             page.locator('#newsSearch').fill('nonexiststhissearchq')
             assert page.locator('#newsCards article').count()==0
             page.locator('#newsSearch').fill('')
-            page.locator('[data-tab="important"]').click()
+            page.locator('[data-jump="important"]').click()
             if page.locator('#newsCards article').count():
                 page.locator('#newsCards article .card-action').first.click()
                 assert page.locator('#newsCards article .card-action').first.get_attribute('aria-pressed')=='true'

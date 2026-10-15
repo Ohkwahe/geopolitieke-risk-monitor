@@ -1,0 +1,20 @@
+/** Regression for Risk Monitor v3.0.4 maintenance */
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
+const html=read('index.html');
+const sw=read('sw.js');
+const workflow=read('.github/workflows/update-news.yml');
+const tiles=[...html.matchAll(/data-jump="(important|trump|below)"/g)].map(x=>x[1]);
+assert.deepEqual(tiles,['important','trump','below']);
+assert(!html.includes('id="newsTabs"')&&!html.includes('data-tab='));
+assert(html.includes('tab=b.dataset.jump'),'Clickable tile category missing');
+assert(html.includes("setAttribute('aria-pressed',String(active))"),'Tile state missing');
+for (const token of ['listenNews','englishAudio','audioDock','ttsTest','ttsStop','playEnglishAudio','speechSynthesis','/data/audio/']) assert(!html.includes(token),'Audio code remains: '+token);
+assert(!workflow.includes('build-english-audio.py')&&!workflow.includes('Engelse audio voorbereiden'));
+assert(!sw.includes('/data/audio/')&&sw.includes('v3.0.4'));
+assert(JSON.parse(read('BUILDINFO.json')).version==='3.0.4');
+console.log('Risk Monitor v3.0.4 maintenance checks OK');

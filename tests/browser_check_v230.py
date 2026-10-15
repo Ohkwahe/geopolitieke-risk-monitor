@@ -33,9 +33,9 @@ with sync_playwright() as p:
         assert not errors,(width,errors)
         assert page.evaluate('document.body.scrollWidth <= innerWidth'),width
         assert page.locator('#changeStrip').is_visible(),width
-        assert page.locator('#listenNews').count()==1
+        assert page.locator('#listenNews').count()==0
         assert '1 nieuw' in page.locator('#changeSummary').inner_text()
-        page.locator('[data-tab="important"]').click()
+        page.locator('[data-jump="important"]').click()
         allcount=page.locator('#newsCards article').count()
         page.locator('#onlyChanged').click()
         assert page.locator('#onlyChanged').get_attribute('aria-pressed')=='true'
@@ -46,13 +46,13 @@ with sync_playwright() as p:
             assert 'Niet onafhankelijk geverifieerd' in page.locator('#newsCards article .detail.open').first.inner_text()
         page.locator('#onlyChanged').click()
         assert page.locator('#onlyChanged').get_attribute('aria-pressed')=='false'
-        page.locator('[data-tab="trump"]').click()
+        page.locator('[data-jump="trump"]').click()
         assert page.locator('#newsCards article').count()>=1
-        page.locator('[data-tab="below"]').click()
+        page.locator('[data-jump="below"]').click()
         assert page.locator('#newsCards article').count()>=1
         page.locator('[data-page="settings"]').click()
         assert page.locator('#preferredLanguage').count()==1
-        assert 'v2.4.0' in page.locator('#page-settings').inner_text()
+        assert 'v3.0.4' in page.locator('#page-settings').inner_text()
         context.close()
         print('v2.4.0 mobile OK',width)
     browser.close()

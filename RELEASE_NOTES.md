@@ -1,23 +1,19 @@
-# Release notes – v3.0.3
+# Risk Monitor v3.0.4 – Release notes
 
-## Fixed
-- Stop met de stille iPhone-`speechSynthesis`-spraakmotor als primaire voorleesroute.
-- Geluidstest gebruikt meegeleverd echt Engels MP3-bestand.
-- Nieuws- en briefingknoppen gebruiken gepubliceerde Engelse MP3-bestanden.
-- Zichtbare audio-balk met handmatige play/pauze en stop, inclusief foutstatus.
-- Service worker vraagt audio steeds vers op.
+## Removed
+- Engelse MP3-generator en alle bijbehorende UI-knoppen en tests.
+- Audio-generatiestap met eSpeak NG en FFmpeg uit GitHub Actions.
+- Dubbele tabnavigatie onder de drie bovenste nieuwstegels.
 
-## New
-- Script `scripts/build-english-audio.py` voor vier Engelstalige MP3-briefings.
-- Automatische synthese via eSpeak NG en FFmpeg in GitHub Actions (geen API-kosten).
-- Tests voor audiogenerator en browserplayer.
+## Improved
+- Rubriekselectie rechtstreeks met Belangrijke signalen / Trump – VS / Onder drempel.
+- Visuele actieve toestand, compacte mobiele indeling, vers cachegeheugen v3.0.4.
+- Onderhoudsregressietest in GitHub Actions.
 
-## Unchanged
-- Nederlandstalige vertaling en weergavekeuze, nieuwsbriefing, bronnen, scores, waarschuwingen, historiek, controles 08:10/18:10.
-- `data/auto-news.json` blijft buiten het installatiepakket.
+## Retained
+- Alle vijf nieuwsbronnen, vertaling NL/EN, tekstbriefing, zoekfilters, scorelogica, bronlinks, historiek, nieuwsplanning en instellingen.
+- Geen wijziging aan live `data/auto-news.json`.
+- Geen aanpassingen aan de afzonderlijke ChatGPT-alarmtaak of Bridge PoC.
 
-## Known limitations
-- Alleen korte, vooraf gegenereerde English headlinebriefings per rubriek, maximaal 6 artikelen.
-- eSpeak klinkt elektronisch en is niet vergelijkbaar met AI-spraak.
-- iPhone PWA-audio kan afhangen van de iOS-versie; test zowel in Safari als vanaf beginscherm.
-- AI-factchecking en zelfstandige geverifieerde veiligheidswaarschuwingen worden niet toegevoegd.
+## Deployment
+Handmatig uploaden van **uitgepakte bestanden en mappen** (niet het ZIP-bestand zelf). Daarna verwijder je de oude audiobestanden uit de repository en test je de volgende Actions-run en de mobiele PWA.

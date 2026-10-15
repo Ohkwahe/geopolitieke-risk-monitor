@@ -1,26 +1,18 @@
-# Risk Monitor v3.0.3 – English Audio Fix
+# Risk Monitor v3.0.4 – onderhoudsiteratie
 
-**Status:** releasekandidaat. De werkelijke audioweergave op de iPhone moet nog bevestigd worden.
+Deze versie vereenvoudigt de bestaande iPhone PWA en verwijdert de trage audiogeneratie.
 
-## Waarom deze correctie
+## Gewijzigd
+- Engelse audio, audiobalk, audioknoppen en geluidstest verwijderd.
+- De GitHub Actions-workflow installeert geen eSpeak NG / FFmpeg meer en genereert geen MP3.
+- De drie tellende nieuwstegels zijn nu de enige navigatie voor Belangrijk, Trump – VS en Onder drempel. Dubbele tabbladen zijn verwijderd.
+- Geselecteerde tegel krijgt een duidelijke actieve weergave.
+- Versienummer en serviceworker-cache verhoogd naar **v3.0.4**.
 
-De vorige versies gebruikten `speechSynthesis` van iOS Safari. Omdat dat bij de gebruiker ook na een eerdere correctie stil bleef, gebruikt deze release echte Engelse MP3-bestanden.
+## Bewust ongewijzigd
+RSS-collector, automatische planning, Argos-vertaling, tekstbriefing, zoek- en nieuwsfilters, bronverwijzingen, risicoscores, dossiers, historiek, persoonlijke gelezen/bewaarde items, optionele meldingen en AI-koppelingen.
 
-- Standaardtaal voor de *tekst* blijft instelbaar op Nederlands of Engels.
-- Gesproken audioberichten zijn **altijd Engels**, ongeacht de teksttaal.
-- De app speelt gewone MP3-bestanden af met een zichtbare, bedienbare audiobalk.
-- De test-MP3 zit in het installatiepakket, zodat je geluid meteen kunt testen.
-- Nieuws-MP3's worden door GitHub Actions gemaakt bij iedere RSS-controle (eSpeak NG en FFmpeg, offline, gratis).
-- De Engelse stem klinkt eenvoudiger/robotischer dan een commerciële AI-stem.
-- Headlines worden uit de originele RSS-teksten voorgelezen; de audiobestanden zijn vooraf gegenereerd en volgen niet alle persoonlijke filters of taalweergave van de app.
-- Bij een probleem toont de app een fout en een rechtstreekse Safari-testlink.
+**BELANGRIJK:** `data/auto-news.json` wordt niet meegeleverd. Laat de bestaande feed en historiek in GitHub staan. Verwijder op je iPhone ook geen websitegegevens, zodat je bewaarde artikelen en voorkeuren behouden blijven.
 
-**Zonder extra API-sleutel of abonnement.** De automatische nieuwsanalyse en feitencontrole blijven ongewijzigd; voorgelezen koppen zijn niet onafhankelijk geverifieerd.
-
-## GitHub-upgrade
-
-Zie `START_HIER_GITHUB.md`. Bestaande `data/auto-news.json` en historiek niet overschrijven.
-
-## Beperkingen
-
-Safari en iOS-PWA's kunnen audioproblemen hebben. Een browsertest bewijst niet dat je iPhone luidspreker daadwerkelijk geluid geeft. De ingebouwde Safari-testlink helpt dit te onderscheiden. Nieuwe nieuws-audio verschijnt pas na een geslaagde GitHub-actie met de stap **Engelse audio voorbereiden**.
+## Status
+Releasekandidaat v3.0.4. Geautomatiseerde browsertests beschikbaar; echte test op iPhone na publicatie nodig.

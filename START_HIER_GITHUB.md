@@ -1,13 +1,13 @@
-# Start hier – installeren via GitHub
+# INSTALLATIE – Risk Monitor v3.0.4
 
-1. Open de meegeleverde HTML-installer op Windows in Firefox; klik **Maak ZIP-pakket**.
-2. Pak de ZIP uit. Open je bestaande GitHub-repository `Ohkwahe/geopolitieke-risk-monitor` → **Code** → **Add file** → **Upload files**.
-3. Upload de volledige inhoud op `main`: zeker `index.html`, `sw.js`, `icons/speech-test-en.mp3`, `.github/workflows/update-news.yml` en `scripts/build-english-audio.py`. **Upload geen live `data/auto-news.json`.**
-4. Klik **Commit changes**. Controleer apart onder **Code → .github → workflows → update-news.yml** dat de stap `Engelse audio voorbereiden (gratis, lokaal)` zichtbaar is. Verborgen `.github`-mappen gaan bij slepen soms niet mee.
-5. Ga naar **Actions** → **Risk Monitor - nieuws ophalen en publiceren** → **Run workflow**, branch `main`. Controleer bij de groene run vooral de stap **Engelse audio voorbereiden (gratis, lokaal)**; die mag niet zijn overgeslagen of rood. De overige workflowstappen moeten ook slagen.
-6. Open in Safari je GitHub Pages-site en ververs. Controleer **v3.0.3**. Open daarna de iPhone beginscherm-app opnieuw.
-7. **Eerste test zonder nieuwsrun:** Instellingen → **Engelse audio testen en geluid oplossen** → **Test Engels geluid**. De test-MP3 is onderdeel van het pakket. Als het stil blijft, klik **Open het testgeluid rechtstreeks in Safari**.
-8. **Nieuws-audio:** Nieuws → **Luister in Engels** of **Ochtend-/avondbriefing → Listen in English**. De audiobalk verschijnt met eigen play/pauze.
-9. Werkt de Safari-test maar niet de beginscherm-app? Test voorlopig in Safari; dit kan samenhangen met iOS WebKit-PWA audio.
+1. Maak voor de zekerheid een back-up van de huidige GitHub-repository of maak een nieuwe onderhoudsbranch.
+2. Pak `Risk_Monitor_v3.0.4_GitHub_Upgrade.zip` **lokaal uit**. Upload niet het ZIP-bestand als bestand naar de repository.
+3. Open GitHub → `Ohkwahe/geopolitieke-risk-monitor` → **Add file → Upload files**.
+4. Sleep de **inhoud** van de uitgepakte map (alle bestanden én submappen inclusief verborgen `.github/workflows`) naar GitHub. Bevestig dat de paden behouden blijven en vervang de gelijknamige bestanden. Eventueel moet je `.github/workflows/update-news.yml` afzonderlijk via de editor vervangen.
+5. **NIET wijzigen/verwijderen:** `data/auto-news.json`, `data/notification-state.json`, andere bestanden onder `data/` en je GitHub Secrets of Pages-instellingen. Live data zit bewust NIET in de ZIP.
+6. **Wél verwijderen indien nog aanwezig:** `scripts/build-english-audio.py`, `icons/speech-test-en.mp3`, `tests/test_audio_browser.py`, `tests/test_audio_generator.py` en `tests/test_speech_browser.py`. Verwijder eventuele oude gegenereerde `data/audio/`-MP3's pas na back-up en controle dat het geen andere bestanden betreft.
+7. Commit naar je gekozen branch en controleer de workflow. Na GO/test kun je de branch naar `main` brengen. De geplande workflow draait alleen op `main`.
+8. GitHub Actions → `Risk Monitor - nieuws ophalen en publiceren` → **Run workflow**. Controleer dat `Tests` en `Publiceer GitHub Pages` groen zijn, en dat de audio-stap ontbreekt.
+9. Controleer `BUILDINFO.json` (v3.0.4) en open de webapp via Safari en de iPhone-beginschermknop. Tik op alle drie nieuwstegels en controleer de bijhorende artikelen, bronlinks, historiek en je bewaarde items.
 
-De gewone nieuwstaal (NL/EN), historiek en ChatGPT-notificaties blijven ongewijzigd. Geen extra account of abonnement.
+**Let op:** als de browser weigert een volledige map te uploaden, gebruik in GitHub voor elk gewijzigd tekstbestand de editor of gebruik GitHub Desktop op een eigen toestel. Upload geen uitgepakte `data/`-map uit een oudere versie.
