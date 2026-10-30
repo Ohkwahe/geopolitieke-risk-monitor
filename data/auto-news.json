@@ -1,18 +1,18 @@
 {
   "schemaVersion": "3.0.0",
   "type": "automated_headline_feed",
-  "generatedAt": "2026-10-30T14:04:29.536Z",
-  "previousControlAt": "2026-10-29T21:46:14.491Z",
+  "generatedAt": "2026-10-30T21:28:02.865Z",
+  "previousControlAt": "2026-10-30T14:04:29.536Z",
   "sourcesOk": 5,
   "sourcesTotal": 5,
-  "newCount": 45,
-  "updatedCount": 2,
+  "newCount": 32,
+  "updatedCount": 3,
   "notice": "Automatische regelgebaseerde voorselectie van nieuwsheadlines; GEEN onafhankelijke verificatie, officiële dreigingsscore of AI-analyse. Schattingen zijn geen vastgestelde gevolgen.",
   "sources": [
     {
       "name": "BBC News",
       "ok": true,
-      "items": 36
+      "items": 37
     },
     {
       "name": "The Guardian",
@@ -1175,9 +1175,826 @@
       "sourcesOk": 5,
       "translated": 30,
       "translationPending": 0
+    },
+    {
+      "at": "2026-10-30T21:28:02.865Z",
+      "added": 32,
+      "changed": 3,
+      "total": 300,
+      "grouped": 0,
+      "dossierCounts": {
+        "korea": 8,
+        "oekraine-rusland": 61,
+        "iran-regio": 26,
+        "wereld": 45,
+        "vs-beleid": 57,
+        "china-taiwan": 30,
+        "israel-palestina": 57,
+        "congo": 9,
+        "soedan": 7
+      },
+      "important": 0,
+      "review": 2,
+      "below": 298,
+      "sourcesOk": 5,
+      "translated": 19,
+      "translationPending": 0
     }
   ],
   "signals": [
+    {
+      "id": "RSS-02ecd35b7079ec56efeed2",
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "summary": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
+      "date": "2026-10-30T21:13:14.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "korea",
+        "label": "Korea"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T21:13:14.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "466124dc25fa5983ff8758ae",
+        "title": "Crypto reus Binance proberen te herstellen $6,3 miljard gestolen in hack gekoppeld aan Noord-Korea",
+        "summary": "De cyber-aanval, die het bedrijf beschrijft als complex, wordt verondersteld de grootste ooit in zijn soort.",
+        "at": "2026-10-30T21:30:11.505612+00:00"
+      }
+    },
+    {
+      "id": "RSS-8fef7464e6b80437fe841b",
+      "title": "They strangled us, says founder of Russian newspaper shut under pressure from authorities",
+      "summary": "Novaya Gazeta has been one of the most high-profile independent news outlets in Russia over the last three decades.",
+      "date": "2026-10-30T20:41:51.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "statement",
+        "label": "Uitspraak of verwachting",
+        "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T20:41:51.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "ff3432d703f3e05583b94905",
+        "title": "Ze wurgden ons, zegt de oprichter van de Russische krant gesloten onder druk van de autoriteiten",
+        "summary": "Novaya Gazeta is de laatste drie decennia een van de meest prominente onafhankelijke nieuwspunten in Rusland geweest.",
+        "at": "2026-10-30T21:30:12.130382+00:00"
+      }
+    },
+    {
+      "id": "RSS-896bebbccb9b244a1699fd",
+      "title": "Ukraine: Oleshky residents evacuate war-ravaged city",
+      "summary": "Under the local ceasefire, an aid convoy of 25 buses arrived with humanitarian aid and as transport for fleeing Oleshky residents. The Ukrainian city has been occupied by Russia since 2022 and faces food shortages.",
+      "date": "2026-10-30T20:09:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/ukraine-oleshky-residents-evacuate-war-ravaged-city/a-79812327?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "diplomatie",
+            "label": "Diplomatie"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T20:09:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "bccb0dada2988acaee4cb399",
+        "title": "Oekraïne: Olesjky bewoners evacueren oorlogsstad",
+        "summary": "Onder het plaatselijke staakt-het-vuren arriveerde een hulpkonvooi van 25 bussen met humanitaire hulp en als transport voor het ontvluchten van Oleshky inwoners. De Oekraïense stad is bezet door Rusland sinds 2022 en heeft te kampen met voedseltekorten.",
+        "at": "2026-10-30T21:30:13.092441+00:00"
+      }
+    },
+    {
+      "id": "RSS-b0aa7d88e42ef8ab9712f5",
+      "title": "How crypto hacking funds isolated North Korea’s nuclear programme",
+      "summary": "Cryptocurrency theft is estimated to generate half of the country’s foreign currency income North Korea plays by its own rules. The isolated, secretive and autocratic country is largely cut off from the world’s economic system – but when it comes to generating foreign earnings it relies on some of the world’s most sophisticated hacking. Experts, such as TRM Labs, quickly attributed the extraordinary $6.3bn (£4.7bn)…",
+      "date": "2026-10-30T17:37:46.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "veiligheid",
+            "label": "Militaire veiligheid"
+          },
+          {
+            "key": "cyber",
+            "label": "Cyber en sabotage"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "korea",
+        "label": "Korea"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T17:37:46.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "e302b6b44585a7e0e453002f",
+        "title": "Hoe crypto hacken fondsen geïsoleerde Noord-Korea... nucleaire programma",
+        "summary": "Cryptocurrency diefstal wordt geschat om de helft van het land te genereren vreemde valuta inkomen Noord-Korea speelt volgens zijn eigen regels. Het geïsoleerde, geheimzinnige en autocratische land is grotendeels afgesneden van het economische systeem van de wereld, maar als het gaat om het genereren van buitenlandse inkomsten is het afhankelijk van een aantal van de wereld meest geavanceerde hacking. Experts, zoals TRM Labs, snel toegeschreven de buitengewone $ 6,3 miljard (£ 4,7 miljard)...",
+        "at": "2026-10-30T21:30:14.724887+00:00"
+      }
+    },
+    {
+      "id": "RSS-03f161c6332a2077b43555",
+      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
+      "summary": "European foreign ministers refused to be pictured with Sergei Lavrov at the summit being held in Atlanta.",
+      "date": "2026-10-30T17:25:20.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "diplomatie",
+            "label": "Diplomatie"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T17:25:20.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "b74f8d10baa99659a05412d8",
+        "title": "G20 'familiefoto' geannuleerd na protesten over de aanwezigheid van Russische minister",
+        "summary": "De Europese ministers van Buitenlandse Zaken weigerden op de top in Atlanta met Sergei Lavrov te worden afgebeeld.",
+        "at": "2026-10-30T21:30:15.342465+00:00"
+      }
+    },
+    {
+      "id": "RSS-5cd3eade375225242b3112",
+      "title": "Evacuation of civilians begins in besieged Ukrainian city of Oleshky",
+      "summary": "Humanitarian convoy brings food and medicine to Russian-held city where people have suffered severe shortages People living in the besieged Russian-held city of Oleshky in southern Ukraine were evacuated on Friday as part of a joint relief operation, the first of its kind in four years and eight months of war. The city, which lies on the Russian-occupied side of the Dnipro River, opposite Kherson, has suffered month…",
+      "date": "2026-10-30T17:13:48.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/world/2026/oct/30/evacuation-besieged-ukrainian-city-oleshky",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T17:13:48.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "de8ec4492000723d39f9ba39",
+        "title": "Evacuatie van burgers begint in belegerde Oekraïense stad Oleshky",
+        "summary": "Humanitaire konvooi brengt voedsel en medicijnen naar de Russische stad waar mensen ernstige tekorten hebben geleden Mensen die in de belegerde Russische stad Oleshky in het zuiden van Oekraïne wonen werden vrijdag geëvacueerd als onderdeel van een gezamenlijke hulpoperatie, de eerste in zijn soort in vier jaar en acht maanden oorlog. De stad ligt aan de Russische kant van de rivier de Dnipro, tegenover Kherson...",
+        "at": "2026-10-30T21:30:16.810350+00:00"
+      }
+    },
+    {
+      "id": "RSS-1f4188dc23ae5a5c9251ed",
+      "title": "BP profits hit ‘obscene’ 18-year high as Iran war drives up oil refining margins",
+      "summary": "Oil giant comes under fire from climate campaigners, as its earnings reach $8.46bn while ‘innocent civilians suffer’ BP’s quarterly profits have been labelled “obscene” after they hit an 18-year high of $8.46bn (£6.3bn), as the war in the Middle East drove up oil and gas prices. The energy company hailed a “banner quarter” on Friday, with its underlying ​replacement ⁠cost profit – a key measure of its income – almos…",
+      "date": "2026-10-30T16:49:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "The Guardian",
+      "official": false,
+      "url": "https://www.theguardian.com/business/2026/oct/30/bp-profits-jump-as-middle-east-conflict-drives-up-oil-refining-margins",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "corroboratingSources": [
+        "The Guardian"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "energie",
+            "label": "Energie"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "iran-regio",
+        "label": "Iran en de regio"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "The Guardian"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T16:49:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "77da295898af07e2c244fb53",
+        "title": "BP-winsten bereikten een piek van 18 jaar, terwijl de Iraanse oorlog de olieraffinagemarges verhoogt.",
+        "summary": "Olie reus komt onder vuur van klimaat campagnevoerders, als zijn inkomsten bereiken $ 8,46 miljard terwijl . .onschuldige burgers lijden . . . . . . . . . . . . . . Het energiebedrijf begroette een",
+        "at": "2026-10-30T21:30:18.820883+00:00"
+      }
+    },
+    {
+      "id": "RSS-93c1cc8d18144e661050af",
+      "title": "Democratic senator blames Egypt press crackdown on US military aid decision",
+      "summary": "Chris Murphy said waiving a human rights condition on aid paved the way for arrests of journalists.",
+      "date": "2026-10-30T15:17:11.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo?at_medium=RSS&at_campaign=rss",
+      "topic": "conflict",
+      "region": "overig",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "veiligheid",
+            "label": "Militaire veiligheid"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "wereld",
+        "label": "Wereldwijde ontwikkelingen"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T15:17:11.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "0f373eb459ee7293a0a659c6",
+        "title": "Democratische senator verwijt Egypte pers hardhandigheid op Amerikaanse militaire hulp besluit",
+        "summary": "Chris Murphy zei dat het afzien van een mensenrechtenvoorwaarde op hulp de weg vrijmaakte voor arrestaties van journalisten.",
+        "at": "2026-10-30T21:30:19.435368+00:00"
+      }
+    },
+    {
+      "id": "RSS-4cb0aca3bd91ccfcfbbb97",
+      "title": "Pope Leo XIV becomes first pontiff to vote in a US election",
+      "summary": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress.",
+      "date": "2026-10-30T14:48:22.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "vs-beleid",
+        "label": "VS-beleid"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T14:48:22.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "fd8a0ae9dd69d2c6b30a04fc",
+        "title": "Paus Leo XIV wordt eerste paus die stemt in een Amerikaanse verkiezing",
+        "summary": "De in Chicago geboren pontiff, die een gespannen relatie heeft met Trump, werd opgestuurd in een stemming voor de tussentijdse verkiezingen die de controle over het Amerikaanse Congres zullen beslissen.",
+        "at": "2026-10-30T21:30:20.148427+00:00"
+      }
+    },
+    {
+      "id": "RSS-224b77e7d66c4b43afb4d1",
+      "title": "Germany news: Merz hopes for Korean reunification at DMZ",
+      "summary": "Chancellor Friedrich Merz has expressed hope for Korean reunification during a visit to the heavily fortified border. Meanwhile, President Steinmeier has held talks with China's Xi Jinping in Beijing. DW has more.",
+      "date": "2026-10-30T14:46:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/germany-news-merz-hopes-for-korean-reunification-at-dmz/live-79803462?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "diplomatie",
+            "label": "Diplomatie"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "china-taiwan",
+        "label": "China – Taiwan"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T14:46:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "3282591492f8babfe7663d9e",
+        "title": "Duitsland nieuws: Merz hoopt op Koreaanse hereniging bij DMZ",
+        "summary": "Kanselier Friedrich Merz heeft de hoop uitgesproken op Koreaanse hereniging tijdens een bezoek aan de zwaar versterkte grens. Ondertussen heeft president Steinmeier gesprekken gevoerd met Xi Jinping in Peking. DW heeft meer.",
+        "at": "2026-10-30T21:30:21.062674+00:00"
+      }
+    },
+    {
+      "id": "RSS-ab9ef827b8a0b0d0c740ee",
+      "title": "Seoul fears being sidelined as US reaches out to North Korea",
+      "summary": "With ties between South Korea and the Trump administration strained, the South Korean government worries that Donald Trump's pursuit of a diplomatic breakthrough with Kim Jong Un may come at Seoul's expense.",
+      "date": "2026-10-30T14:08:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/seoul-fears-being-sidelined-as-us-reaches-out-to-north-korea/a-79808098?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "azie",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "korea",
+        "label": "Korea"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T14:08:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "8874f2d1907b388fb107f4ef",
+        "title": "Seoul vreest dat hij buitenspel wordt gezet als de VS Noord-Korea bereikt",
+        "summary": "Met banden tussen Zuid-Korea en de regering Trump onder druk, de Zuid-Koreaanse regering maakt zich zorgen dat Donald Trump's streven naar een diplomatieke doorbraak met Kim Jong Un kan komen ten koste van Seoul.",
+        "at": "2026-10-30T21:30:21.999087+00:00"
+      }
+    },
     {
       "id": "RSS-53d2b9361d26a074ea0727",
       "title": "Gulf states must rethink trillion-dollar defence in light of US-Iran war, says report",
@@ -1226,8 +2043,8 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1254,8 +2071,8 @@
     },
     {
       "id": "RSS-06dd76803e8b9715c50769",
-      "title": "North Korean group blamed for $6.3bn Binance hack in biggest ever crypto heist",
-      "summary": "Cryptocurrency exchange scrambles to freeze affected assets, with about $3bn located so far, and says it will cover losses The world’s largest cryptocurrency exchange has been hit by an industry-record $6.3bn (£4.7bn) hack, with experts identifying North Korea as the likely culprit. Binance has scrambled to freeze the affected assets, with about $3bn located so far. The company gave no update on the other $3.3bn as…",
+      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
+      "summary": "Binance exchange says it will cover customer losses as it scrambles to freeze affected assets, with about $3bn located so far The world’s largest cryptocurrency exchange has been hit by a record $6.3bn (£4.7bn) hack described as the biggest heist in history, with experts identifying North Korea as the likely culprit. Binance said it would cover all customer losses as it froze $3bn of the affected assets.",
       "date": "2026-10-30T12:48:40.000Z",
       "firstSeen": "2026-10-30T14:04:29.536Z",
       "source": "The Guardian",
@@ -1295,8 +2112,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1307,18 +2124,19 @@
         "linkedArticles": 1,
         "publishedAt": "2026-10-30T12:48:40.000Z",
         "firstSeenAt": "2026-10-30T14:04:29.536Z",
-        "lastChangedAt": null,
+        "lastChangedAt": "2026-10-30T21:28:02.865Z",
         "verified": false,
         "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
       },
+      "lastChangedAt": "2026-10-30T21:28:02.865Z",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "9d97a99d6dc3169790086379",
-        "title": "Noord-Koreaanse groep beschuldigd voor $6,3 miljard Binance hack in grootste ooit crypto diefstal",
-        "summary": "Cryptocurrency uitwisseling scrambles te bevriezen getroffen activa, met ongeveer $ 3 miljard gelegen tot nu toe, en zegt dat het verliezen zal dekken De wereld grootste cryptogeld uitwisseling is getroffen door een industrie-record $6,3 miljard (£4,7 miljard) hack, met deskundigen identificeren Noord-Korea als de waarschijnlijke schuldige. Binance heeft vervormd om de getroffen activa te bevriezen, met ongeveer $ 3 miljard gelegen tot nu toe. Het bedrijf gaf geen update over de andere $3,3 miljard als ...",
-        "at": "2026-10-30T14:06:46.703420+00:00"
+        "sourceHash": "ed611bc7450724ae73142d40",
+        "title": "Noord-Korea is waarschijnlijk schuldig achter $6,3bn crypto hack, Grootste overval in de geschiedenis",
+        "summary": "Binance uitwisseling zegt dat het zal de verliezen van de klant te dekken als het scrambles te bevriezen getroffen activa, met ongeveer $ 3 miljard gelegen tot nu toe De wereld grootste cryptogeld uitwisseling is getroffen door een record $ 6,3 miljard (£ 4,7 miljard) hack beschreven als de grootste overval in de geschiedenis, met deskundigen identificeren Noord-Korea als de waarschijnlijke boosdoener. Binance zei dat het zou dekken alle klanten verliezen als het bevroren $ 3 miljard van de getroffen activa.",
+        "at": "2026-10-30T21:30:23.773179+00:00"
       }
     },
     {
@@ -1369,8 +2187,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1438,8 +2256,8 @@
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1507,8 +2325,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1535,8 +2353,8 @@
     },
     {
       "id": "RSS-d739e6ac886f7d18169f65",
-      "title": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
-      "summary": "Several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water.",
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+      "summary": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
       "date": "2026-10-30T12:25:53.000Z",
       "firstSeen": "2026-10-30T14:04:29.536Z",
       "source": "BBC News",
@@ -1547,14 +2365,14 @@
       "status": "automatic_unverified",
       "score": {
         "military": 0,
-        "belgium": 1,
+        "belgium": 0,
         "novelty": 2,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
         "BBC News"
       ],
@@ -1565,8 +2383,8 @@
         "level": "indirect_thema",
         "domains": [
           {
-            "key": "energie",
-            "label": "Energie"
+            "key": "diplomatie",
+            "label": "Diplomatie"
           }
         ],
         "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
@@ -1581,8 +2399,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1593,18 +2411,19 @@
         "linkedArticles": 1,
         "publishedAt": "2026-10-30T12:25:53.000Z",
         "firstSeenAt": "2026-10-30T14:04:29.536Z",
-        "lastChangedAt": null,
+        "lastChangedAt": "2026-10-30T21:28:02.865Z",
         "verified": false,
         "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
       },
+      "lastChangedAt": "2026-10-30T21:28:02.865Z",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "fc8ba0a1063ae5cefc79b366",
-        "title": "Bewoners verlaten verwoeste Russisch-bezette Oleshky als evacuatie gang opent",
-        "summary": "Er zijn honderden mensen die besloten hebben om in de frontlinie te blijven, ondanks het gebrek aan gas, elektriciteit en stromend water.",
-        "at": "2026-10-30T14:06:48.611850+00:00"
+        "sourceHash": "402baa97ec687239cd6478c5",
+        "title": "Honderden geëvacueerd uit Russisch bezet Oleshky tijdens zeldzame Oekraïne staakt-het-vuren",
+        "summary": "Honderden mensen worden ook begrepen dat ze in de frontlinie stad zijn gebleven, ondanks de gevaren.",
+        "at": "2026-10-30T21:30:24.386385+00:00"
       }
     },
     {
@@ -1650,8 +2469,8 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1719,8 +2538,8 @@
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "official_publication",
       "sourceAudit": {
@@ -1788,8 +2607,8 @@
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "official_publication",
       "sourceAudit": {
@@ -1812,6 +2631,218 @@
         "title": "Jemen oorlog maakt het bereiken van hulp te gevaarlijk voor velen",
         "summary": "Meer dan 280.000 mensen zijn nu ontheemd door gevechten in Jemen en veel kwetsbare mensen hebben geen toegang tot levensreddende hulp omdat het te gevaarlijk is om dat te doen, zei het VN-vluchtelingenagentschap (UNHCR) op vrijdag.",
         "at": "2026-10-30T14:06:50.025520+00:00"
+      }
+    },
+    {
+      "id": "RSS-fce6834aa3094b6a54d8b8",
+      "title": "World News in Brief: 300,000 displaced in Lebanon, Türk ‘deeply concerned’ over Novaya Gazeta closure, $50 million refugee appeal, World Cities Day",
+      "summary": "More than 300,000 people displaced since early March remain internally displaced in Lebanon, where the humanitarian crisis is “far from over,” according to the UN’s aid coordination office (OCHA).",
+      "date": "2026-10-30T12:00:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168713",
+      "topic": "conflict",
+      "region": "midden-oosten",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "sourceEvidence": "official_publication",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "wereld",
+        "label": "Wereldwijde ontwikkelingen"
+      },
+      "evidence": {
+        "kind": "claim",
+        "label": "Claim of betwiste uitspraak",
+        "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T12:00:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "80716ba210c05074eba0d3f8",
+        "title": "Wereldnieuws in het kort: 300.000 ontheemden in Libanon, Türk diep bezorgd over de sluiting van Novaya Gazeta, 50 miljoen dollar vluchtelingen beroep, Wereldstedendag",
+        "summary": "Meer dan 300.000 ontheemden die sinds begin maart ontheemd zijn, blijven intern ontheemd in Libanon, waar de humanitaire crisis ver van boven ligt, aldus het VN-coördinatiebureau voor hulp (OCHA).",
+        "at": "2026-10-30T21:30:25.511641+00:00"
+      }
+    },
+    {
+      "id": "RSS-cda984fd3145ada6ec3101",
+      "title": "Ukraine: Oleshky ceasefire offers ‘hope’ for civilians as attacks on aid vehicles continue",
+      "summary": "Each day the ceasefire in Oleshky holds means hope for civilians in the city, the UN’s top humanitarian official said, stressing that those wishing to leave must be able to do so safely and voluntarily.",
+      "date": "2026-10-30T12:00:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168712",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "sourceEvidence": "official_publication",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "indirect_thema",
+        "domains": [
+          {
+            "key": "diplomatie",
+            "label": "Diplomatie"
+          }
+        ],
+        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "official_source",
+        "label": "Officiële mededeling",
+        "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T12:00:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "186d68449b965b261347b4bb",
+        "title": "Oekraïne: Oleshky staakt-het-vuren biedt hoop voor burgers als aanvallen op hulpvoertuigen blijven",
+        "summary": "Elke dag het staakt-het-vuren in Oleshky betekent hoop voor burgers in de stad, de VN top humanitaire ambtenaar zei, benadrukkend dat degenen die willen vertrekken moeten in staat zijn om dit veilig en vrijwillig te doen.",
+        "at": "2026-10-30T21:30:26.472518+00:00"
+      }
+    },
+    {
+      "id": "RSS-07e6a9b89d0e02648fb120",
+      "title": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks",
+      "summary": "More than 28 million people in the Democratic Republic of the Congo (DRC) are not getting enough to eat and the number is expected to tick up in the coming months, according to the latest alert from the IPC global food security monitor.",
+      "date": "2026-10-30T12:00:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "UN News",
+      "official": true,
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168708",
+      "topic": "conflict",
+      "region": "afrika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 1,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 2
+      },
+      "total": 5,
+      "category": "below",
+      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "UN News"
+      ],
+      "sourceEvidence": "official_publication",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "congo",
+        "label": "Congo"
+      },
+      "evidence": {
+        "kind": "claim",
+        "label": "Claim of betwiste uitspraak",
+        "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "official_publication",
+      "sourceAudit": {
+        "state": "primary_statement",
+        "sourceNames": [
+          "UN News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T12:00:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Publicatie van een officiële instelling. Dit bevestigt de publicatie, niet automatisch iedere bewering."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "3059babec645a46bf47c0734",
+        "title": "DR Congo: Honger verdiept voor miljoenen temidden van conflicten, ebola en klimaatschokken",
+        "summary": "Meer dan 28 miljoen mensen in de Democratische Republiek Congo (DRC) krijgen niet genoeg om te eten en het aantal zal naar verwachting de komende maanden stijgen, volgens de laatste waarschuwing van de wereldwijde IPC voedselveiligheidsmonitor.",
+        "at": "2026-10-30T21:30:27.424926+00:00"
       }
     },
     {
@@ -1857,8 +2888,8 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -1931,8 +2962,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2000,8 +3031,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2042,17 +3073,16 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "Deutsche Welle",
-        "The Guardian"
+        "Deutsche Welle"
       ],
-      "sourceEvidence": "similar_headlines",
+      "sourceEvidence": "single_news_source",
       "method": "rule_based_screening",
       "verified": false,
       "belgiumAssessment": {
@@ -2070,10 +3100,10 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
-      "reviewBasis": "similar_headlines",
+      "reviewBasis": "single_media_report",
       "sourceAudit": {
         "state": "single_report",
         "sourceNames": [
@@ -2139,8 +3169,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2213,8 +3243,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2240,9 +3270,78 @@
       }
     },
     {
+      "id": "RSS-74b72705acb4859f75c5af",
+      "title": "What's at stake for Trump in the US midterms?",
+      "summary": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency.",
+      "date": "2026-10-30T10:19:48.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "BBC News",
+      "official": false,
+      "url": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&at_campaign=rss",
+      "topic": "trump",
+      "region": "amerika",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 0,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 3,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "BBC News"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "niet_vastgesteld",
+        "domains": [],
+        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "vs-beleid",
+        "label": "VS-beleid"
+      },
+      "evidence": {
+        "kind": "news_report",
+        "label": "Nieuwsbericht",
+        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "BBC News"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-30T10:19:48.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "0847872107c86b464eec40f1",
+        "title": "Wat staat er op het spel voor Trump tijdens de examens?",
+        "summary": "Anthony Zurcher legt uit hoe de resultaten van de tussentijdse verkiezingen de rest van het presidentschap van Trump kunnen veranderen.",
+        "at": "2026-10-30T21:30:28.036527+00:00"
+      }
+    },
+    {
       "id": "RSS-4ab64a8b3b26937a2aec5c",
-      "title": "Russian newspaper Novaya Gazeta to close, citing pressure from ‘special services’",
-      "summary": "Independent outlet, whose former editor won Nobel peace prize, says Russian authorities have forced it to shut The Russian independent newspaper Novaya Gazeta has announced it is closing, citing pressure from authorities who recently searched the home of its senior editor and earlier this year detained one of its journalists. “Novaya Gazeta is ceasing to exist,” the editor-in-chief, Sergei Sokolov, said in a video s…",
+      "title": "Russian society being ‘systematically crushed’ says Novaya Gazeta as newspaper announces closure",
+      "summary": "Independent outlet, whose former editor Dmitry Muratov won Nobel prize, cites intolerable pressure from authorities Novaya Gazeta, one of Russia’s best-known independent media outlets, has announced it will permanently close next month. The newspaper, whose former editor-in-chief Dmitry Muratov , cited intolerable pressure, including being stripped of its newsroom, its donation platforms and its legal right to publi…",
       "date": "2026-10-30T09:05:21.000Z",
       "firstSeen": "2026-10-30T14:04:29.536Z",
       "source": "The Guardian",
@@ -2255,17 +3354,16 @@
         "military": 0,
         "belgium": 0,
         "novelty": 2,
-        "reliability": 2
+        "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
-      "belowReason": "Geen voldoende nieuwe of concrete impact voor België.",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
       "corroboratingSources": [
-        "The Guardian",
-        "Deutsche Welle"
+        "The Guardian"
       ],
-      "sourceEvidence": "similar_headlines",
+      "sourceEvidence": "single_news_source",
       "method": "rule_based_screening",
       "verified": false,
       "belgiumAssessment": {
@@ -2279,14 +3377,14 @@
         "label": "Rusland – Oekraïne"
       },
       "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
+        "kind": "statement",
+        "label": "Uitspraak of verwachting",
+        "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "updated",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
       "reviewStatus": "unverified",
-      "reviewBasis": "similar_headlines",
+      "reviewBasis": "single_media_report",
       "sourceAudit": {
         "state": "single_report",
         "sourceNames": [
@@ -2295,18 +3393,19 @@
         "linkedArticles": 1,
         "publishedAt": "2026-10-30T09:05:21.000Z",
         "firstSeenAt": "2026-10-30T14:04:29.536Z",
-        "lastChangedAt": null,
+        "lastChangedAt": "2026-10-30T21:28:02.865Z",
         "verified": false,
         "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
       },
+      "lastChangedAt": "2026-10-30T21:28:02.865Z",
       "translation": {
         "status": "translated",
         "engine": "argos",
         "language": "nl",
-        "sourceHash": "433debb605e5c0924acb45f1",
-        "title": "Russische krant Novaya Gazeta te sluiten, onder verwijzing naar druk van speciale diensten",
-        "summary": "Onafhankelijke outlet, wiens voormalige redacteur Nobelprijs voor de vrede won, zegt dat de Russische autoriteiten haar gedwongen hebben te sluiten De Russische onafhankelijke krant Novaya Gazeta heeft aangekondigd te sluiten, onder druk van de autoriteiten die onlangs het huis van haar senior redacteur hebben doorzocht en eerder dit jaar een van haar journalisten hebben aangehouden. Novaya Gazeta bestaat niet, zegt de hoofdredacteur, Sergei Sokolov in een videos...",
-        "at": "2026-10-30T14:06:54.277626+00:00"
+        "sourceHash": "8631cf257d053d5e96d40493",
+        "title": "Russische samenleving wordt systematisch verpletterd zegt Novaya Gazeta als krant kondigt sluiting",
+        "summary": "Onafhankelijke outlet, wiens voormalige redacteur Dmitry Muratov Nobelprijs won, citeert ondraaglijke druk van de autoriteiten Novaya Gazeta, een van Ruslands meest bekende onafhankelijke media outlets, heeft aangekondigd dat het zal permanent sluiten volgende maand. De krant, wiens voormalige hoofdredacteur Dmitry Muratov , citeerde ondraaglijke druk, waaronder ontdaan van zijn nieuwszaal, zijn donatieplatforms en zijn wettelijk recht om te publiceren...",
+        "at": "2026-10-30T21:30:29.753462+00:00"
       }
     },
     {
@@ -2352,8 +3451,8 @@
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2430,8 +3529,8 @@
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2499,8 +3598,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2573,8 +3672,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2642,8 +3741,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2711,8 +3810,8 @@
         "label": "Uitspraak of verwachting",
         "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2780,8 +3879,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2849,8 +3948,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2918,8 +4017,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -2987,8 +4086,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -3056,8 +4155,8 @@
         "label": "Nieuwsbericht",
         "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
       },
-      "lastActivity": "updated",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -3693,8 +4792,8 @@
         "label": "Claim of betwiste uitspraak",
         "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
       },
-      "lastActivity": "updated",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "single_media_report",
       "sourceAudit": {
@@ -3878,10 +4977,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -3948,10 +5047,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4018,10 +5117,10 @@
       "score": {
         "military": 0,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4092,10 +5191,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4166,10 +5265,10 @@
       "score": {
         "military": 0,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4235,10 +5334,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4304,10 +5403,10 @@
       "score": {
         "military": 3,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 6,
+      "total": 5,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4374,10 +5473,10 @@
       "score": {
         "military": 0,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4452,10 +5551,10 @@
       "score": {
         "military": 0,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -4583,6 +5682,80 @@
         "title": "De Amerikaanse maatregelen om de sancties op de Russische schaduwvloot op te heffen, kunnen de westerse druk op Moskou ondermijnen en de oorlog in Oekraïne helpen financieren.",
         "summary": "De VS overwegen naar verluidt manieren om \"donkere tankers\" om te zetten in legitieme schepen, zodat zij ruwe olie kunnen vervoeren die niet aan sancties onderworpen is.",
         "at": "2026-10-29T21:48:24.011666+00:00"
+      }
+    },
+    {
+      "id": "RSS-cfec60ac7ee723f5364d58",
+      "title": "Russia shadow fleet sanctions: Can the EU act without US?",
+      "summary": "The US is reportedly considering ways to convert \"dark tankers\" into legitimate vessels, allowing them to transport crude oil that is not subject to sanctions.",
+      "date": "2026-10-29T12:01:00.000Z",
+      "firstSeen": "2026-10-30T21:28:02.865Z",
+      "source": "Deutsche Welle",
+      "official": false,
+      "url": "https://www.dw.com/en/russia-shadow-fleet-sanctions-can-the-eu-act-without-us/a-79787035?maca=en-rss-en-all-1573-xml-mrss",
+      "topic": "conflict",
+      "region": "europa",
+      "status": "automatic_unverified",
+      "score": {
+        "military": 0,
+        "belgium": 1,
+        "novelty": 2,
+        "reliability": 1
+      },
+      "total": 4,
+      "category": "below",
+      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
+      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
+      "corroboratingSources": [
+        "Deutsche Welle"
+      ],
+      "sourceEvidence": "single_news_source",
+      "method": "rule_based_screening",
+      "verified": false,
+      "belgiumAssessment": {
+        "level": "europese_context",
+        "domains": [
+          {
+            "key": "energie",
+            "label": "Energie"
+          }
+        ],
+        "explanation": "Europese context genoemd. Belgische gevolgen zijn niet rechtstreeks vastgesteld.",
+        "verified": false
+      },
+      "dossier": {
+        "id": "oekraine-rusland",
+        "label": "Rusland – Oekraïne"
+      },
+      "evidence": {
+        "kind": "claim",
+        "label": "Claim of betwiste uitspraak",
+        "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
+      },
+      "lastActivity": "new",
+      "lastActivityAt": "2026-10-30T21:28:02.865Z",
+      "reviewStatus": "unverified",
+      "reviewBasis": "single_media_report",
+      "sourceAudit": {
+        "state": "single_report",
+        "sourceNames": [
+          "Deutsche Welle"
+        ],
+        "linkedArticles": 1,
+        "publishedAt": "2026-10-29T12:01:00.000Z",
+        "firstSeenAt": "2026-10-30T21:28:02.865Z",
+        "lastChangedAt": null,
+        "verified": false,
+        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
+      },
+      "translation": {
+        "status": "translated",
+        "engine": "argos",
+        "language": "nl",
+        "sourceHash": "b910b6437c141574a5861382",
+        "title": "Russische schaduwvlootsancties: kan de EU zonder de VS handelen?",
+        "summary": "De VS overwegen naar verluidt manieren om \"donkere tankers\" om te zetten in legitieme schepen, waardoor zij ruwe olie kunnen vervoeren die niet aan sancties onderworpen is.",
+        "at": "2026-10-30T21:30:30.475608+00:00"
       }
     },
     {
@@ -4780,8 +5953,8 @@
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "official_publication",
       "sourceAudit": {
@@ -4849,8 +6022,8 @@
         "label": "Officiële mededeling",
         "explanation": "Een officiële instelling publiceert dit bericht; de daarin vermelde feiten zijn niet onafhankelijk gecontroleerd."
       },
-      "lastActivity": "new",
-      "lastActivityAt": "2026-10-30T14:04:29.536Z",
+      "lastActivity": "unchanged",
+      "lastActivityAt": null,
       "reviewStatus": "unverified",
       "reviewBasis": "official_publication",
       "sourceAudit": {
@@ -4890,10 +6063,10 @@
       "score": {
         "military": 3,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 6,
+      "total": 5,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5028,10 +6201,10 @@
       "score": {
         "military": 1,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5171,10 +6344,10 @@
       "score": {
         "military": 0,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5240,10 +6413,10 @@
       "score": {
         "military": 1,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 5,
+      "total": 4,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
@@ -5318,10 +6491,10 @@
       "score": {
         "military": 2,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 5,
+      "total": 4,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5392,10 +6565,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5461,10 +6634,10 @@
       "score": {
         "military": 1,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 5,
+      "total": 4,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
@@ -5535,10 +6708,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5604,10 +6777,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5752,10 +6925,10 @@
       "score": {
         "military": 2,
         "belgium": 1,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 6,
+      "total": 5,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
@@ -5830,10 +7003,10 @@
       "score": {
         "military": 2,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 5,
+      "total": 4,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5904,10 +7077,10 @@
       "score": {
         "military": 1,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 4,
+      "total": 3,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -5982,10 +7155,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -6051,10 +7224,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -6125,10 +7298,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -6683,10 +7856,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -6826,10 +7999,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 2,
+        "novelty": 1,
         "reliability": 1
       },
-      "total": 3,
+      "total": 2,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -7968,10 +9141,10 @@
       "score": {
         "military": 0,
         "belgium": 0,
-        "novelty": 1,
+        "novelty": 0,
         "reliability": 1
       },
-      "total": 2,
+      "total": 1,
       "category": "below",
       "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
       "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
@@ -21318,1147 +22491,24 @@
         "summary": "Het netwerk wordt gebruikt door de Oekraïense militairen, bronnen zeggen, en Trump zegt \"als er een probleem, Ik zal het rechtzetten\" .",
         "at": "2026-10-23T19:58:48.154424+00:00"
       }
-    },
-    {
-      "id": "RSS-ed8742a34c4ce7796746f7",
-      "title": "What’s up with Trump’s unhinged rants on male candidates’ bodies at rallies?",
-      "summary": "Trump’s latest tactic to champion Republicans at midterm rallies? Assessing men’s bodies in meticulous detail Speaking at a rally in Youngstown, Ohio, earlier this month, to support the Republican senator Jon Husted, Donald Trump broke from his prepared remarks. Trump said he had recently learned that Husted played football at university. The president, 80, said this had prompted him to conduct a physical assessment…",
-      "date": "2026-10-23T11:00:32.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "The Guardian",
-      "official": false,
-      "url": "https://www.theguardian.com/us-news/2026/oct/23/trump-midterm-rallies-male-bodies",
-      "topic": "trump",
-      "region": "amerika",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "The Guardian"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "vs-beleid",
-        "label": "VS-beleid"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "The Guardian"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T11:00:32.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "4987440b3f5c36ebf45baac3",
-        "title": "Wat is er aan de hand met Trump... ongebreidelde razzia's op mannelijke kandidaten?",
-        "summary": "Trumps nieuwste tactiek om Republikeinen te kamperen tijdens tussentijdse bijeenkomsten? Mannen in detail beoordelen Sprekend op een bijeenkomst in Youngstown, Ohio, eerder deze maand, om de Republikeinse senator Jon Husted te steunen, brak Donald Trump van zijn voorbereide opmerkingen. Trump zei dat hij onlangs had geleerd dat Husted voetbal speelde op de universiteit. De president, 80, zei dat dit hem ertoe had aangezet een fysieke beoordeling uit te voeren...",
-        "at": "2026-10-23T11:33:39.491850+00:00"
-      }
-    },
-    {
-      "id": "RSS-084c296a99bc0f1b2c185e",
-      "title": "First Thing: Former DHS aide Lewandowski investigated over claims he profited from government role",
-      "summary": "Investigation marks a rare move by the DoJ against an ally of the US president. Plus, why the world’s coral reefs are facing a dire future Good morning. Corey Lewandowski, a former political adviser to Donald Trump and ⁠top aide at the Department ⁠of Homeland Security, ​is over allegations he profited off his role in the US government. The DoJ has not yet issued subpoenas or other legal demands in the criminal inves…",
-      "date": "2026-10-23T10:53:00.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "The Guardian",
-      "official": false,
-      "url": "https://www.theguardian.com/us-news/2026/oct/23/first-thing-corey-lewandowski-under-investigation-homeland-security",
-      "topic": "trump",
-      "region": "amerika",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "The Guardian"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "vs-beleid",
-        "label": "VS-beleid"
-      },
-      "evidence": {
-        "kind": "claim",
-        "label": "Claim of betwiste uitspraak",
-        "explanation": "De berichtgeving bevat een toegeschreven of betwiste bewering. Raadpleeg de oorspronkelijke bron."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "The Guardian"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T10:53:00.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "a3468d8a2b8dcd4e75fe6edc",
-        "title": "Eerste ding: voormalig DHS adjudant Lewandowski onderzocht over claims die hij profiteerde van de rol van de overheid",
-        "summary": "Onderzoek markeert een zeldzame zet van de DoJ tegen een bondgenoot van de Amerikaanse president. Plus, waarom de wereld koraalriffen worden geconfronteerd met een ernstige toekomst Goedemorgen. Corey Lewandowski, een voormalig politiek adviseur van Donald Trump en top assistent van het ministerie van Binnenlandse Veiligheid, is over de beschuldigingen dat hij profiteerde van zijn rol in de Amerikaanse regering. De DoJ heeft nog geen dagvaardingen of andere wettelijke eisen uitgevaardigd in de criminele inves...",
-        "at": "2026-10-23T11:33:41.250210+00:00"
-      }
-    },
-    {
-      "id": "RSS-69507617ea9517a68e3659",
-      "title": "Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead",
-      "summary": "The soldiers were killed in an attack by two Palestinian gunmen at a checkpoint outside the West Bank city on Friday morning.",
-      "date": "2026-10-23T10:26:06.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "BBC News",
-      "official": false,
-      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
-      "topic": "conflict",
-      "region": "midden-oosten",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 3,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 4,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "BBC News"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "israel-palestina",
-        "label": "Israël – Palestina"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "BBC News"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T10:26:06.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": "2026-10-23T19:56:29.232Z",
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "lastChangedAt": "2026-10-23T19:56:29.232Z",
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "317723a0daaec4159d96d852",
-        "title": "Israëlische troepen beginnen Palestijnse gebouwen te slopen in Hebron nadat twee Israëlische soldaten doodgeschoten zijn.",
-        "summary": "De soldaten werden gedood bij een aanval door twee Palestijnse schutters bij een controlepost buiten de West Bank stad op vrijdagmorgen.",
-        "at": "2026-10-23T19:58:48.518425+00:00"
-      }
-    },
-    {
-      "id": "RSS-a0eb2965186242b66b4aa5",
-      "title": "Hospitals deliberately targeted by Sudan's RSF fighters, BBC finds",
-      "summary": "The UN human rights chief Volker Türk says the multiple attacks may amount to war crimes.",
-      "date": "2026-10-23T10:23:07.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "BBC News",
-      "official": false,
-      "url": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
-      "topic": "conflict",
-      "region": "afrika",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 1,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 2,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "BBC News"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "soedan",
-        "label": "Soedan"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "BBC News"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T10:23:07.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "35a25ef966515323d502c394",
-        "title": "Ziekenhuizen doelbewust gericht door Sudan RSF strijders, vindt BBC",
-        "summary": "De VN-mensenrechtenchef Volker Türk zegt dat de meervoudige aanvallen kunnen neerkomen op oorlogsmisdaden.",
-        "at": "2026-10-23T11:33:42.387518+00:00"
-      }
-    },
-    {
-      "id": "RSS-848beec4e42f2778068bbd",
-      "title": "Hispanic voters helped bring Trump to power - in Texas, the tide may be turning",
-      "summary": "Recent polls suggest the president is facing challenging headwinds in the state ahead of the midterms.",
-      "date": "2026-10-23T09:23:53.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "BBC News",
-      "official": false,
-      "url": "https://www.bbc.co.uk/news/articles/cmwyqn6ejyd4o?at_medium=RSS&at_campaign=rss",
-      "topic": "trump",
-      "region": "amerika",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "BBC News"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "vs-beleid",
-        "label": "VS-beleid"
-      },
-      "evidence": {
-        "kind": "statement",
-        "label": "Uitspraak of verwachting",
-        "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "BBC News"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T09:23:53.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "67d20bfdf6ce6088053d6047",
-        "title": "Spaanse kiezers hielpen Trump aan de macht te brengen - in Texas, kan het tij draaien",
-        "summary": "Recente peilingen wijzen erop dat de president voor de midterms met tegenwind wordt geconfronteerd.",
-        "at": "2026-10-23T11:33:43.011765+00:00"
-      }
-    },
-    {
-      "id": "RSS-d3a44ec2b4dec1c0582737",
-      "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-      "summary": "One person has died after being swept away by waves in Taiwan's Liuqiu island, authorities say.",
-      "date": "2026-10-23T08:45:58.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "BBC News",
-      "official": false,
-      "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
-      "topic": "conflict",
-      "region": "azie",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "BBC News"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "china-taiwan",
-        "label": "China – Taiwan"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "BBC News"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T08:45:58.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "09f7d503ea9a718723ee8860",
-        "title": "Honderden vluchten geannuleerd als Typhoon Champi sluit Taiwan",
-        "summary": "Eén persoon is gestorven nadat hij door golven was weggevaagd op het eiland Liuqiu van Taiwan, zeggen de autoriteiten.",
-        "at": "2026-10-23T11:33:43.565807+00:00"
-      }
-    },
-    {
-      "id": "RSS-994427281c92bb67a875d3",
-      "title": "Rubio turns to small Indian town as US faces high oil prices",
-      "summary": "US Secretary of State Marco Rubio pushed a business and energy agenda over diplomacy on his second trip to India this year.",
-      "date": "2026-10-23T08:39:42.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "BBC News",
-      "official": false,
-      "url": "https://www.bbc.co.uk/news/articles/c3x2wnk8ejq5o?at_medium=RSS&at_campaign=rss",
-      "topic": "conflict",
-      "region": "overig",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 1,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 2,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Potentieel indirecte gevolgen voor Belgische energie, handel of economie; niet bevestigd.",
-      "corroboratingSources": [
-        "BBC News"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "indirect_thema",
-        "domains": [
-          {
-            "key": "energie",
-            "label": "Energie"
-          },
-          {
-            "key": "diplomatie",
-            "label": "Diplomatie"
-          }
-        ],
-        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "wereld",
-        "label": "Wereldwijde ontwikkelingen"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "BBC News"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T08:39:42.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "1c0fab1f0ad22398e27e2cc1",
-        "title": "Rubio verandert in kleine Indiase stad als de VS geconfronteerd met hoge olieprijzen",
-        "summary": "De Amerikaanse minister van Buitenlandse Zaken Marco Rubio duwde een zakelijke en energieagenda over diplomatie op zijn tweede reis naar India dit jaar.",
-        "at": "2026-10-23T11:33:44.243378+00:00"
-      }
-    },
-    {
-      "id": "RSS-47d199a26ad62fd82a42d5",
-      "title": "Israel preparing 'full closure' of West Bank, Netanyahu says",
-      "summary": "Prime Minister Benjamin Netanyahu said Israel is shutting down the occupied West Bank after having prevented a \"major attack.\"",
-      "date": "2026-10-23T08:25:00.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "Deutsche Welle",
-      "official": false,
-      "url": "https://www.dw.com/en/israel-preparing-full-closure-of-west-bank-netanyahu-says/a-79739292?maca=en-rss-en-all-1573-xml-mrss",
-      "topic": "conflict",
-      "region": "midden-oosten",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "Deutsche Welle"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "israel-palestina",
-        "label": "Israël – Palestina"
-      },
-      "evidence": {
-        "kind": "statement",
-        "label": "Uitspraak of verwachting",
-        "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "Deutsche Welle"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T08:25:00.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "daeb0504eeedc5cbf8a32b01",
-        "title": "Israël bereidt 'volledige sluiting' van de Westelijke Jordaanoever voor, zegt Netanyahu",
-        "summary": "Premier Benjamin Netanyahu zei dat Israël de bezette Westelijke Jordaanoever sluit na een \"grote aanval\" te hebben voorkomen.",
-        "at": "2026-10-23T11:33:44.827878+00:00"
-      }
-    },
-    {
-      "id": "RSS-9184fd11ff83a256ecfc71",
-      "title": "Israel orders home demolitions after soldiers killed in West Bank",
-      "summary": "Prime Minister Benjamin Netanyahu said Israeli forces will demolish homes in the West Bank after gunmen killed two Israeli soldiers in the West Bank city of Hebron.",
-      "date": "2026-10-23T08:25:00.000Z",
-      "firstSeen": "2026-10-23T19:56:29.232Z",
-      "source": "Deutsche Welle",
-      "official": false,
-      "url": "https://www.dw.com/en/israel-orders-home-demolitions-after-soldiers-killed-in-west-bank/a-79739292?maca=en-rss-en-all-1573-xml-mrss",
-      "topic": "conflict",
-      "region": "midden-oosten",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 3,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 4,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "Deutsche Welle"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "israel-palestina",
-        "label": "Israël – Palestina"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "Deutsche Welle"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T08:25:00.000Z",
-        "firstSeenAt": "2026-10-23T19:56:29.232Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "629e7b5a76a6432352209441",
-        "title": "Israël bestelt huis sloop na soldaten gedood op de West Bank",
-        "summary": "Premier Benjamin Netanyahu zei dat Israëlische troepen huizen op de Westelijke Jordaanoever zullen slopen nadat schutters twee Israëlische soldaten in de Westoeverstad Hebron gedood hebben.",
-        "at": "2026-10-23T19:58:48.919866+00:00"
-      }
-    },
-    {
-      "id": "RSS-1ab816be79cf2b5bf30f2b",
-      "title": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-      "summary": "Search and rescue efforts under way after quake strikes region’s north, with at least seven aftershocks recorded A magnitude-7 earthquake has hit Tibet, killing at least 16 people, injuring 54 and destroying hundreds of homes in the northern regional city of Nagqu, official media have said. Search and rescue efforts continued after at least 339 homes and 20 livestock sheds collapsed, the Nagqu media office said, cit…",
-      "date": "2026-10-23T07:53:58.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "The Guardian",
-      "official": false,
-      "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
-      "topic": "conflict",
-      "region": "overig",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "The Guardian"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "wereld",
-        "label": "Wereldwijde ontwikkelingen"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "The Guardian"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T07:53:58.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "7cc1e7aea184758124598f99",
-        "title": "Hoogte-7 aardbeving raakt Tibet, doodt minstens 16 en verwoest honderden huizen.",
-        "summary": "Zoek- en reddingspogingen gaande na aardbevingen in het noorden, met ten minste zeven naschokken geregistreerd Een aardbeving van magnitude-7 heeft Tibet getroffen, waarbij minstens 16 mensen zijn gedood, 54 mensen zijn verwond en honderden huizen in de noordelijke regionale stad Nagqu zijn verwoest, hebben officiële media gezegd. Zoek en reddingspogingen voortgezet na minstens 339 huizen en 20 veeschuren ingestort, de Nagqu media kantoor zei, cit...",
-        "at": "2026-10-23T11:33:46.410984+00:00"
-      }
-    },
-    {
-      "id": "RSS-4143a29129ca671f7965b0",
-      "title": "South Korea proposes military talks with North again",
-      "summary": "South Korea is attempting to mutually determine the land border with North Korea amid military incidents and escalating tensions.",
-      "date": "2026-10-23T07:50:00.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "Deutsche Welle",
-      "official": false,
-      "url": "https://www.dw.com/en/south-korea-proposes-military-talks-with-north-again/a-79739208?maca=en-rss-en-all-1573-xml-mrss",
-      "topic": "conflict",
-      "region": "azie",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 1,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 2,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "Deutsche Welle"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "indirect_thema",
-        "domains": [
-          {
-            "key": "veiligheid",
-            "label": "Militaire veiligheid"
-          },
-          {
-            "key": "diplomatie",
-            "label": "Diplomatie"
-          }
-        ],
-        "explanation": "Mogelijk relevant thema voor België, zonder bevestigde Belgische gevolgen.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "korea",
-        "label": "Korea"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "Deutsche Welle"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T07:50:00.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "34855d7106540ce5bbc54133",
-        "title": "Zuid-Korea stelt opnieuw militaire gesprekken met Noord voor",
-        "summary": "Zuid-Korea probeert de landgrens met Noord-Korea te bepalen, te midden van militaire incidenten en toenemende spanningen.",
-        "at": "2026-10-23T11:33:46.906258+00:00"
-      }
-    },
-    {
-      "id": "RSS-2fa7a6dae533265197819b",
-      "title": "UK consumer confidence falls at fastest rate since Brexit vote as cost of living bites",
-      "summary": "Economic fallout from war in Middle East adds to pressures on consumers and on chancellor before budget Consumer confidence in the UK has fallen at the fastest rate outside the Covid pandemic since the 2016 Brexit vote as the escalating economic damage from the war in the Middle East hits Britain. With less than a week before John Healey’s first budget, the latest barometer from the data company GfK indicated confid…",
-      "date": "2026-10-23T07:25:57.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "The Guardian",
-      "official": false,
-      "url": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
-      "topic": "conflict",
-      "region": "midden-oosten",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 1,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 2,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "The Guardian"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "wereld",
-        "label": "Wereldwijde ontwikkelingen"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "The Guardian"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T07:25:57.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "bbe0870602fb86d269d7701e",
-        "title": "Het vertrouwen van de consument in het Verenigd Koninkrijk daalt het snelst sinds Brexit stemt als kosten van levensonderhoud",
-        "summary": "Economische gevolgen van oorlog in het Midden-Oosten dragen bij tot de druk op de consumenten en op kanselier voor de begroting Het vertrouwen van de consument in het Verenigd Koninkrijk is in het snelste tempo gedaald buiten de Covid pandemie sinds de Brexit-stemming in 2016, aangezien de toenemende economische schade door de oorlog in het Midden-Oosten Groot-Brittannië treft. Met minder dan een week voor John Healey's eerste budget, de nieuwste barometer van het databedrijf GfK aangegeven...",
-        "at": "2026-10-23T11:33:48.693259+00:00"
-      }
-    },
-    {
-      "id": "RSS-92a10271c3b3e0a513e3c3",
-      "title": "Germany sit out FIFA Under-15 World Cup as Russia return",
-      "summary": "Germany is one a handful of FIFA's 211 nations to refuse an invitation to play at the inaugural Under-15 World Cup. The tournament will also mark Russia's return to the FIFA fold.",
-      "date": "2026-10-23T07:17:00.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "Deutsche Welle",
-      "official": false,
-      "url": "https://www.dw.com/en/germany-sit-out-fifa-under-15-world-cup-as-russia-return/a-79734040?maca=en-rss-en-all-1573-xml-mrss",
-      "topic": "conflict",
-      "region": "europa",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "Deutsche Welle"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "oekraine-rusland",
-        "label": "Rusland – Oekraïne"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "Deutsche Welle"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T07:17:00.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "7d86577b6331e3c208e0482b",
-        "title": "Duitsland zit uit FIFA onder-15 World Cup als Rusland terugkeert",
-        "summary": "Duitsland is een handvol van de 211 landen van de FIFA om een uitnodiging te weigeren om te spelen op de inaugurele Under-15 World Cup. Het toernooi zal ook de terugkeer van Rusland naar de FIFA fold markeren.",
-        "at": "2026-10-23T11:33:49.621532+00:00"
-      }
-    },
-    {
-      "id": "RSS-df9fcc5f65a2d18143fcae",
-      "title": "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
-      "summary": "One person has died and thousands have been evacuated as Taiwan prepares for a possible direct hit. Though no longer a \"super\" typhoon, Champi is still packing winds of nearly 200 kmh and will bring torrential rain.",
-      "date": "2026-10-23T06:40:00.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "Deutsche Welle",
-      "official": false,
-      "url": "https://www.dw.com/en/taiwan-braces-as-el-nino-supercharged-typhoon-champi-approaches-island/a-79738819?maca=en-rss-en-all-1573-xml-mrss",
-      "topic": "conflict",
-      "region": "azie",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "Deutsche Welle"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "china-taiwan",
-        "label": "China – Taiwan"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "Deutsche Welle"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T06:40:00.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "47b57adc24e844f82c3c28b9",
-        "title": "Taiwan beugels als El Nino-opgeladen Typhoon Champi nadert eiland",
-        "summary": "Eén persoon is gestorven en duizenden zijn geëvacueerd terwijl Taiwan zich voorbereidt op een mogelijke directe aanslag. Hoewel niet langer een \"super\" tyfoon, Champi is nog steeds het verpakken van winden van bijna 200 kmh en zal leiden tot stortregen.",
-        "at": "2026-10-23T11:33:50.648114+00:00"
-      }
-    },
-    {
-      "id": "RSS-8eee88a857faebf499712c",
-      "title": "Musk's Starshield system 'back' in Ukraine, says Trump",
-      "summary": "US President Trump has said he wouldn't comment on who called for capping Ukraine's Starshield access but added that Elon Musk had \"put it back.\" His account was rejected by Ukraine, which says nothing has changed.",
-      "date": "2026-10-23T05:37:00.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "Deutsche Welle",
-      "official": false,
-      "url": "https://www.dw.com/en/musk-s-starshield-system-back-in-ukraine-says-trump/a-79738723?maca=en-rss-en-all-1573-xml-mrss",
-      "topic": "conflict",
-      "region": "europa",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "Deutsche Welle"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "oekraine-rusland",
-        "label": "Rusland – Oekraïne"
-      },
-      "evidence": {
-        "kind": "statement",
-        "label": "Uitspraak of verwachting",
-        "explanation": "De kop verwijst naar een uitspraak of mogelijke ontwikkeling; dit is niet noodzakelijk een uitgevoerd besluit."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "Deutsche Welle"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T05:37:00.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "18d0ca931580ec96d1662011",
-        "title": "Musk's Starschild systeem 'terug' in Oekraïne, zegt Trump",
-        "summary": "De Amerikaanse president Trump heeft gezegd dat hij geen commentaar zou geven op wie belde om toegang te krijgen tot de Oekraïense Starschild maar voegde eraan toe dat Elon Musk \"het terug had gezet.\" Zijn verslag werd verworpen door Oekraïne, dat zegt dat er niets is veranderd.",
-        "at": "2026-10-23T11:33:51.673115+00:00"
-      }
-    },
-    {
-      "id": "RSS-732c49063a7550b48e73e8",
-      "title": "Powerful earthquake hits Tibet killing 16 people, reports say",
-      "summary": "The quake hit a mountainous, sparsely-populated area in what China calls the Tibet Autonomous Region.",
-      "date": "2026-10-23T05:16:37.000Z",
-      "firstSeen": "2026-10-23T11:32:05.615Z",
-      "source": "BBC News",
-      "official": false,
-      "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
-      "topic": "conflict",
-      "region": "azie",
-      "status": "automatic_unverified",
-      "score": {
-        "military": 0,
-        "belgium": 0,
-        "novelty": 0,
-        "reliability": 1
-      },
-      "total": 1,
-      "category": "below",
-      "belowReason": "Voorlopig slechts één nieuwsbron; onafhankelijk bevestiging ontbreekt.",
-      "belgiumImpact": "Geen rechtstreekse Belgische impact vastgesteld in deze bron.",
-      "corroboratingSources": [
-        "BBC News"
-      ],
-      "sourceEvidence": "single_news_source",
-      "method": "rule_based_screening",
-      "verified": false,
-      "belgiumAssessment": {
-        "level": "niet_vastgesteld",
-        "domains": [],
-        "explanation": "Geen concreet verband met België gevonden in titel of samenvatting.",
-        "verified": false
-      },
-      "dossier": {
-        "id": "china-taiwan",
-        "label": "China – Taiwan"
-      },
-      "evidence": {
-        "kind": "news_report",
-        "label": "Nieuwsbericht",
-        "explanation": "Dit is een nieuwsbericht, geen zelfstandig geverifieerd feitenrapport."
-      },
-      "lastActivity": "unchanged",
-      "lastActivityAt": null,
-      "reviewStatus": "unverified",
-      "reviewBasis": "single_media_report",
-      "sourceAudit": {
-        "state": "single_report",
-        "sourceNames": [
-          "BBC News"
-        ],
-        "linkedArticles": 1,
-        "publishedAt": "2026-10-23T05:16:37.000Z",
-        "firstSeenAt": "2026-10-23T11:32:05.615Z",
-        "lastChangedAt": null,
-        "verified": false,
-        "explanation": "Eén bronartikel beschikbaar. Zoek verdere onafhankelijke bevestiging alvorens conclusies te trekken."
-      },
-      "translation": {
-        "status": "translated",
-        "engine": "argos",
-        "language": "nl",
-        "sourceHash": "773e8740573f298521e7efeb",
-        "title": "Krachtige aardbeving raakt Tibet doden 16 mensen, rapporten zeggen",
-        "summary": "De aardbeving raakte een bergachtig, dunbevolkt gebied in wat China de Tibetaanse Autonome Regio noemt.",
-        "at": "2026-10-23T11:33:52.142532+00:00"
-      }
     }
   ],
   "translation": {
     "engine": "Argos Translate en→nl",
     "language": "nl",
-    "translatedThisRun": 30,
+    "translatedThisRun": 19,
     "pending": 0,
     "failedThisRun": 0,
     "status": "ok"
   },
   "briefing": {
-    "createdAt": "2026-10-30T14:04:29.536Z",
+    "createdAt": "2026-10-30T21:28:02.865Z",
     "period": "Avondcontrole",
     "kind": "headline_selection_unverified",
     "verified": false,
     "counts": {
       "important": 2,
-      "trump": 57,
+      "trump": 56,
       "below": 298
     },
     "important": [
@@ -22466,20 +22516,20 @@
       "RSS-01d4e3d04c4f2e0f39cae2"
     ],
     "trump": [
+      "RSS-4cb0aca3bd91ccfcfbbb97",
       "RSS-054df438f6eefadd80b11b",
+      "RSS-74b72705acb4859f75c5af",
       "RSS-bfbd244ec12050c65306e1",
       "RSS-b00a415b62bced13734730",
-      "RSS-958095fe4bcd0d8170c349",
-      "RSS-81efa9ac8545b8ea2496e7",
-      "RSS-405792bef55538f3f9c7c6"
+      "RSS-958095fe4bcd0d8170c349"
     ],
     "below": [
-      "RSS-53d2b9361d26a074ea0727",
-      "RSS-06dd76803e8b9715c50769",
-      "RSS-117395fc796e09756f5938",
-      "RSS-e59e29ad7cf95dd9998f4b",
-      "RSS-054df438f6eefadd80b11b",
-      "RSS-d739e6ac886f7d18169f65"
+      "RSS-02ecd35b7079ec56efeed2",
+      "RSS-8fef7464e6b80437fe841b",
+      "RSS-896bebbccb9b244a1699fd",
+      "RSS-b0aa7d88e42ef8ab9712f5",
+      "RSS-03f161c6332a2077b43555",
+      "RSS-5cd3eade375225242b3112"
     ],
     "disclaimer": "Geselecteerde RSS-koppen. Geen onafhankelijke feitencontrole of officieel veiligheidsalarm."
   }
